@@ -423,11 +423,12 @@
         '</span></div>'
       : '';
 
-    var links = urls.map(function (u) {
+    var visibleLinks = 3;
+    var links = urls.map(function (u, i) {
       var label = u.label || hostOf(u.url);
       var dot = statusDotMarkup(u.url, item, u);
       var color = safeColor(u.color) || safeColor(item.color);
-      return '<button class="badge badge-play' + (color ? ' has-color' : '') + '" type="button" ' +
+      return '<button class="badge badge-play' + (color ? ' has-color' : '') + (i >= visibleLinks ? ' is-extra' : '') + '" type="button" ' +
         'data-play-url="' + esc(u.url) + '" data-play-name="' + esc(item.name) + '" data-play-icon="' + esc(item.icon || '') + '" ' +
         'data-play-type="' + esc(type) + '" ' +
         (color ? 'style="--badge-color:' + esc(color) + '" ' : '') +
@@ -435,6 +436,11 @@
         dot + PLAY_ICON + esc(label) +
       '</button>';
     }).join('');
+
+    if (urls.length > visibleLinks) {
+      links += '<button class="badge badge-more" type="button" data-more-links aria-expanded="false">' +
+        '+ ' + (urls.length - visibleLinks) + ' weitere</button>';
+    }
 
     return '<article class="card" style="--i:' + index + '">' +
       '<div class="card-head">' +
@@ -1390,6 +1396,17 @@
     if (!main) return;
 
     main.addEventListener('click', function (event) {
+      var more = event.target.closest('[data-more-links]');
+      if (more) {
+        var badgesBox = more.parentElement;
+        var open = badgesBox.classList.toggle('is-open');
+        more.setAttribute('aria-expanded', String(open));
+        more.textContent = open
+          ? 'Weniger anzeigen'
+          : '+ ' + badgesBox.querySelectorAll('.badge.is-extra').length + ' weitere';
+        return;
+      }
+
       var dot = event.target.closest('.status-dot[data-url]');
       if (dot) {
         event.preventDefault();
@@ -1491,6 +1508,79 @@
     note.classList.remove('is-hidden');
   }
 
+  /* Eintrag zu einer URL finden – für die Domain-Knöpfe im Player. */
+  function findItemByUrl(url) {
+    if (!url) return null;
+    var found = null;
+    Object.keys(state.data).some(function (key) {
+      var entry = state.data[key];
+      if (!entry || !entry.groups) return false;
+      entry.groups.some(function (group) {
+        return group.items.some(function (item) {
+          var match = (Array.isArray(item.urls) ? item.urls : []).some(function (u) {
+            return u && u.url === url;
+          });
+          if (match) found = item;
+          return match;
+        });
+      });
+      return !!found;
+    });
+    return found;
+  }
+
+  /* Domain-Knöpfe im Player: erst die wichtigsten, Rest auf Klick. */
+  function renderPlayerDomains(urls, currentUrl) {
+    var box = $('#player-domains');
+    if (!box) return;
+
+    var list = (urls || []).filter(function (u) { return u && u.url; });
+    if (list.length < 2) {
+      box.hidden = true;
+      box.innerHTML = '';
+      return;
+    }
+
+    var limit = 8;
+    box.hidden = false;
+    box.classList.remove('is-open');
+    box.innerHTML = '<span class="player-domains-label">Domain</span>' +
+      list.map(function (u, i) {
+        var label = u.label || hostOf(u.url);
+        return '<button class="domain-chip' + (i >= limit ? ' is-extra' : '') +
+          (u.url === currentUrl ? ' is-active' : '') + '" type="button" ' +
+          'data-domain-url="' + esc(u.url) + '" title="' + esc(u.url) + '">' + esc(label) + '</button>';
+      }).join('') +
+      (list.length > limit
+        ? '<button class="domain-chip domain-more" type="button" data-domain-more aria-expanded="false">+ ' +
+            (list.length - limit) + ' weitere</button>'
+        : '');
+  }
+
+  function switchPlayerDomain(url) {
+    var frame = $('#player-frame');
+    if (!frame || !url) return;
+
+    state.player.url = url;
+    var host = $('#player-host');
+    if (host) host.textContent = hostOf(url);
+    var external = $('#player-external');
+    if (external) external.href = url;
+
+    $$('#player-domains [data-domain-url]').forEach(function (chip) {
+      chip.classList.toggle('is-active', chip.dataset.domainUrl === url);
+    });
+
+    playerNote('<strong>Domain wird geladen …</strong><br />Falls nichts passiert, hilft <em>Neuer Tab</em> oben rechts.');
+    frame.src = url;
+
+    window.clearTimeout(state.player.timer);
+    state.player.timer = window.setTimeout(function () {
+      if (!state.player.open) return;
+      playerNote('<strong>Diese Domain lässt sich nicht einbetten.</strong><br />Nimm eine andere Domain oder <em>Neuer Tab</em>.');
+    }, 12000);
+  }
+
   function openPlayer(opts) {
     var root = $('#player');
     var frame = $('#player-frame');
@@ -1525,6 +1615,10 @@
     root.hidden = false;
     document.body.classList.add('player-open');
     frame.src = opts.url;
+
+    var item = findItemByUrl(opts.url);
+    state.player.urls = item && Array.isArray(item.urls) ? item.urls : [];
+    renderPlayerDomains(state.player.urls, opts.url);
 
     window.clearTimeout(state.player.timer);
     state.player.timer = window.setTimeout(function () {
@@ -1586,6 +1680,23 @@
   }
 
   function bindPlayer() {
+    var domains = $('#player-domains');
+    if (domains) {
+      domains.addEventListener('click', function (event) {
+        var more = event.target.closest('[data-domain-more]');
+        if (more) {
+          var open = domains.classList.toggle('is-open');
+          more.setAttribute('aria-expanded', String(open));
+          more.textContent = open
+            ? 'Weniger anzeigen'
+            : '+ ' + domains.querySelectorAll('.domain-chip.is-extra').length + ' weitere';
+          return;
+        }
+        var chip = event.target.closest('[data-domain-url]');
+        if (chip) switchPlayerDomain(chip.dataset.domainUrl);
+      });
+    }
+
     var home = $('#player-home');
     if (home) {
       home.addEventListener('click', function () {

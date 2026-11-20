@@ -7,7 +7,7 @@
   <title></title>
   <meta name="description" content="Freies Archiv für Browser-Spiele, lokale Games und Web-Tools." />
   <link rel="icon" href="data:," />
-  <link rel="stylesheet" href="css/style.css?v=2" />
+  <link rel="stylesheet" href="css/style.css?v=3" />
   <link rel="preload" as="image" href="img/censor/recycle-bin-empty.png" fetchpriority="high" />
   <script>
     /* Theme before first paint — avoids a flash of the wrong theme. */
@@ -144,25 +144,23 @@
         <article class="panel span-12 panel-clicks">
           <div class="panel-head">
             <span class="panel-label">Klick-Spaß</span>
-            <span class="panel-hint">öffnet im Player</span>
+            <span class="panel-hint">direkt spielbar</span>
           </div>
           <div class="click-tiles">
-            <button class="click-tile" type="button" data-play-url="https://popcat.click/" data-play-name="Popcat">
-              <span class="click-emoji" aria-hidden="true">🐱</span>
-              <span class="click-body">
-                <strong>Popcat</strong>
-                <small>Katze antippen, Maul auf – der Klassiker.</small>
-              </span>
-              <span class="click-go" aria-hidden="true">Öffnen</span>
-            </button>
-            <button class="click-tile" type="button" data-play-url="https://puginarug.com/" data-play-name="Pugina Rug">
-              <span class="click-emoji" aria-hidden="true">🐶</span>
-              <span class="click-body">
-                <strong>Pugina Rug</strong>
-                <small>Der Hund, der auf jeden Klick reagiert.</small>
-              </span>
-              <span class="click-go" aria-hidden="true">Öffnen</span>
-            </button>
+            <div class="click-embed">
+              <div class="click-embed-head">
+                <strong><span aria-hidden="true">🐱</span> Popcat</strong>
+                <a href="https://popcat.click/" target="_blank" rel="noopener noreferrer">Neuer Tab</a>
+              </div>
+              <iframe src="https://popcat.click/" title="Popcat" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay"></iframe>
+            </div>
+            <div class="click-embed">
+              <div class="click-embed-head">
+                <strong><span aria-hidden="true">🐶</span> Pugina Rug</strong>
+                <a href="https://puginarug.com/" target="_blank" rel="noopener noreferrer">Neuer Tab</a>
+              </div>
+              <iframe src="https://puginarug.com/" title="Pugina Rug" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay"></iframe>
+            </div>
           </div>
         </article>
       </div>
@@ -428,6 +426,7 @@
           </button>
         </div>
       </header>
+      <div class="player-domains" id="player-domains" hidden></div>
       <div class="player-stage">
         <iframe id="player-frame" title="Spiel-Player" loading="eager"
           allow="fullscreen; autoplay; gamepad; clipboard-read; clipboard-write; encrypted-media; picture-in-picture; screen-wake-lock; web-share; accelerometer; gyroscope; storage-access; cross-origin-isolated"
@@ -533,7 +532,7 @@
     <div class="wrap noscript">Bitte aktiviere JavaScript — die Inhalte werden aus JSON-Dateien geladen.</div>
   </noscript>
 
-  <script src="js/checker.js?v=2" defer></script>
-  <script src="js/app.js?v=2" defer></script>
+  <script src="js/checker.js?v=3" defer></script>
+  <script src="js/app.js?v=3" defer></script>
 </body>
 </html>
