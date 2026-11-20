@@ -1,5 +1,5 @@
 {
-  "_hinweis": "Neue Unterkategorie: Objekt in 'groups' ergänzen (id, name, icon, items). Farbe pro Link: in 'urls' beim Link einfach \"color\" setzen, z.B. {\"label\": \"…\", \"url\": \"…\", \"color\": \"#ff8a4c\"} – erlaubt sind Hex (#f80, #ff8800), Farbnamen (tomato) oder rgb()/hsl(). Eine \"color\" direkt am Eintrag gilt für alle seine Links.",
+  "_hinweis": "Neue Unterkategorie: Objekt in 'groups' ergänzen (id, name, icon, items). Farbe pro Link: in 'urls' beim Link einfach \"color\" setzen, z.B. {\"label\": \"…\", \"url\": \"…\", \"color\": \"#ff8a4c\"} – erlaubt sind Hex (#f80, #ff8800), Farbnamen (tomato) oder rgb()/hsl(). Eine \"color\" direkt am Eintrag gilt für alle seine Links. Die Gruppe \"Web-Ports\" stammt aus ported2browser.com (nur geprüfte, erreichbare Spiel-Links). Spiele mit Frame-Sperre (Zusatz \"· neuer Tab\", z.B. die NFS-Ports) starten nur über den Button \"Neuer Tab\" oben rechts im Player.",
   "title": "Games Online",
   "groups": [
     {
@@ -804,6 +804,39 @@
               "url": "https://www.coolmathgames.com/0-run-3"
             }
           ]
+        },
+        {
+          "name": "Need for Speed: Carbon Online",
+          "icon": "https://www.google.com/s2/favicons?domain=nfscrb.xyz&sz=128",
+          "urls": [
+            {
+              "label": "nfscrb.xyz · neuer Tab",
+              "url": "https://nfscrb.xyz/",
+              "color": "#ff8a4c"
+            }
+          ]
+        },
+        {
+          "name": "Need for Speed: Most Wanted (2005)",
+          "icon": "https://www.google.com/s2/favicons?domain=nfsmwo.com&sz=128",
+          "urls": [
+            {
+              "label": "web.nfsmwo.com · neuer Tab",
+              "url": "https://web.nfsmwo.com/",
+              "color": "#ff8a4c"
+            }
+          ]
+        },
+        {
+          "name": "Need for Speed: Underground 2 (Modded)",
+          "icon": "https://www.google.com/s2/favicons?domain=nfsu2mod.xyz&sz=128",
+          "urls": [
+            {
+              "label": "nfsu2mod.xyz (nur neuer Tab)",
+              "url": "https://nfsu2mod.xyz/",
+              "color": "#ff8a4c"
+            }
+          ]
         }
       ]
     },
@@ -859,6 +892,1939 @@
             {
               "label": "neal.fun",
               "url": "https://neal.fun/password-game/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ports",
+      "name": "Web-Ports",
+      "icon": "💾",
+      "items": [
+        {
+          "name": "1080° Snowboarding",
+          "icon": "https://ported2browser.com/storage/covers/1080-snowboarding.webp",
+          "urls": [
+            {
+              "label": "lemon-web.net",
+              "url": "https://www.lemon-web.net/applications/lemon-web-games#1080snowboarding"
+            }
+          ]
+        },
+        {
+          "name": "20 Minutes Till Dawn",
+          "icon": "https://ported2browser.com/storage/covers/20-minutes-till-dawn.webp",
+          "urls": [
+            {
+              "label": "truffled.lol",
+              "url": "https://truffled.lol/unityframe.html?url=/games/20minutesbog/index.html"
+            }
+          ]
+        },
+        {
+          "name": "3D Pinball: Space Cadet",
+          "icon": "https://ported2browser.com/storage/covers/space-cadet-pinball.webp",
+          "urls": [
+            {
+              "label": "dos.zone · neuer Tab",
+              "url": "https://dos.zone/microsoft-3d-pinball-space-cadet/"
+            }
+          ]
+        },
+        {
+          "name": "A Difficult Game About Climbing",
+          "icon": "https://ported2browser.com/storage/covers/a-difficult-game-about-climbing.webp",
+          "urls": [
+            {
+              "label": "truffled.lol",
+              "url": "https://truffled.lol/iframe.html?url=/gamefile/adgac.html"
+            }
+          ]
+        },
+        {
+          "name": "Abobo's Big Adventure",
+          "icon": "https://ported2browser.com/storage/covers/abobos-big-adventure.webp",
+          "urls": [
+            {
+              "label": "kongregate.com · neuer Tab",
+              "url": "https://www.kongregate.com/en/games/pestoforce/abobos-big-adventure"
+            }
+          ]
+        },
+        {
+          "name": "Advance Wars By Web",
+          "icon": "https://ported2browser.com/storage/covers/advance-wars-by-web.webp",
+          "urls": [
+            {
+              "label": "awbw.amarriner.com",
+              "url": "https://awbw.amarriner.com/"
+            }
+          ]
+        },
+        {
+          "name": "Adventure Capitalist",
+          "icon": "https://ported2browser.com/storage/covers/adventure-capitalist.webp",
+          "urls": [
+            {
+              "label": "lemon-web.net",
+              "url": "https://www.lemon-web.net/applications/lemon-web-games#adventurecapitalist"
+            }
+          ]
+        },
+        {
+          "name": "Age of Empires II",
+          "icon": "https://ported2browser.com/storage/covers/age-of-empires-2.webp",
+          "urls": [
+            {
+              "label": "dos.zone · neuer Tab",
+              "url": "https://dos.zone/age-of-empires2/"
+            }
+          ]
+        },
+        {
+          "name": "Ages of Conflict",
+          "icon": "https://ported2browser.com/storage/covers/ages-of-conflict-world-war-simulator.webp",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/aoc/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Alien Hominid",
+          "icon": "https://ported2browser.com/storage/covers/alien-hominid.webp",
+          "urls": [
+            {
+              "label": "truffled.lol",
+              "url": "https://truffled.lol/iframe.html?url=/games/alien/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Amazing Alex",
+          "icon": "https://ported2browser.com/storage/covers/amazing-alex.webp",
+          "urls": [
+            {
+              "label": "nomadic-ua.itch.io",
+              "url": "https://nomadic-ua.itch.io/amazing-alex"
+            }
+          ]
+        },
+        {
+          "name": "Ambidextro",
+          "icon": "https://ported2browser.com/storage/covers/amidextro.webp",
+          "urls": [
+            {
+              "label": "ambidextro.surge.sh",
+              "url": "https://ambidextro.surge.sh/"
+            }
+          ]
+        },
+        {
+          "name": "Amnesia: The Dark Descent",
+          "icon": "https://ported2browser.com/storage/covers/amnesia-the-dark-descent-web.webp",
+          "urls": [
+            {
+              "label": "agentcube.github.io",
+              "url": "https://agentcube.github.io/amnesia-web-wasm"
+            }
+          ]
+        },
+        {
+          "name": "Among Us",
+          "icon": "https://ported2browser.com/storage/covers/among-us.webp",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/amongus/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Angry Birds 2",
+          "icon": "https://ported2browser.com/storage/covers/angry-birds-2.webp",
+          "urls": [
+            {
+              "label": "naotomori1.github.io",
+              "url": "https://naotomori1.github.io/AngryBirds2Port/"
+            }
+          ]
+        },
+        {
+          "name": "Animal Crossing",
+          "icon": "https://ported2browser.com/storage/covers/animal-crossing.webp",
+          "urls": [
+            {
+              "label": "truffled.lol",
+              "url": "https://truffled.lol/iframe.html?url=/games/slider/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Arx Fatalis",
+          "icon": "https://ported2browser.com/storage/covers/arx-fatalis-web.webp",
+          "urls": [
+            {
+              "label": "wasm.continuation-labs.com",
+              "url": "https://wasm.continuation-labs.com/arxdemo/"
+            }
+          ]
+        },
+        {
+          "name": "AssaultCube",
+          "icon": "https://ported2browser.com/storage/covers/assaultcube.webp",
+          "urls": [
+            {
+              "label": "crishoux.com",
+              "url": "https://crishoux.com/assaultcube-web/"
+            }
+          ]
+        },
+        {
+          "name": "Axiom Verge",
+          "icon": "https://ported2browser.com/storage/covers/axiom-verge.webp",
+          "urls": [
+            {
+              "label": "agentcube.github.io",
+              "url": "https://agentcube.github.io/axiomverge-wasm"
+            }
+          ]
+        },
+        {
+          "name": "Azeroth Survivors",
+          "icon": "https://ported2browser.com/storage/covers/azeroth-survivors.webp",
+          "urls": [
+            {
+              "label": "wow.aethus.pl",
+              "url": "https://wow.aethus.pl/"
+            }
+          ]
+        },
+        {
+          "name": "Bad Monday Simulator",
+          "icon": "https://ported2browser.com/storage/covers/bad-monday-simulator.webp",
+          "urls": [
+            {
+              "label": "lumpytouch.itch.io",
+              "url": "https://lumpytouch.itch.io/bad-monday-simulator"
+            }
+          ]
+        },
+        {
+          "name": "Balatro",
+          "icon": "https://ported2browser.com/storage/covers/balatro.webp",
+          "urls": [
+            {
+              "label": "truffled.lol",
+              "url": "https://truffled.lol/iframe.html?url=/games/balatro/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Baldi's Basics Birthday Bash",
+          "icon": "https://ported2browser.com/storage/covers/baldis-basics-1-year-birthday-bash.webp",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/birthdaybash/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Baldur's Gate 2",
+          "icon": "https://ported2browser.com/storage/covers/baldurs-gate-2.webp",
+          "urls": [
+            {
+              "label": "truffled.lol",
+              "url": "https://truffled.lol/iframe.html?url=/games/baldurs-gate-2/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Ballance",
+          "icon": "https://ported2browser.com/storage/covers/ballance.webp",
+          "urls": [
+            {
+              "label": "ballance.fayaz.workers.dev",
+              "url": "https://ballance.fayaz.workers.dev/"
+            }
+          ]
+        },
+        {
+          "name": "Beatblock",
+          "icon": "https://ported2browser.com/storage/covers/beatblock.webp",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/beatblock/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Bendy and the Ink Machine",
+          "icon": "https://ported2browser.com/storage/covers/bendy-and-the-ink-machine.webp",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/BATIM/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Beneath a Steel Sky",
+          "icon": "https://ported2browser.com/storage/covers/beneath-a-steel-sky.webp",
+          "urls": [
+            {
+              "label": "scummweb.tsilva.eu",
+              "url": "https://scummweb.tsilva.eu/#game-beneath-a-steel-sky"
+            }
+          ]
+        },
+        {
+          "name": "BERGENTRUCK 201x",
+          "icon": "https://ported2browser.com/storage/covers/bergentruck-201x.webp",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/freebuisness/html/main/455-fix2.html"
+            }
+          ]
+        },
+        {
+          "name": "Binding of Isaac: Repentance",
+          "icon": "https://ported2browser.com/storage/covers/binding-of-isaac.webp",
+          "urls": [
+            {
+              "label": "tboi.online",
+              "url": "https://tboi.online/"
+            }
+          ]
+        },
+        {
+          "name": "Black Ops Zombies",
+          "icon": "https://ported2browser.com/storage/covers/black-ops-zombies.webp",
+          "urls": [
+            {
+              "label": "vel.gg",
+              "url": "https://vel.gg/bsz"
+            }
+          ]
+        },
+        {
+          "name": "BLOODMONEY!",
+          "icon": "https://ported2browser.com/storage/covers/bloodmoney.webp",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/freebuisness/html/main/454-fix2.html"
+            }
+          ]
+        },
+        {
+          "name": "Boil Noodles at Night",
+          "icon": "https://ported2browser.com/storage/covers/boil-noodles-at-night.webp",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/boilnoodles/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Bounce Tales",
+          "icon": "https://ported2browser.com/storage/covers/bounce-tales-web.webp",
+          "urls": [
+            {
+              "label": "prasannaone.github.io",
+              "url": "https://prasannaone.github.io/BounceTales/"
+            }
+          ]
+        },
+        {
+          "name": "Broken Sword 2.5: The Return of the Templars",
+          "icon": "https://ported2browser.com/storage/covers/broken-sword-2-dot-5-the-return-of-the-templars.webp",
+          "urls": [
+            {
+              "label": "scummweb.tsilva.eu",
+              "url": "https://scummweb.tsilva.eu/#game-broken-sword-2-5-the-return-of-the-templars"
+            }
+          ]
+        },
+        {
+          "name": "Brotato Paws n' Claws",
+          "icon": "https://ported2browser.com/storage/covers/brotato.webp",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/bpac/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Buckshot Roulette",
+          "icon": "https://ported2browser.com/storage/covers/buckshot-roulette.webp",
+          "urls": [
+            {
+              "label": "truffled.lol",
+              "url": "https://truffled.lol/iframe.html?url=/games/buckshot/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Burnout 3: Takedown",
+          "icon": "https://ported2browser.com/storage/covers/burnout-3-takedown.webp",
+          "urls": [
+            {
+              "label": "burnout3.gamingretro.online · neuer Tab",
+              "url": "https://burnout3.gamingretro.online/"
+            }
+          ]
+        },
+        {
+          "name": "C.O.W.-Boys",
+          "icon": "https://ported2browser.com/storage/covers/wild-west-cow-boys-of-moo-mesa-arcade.webp",
+          "urls": [
+            {
+              "label": "games4me.alwaysdata.net",
+              "url": "https://games4me.alwaysdata.net/moomesa_web/"
+            }
+          ]
+        },
+        {
+          "name": "Cadillacs and Dinosaurs",
+          "icon": "https://ported2browser.com/storage/covers/cadillacs-and-dinosaurs-arcade.webp",
+          "urls": [
+            {
+              "label": "games4me.alwaysdata.net",
+              "url": "https://games4me.alwaysdata.net/cadillacs_web/"
+            }
+          ]
+        },
+        {
+          "name": "Call of Duty Webports",
+          "icon": "https://ported2browser.com/storage/covers/call-of-duty-webports.webp",
+          "urls": [
+            {
+              "label": "cod-webports.pages.dev",
+              "url": "https://cod-webports.pages.dev/"
+            }
+          ]
+        },
+        {
+          "name": "Call of Mini: Dino Hunter",
+          "icon": "https://ported2browser.com/storage/covers/call-of-mini-dino-hunter.webp",
+          "urls": [
+            {
+              "label": "comdh.krig.games",
+              "url": "https://comdh.krig.games/"
+            }
+          ]
+        },
+        {
+          "name": "Card Wars",
+          "icon": "https://ported2browser.com/storage/covers/card-wars.webp",
+          "urls": [
+            {
+              "label": "savavlad.com",
+              "url": "https://savavlad.com/cardwars/"
+            }
+          ]
+        },
+        {
+          "name": "Carrion",
+          "icon": "https://ported2browser.com/storage/covers/carrion.webp",
+          "urls": [
+            {
+              "label": "agentcube.github.io",
+              "url": "https://agentcube.github.io/carrion-wasm"
+            }
+          ]
+        },
+        {
+          "name": "Castlevania Romhacks",
+          "icon": "https://ported2browser.com/storage/covers/rh-cv-cover.webp",
+          "urls": [
+            {
+              "label": "kbhgames.com · neuer Tab",
+              "url": "https://kbhgames.com/game/castlevania-the-holy-relics"
+            }
+          ]
+        },
+        {
+          "name": "Catan Universe",
+          "icon": "https://ported2browser.com/storage/covers/catan-universe.webp",
+          "urls": [
+            {
+              "label": "catanuniverse.com",
+              "url": "https://catanuniverse.com/en/game/"
+            }
+          ]
+        },
+        {
+          "name": "Cave Story",
+          "icon": "https://ported2browser.com/storage/covers/cave-story.webp",
+          "urls": [
+            {
+              "label": "midzer.de · neuer Tab",
+              "url": "https://midzer.de/wasm/cavestory/"
+            }
+          ]
+        },
+        {
+          "name": "Celeste",
+          "icon": "https://ported2browser.com/storage/covers/celeste.webp",
+          "urls": [
+            {
+              "label": "truffled.lol",
+              "url": "https://truffled.lol/iframe.html?url=/games/celeste/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Cheese Rolling",
+          "icon": "https://ported2browser.com/storage/covers/cheese-rolling.webp",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/cheese-rolling/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Clover Pit",
+          "icon": "https://ported2browser.com/storage/covers/clover-pit.webp",
+          "urls": [
+            {
+              "label": "genizymath.github.io",
+              "url": "https://genizymath.github.io/games/clover-pit/"
+            }
+          ]
+        },
+        {
+          "name": "Clustertruck",
+          "icon": "https://ported2browser.com/storage/covers/clustertruck.webp",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/ClusterTruck/clustertruck.html"
+            }
+          ]
+        },
+        {
+          "name": "Coffee Talk",
+          "icon": "https://ported2browser.com/storage/covers/coffee-talk.webp",
+          "urls": [
+            {
+              "label": "truffled.lol",
+              "url": "https://truffled.lol/iframe.html?url=/games/coffee/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Combat Skirmish (CS 1.6)",
+          "icon": "https://ported2browser.com/storage/covers/combat-skirmish.webp",
+          "urls": [
+            {
+              "label": "combatskirmish.net",
+              "url": "https://combatskirmish.net/"
+            }
+          ]
+        },
+        {
+          "name": "Compositor",
+          "icon": "https://ported2browser.com/storage/covers/compositor.webp",
+          "urls": [
+            {
+              "label": "compositor.fyi",
+              "url": "https://compositor.fyi/"
+            }
+          ]
+        },
+        {
+          "name": "Conker's Bad Fur Day",
+          "icon": "https://www.google.com/s2/favicons?domain=lemon-web.net&sz=128",
+          "urls": [
+            {
+              "label": "lemon-web.net",
+              "url": "https://www.lemon-web.net/applications/lemon-web-games#conkersbadfurday"
+            }
+          ]
+        },
+        {
+          "name": "Conker's BFD (Multiplayer)",
+          "icon": "https://www.google.com/s2/favicons?domain=conker.wtf&sz=128",
+          "urls": [
+            {
+              "label": "conker.wtf",
+              "url": "https://conker.wtf/"
+            }
+          ]
+        },
+        {
+          "name": "Contra",
+          "icon": "https://ported2browser.com/storage/covers/contra-web.webp",
+          "urls": [
+            {
+              "label": "contragame.dev",
+              "url": "https://contragame.dev/"
+            }
+          ]
+        },
+        {
+          "name": "Counter-Strike",
+          "icon": "https://ported2browser.com/storage/covers/counter-strike.webp",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/gstrike/index.html"
+            },
+            {
+              "label": "play-cs.com",
+              "url": "https://play-cs.com/"
+            }
+          ]
+        },
+        {
+          "name": "Counter-Strike Surf",
+          "icon": "https://www.google.com/s2/favicons?domain=surfd.net&sz=128",
+          "urls": [
+            {
+              "label": "surfd.net",
+              "url": "https://surfd.net/"
+            }
+          ]
+        },
+        {
+          "name": "Crash Bash",
+          "icon": "https://ported2browser.com/storage/covers/crash-bash.webp",
+          "urls": [
+            {
+              "label": "crashbash.app · neuer Tab",
+              "url": "https://crashbash.app/"
+            }
+          ]
+        },
+        {
+          "name": "Crashout Crew",
+          "icon": "https://www.google.com/s2/favicons?domain=wasm.rip&sz=128",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/cc/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Cricket 07",
+          "icon": "https://www.google.com/s2/favicons?domain=cricket07.dhaiwat.com&sz=128",
+          "urls": [
+            {
+              "label": "cricket07.dhaiwat.com",
+              "url": "https://cricket07.dhaiwat.com/"
+            }
+          ]
+        },
+        {
+          "name": "Crimsonland",
+          "icon": "https://www.google.com/s2/favicons?domain=crimson.land&sz=128",
+          "urls": [
+            {
+              "label": "crimson.land",
+              "url": "https://crimson.land/play/"
+            }
+          ]
+        },
+        {
+          "name": "Cuphead",
+          "icon": "https://ported2browser.com/storage/covers/cuphead.webp",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/cuphead/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Cut the Rope DX",
+          "icon": "https://www.google.com/s2/favicons?domain=yell0wsuit.github.io&sz=128",
+          "urls": [
+            {
+              "label": "yell0wsuit.github.io",
+              "url": "https://yell0wsuit.github.io/cuttherope-dx/"
+            }
+          ]
+        },
+        {
+          "name": "Daedalian Opus",
+          "icon": "https://www.google.com/s2/favicons?domain=joyrider3774.itch.io&sz=128",
+          "urls": [
+            {
+              "label": "joyrider3774.itch.io · neuer Tab",
+              "url": "https://joyrider3774.itch.io/puzzle-land-playdate"
+            }
+          ]
+        },
+        {
+          "name": "DBZ: Budokai",
+          "icon": "https://www.google.com/s2/favicons?domain=budokai1online.win&sz=128",
+          "urls": [
+            {
+              "label": "budokai1online.win",
+              "url": "https://budokai1online.win/"
+            }
+          ]
+        },
+        {
+          "name": "DBZ: Budokai 2",
+          "icon": "https://www.google.com/s2/favicons?domain=budokai2onlline.cc&sz=128",
+          "urls": [
+            {
+              "label": "budokai2onlline.cc",
+              "url": "https://budokai2onlline.cc/"
+            }
+          ]
+        },
+        {
+          "name": "DBZ: Budokai 3",
+          "icon": "https://www.google.com/s2/favicons?domain=dragonballbudokai3.gamingretro.online&sz=128",
+          "urls": [
+            {
+              "label": "dragonballbudokai3.gamingretro.online · neuer Tab",
+              "url": "https://dragonballbudokai3.gamingretro.online/"
+            }
+          ]
+        },
+        {
+          "name": "DEAD PLATE",
+          "icon": "https://ported2browser.com/storage/covers/dead-plate.webp",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/freebuisness/html/main/462-fix2.html"
+            }
+          ]
+        },
+        {
+          "name": "Def Jam: Fight for NY",
+          "icon": "https://www.google.com/s2/favicons?domain=def-jam.gamingretro.online&sz=128",
+          "urls": [
+            {
+              "label": "def-jam.gamingretro.online · neuer Tab",
+              "url": "https://def-jam.gamingretro.online/"
+            }
+          ]
+        },
+        {
+          "name": "Deltarune: Lightners Live Plus",
+          "icon": "https://www.google.com/s2/favicons?domain=ezioeagle.itch.io&sz=128",
+          "urls": [
+            {
+              "label": "ezioeagle.itch.io",
+              "url": "https://ezioeagle.itch.io/lightners-live-plus"
+            }
+          ]
+        },
+        {
+          "name": "Diablo",
+          "icon": "https://www.google.com/s2/favicons?domain=devilutionx.app&sz=128",
+          "urls": [
+            {
+              "label": "devilutionx.app",
+              "url": "https://devilutionx.app/"
+            }
+          ]
+        },
+        {
+          "name": "Diablo 2 Survivors",
+          "icon": "https://www.google.com/s2/favicons?domain=d2survivors.lol&sz=128",
+          "urls": [
+            {
+              "label": "d2survivors.lol · neuer Tab",
+              "url": "https://d2survivors.lol/"
+            }
+          ]
+        },
+        {
+          "name": "Dice A Million",
+          "icon": "https://www.google.com/s2/favicons?domain=wasm.rip&sz=128",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/diceAmillion/diceamillion.html"
+            }
+          ]
+        },
+        {
+          "name": "Do NOT Take This Cat Home",
+          "icon": "https://www.google.com/s2/favicons?domain=raw.githack.com&sz=128",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/freebuisness/html/main/193-fix2.html"
+            }
+          ]
+        },
+        {
+          "name": "DOKDO",
+          "icon": "https://ported2browser.com/storage/covers/dokdo-web.webp",
+          "urls": [
+            {
+              "label": "dokdo.online · neuer Tab",
+              "url": "https://dokdo.online"
+            }
+          ]
+        },
+        {
+          "name": "Dome Keeper",
+          "icon": "https://www.google.com/s2/favicons?domain=truffled.lol&sz=128",
+          "urls": [
+            {
+              "label": "truffled.lol",
+              "url": "https://truffled.lol/iframe.html?url=/games/domekeeper/index.html"
+            }
+          ]
+        },
+        {
+          "name": "DOOM",
+          "icon": "https://www.google.com/s2/favicons?domain=dwasm.m-h.org.uk&sz=128",
+          "urls": [
+            {
+              "label": "dwasm.m-h.org.uk · neuer Tab",
+              "url": "https://dwasm.m-h.org.uk/"
+            }
+          ]
+        },
+        {
+          "name": "DOOM Multiplayer",
+          "icon": "https://ported2browser.com/storage/covers/doom-multiplayer.webp",
+          "urls": [
+            {
+              "label": "silentspacemarine.com",
+              "url": "https://silentspacemarine.com/"
+            }
+          ]
+        },
+        {
+          "name": "Downhill Domination",
+          "icon": "https://www.google.com/s2/favicons?domain=downhilldomination.gamingretro.online&sz=128",
+          "urls": [
+            {
+              "label": "downhilldomination.gamingretro.online · neuer Tab",
+              "url": "https://downhilldomination.gamingretro.online/"
+            }
+          ]
+        },
+        {
+          "name": "Dragon Ball Devolution",
+          "icon": "https://www.google.com/s2/favicons?domain=txori.com&sz=128",
+          "urls": [
+            {
+              "label": "txori.com · neuer Tab",
+              "url": "https://www.txori.com/dbdevolution"
+            }
+          ]
+        },
+        {
+          "name": "Dragon Ball Z: BT 3",
+          "icon": "https://www.google.com/s2/favicons?domain=dragonballbt3.online&sz=128",
+          "urls": [
+            {
+              "label": "dragonballbt3.online · neuer Tab",
+              "url": "https://dragonballbt3.online/"
+            }
+          ]
+        },
+        {
+          "name": "DreamWeb",
+          "icon": "https://ported2browser.com/storage/covers/dreamweb.webp",
+          "urls": [
+            {
+              "label": "scummweb.tsilva.eu",
+              "url": "https://scummweb.tsilva.eu/#game-dreamweb"
+            }
+          ]
+        },
+        {
+          "name": "Dráscula: The Vampire Strikes Back",
+          "icon": "https://www.google.com/s2/favicons?domain=scummweb.tsilva.eu&sz=128",
+          "urls": [
+            {
+              "label": "scummweb.tsilva.eu",
+              "url": "https://scummweb.tsilva.eu/#game-drascula-the-vampire-strikes-back"
+            }
+          ]
+        },
+        {
+          "name": "Dude, Stop",
+          "icon": "https://www.google.com/s2/favicons?domain=wasm.rip&sz=128",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/dudestop/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Duke Nukem 3D",
+          "icon": "https://www.google.com/s2/favicons?domain=digitalcybersoft.github.io&sz=128",
+          "urls": [
+            {
+              "label": "digitalcybersoft.github.io",
+              "url": "https://digitalcybersoft.github.io/eduke32-wasm/"
+            }
+          ]
+        },
+        {
+          "name": "Dune II",
+          "icon": "https://ported2browser.com/storage/covers/dune-ii-web.webp",
+          "urls": [
+            {
+              "label": "dune2js.com",
+              "url": "https://dune2js.com/"
+            }
+          ]
+        },
+        {
+          "name": "Egg Fried Rice",
+          "icon": "https://www.google.com/s2/favicons?domain=kbhgames.com&sz=128",
+          "urls": [
+            {
+              "label": "kbhgames.com · neuer Tab",
+              "url": "https://kbhgames.com/game/egg-fried-rice"
+            }
+          ]
+        },
+        {
+          "name": "Endacopia",
+          "icon": "https://www.google.com/s2/favicons?domain=truffled.lol&sz=128",
+          "urls": [
+            {
+              "label": "truffled.lol",
+              "url": "https://truffled.lol/iframe.html?url=/games/endacopia/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Exit Fate",
+          "icon": "https://www.google.com/s2/favicons?domain=exitfate.radialapps.com&sz=128",
+          "urls": [
+            {
+              "label": "exitfate.radialapps.com",
+              "url": "https://exitfate.radialapps.com/"
+            }
+          ]
+        },
+        {
+          "name": "Fallout Nevada",
+          "icon": "https://ported2browser.com/storage/covers/fallout-nevada.webp",
+          "urls": [
+            {
+              "label": "fallout-nevada.ru",
+              "url": "https://fallout-nevada.ru/#/en"
+            }
+          ]
+        },
+        {
+          "name": "Fallout New Vegas",
+          "icon": "https://ported2browser.com/storage/covers/fallout-new-vegas-web.webp",
+          "urls": [
+            {
+              "label": "falloutnewvegasweb.com",
+              "url": "https://falloutnewvegasweb.com/"
+            }
+          ]
+        },
+        {
+          "name": "Fancy Pants (Series)",
+          "icon": "https://www.google.com/s2/favicons?domain=truffled.lol&sz=128",
+          "urls": [
+            {
+              "label": "truffled.lol",
+              "url": "https://truffled.lol/iframe.html?url=/games/fancypantsadventures/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Fate/Stay Night",
+          "icon": "https://www.google.com/s2/favicons?domain=fatestaynight.vnovel.org&sz=128",
+          "urls": [
+            {
+              "label": "fatestaynight.vnovel.org",
+              "url": "https://fatestaynight.vnovel.org/"
+            }
+          ]
+        },
+        {
+          "name": "Fear & Hunger",
+          "icon": "https://www.google.com/s2/favicons?domain=raw.githack.com&sz=128",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/freebuisness/html/main/706-fix2.html"
+            }
+          ]
+        },
+        {
+          "name": "FEZ",
+          "icon": "https://www.google.com/s2/favicons?domain=wasm.rip&sz=128",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/FEZ/fez.html"
+            }
+          ]
+        },
+        {
+          "name": "FF7: The First SOLDIER (Fan Remake)",
+          "icon": "https://www.google.com/s2/favicons?domain=fracturedgems.itch.io&sz=128",
+          "urls": [
+            {
+              "label": "fracturedgems.itch.io",
+              "url": "https://fracturedgems.itch.io/final-fantasy-vii-the-first-soldier"
+            }
+          ]
+        },
+        {
+          "name": "FFX Blitzball",
+          "icon": "https://ported2browser.com/storage/covers/ffx-blitzball-web.webp",
+          "urls": [
+            {
+              "label": "blitzballremake.com · neuer Tab",
+              "url": "https://blitzballremake.com/"
+            }
+          ]
+        },
+        {
+          "name": "FIFA 14",
+          "icon": "https://www.google.com/s2/favicons?domain=fifa14.gamingretro.online&sz=128",
+          "urls": [
+            {
+              "label": "fifa14.gamingretro.online · neuer Tab",
+              "url": "https://fifa14.gamingretro.online/"
+            }
+          ]
+        },
+        {
+          "name": "FIFA Street (2012)",
+          "icon": "https://www.google.com/s2/favicons?domain=fifastreet2012.gamingretro.online&sz=128",
+          "urls": [
+            {
+              "label": "fifastreet2012.gamingretro.online",
+              "url": "https://fifastreet2012.gamingretro.online/"
+            }
+          ]
+        },
+        {
+          "name": "FIFA Street 2",
+          "icon": "https://www.google.com/s2/favicons?domain=fifastreet2.fun&sz=128",
+          "urls": [
+            {
+              "label": "fifastreet2.fun · neuer Tab",
+              "url": "https://fifastreet2.fun/"
+            }
+          ]
+        },
+        {
+          "name": "Fire Fight",
+          "icon": "https://www.google.com/s2/favicons?domain=tosiabunio.github.io&sz=128",
+          "urls": [
+            {
+              "label": "tosiabunio.github.io",
+              "url": "https://tosiabunio.github.io/firefight-port/#GamePreservation"
+            }
+          ]
+        },
+        {
+          "name": "FISH",
+          "icon": "https://www.google.com/s2/favicons?domain=raw.githack.com&sz=128",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/freebuisness/html/main/761-fix.html"
+            }
+          ]
+        },
+        {
+          "name": "Five Nights at Freddy's NES",
+          "icon": "https://ported2browser.com/storage/covers/five-nights-at-freddys-nes.webp",
+          "urls": [
+            {
+              "label": "endoblance.itch.io",
+              "url": "https://endoblance.itch.io/fnafnes"
+            }
+          ]
+        },
+        {
+          "name": "Flight of the Amazon Queen",
+          "icon": "https://www.google.com/s2/favicons?domain=scummweb.tsilva.eu&sz=128",
+          "urls": [
+            {
+              "label": "scummweb.tsilva.eu",
+              "url": "https://scummweb.tsilva.eu/#game-flight-of-the-amazon-queen"
+            }
+          ]
+        },
+        {
+          "name": "FNAF (Series)",
+          "icon": "https://www.google.com/s2/favicons?domain=fivenightsatfreddysgame.io&sz=128",
+          "urls": [
+            {
+              "label": "fivenightsatfreddysgame.io",
+              "url": "https://fivenightsatfreddysgame.io/"
+            }
+          ]
+        },
+        {
+          "name": "Formula One 06",
+          "icon": "https://www.google.com/s2/favicons?domain=f12006.gamingretro.online&sz=128",
+          "urls": [
+            {
+              "label": "f12006.gamingretro.online · neuer Tab",
+              "url": "https://f12006.gamingretro.online/"
+            }
+          ]
+        },
+        {
+          "name": "Friday Night Funkin'",
+          "icon": "https://ported2browser.com/storage/covers/friday-night-funkin-cover.webp",
+          "urls": [
+            {
+              "label": "gamaverse.com",
+              "url": "https://gamaverse.com/friday-night-funkin-clay-mod-game/"
+            }
+          ]
+        },
+        {
+          "name": "Gizmoduck",
+          "icon": "https://www.google.com/s2/favicons?domain=sova-games.ru&sz=128",
+          "urls": [
+            {
+              "label": "sova-games.ru · neuer Tab",
+              "url": "https://sova-games.ru/en/games/gizmoduck/"
+            }
+          ]
+        },
+        {
+          "name": "Global Operations",
+          "icon": "https://www.google.com/s2/favicons?domain=savavlad.com&sz=128",
+          "urls": [
+            {
+              "label": "savavlad.com",
+              "url": "https://savavlad.com/glops/"
+            }
+          ]
+        },
+        {
+          "name": "Gold Miner",
+          "icon": "https://ported2browser.com/storage/covers/gold-miner-web.webp",
+          "urls": [
+            {
+              "label": "wasmarcade.app · neuer Tab",
+              "url": "https://wasmarcade.app/play/gold-miner"
+            }
+          ]
+        },
+        {
+          "name": "Gran Turismo 4",
+          "icon": "https://www.google.com/s2/favicons?domain=granturismo4.gamingretro.online&sz=128",
+          "urls": [
+            {
+              "label": "granturismo4.gamingretro.online · neuer Tab",
+              "url": "https://granturismo4.gamingretro.online/"
+            }
+          ]
+        },
+        {
+          "name": "Grand Theft Auto III",
+          "icon": "https://ported2browser.com/storage/covers/grand-theft-auto-iii.webp",
+          "urls": [
+            {
+              "label": "wasmarcade.com · neuer Tab",
+              "url": "https://wasmarcade.com/gta3"
+            },
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/gta3/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Grand Theft Auto V",
+          "icon": "https://www.google.com/s2/favicons?domain=fiveplay.lol&sz=128",
+          "urls": [
+            {
+              "label": "fiveplay.lol",
+              "url": "https://fiveplay.lol/"
+            }
+          ]
+        },
+        {
+          "name": "Grand Theft Auto: Vice City",
+          "icon": "https://ported2browser.com/storage/covers/grand-theft-auto-vice-city.webp",
+          "urls": [
+            {
+              "label": "joncodeofficial.github.io",
+              "url": "https://joncodeofficial.github.io/gta-vice-city-wasm/"
+            },
+            {
+              "label": "quenq.com · neuer Tab",
+              "url": "https://quenq.com/apps/vice-city/"
+            }
+          ]
+        },
+        {
+          "name": "Granny 3",
+          "icon": "https://ported2browser.com/storage/covers/granny-3.webp",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/granny/granny3.html"
+            }
+          ]
+        },
+        {
+          "name": "Granny Legacy",
+          "icon": "https://www.google.com/s2/favicons?domain=granny-games.com&sz=128",
+          "urls": [
+            {
+              "label": "granny-games.com",
+              "url": "https://granny-games.com/granny-legacy"
+            }
+          ]
+        },
+        {
+          "name": "Gravity Defied",
+          "icon": "https://ported2browser.com/storage/covers/gravity-defied-web.webp",
+          "urls": [
+            {
+              "label": "litomore.github.io",
+              "url": "https://litomore.github.io/gravity-defied-web/"
+            }
+          ]
+        },
+        {
+          "name": "Guitar Hero 3",
+          "icon": "https://www.google.com/s2/favicons?domain=gh3.thediaryofchris.net&sz=128",
+          "urls": [
+            {
+              "label": "gh3.thediaryofchris.net",
+              "url": "https://gh3.thediaryofchris.net/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Halo: Combat Evolved",
+          "icon": "https://ported2browser.com/storage/covers/halo-combat-evolved.webp",
+          "urls": [
+            {
+              "label": "openhaloce.com",
+              "url": "https://openhaloce.com/"
+            },
+            {
+              "label": "mitchellhynes.com",
+              "url": "https://mitchellhynes.com/halo/halo.html"
+            }
+          ]
+        },
+        {
+          "name": "Happy Room",
+          "icon": "https://ported2browser.com/storage/covers/happy-room.webp",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/happy-room/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Happy Wheels",
+          "icon": "https://www.google.com/s2/favicons?domain=totaljerkface.com&sz=128",
+          "urls": [
+            {
+              "label": "totaljerkface.com · neuer Tab",
+              "url": "https://totaljerkface.com/happy_wheels.tjf"
+            }
+          ]
+        },
+        {
+          "name": "Helltaker",
+          "icon": "https://www.google.com/s2/favicons?domain=wasm.rip&sz=128",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/Helltaker/helltaker.html"
+            }
+          ]
+        },
+        {
+          "name": "Hexen II",
+          "icon": "https://www.google.com/s2/favicons?domain=dos.zone&sz=128",
+          "urls": [
+            {
+              "label": "dos.zone · neuer Tab",
+              "url": "https://dos.zone/hexen-2-fteqw/"
+            }
+          ]
+        },
+        {
+          "name": "Hill Climb Racing",
+          "icon": "https://www.google.com/s2/favicons?domain=wasm.rip&sz=128",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/hcr/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Holiday Island",
+          "icon": "https://www.google.com/s2/favicons?domain=playclassic.games&sz=128",
+          "urls": [
+            {
+              "label": "playclassic.games",
+              "url": "https://playclassic.games/games/city-building-windows-games-online/holiday-island/play/"
+            }
+          ]
+        },
+        {
+          "name": "Hollow Knight",
+          "icon": "https://ported2browser.com/storage/covers/hollow-knight.webp",
+          "urls": [
+            {
+              "label": "truffled.lol",
+              "url": "https://truffled.lol/iframe.html?url=/games/newesthk/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Homeworld",
+          "icon": "https://ported2browser.com/storage/covers/homeworld.webp",
+          "urls": [
+            {
+              "label": "gardens-of-kadesh.gitlab.io",
+              "url": "https://gardens-of-kadesh.gitlab.io/gardens-of-kadesh/"
+            }
+          ]
+        },
+        {
+          "name": "HoMM2",
+          "icon": "https://www.google.com/s2/favicons?domain=dos.zone&sz=128",
+          "urls": [
+            {
+              "label": "dos.zone · neuer Tab",
+              "url": "https://dos.zone/heroes-of-might-and-magic-ii/"
+            }
+          ]
+        },
+        {
+          "name": "Horsey Game",
+          "icon": "https://www.google.com/s2/favicons?domain=woahhcrackers.github.io&sz=128",
+          "urls": [
+            {
+              "label": "woahhcrackers.github.io",
+              "url": "https://woahhcrackers.github.io/HorseyGameWeb/"
+            }
+          ]
+        },
+        {
+          "name": "Hot Shots Golf",
+          "icon": "https://www.google.com/s2/favicons?domain=oldgames.app&sz=128",
+          "urls": [
+            {
+              "label": "oldgames.app",
+              "url": "https://oldgames.app/games/ps1/hot-shots-golf-ps1-9226"
+            }
+          ]
+        },
+        {
+          "name": "Hotline Miami",
+          "icon": "https://www.google.com/s2/favicons?domain=mdecombax.github.io&sz=128",
+          "urls": [
+            {
+              "label": "mdecombax.github.io",
+              "url": "https://mdecombax.github.io/hotline-miami/"
+            }
+          ]
+        },
+        {
+          "name": "HowToFish",
+          "icon": "https://ported2browser.com/storage/covers/how-to-fish.webp",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/HowToFish/HowToFish.html"
+            }
+          ]
+        },
+        {
+          "name": "Human Killing",
+          "icon": "https://www.google.com/s2/favicons?domain=toen184.itch.io&sz=128",
+          "urls": [
+            {
+              "label": "toen184.itch.io",
+              "url": "https://toen184.itch.io/human-killing-en"
+            }
+          ]
+        },
+        {
+          "name": "Indiana Jones (Series)",
+          "icon": "https://www.google.com/s2/favicons?domain=bestoldgames.net&sz=128",
+          "urls": [
+            {
+              "label": "bestoldgames.net",
+              "url": "https://www.bestoldgames.net/indiana-jones-last-crusade-adventure/play"
+            }
+          ]
+        },
+        {
+          "name": "Inscryption",
+          "icon": "https://www.google.com/s2/favicons?domain=wasm.rip&sz=128",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/inscryption/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Ion Fury",
+          "icon": "https://www.google.com/s2/favicons?domain=agentcube.github.io&sz=128",
+          "urls": [
+            {
+              "label": "agentcube.github.io",
+              "url": "https://agentcube.github.io/ion-fury-wasm/"
+            }
+          ]
+        },
+        {
+          "name": "Iron Lung",
+          "icon": "https://www.google.com/s2/favicons?domain=truffled.lol&sz=128",
+          "urls": [
+            {
+              "label": "truffled.lol",
+              "url": "https://truffled.lol/iframe.html?url=/games/ironlung/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Jelly Drift",
+          "icon": "https://www.google.com/s2/favicons?domain=raw.githack.com&sz=128",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/freebuisness/html/main/543-fix2.html"
+            }
+          ]
+        },
+        {
+          "name": "Kerbal Space Program",
+          "icon": "https://www.google.com/s2/favicons?domain=ksp.ishotupa.school&sz=128",
+          "urls": [
+            {
+              "label": "ksp.ishotupa.school",
+              "url": "https://ksp.ishotupa.school/ksp/"
+            }
+          ]
+        },
+        {
+          "name": "Kindergarten (Series)",
+          "icon": "https://www.google.com/s2/favicons?domain=raw.githack.com&sz=128",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/freebuisness/html/main/445-fix2.html"
+            }
+          ]
+        },
+        {
+          "name": "Kirby Romhacks",
+          "icon": "https://www.google.com/s2/favicons?domain=retrogames.cc&sz=128",
+          "urls": [
+            {
+              "label": "retrogames.cc",
+              "url": "https://www.retrogames.cc/gameboy-games/kirbys-dream-land-2-dx.html"
+            }
+          ]
+        },
+        {
+          "name": "LEGO Island",
+          "icon": "https://www.google.com/s2/favicons?domain=isle.pizza&sz=128",
+          "urls": [
+            {
+              "label": "isle.pizza",
+              "url": "https://isle.pizza/"
+            }
+          ]
+        },
+        {
+          "name": "LEGO Racers",
+          "icon": "https://www.google.com/s2/favicons?domain=steponit.online&sz=128",
+          "urls": [
+            {
+              "label": "steponit.online",
+              "url": "https://steponit.online/"
+            }
+          ]
+        },
+        {
+          "name": "Lethal Company",
+          "icon": "https://ported2browser.com/storage/covers/lethal-company.webp",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/lethal/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Link's Arena",
+          "icon": "https://www.google.com/s2/favicons?domain=linksarena.pages.dev&sz=128",
+          "urls": [
+            {
+              "label": "linksarena.pages.dev",
+              "url": "https://linksarena.pages.dev/"
+            }
+          ]
+        },
+        {
+          "name": "Lobotomy Corporation",
+          "icon": "https://www.google.com/s2/favicons?domain=wasm.rip&sz=128",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/lob-corp/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Lords of the Realm II",
+          "icon": "https://ported2browser.com/storage/covers/lords-of-the-realm-ii-web.webp",
+          "urls": [
+            {
+              "label": "1lk.github.io",
+              "url": "https://1lk.github.io/Lords2web/"
+            }
+          ]
+        },
+        {
+          "name": "Lure of the Temptress",
+          "icon": "https://www.google.com/s2/favicons?domain=scummweb.tsilva.eu&sz=128",
+          "urls": [
+            {
+              "label": "scummweb.tsilva.eu",
+              "url": "https://scummweb.tsilva.eu/#game-lure-of-the-temptress"
+            }
+          ]
+        },
+        {
+          "name": "Magic: The Gathering",
+          "icon": "https://www.google.com/s2/favicons?domain=shandalar.dev&sz=128",
+          "urls": [
+            {
+              "label": "shandalar.dev",
+              "url": "https://shandalar.dev/"
+            }
+          ]
+        },
+        {
+          "name": "Manic Miner",
+          "icon": "https://www.google.com/s2/favicons?domain=mm.sarson.cz&sz=128",
+          "urls": [
+            {
+              "label": "mm.sarson.cz",
+              "url": "https://mm.sarson.cz/"
+            }
+          ]
+        },
+        {
+          "name": "Mari0",
+          "icon": "https://www.google.com/s2/favicons?domain=tannerrogalsky.com&sz=128",
+          "urls": [
+            {
+              "label": "tannerrogalsky.com",
+              "url": "https://tannerrogalsky.com/mari0/"
+            }
+          ]
+        },
+        {
+          "name": "Mario 64",
+          "icon": "https://ported2browser.com/storage/covers/mario-64.webp",
+          "urls": [
+            {
+              "label": "olivers.tools · neuer Tab",
+              "url": "https://olivers.tools/play"
+            }
+          ]
+        },
+        {
+          "name": "Mario 64 Romhacks",
+          "icon": "https://www.google.com/s2/favicons?domain=sm64games.com&sz=128",
+          "urls": [
+            {
+              "label": "sm64games.com",
+              "url": "https://www.sm64games.com/game/mario-builder-64"
+            }
+          ]
+        },
+        {
+          "name": "Mario Kart 64",
+          "icon": "https://ported2browser.com/storage/covers/mario-kart-64.webp",
+          "urls": [
+            {
+              "label": "truffled.lol",
+              "url": "https://truffled.lol/iframe.html?url=/games/mk64/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Mario Kart 64 Online",
+          "icon": "https://ported2browser.com/storage/covers/mario-kart-64-online.webp",
+          "urls": [
+            {
+              "label": "olivers.tools",
+              "url": "https://olivers.tools/kart/"
+            }
+          ]
+        },
+        {
+          "name": "Marvel vs Capcom 2",
+          "icon": "https://www.google.com/s2/favicons?domain=marvelvscapcom2.gamingretro.online&sz=128",
+          "urls": [
+            {
+              "label": "marvelvscapcom2.gamingretro.online · neuer Tab",
+              "url": "https://marvelvscapcom2.gamingretro.online/"
+            }
+          ]
+        },
+        {
+          "name": "Master of Defence",
+          "icon": "https://www.google.com/s2/favicons?domain=nomadic-ua.itch.io&sz=128",
+          "urls": [
+            {
+              "label": "nomadic-ua.itch.io",
+              "url": "https://nomadic-ua.itch.io/master-of-defence"
+            }
+          ]
+        },
+        {
+          "name": "Meccha Chameleon",
+          "icon": "https://www.google.com/s2/favicons?domain=wasm.rip&sz=128",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/meccha-chameleon/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Mega Man Legends (Series)",
+          "icon": "https://www.google.com/s2/favicons?domain=oldgames.app&sz=128",
+          "urls": [
+            {
+              "label": "oldgames.app",
+              "url": "https://oldgames.app/games/ps1/mega-man-legends-ps1-9356"
+            }
+          ]
+        },
+        {
+          "name": "Mega Man Romhacks",
+          "icon": "https://www.google.com/s2/favicons?domain=megamangames.net&sz=128",
+          "urls": [
+            {
+              "label": "megamangames.net",
+              "url": "https://www.megamangames.net/mega-man-4-minus-infinity.php"
+            }
+          ]
+        },
+        {
+          "name": "Mega Man RPG Prototype",
+          "icon": "https://ported2browser.com/storage/covers/mega-man-rpg-prototype.webp",
+          "urls": [
+            {
+              "label": "prototype.mmrpg-world.net",
+              "url": "https://prototype.mmrpg-world.net/file/load/"
+            }
+          ]
+        },
+        {
+          "name": "Messenger",
+          "icon": "https://www.google.com/s2/favicons?domain=messenger.abeto.co&sz=128",
+          "urls": [
+            {
+              "label": "messenger.abeto.co",
+              "url": "https://messenger.abeto.co/"
+            }
+          ]
+        },
+        {
+          "name": "Metal Slug (Series)",
+          "icon": "https://www.google.com/s2/favicons?domain=wasmarcade.com&sz=128",
+          "urls": [
+            {
+              "label": "wasmarcade.com · neuer Tab",
+              "url": "https://wasmarcade.com/retro-games/metal-slug"
+            }
+          ]
+        },
+        {
+          "name": "Meteor 60 Seconds!",
+          "icon": "https://www.google.com/s2/favicons?domain=thatwirdguy.github.io&sz=128",
+          "urls": [
+            {
+              "label": "thatwirdguy.github.io",
+              "url": "https://thatwirdguy.github.io/Meteor-60-Seconds-Web/"
+            }
+          ]
+        },
+        {
+          "name": "Midnight Club 2",
+          "icon": "https://ported2browser.com/storage/covers/midnight-club-2-web.webp",
+          "urls": [
+            {
+              "label": "mcii.online",
+              "url": "https://mcii.online/"
+            }
+          ]
+        },
+        {
+          "name": "Midnight Club 3: DUB",
+          "icon": "https://ported2browser.com/storage/covers/midnight-club-3-dub-web.webp",
+          "urls": [
+            {
+              "label": "mcdub3.xyz",
+              "url": "https://mcdub3.xyz/"
+            }
+          ]
+        },
+        {
+          "name": "Minecraft",
+          "icon": "https://ported2browser.com/storage/covers/minecraft.webp",
+          "urls": [
+            {
+              "label": "lemon-web.net",
+              "url": "https://www.lemon-web.net/applications/lemon-web-games#minecraft"
+            }
+          ]
+        },
+        {
+          "name": "Minecraft: Story Mode",
+          "icon": "https://ported2browser.com/storage/covers/minecraft-story-mode-web.webp",
+          "urls": [
+            {
+              "label": "mcsm-web.pages.dev",
+              "url": "https://mcsm-web.pages.dev/"
+            }
+          ]
+        },
+        {
+          "name": "Mouthwashing",
+          "icon": "https://ported2browser.com/storage/covers/mouthwashing-web.webp",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/mouthwashing/index.html"
+            }
+          ]
+        },
+        {
+          "name": "NFS: Hot Pursuit 2",
+          "icon": "https://ported2browser.com/storage/covers/nfs-hot-pursuit-2.webp",
+          "urls": [
+            {
+              "label": "nfshp2.fyi · neuer Tab",
+              "url": "https://nfshp2.fyi/"
+            }
+          ]
+        },
+        {
+          "name": "PDTA 3D",
+          "icon": "https://ported2browser.com/storage/covers/please-dont-touch-anything-3d-web.webp",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/pdta3d/index.html"
+            }
+          ]
+        },
+        {
+          "name": "PEAK",
+          "icon": "https://ported2browser.com/storage/covers/peak--1.webp",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/peak/PEAK.html"
+            }
+          ]
+        },
+        {
+          "name": "Plague Inc.",
+          "icon": "https://ported2browser.com/storage/covers/plague-inc.webp",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/plauge/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Pokémon Red / Blue MMO",
+          "icon": "https://ported2browser.com/storage/covers/pokemon-mmo.webp",
+          "urls": [
+            {
+              "label": "redblue.benjamincrozat.com · neuer Tab",
+              "url": "https://redblue.benjamincrozat.com/"
+            }
+          ]
+        },
+        {
+          "name": "Pro Evolution Soccer 6",
+          "icon": "https://ported2browser.com/storage/covers/pes-6.webp",
+          "urls": [
+            {
+              "label": "pes6.optijuegos.net",
+              "url": "https://pes6.optijuegos.net/"
+            }
+          ]
+        },
+        {
+          "name": "Raft",
+          "icon": "https://ported2browser.com/storage/covers/raft.webp",
+          "urls": [
+            {
+              "label": "lemon-web.net",
+              "url": "https://www.lemon-web.net/applications/lemon-web-games#raft"
+            }
+          ]
+        },
+        {
+          "name": "Raft Wars 2",
+          "icon": "https://ported2browser.com/storage/covers/raft-wars-2-web.webp",
+          "urls": [
+            {
+              "label": "wasmarcade.app · neuer Tab",
+              "url": "https://wasmarcade.app/play/raft-wars-2"
+            }
+          ]
+        },
+        {
+          "name": "Reset Generation",
+          "icon": "https://ported2browser.com/storage/covers/reset-generation-web.webp",
+          "urls": [
+            {
+              "label": "hubert-rybak.github.io",
+              "url": "https://hubert-rybak.github.io/Reset-Generation-Wasm-Port/"
+            }
+          ]
+        },
+        {
+          "name": "Space Station 13",
+          "icon": "https://ported2browser.com/storage/covers/space-station-13-web.webp",
+          "urls": [
+            {
+              "label": "ss13.live · neuer Tab",
+              "url": "https://ss13.live"
+            }
+          ]
+        },
+        {
+          "name": "Spelunky Classic HD",
+          "icon": "https://ported2browser.com/storage/covers/spelunky-classic-hd-web.webp",
+          "urls": [
+            {
+              "label": "yancharkin.itch.io",
+              "url": "https://yancharkin.itch.io/spelunky-classic-hd"
+            }
+          ]
+        },
+        {
+          "name": "StarCraft",
+          "icon": "https://ported2browser.com/storage/covers/starcraft-openbw.webp",
+          "urls": [
+            {
+              "label": "openbw.heiner.ai",
+              "url": "https://openbw.heiner.ai/"
+            }
+          ]
+        },
+        {
+          "name": "Sunset Riders",
+          "icon": "https://ported2browser.com/storage/covers/sunset-riders-arcade.webp",
+          "urls": [
+            {
+              "label": "games4me.alwaysdata.net",
+              "url": "https://games4me.alwaysdata.net/sunsetriders_web/"
+            }
+          ]
+        },
+        {
+          "name": "Super Mario 64",
+          "icon": "https://ported2browser.com/storage/covers/super-mario-64.webp",
+          "urls": [
+            {
+              "label": "heyitsheart.github.io",
+              "url": "https://heyitsheart.github.io/sm3das/64/"
+            }
+          ]
+        },
+        {
+          "name": "The Simpsons Arcade",
+          "icon": "https://ported2browser.com/storage/covers/the-simpsons-arcade-game.webp",
+          "urls": [
+            {
+              "label": "games4me.alwaysdata.net",
+              "url": "https://games4me.alwaysdata.net/simpsons_web/"
+            }
+          ]
+        },
+        {
+          "name": "The Simpsons: Hit & Run",
+          "icon": "https://ported2browser.com/storage/covers/the-simpsons-hit-run.webp",
+          "urls": [
+            {
+              "label": "shar-wasm.cjoseph.workers.dev",
+              "url": "https://shar-wasm.cjoseph.workers.dev/"
+            }
+          ]
+        },
+        {
+          "name": "Warzone 2100",
+          "icon": "https://ported2browser.com/storage/covers/warzone-2100-web.webp",
+          "urls": [
+            {
+              "label": "play.wz2100.net · neuer Tab",
+              "url": "https://play.wz2100.net/"
+            }
+          ]
+        },
+        {
+          "name": "Windows 98",
+          "icon": "https://ported2browser.com/storage/covers/windows-98.webp",
+          "urls": [
+            {
+              "label": "berrry.wine",
+              "url": "https://berrry.wine/"
+            }
+          ]
+        },
+        {
+          "name": "wosu!",
+          "icon": "https://ported2browser.com/storage/covers/wosu.webp",
+          "urls": [
+            {
+              "label": "wosu.dino.icu",
+              "url": "https://wosu.dino.icu/"
+            }
+          ]
+        },
+        {
+          "name": "Xiao Xiao 4",
+          "icon": "https://ported2browser.com/storage/covers/xiao-xiao-4-web.webp",
+          "urls": [
+            {
+              "label": "wasmarcade.app · neuer Tab",
+              "url": "https://wasmarcade.app/play/xiao-xiao-4"
             }
           ]
         }

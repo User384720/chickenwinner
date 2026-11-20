@@ -95,6 +95,53 @@
           ]
         }
       ]
+    },
+    {
+      "id": "listen",
+      "name": "Listen & Kataloge",
+      "icon": "🗂️",
+      "items": [
+        {
+          "name": "Ported2Browser",
+          "icon": "https://www.google.com/s2/favicons?domain=ported2browser.com&sz=128",
+          "urls": [
+            {
+              "label": "ported2browser.com",
+              "url": "https://ported2browser.com/"
+            }
+          ]
+        },
+        {
+          "name": "wasm.rip",
+          "icon": "https://www.google.com/s2/favicons?domain=wasm.rip&sz=128",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/"
+            }
+          ]
+        },
+        {
+          "name": "Ultimate Catalog of Web Game Ports",
+          "icon": "https://www.google.com/s2/favicons?domain=github.com&sz=128",
+          "urls": [
+            {
+              "label": "github.com/Carter54git",
+              "url": "https://github.com/Carter54git/Ultimate-Catalog-Of-Web-Game-Ports"
+            }
+          ]
+        },
+        {
+          "name": "r/IoGames Wiki (Index)",
+          "icon": "https://www.google.com/s2/favicons?domain=reddit.com&sz=128",
+          "urls": [
+            {
+              "label": "reddit.com/r/IoGames/wiki",
+              "url": "https://www.reddit.com/r/IoGames/wiki/index/"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
