@@ -18,6 +18,18 @@
     'proxy':        { file: 'data/proxy.json',        title: 'Proxy'          }
   };
 
+  /* Lokale Spiele: jeder Ordner in local-games/ wird automatisch erkannt.
+     Name = Ordnername, Icon = Bilddatei im Ordner, Startseite = index.html.
+     Quelle ist die GitHub-Inhaltsliste des Repos (kein Backend, kein Build). */
+  var LOCAL_GAMES = {
+    repo: 'User384720/chickenwinner',
+    branch: 'main',
+    folder: 'local-games',
+    entry: 'index.html',
+    cacheKey: 'fbtarchive.local-games.v1',
+    icons: ['icon.svg', 'icon.png', 'icon.webp', 'icon.jpg', 'icon.jpeg', 'favicon.ico', 'favicon.png']
+  };
+
   var ROUTES = ['home', 'games-online', 'games-local', 'apps', 'sites', 'email', 'proxy'];
 
   var ENGINES = [
@@ -300,6 +312,105 @@
   /* Daten laden & rendern                                               */
   /* ------------------------------------------------------------------ */
 
+  function fetchCatalogFile(file) {
+    return fetch(file, { cache: 'no-cache' }).then(function (res) {
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      return res.json();
+    });
+  }
+
+  /* Liegt die Seite auf GitHub Pages, wird das Repo aus der Adresse gelesen. */
+  function localGamesRepo() {
+    var host = window.location.hostname || '';
+    var parts = (window.location.pathname || '/').split('/').filter(Boolean);
+    if (/\.github\.io$/i.test(host) && parts.length) {
+      return host.replace(/\.github\.io$/i, '') + '/' + parts[0];
+    }
+    return LOCAL_GAMES.repo;
+  }
+
+  function localGameName(folder) {
+    var words = String(folder).replace(/[_-]+/g, ' ').replace(/\s+/g, ' ').trim();
+    return words.replace(/(^|\s)(\S)/g, function (match, space, letter) {
+      return space + letter.toUpperCase();
+    }) || folder;
+  }
+
+  function probeLocalFile(url) {
+    return fetch(url, { method: 'HEAD', cache: 'no-cache' }).then(function (res) {
+      return res.ok ? url : '';
+    }).catch(function () { return ''; });
+  }
+
+  /* Erstes vorhandenes Icon im Spielordner gewinnt. */
+  function probeLocalIcon(base) {
+    var chain = Promise.resolve('');
+    LOCAL_GAMES.icons.forEach(function (file) {
+      chain = chain.then(function (found) { return found || probeLocalFile(base + file); });
+    });
+    return chain;
+  }
+
+  function buildLocalGame(folder) {
+    var base = LOCAL_GAMES.folder + '/' + encodeURIComponent(folder) + '/';
+    return probeLocalIcon(base).then(function (icon) {
+      return {
+        name: localGameName(folder),
+        folder: folder,
+        icon: icon,
+        urls: [{ label: 'lokal spielen', url: base + LOCAL_GAMES.entry }]
+      };
+    });
+  }
+
+  function rememberLocalGames(catalog) {
+    try { window.localStorage.setItem(LOCAL_GAMES.cacheKey, JSON.stringify(catalog)); } catch (err) { /* Speicher voll o. ä. */ }
+  }
+
+  function cachedLocalGames() {
+    try {
+      var raw = window.localStorage.getItem(LOCAL_GAMES.cacheKey);
+      return raw ? JSON.parse(raw) : null;
+    } catch (err) {
+      return null;
+    }
+  }
+
+  function discoverLocalGames() {
+    var url = 'https://api.github.com/repos/' + localGamesRepo() + '/contents/' +
+      LOCAL_GAMES.folder + '?ref=' + LOCAL_GAMES.branch;
+
+    return fetch(url, { cache: 'no-store', headers: { Accept: 'application/vnd.github+json' } })
+      .then(function (res) {
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        return res.json();
+      })
+      .then(function (list) {
+        if (!Array.isArray(list)) throw new Error('unerwartete Antwort');
+        var folders = list.filter(function (item) {
+          return item && item.type === 'dir' && item.name && item.name.charAt(0) !== '.';
+        }).map(function (item) { return item.name; }).sort(function (a, b) {
+          return a.localeCompare(b, 'de', { numeric: true, sensitivity: 'base' });
+        });
+        if (!folders.length) throw new Error('keine Ordner gefunden');
+        return Promise.all(folders.map(buildLocalGame));
+      })
+      .then(function (items) {
+        var catalog = {
+          groups: [{ id: 'lokal', name: 'Lokale Spiele', icon: '📁', items: items }]
+        };
+        rememberLocalGames(catalog);
+        return catalog;
+      });
+  }
+
+  /* Ohne Netz/API: letzte bekannte Liste, sonst die statische JSON. */
+  function loadLocalGamesCatalog() {
+    return discoverLocalGames().catch(function () {
+      return cachedLocalGames() || fetchCatalogFile(DATA_SOURCES['games-local'].file);
+    });
+  }
+
   function loadData(key) {
     var entry = state.data[key];
     if (entry && (entry.status === 'loading' || entry.status === 'ready')) return;
@@ -311,11 +422,11 @@
     var count = $('[data-count="' + key + '"]');
     if (count) count.textContent = 'wird geladen …';
 
-    fetch(DATA_SOURCES[key].file, { cache: 'no-cache' })
-      .then(function (res) {
-        if (!res.ok) throw new Error('HTTP ' + res.status);
-        return res.json();
-      })
+    var request = key === 'games-local'
+      ? loadLocalGamesCatalog()
+      : fetchCatalogFile(DATA_SOURCES[key].file);
+
+    request
       .then(function (raw) {
         var groups = normalizeCatalog(raw);
         var flat = [];

@@ -1,5 +1,5 @@
 {
-  "_hinweis": "Neue Unterkategorie: Objekt in 'groups' ergänzen (id, name, icon, items). Farbe pro Link: in 'urls' beim Link einfach \"color\" setzen, z.B. {\"label\": \"…\", \"url\": \"…\", \"color\": \"#ff8a4c\"} – erlaubt sind Hex (#f80, #ff8800), Farbnamen (tomato) oder rgb()/hsl(). Eine \"color\" direkt am Eintrag gilt für alle seine Links.",
+  "_hinweis": "Nur Fallback: Die Spiele in local-games/ werden automatisch erkannt (Name = Ordnername, Symbol = icon.svg/icon.png/favicon.ico im Ordner, Start = index.html). Diese Datei wird nur geladen, wenn die GitHub-Ablage nicht erreichbar ist. Um ein Spiel zu ergänzen, genügt ein neuer Ordner mit index.html.",
   "title": "Games Local",
   "groups": [
     {
