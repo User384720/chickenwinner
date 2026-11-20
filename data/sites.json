@@ -1,5 +1,5 @@
 {
-  "_hinweis": "Neue Unterkategorie: Objekt in 'groups' ergänzen (id, name, icon, items). Mehrere Unterkategorien sind erlaubt, items bleiben unverändert.",
+  "_hinweis": "Neue Unterkategorie: Objekt in 'groups' ergänzen (id, name, icon, items). Farbe pro Link: in 'urls' beim Link einfach \"color\" setzen, z.B. {\"label\": \"…\", \"url\": \"…\", \"color\": \"#ff8a4c\"} – erlaubt sind Hex (#f80, #ff8800), Farbnamen (tomato) oder rgb()/hsl(). Eine \"color\" direkt am Eintrag gilt für alle seine Links.",
   "title": "Unblocked Sites",
   "groups": [
     {

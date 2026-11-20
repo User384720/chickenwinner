@@ -950,6 +950,19 @@ button.fav-link {
 .badge-play svg { color: var(--accent); }
 .badge-play:hover { color: var(--text); }
 
+/* Farbe pro Link aus der JSON (style="--badge-color: …") */
+.badge-play.has-color {
+  color: var(--badge-color);
+  border-color: color-mix(in srgb, var(--badge-color) 45%, transparent);
+  background: color-mix(in srgb, var(--badge-color) 14%, var(--surface-2));
+}
+.badge-play.has-color svg { color: var(--badge-color); }
+.badge-play.has-color:hover {
+  color: var(--badge-color);
+  border-color: var(--badge-color);
+  background: color-mix(in srgb, var(--badge-color) 22%, var(--surface-2));
+}
+
 /* ---------- Seiten-Suche (Home) ---------- */
 
 .panel-finder { display: flex; flex-direction: column; gap: 14px; }

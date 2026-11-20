@@ -398,6 +398,17 @@
       '<div class="icon-fallback" hidden aria-hidden="true">' + initial + '</div>';
   }
 
+  /* Farbe aus der JSON: Hex, Farbname oder rgb()/hsl(). Alles andere wird ignoriert. */
+  function safeColor(value) {
+    if (typeof value !== 'string') return '';
+    var v = value.trim();
+    if (!v) return '';
+    if (/^#[0-9a-f]{3,8}$/i.test(v)) return v;
+    if (/^[a-z]{3,20}$/i.test(v)) return v;
+    if (/^(rgb|rgba|hsl|hsla)\([0-9.,%\s/+-]+\)$/i.test(v)) return v;
+    return '';
+  }
+
   function cardMarkup(item, type, index, group) {
     var urls = (Array.isArray(item.urls) ? item.urls : []).filter(function (u) {
       return u && u.url;
@@ -415,9 +426,11 @@
     var links = urls.map(function (u) {
       var label = u.label || hostOf(u.url);
       var dot = statusDotMarkup(u.url, item, u);
-      return '<button class="badge badge-play" type="button" ' +
+      var color = safeColor(u.color) || safeColor(item.color);
+      return '<button class="badge badge-play' + (color ? ' has-color' : '') + '" type="button" ' +
         'data-play-url="' + esc(u.url) + '" data-play-name="' + esc(item.name) + '" data-play-icon="' + esc(item.icon || '') + '" ' +
         'data-play-type="' + esc(type) + '" ' +
+        (color ? 'style="--badge-color:' + esc(color) + '" ' : '') +
         'title="Im Player öffnen: ' + esc(u.url) + '">' +
         dot + PLAY_ICON + esc(label) +
       '</button>';
