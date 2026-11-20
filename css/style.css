@@ -1448,6 +1448,54 @@ body.player-open { overflow: hidden; }
   to { opacity: 0; transform: translateY(8px); }
 }
 
+/* ---------- Klick-Spaß ---------- */
+
+.click-tiles {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.click-tile {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.click-tile:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  box-shadow: 0 14px 30px -24px var(--accent);
+}
+.click-tile:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.click-emoji { font-size: 1.7rem; line-height: 1; }
+
+.click-body { display: flex; flex-direction: column; gap: 2px; min-width: 0; flex: 1; }
+.click-body strong { font-size: 0.95rem; }
+.click-body small { color: var(--muted); font-size: 0.78rem; }
+
+.click-go {
+  flex: none;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 640px) {
+  .click-tiles { grid-template-columns: 1fr; }
+  .click-go { display: none; }
+}
+
 /* ---------- Footer ---------- */
 
 .noscript {
