@@ -1,0 +1,127 @@
+{
+  "_hinweis": "Neue Unterkategorie: Objekt in 'groups' ergänzen (id, name, icon, items). Mehrere Unterkategorien sind erlaubt, items bleiben unverändert.",
+  "title": "Apps & Tools",
+  "groups": [
+    {
+      "id": "design",
+      "name": "Design & Bilder",
+      "icon": "🎨",
+      "items": [
+        {
+          "name": "Photopea",
+          "icon": "https://www.google.com/s2/favicons?domain=photopea.com&sz=128",
+          "urls": [
+            {
+              "label": "photopea.com",
+              "url": "https://www.photopea.com"
+            }
+          ]
+        },
+        {
+          "name": "Excalidraw",
+          "icon": "https://www.google.com/s2/favicons?domain=excalidraw.com&sz=128",
+          "urls": [
+            {
+              "label": "excalidraw.com",
+              "url": "https://excalidraw.com"
+            }
+          ]
+        },
+        {
+          "name": "tldraw",
+          "icon": "https://www.google.com/s2/favicons?domain=tldraw.com&sz=128",
+          "urls": [
+            {
+              "label": "tldraw.com",
+              "url": "https://www.tldraw.com"
+            }
+          ]
+        },
+        {
+          "name": "Squoosh",
+          "icon": "https://www.google.com/s2/favicons?domain=squoosh.app&sz=128",
+          "urls": [
+            {
+              "label": "squoosh.app",
+              "url": "https://squoosh.app"
+            }
+          ]
+        },
+        {
+          "name": "Coolors",
+          "icon": "https://www.google.com/s2/favicons?domain=coolors.co&sz=128",
+          "urls": [
+            {
+              "label": "coolors.co",
+              "url": "https://coolors.co/generate"
+            }
+          ]
+        },
+        {
+          "name": "Canva",
+          "icon": "https://www.google.com/s2/favicons?domain=canva.com&sz=128",
+          "urls": [
+            {
+              "label": "canva.com",
+              "url": "https://www.canva.com"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dev",
+      "name": "Code & Dev-Tools",
+      "icon": "🛠️",
+      "items": [
+        {
+          "name": "IT-Tools",
+          "icon": "https://www.google.com/s2/favicons?domain=it-tools.tech&sz=128",
+          "urls": [
+            {
+              "label": "it-tools.tech",
+              "url": "https://it-tools.tech"
+            }
+          ]
+        },
+        {
+          "name": "CodePen",
+          "icon": "https://www.google.com/s2/favicons?domain=codepen.io&sz=128",
+          "urls": [
+            {
+              "label": "codepen.io/pen",
+              "url": "https://codepen.io/pen"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wissen",
+      "name": "Text & Wissen",
+      "icon": "💬",
+      "items": [
+        {
+          "name": "DeepL",
+          "icon": "https://www.google.com/s2/favicons?domain=deepl.com&sz=128",
+          "urls": [
+            {
+              "label": "deepl.com",
+              "url": "https://www.deepl.com/translator"
+            }
+          ]
+        },
+        {
+          "name": "WolframAlpha",
+          "icon": "https://www.google.com/s2/favicons?domain=wolframalpha.com&sz=128",
+          "urls": [
+            {
+              "label": "wolframalpha.com",
+              "url": "https://www.wolframalpha.com"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

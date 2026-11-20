@@ -1,0 +1,100 @@
+{
+  "_hinweis": "Neue Unterkategorie: Objekt in 'groups' ergänzen (id, name, icon, items). Mehrere Unterkategorien sind erlaubt, items bleiben unverändert.",
+  "title": "Unblocked Sites",
+  "groups": [
+    {
+      "id": "portals",
+      "name": "Spiele-Portale",
+      "icon": "🎮",
+      "items": [
+        {
+          "name": "Poki",
+          "icon": "https://www.google.com/s2/favicons?domain=poki.com&sz=128",
+          "urls": [
+            {
+              "label": "poki.com",
+              "url": "https://poki.com"
+            }
+          ]
+        },
+        {
+          "name": "CrazyGames",
+          "icon": "https://www.google.com/s2/favicons?domain=crazygames.com&sz=128",
+          "urls": [
+            {
+              "label": "crazygames.com",
+              "url": "https://www.crazygames.com"
+            }
+          ]
+        },
+        {
+          "name": "Coolmath Games",
+          "icon": "https://www.google.com/s2/favicons?domain=coolmathgames.com&sz=128",
+          "urls": [
+            {
+              "label": "coolmathgames.com",
+              "url": "https://www.coolmathgames.com"
+            }
+          ]
+        },
+        {
+          "name": "Armor Games",
+          "icon": "https://www.google.com/s2/favicons?domain=armorgames.com&sz=128",
+          "urls": [
+            {
+              "label": "armorgames.com",
+              "url": "https://armorgames.com"
+            }
+          ]
+        },
+        {
+          "name": "Y8",
+          "icon": "https://www.google.com/s2/favicons?domain=y8.com&sz=128",
+          "urls": [
+            {
+              "label": "y8.com",
+              "url": "https://www.y8.com"
+            }
+          ]
+        },
+        {
+          "name": "Silvergames",
+          "icon": "https://www.google.com/s2/favicons?domain=silvergames.com&sz=128",
+          "urls": [
+            {
+              "label": "silvergames.com",
+              "url": "https://www.silvergames.com"
+            }
+          ]
+        },
+        {
+          "name": "Now.gg",
+          "icon": "https://www.google.com/s2/favicons?domain=now.gg&sz=128",
+          "urls": [
+            {
+              "label": "now.gg",
+              "url": "https://now.gg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "indie",
+      "name": "Indie & Web-Games",
+      "icon": "🧪",
+      "items": [
+        {
+          "name": "itch.io Web-Games",
+          "icon": "https://www.google.com/s2/favicons?domain=itch.io&sz=128",
+          "urls": [
+            {
+              "label": "itch.io",
+              "url": "https://itch.io/games/platform-web"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

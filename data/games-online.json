@@ -1,0 +1,552 @@
+{
+  "_hinweis": "Neue Unterkategorie: Objekt in 'groups' ergänzen (id, name, icon, items). Mehrere Unterkategorien sind erlaubt, items bleiben unverändert.",
+  "title": "Games Online",
+  "groups": [
+    {
+      "id": "shooter",
+      "name": "Shooter & Battle Royale",
+      "icon": "🎯",
+      "items": [
+        {
+          "name": "Krunker",
+          "icon": "https://www.google.com/s2/favicons?domain=krunker.io&sz=128",
+          "urls": [
+            {
+              "label": "krunker.io",
+              "url": "https://krunker.io"
+            }
+          ]
+        },
+        {
+          "name": "Shell Shockers",
+          "icon": "https://www.google.com/s2/favicons?domain=shellshock.io&sz=128",
+          "urls": [
+            {
+              "label": "shellshock.io",
+              "url": "https://shellshock.io"
+            }
+          ]
+        },
+        {
+          "name": "1v1.LOL",
+          "icon": "https://www.google.com/s2/favicons?domain=1v1.lol&sz=128",
+          "urls": [
+            {
+              "label": "1v1.lol",
+              "url": "https://1v1.lol"
+            }
+          ]
+        },
+        {
+          "name": "Deadshot.io",
+          "icon": "https://www.google.com/s2/favicons?domain=deadshot.io&sz=128",
+          "urls": [
+            {
+              "label": "deadshot.io",
+              "url": "https://deadshot.io"
+            }
+          ]
+        },
+        {
+          "name": "Venge.io",
+          "icon": "https://www.google.com/s2/favicons?domain=venge.io&sz=128",
+          "urls": [
+            {
+              "label": "venge.io",
+              "url": "https://venge.io"
+            }
+          ]
+        },
+        {
+          "name": "Kirka.io",
+          "icon": "https://www.google.com/s2/favicons?domain=kirka.io&sz=128",
+          "urls": [
+            {
+              "label": "kirka.io",
+              "url": "https://kirka.io"
+            }
+          ]
+        },
+        {
+          "name": "Narrow One",
+          "icon": "https://www.google.com/s2/favicons?domain=narrow.one&sz=128",
+          "urls": [
+            {
+              "label": "narrow.one",
+              "url": "https://narrow.one"
+            }
+          ]
+        },
+        {
+          "name": "Bloxd.io",
+          "icon": "https://www.google.com/s2/favicons?domain=bloxd.io&sz=128",
+          "urls": [
+            {
+              "label": "bloxd.io",
+              "url": "https://bloxd.io"
+            }
+          ]
+        },
+        {
+          "name": "Surviv.io",
+          "icon": "https://www.google.com/s2/favicons?domain=surviv.io&sz=128",
+          "urls": [
+            {
+              "label": "surviv.io",
+              "url": "https://surviv.io"
+            }
+          ]
+        },
+        {
+          "name": "Suroi.io",
+          "icon": "https://www.google.com/s2/favicons?domain=suroi.io&sz=128",
+          "urls": [
+            {
+              "label": "suroi.io",
+              "url": "https://suroi.io"
+            }
+          ]
+        },
+        {
+          "name": "BuildRoyale.io",
+          "icon": "https://www.google.com/s2/favicons?domain=buildroyale.io&sz=128",
+          "urls": [
+            {
+              "label": "buildroyale.io",
+              "url": "https://buildroyale.io"
+            }
+          ]
+        },
+        {
+          "name": "Zombs Royale",
+          "icon": "https://www.google.com/s2/favicons?domain=zombsroyale.io&sz=128",
+          "urls": [
+            {
+              "label": "zombsroyale.io",
+              "url": "https://zombsroyale.io"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "io",
+      "name": "Snake & .io",
+      "icon": "🐍",
+      "items": [
+        {
+          "name": "Slither.io",
+          "icon": "https://www.google.com/s2/favicons?domain=slither.io&sz=128",
+          "urls": [
+            {
+              "label": "slither.io",
+              "url": "https://slither.io"
+            }
+          ]
+        },
+        {
+          "name": "Agar.io",
+          "icon": "https://www.google.com/s2/favicons?domain=agar.io&sz=128",
+          "urls": [
+            {
+              "label": "agar.io",
+              "url": "https://agar.io"
+            }
+          ]
+        },
+        {
+          "name": "Diep.io",
+          "icon": "https://www.google.com/s2/favicons?domain=diep.io&sz=128",
+          "urls": [
+            {
+              "label": "diep.io",
+              "url": "https://diep.io"
+            }
+          ]
+        },
+        {
+          "name": "Paper.io 2",
+          "icon": "https://www.google.com/s2/favicons?domain=paper-io.com&sz=128",
+          "urls": [
+            {
+              "label": "paper-io.com",
+              "url": "https://paper-io.com"
+            }
+          ]
+        },
+        {
+          "name": "Wormate.io",
+          "icon": "https://www.google.com/s2/favicons?domain=wormate.io&sz=128",
+          "urls": [
+            {
+              "label": "wormate.io",
+              "url": "https://wormate.io"
+            }
+          ]
+        },
+        {
+          "name": "Powerline.io",
+          "icon": "https://www.google.com/s2/favicons?domain=powerline.io&sz=128",
+          "urls": [
+            {
+              "label": "powerline.io",
+              "url": "https://powerline.io"
+            }
+          ]
+        },
+        {
+          "name": "Little Big Snake",
+          "icon": "https://www.google.com/s2/favicons?domain=littlebigsnake.com&sz=128",
+          "urls": [
+            {
+              "label": "littlebigsnake.com",
+              "url": "https://littlebigsnake.com"
+            }
+          ]
+        },
+        {
+          "name": "Gulper.io",
+          "icon": "https://www.google.com/s2/favicons?domain=gulper.io&sz=128",
+          "urls": [
+            {
+              "label": "gulper.io",
+              "url": "https://gulper.io"
+            }
+          ]
+        },
+        {
+          "name": "MooMoo.io",
+          "icon": "https://www.google.com/s2/favicons?domain=moomoo.io&sz=128",
+          "urls": [
+            {
+              "label": "moomoo.io",
+              "url": "https://moomoo.io"
+            }
+          ]
+        },
+        {
+          "name": "Starve.io",
+          "icon": "https://www.google.com/s2/favicons?domain=starve.io&sz=128",
+          "urls": [
+            {
+              "label": "starve.io",
+              "url": "https://starve.io"
+            }
+          ]
+        },
+        {
+          "name": "Zombs.io",
+          "icon": "https://www.google.com/s2/favicons?domain=zombs.io&sz=128",
+          "urls": [
+            {
+              "label": "zombs.io",
+              "url": "https://zombs.io"
+            }
+          ]
+        },
+        {
+          "name": "Yohoho.io",
+          "icon": "https://www.google.com/s2/favicons?domain=yohoho.io&sz=128",
+          "urls": [
+            {
+              "label": "yohoho.io",
+              "url": "https://yohoho.io"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "party",
+      "name": "Brett & Party",
+      "icon": "🎲",
+      "items": [
+        {
+          "name": "Skribbl.io",
+          "icon": "https://www.google.com/s2/favicons?domain=skribbl.io&sz=128",
+          "urls": [
+            {
+              "label": "skribbl.io",
+              "url": "https://skribbl.io"
+            }
+          ]
+        },
+        {
+          "name": "Gartic Phone",
+          "icon": "https://www.google.com/s2/favicons?domain=garticphone.com&sz=128",
+          "urls": [
+            {
+              "label": "garticphone.com",
+              "url": "https://garticphone.com"
+            }
+          ]
+        },
+        {
+          "name": "Codenames",
+          "icon": "https://www.google.com/s2/favicons?domain=codenames.game&sz=128",
+          "urls": [
+            {
+              "label": "codenames.game",
+              "url": "https://codenames.game"
+            }
+          ]
+        },
+        {
+          "name": "Chess.com",
+          "icon": "https://www.google.com/s2/favicons?domain=chess.com&sz=128",
+          "urls": [
+            {
+              "label": "chess.com",
+              "url": "https://www.chess.com/play/online"
+            }
+          ]
+        },
+        {
+          "name": "Lichess",
+          "icon": "https://www.google.com/s2/favicons?domain=lichess.org&sz=128",
+          "urls": [
+            {
+              "label": "lichess.org",
+              "url": "https://lichess.org"
+            }
+          ]
+        },
+        {
+          "name": "TETR.IO",
+          "icon": "https://www.google.com/s2/favicons?domain=tetr.io&sz=128",
+          "urls": [
+            {
+              "label": "tetr.io",
+              "url": "https://tetr.io"
+            }
+          ]
+        },
+        {
+          "name": "Wolvesville",
+          "icon": "https://www.google.com/s2/favicons?domain=wolvesville.com&sz=128",
+          "urls": [
+            {
+              "label": "wolvesville.com",
+              "url": "https://www.wolvesville.com"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "puzzle",
+      "name": "Puzzle & Wörter",
+      "icon": "🧩",
+      "items": [
+        {
+          "name": "2048",
+          "icon": "https://www.google.com/s2/favicons?domain=play2048.co&sz=128",
+          "urls": [
+            {
+              "label": "play2048.co",
+              "url": "https://play2048.co"
+            },
+            {
+              "label": "GitHub",
+              "url": "https://gabrielecirulli.github.io/2048/"
+            }
+          ]
+        },
+        {
+          "name": "Hextris",
+          "icon": "https://www.google.com/s2/favicons?domain=hextris.io&sz=128",
+          "urls": [
+            {
+              "label": "hextris.io",
+              "url": "https://hextris.io"
+            }
+          ]
+        },
+        {
+          "name": "ZType",
+          "icon": "https://www.google.com/s2/favicons?domain=zty.pe&sz=128",
+          "urls": [
+            {
+              "label": "zty.pe",
+              "url": "https://zty.pe"
+            }
+          ]
+        },
+        {
+          "name": "Little Alchemy 2",
+          "icon": "https://www.google.com/s2/favicons?domain=littlealchemy2.com&sz=128",
+          "urls": [
+            {
+              "label": "littlealchemy2.com",
+              "url": "https://littlealchemy2.com"
+            }
+          ]
+        },
+        {
+          "name": "Wordle",
+          "icon": "https://www.google.com/s2/favicons?domain=nytimes.com&sz=128",
+          "urls": [
+            {
+              "label": "nytimes.com",
+              "url": "https://www.nytimes.com/games/wordle/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Connections",
+          "icon": "https://www.google.com/s2/favicons?domain=nytimes.com&sz=128",
+          "urls": [
+            {
+              "label": "nytimes.com",
+              "url": "https://www.nytimes.com/games/connections"
+            }
+          ]
+        },
+        {
+          "name": "Waffle",
+          "icon": "https://www.google.com/s2/favicons?domain=wafflegame.net&sz=128",
+          "urls": [
+            {
+              "label": "wafflegame.net",
+              "url": "https://wafflegame.net"
+            }
+          ]
+        },
+        {
+          "name": "Nerdle",
+          "icon": "https://www.google.com/s2/favicons?domain=nerdlegame.com&sz=128",
+          "urls": [
+            {
+              "label": "nerdlegame.com",
+              "url": "https://nerdlegame.com"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skill",
+      "name": "Skill & Racing",
+      "icon": "🏎️",
+      "items": [
+        {
+          "name": "Smash Karts",
+          "icon": "https://www.google.com/s2/favicons?domain=smashkarts.io&sz=128",
+          "urls": [
+            {
+              "label": "smashkarts.io",
+              "url": "https://smashkarts.io"
+            }
+          ]
+        },
+        {
+          "name": "Slow Roads",
+          "icon": "https://www.google.com/s2/favicons?domain=slowroads.io&sz=128",
+          "urls": [
+            {
+              "label": "slowroads.io",
+              "url": "https://slowroads.io"
+            }
+          ]
+        },
+        {
+          "name": "Line Rider",
+          "icon": "https://www.google.com/s2/favicons?domain=linerider.com&sz=128",
+          "urls": [
+            {
+              "label": "linerider.com",
+              "url": "https://www.linerider.com"
+            }
+          ]
+        },
+        {
+          "name": "QWOP",
+          "icon": "https://www.google.com/s2/favicons?domain=foddy.net&sz=128",
+          "urls": [
+            {
+              "label": "foddy.net",
+              "url": "https://www.foddy.net/Athletics.html"
+            }
+          ]
+        },
+        {
+          "name": "Basket Random",
+          "icon": "https://www.google.com/s2/favicons?domain=basketrandom.com&sz=128",
+          "urls": [
+            {
+              "label": "basketrandom.com",
+              "url": "https://basketrandom.com"
+            }
+          ]
+        },
+        {
+          "name": "Run 3",
+          "icon": "https://www.google.com/s2/favicons?domain=coolmathgames.com&sz=128",
+          "urls": [
+            {
+              "label": "coolmathgames.com",
+              "url": "https://www.coolmathgames.com/0-run-3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "explore",
+      "name": "Entdecken & Idle",
+      "icon": "🌍",
+      "items": [
+        {
+          "name": "GeoGuessr",
+          "icon": "https://www.google.com/s2/favicons?domain=geoguessr.com&sz=128",
+          "urls": [
+            {
+              "label": "geoguessr.com",
+              "url": "https://www.geoguessr.com"
+            }
+          ]
+        },
+        {
+          "name": "Cookie Clicker",
+          "icon": "https://www.google.com/s2/favicons?domain=orteil.dashnet.org&sz=128",
+          "urls": [
+            {
+              "label": "orteil.dashnet.org",
+              "url": "https://orteil.dashnet.org/cookieclicker/"
+            }
+          ]
+        },
+        {
+          "name": "Universal Paperclips",
+          "icon": "https://www.google.com/s2/favicons?domain=decisionproblem.com&sz=128",
+          "urls": [
+            {
+              "label": "decisionproblem.com",
+              "url": "https://www.decisionproblem.com/paperclips/index2.html"
+            }
+          ]
+        },
+        {
+          "name": "Neal.fun",
+          "icon": "https://www.google.com/s2/favicons?domain=neal.fun&sz=128",
+          "urls": [
+            {
+              "label": "neal.fun",
+              "url": "https://neal.fun"
+            }
+          ]
+        },
+        {
+          "name": "The Password Game",
+          "icon": "https://www.google.com/s2/favicons?domain=neal.fun&sz=128",
+          "urls": [
+            {
+              "label": "neal.fun",
+              "url": "https://neal.fun/password-game/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

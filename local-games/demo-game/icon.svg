@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Neon Breakout">
+  <defs>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8b7cff" />
+      <stop offset="1" stop-color="#38e1d0" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#0b0d17" />
+  <rect x="11" y="15" width="12" height="7" rx="2" fill="url(#neon)" />
+  <rect x="26" y="15" width="12" height="7" rx="2" fill="url(#neon)" />
+  <rect x="41" y="15" width="12" height="7" rx="2" fill="url(#neon)" />
+  <rect x="11" y="26" width="12" height="7" rx="2" fill="url(#neon)" opacity=".65" />
+  <rect x="26" y="26" width="12" height="7" rx="2" fill="url(#neon)" opacity=".65" />
+  <rect x="41" y="26" width="12" height="7" rx="2" fill="url(#neon)" opacity=".65" />
+  <circle cx="32" cy="44" r="4" fill="#ffffff" />
+  <rect x="21" y="52" width="22" height="4" rx="2" fill="#38e1d0" />
+</svg>

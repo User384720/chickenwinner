@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" id="theme-color" content="#06070d" />
+  <title></title>
+  <meta name="description" content="Freies Archiv für Browser-Spiele, lokale Games und Web-Tools." />
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preload" as="image" href="img/censor/recycle-bin-empty.png" fetchpriority="high" />
+  <script>
+    /* Theme before first paint — avoids a flash of the wrong theme. */
+    try {
+      var stored = JSON.parse(localStorage.getItem('fbtarchive.settings.v1') || localStorage.getItem('nexus.settings.v1') || '{}');
+      var pref = stored.theme || 'dark';
+      if (pref === 'system') pref = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      document.documentElement.dataset.theme = pref;
+    } catch (e) { /* ignore */ }
+    document.documentElement.classList.add('intro-locked');
+  </script>
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+    <span class="blob b3"></span>
+  </div>
+
+  <header class="navbar">
+    <div class="nav-inner">
+      <nav class="tabs" role="tablist" aria-label="Hauptnavigation">
+        <button class="tab active" id="tab-home" data-route="home" role="tab" aria-selected="true" aria-controls="view-home">Home</button>
+        <button class="tab" id="tab-games-online" data-route="games-online" role="tab" aria-selected="false" aria-controls="view-games-online">Games Online</button>
+        <button class="tab" id="tab-games-local" data-route="games-local" role="tab" aria-selected="false" aria-controls="view-games-local">Games Local</button>
+        <button class="tab" id="tab-apps" data-route="apps" role="tab" aria-selected="false" aria-controls="view-apps">Apps</button>
+        <button class="tab" id="tab-sites" data-route="sites" role="tab" aria-selected="false" aria-controls="view-sites">Sites</button>
+        <button class="tab" id="tab-email" data-route="email" role="tab" aria-selected="false" aria-controls="view-email">E-Mail</button>
+        <button class="tab" id="tab-proxy" data-route="proxy" role="tab" aria-selected="false" aria-controls="view-proxy">Proxy</button>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="open-settings" type="button" aria-label="Einstellungen öffnen" title="Einstellungen">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="3.1" />
+            <path d="M19.4 15a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1.03 1.56V21a2 2 0 1 1-4 0v-.08a1.7 1.7 0 0 0-1.11-1.56 1.7 1.7 0 0 0-1.87.34l-.06.06A2 2 0 1 1 3.14 16.9l.06-.06a1.7 1.7 0 0 0 .34-1.87 1.7 1.7 0 0 0-1.56-1.03H2a2 2 0 1 1 0-4h.08A1.7 1.7 0 0 0 3.64 8.9a1.7 1.7 0 0 0-.34-1.87l-.06-.06A2 2 0 1 1 6.07 4.14l.06.06a1.7 1.7 0 0 0 1.87.34H8.1a1.7 1.7 0 0 0 1.03-1.56V3a2 2 0 1 1 4 0v.08a1.7 1.7 0 0 0 1.03 1.56 1.7 1.7 0 0 0 1.87-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.7 1.7 0 0 0-.34 1.87v.08a1.7 1.7 0 0 0 1.56 1.03H21a2 2 0 1 1 0 4h-.08a1.7 1.7 0 0 0-1.52.89z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <!-- ============================ HOME ============================ -->
+    <section class="view" id="view-home" data-view="home" role="tabpanel" aria-labelledby="tab-home">
+      <div class="bento">
+        <article class="panel panel-search span-8">
+          <div class="panel-head">
+            <span class="panel-label">Web-Suche</span>
+            <span class="panel-hint">öffnet in neuem Tab</span>
+          </div>
+          <form id="search-form" class="searchbar" autocomplete="off" role="search">
+            <label class="select-wrap">
+              <select id="engine-select" aria-label="Suchmaschine auswählen"></select>
+              <svg class="select-arrow" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+            </label>
+            <div class="search-input-wrap">
+              <svg class="search-ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+              <input id="search-input" type="search" placeholder="Suche im Web oder gib eine URL ein …" spellcheck="false" enterkeyhint="search" aria-label="Suchbegriff oder URL" />
+            </div>
+            <button class="btn btn-primary" type="submit">Suchen</button>
+            <button class="cloak-btn" id="cloak-toggle" type="button" aria-pressed="false" title="Cloak-Modus: Suche in einem neutralen Tab öffnen" aria-label="Cloak-Modus umschalten">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4.5 6v6c0 4.5 3.2 7.7 7.5 9 4.3-1.3 7.5-4.5 7.5-9V6z" /><path d="m9 12 2 2 4-4" /></svg>
+            </button>
+          </form>
+          <div class="search-hint">
+            <span><kbd>/</kbd> fokussiert die Suche</span>
+            <span><kbd>Strg</kbd> + <kbd>K</kbd> überall</span>
+            <span id="cloak-state">Cloak: aus</span>
+          </div>
+        </article>
+
+        <article class="panel span-4 panel-clock">
+          <div class="panel-head">
+            <span class="panel-label">Uhrzeit</span>
+            <span class="live-pill"><span class="live-dot"></span>Live</span>
+          </div>
+          <div class="clock">
+            <span id="clock-time">--:--</span><span class="clock-sec" id="clock-sec">00</span>
+          </div>
+          <p class="clock-date" id="clock-date">Wird geladen …</p>
+          <p class="clock-tz" id="clock-tz"></p>
+        </article>
+
+        <article class="panel span-12 panel-finder">
+          <div class="panel-head">
+            <span class="panel-label">Auf dieser Seite suchen</span>
+            <span class="panel-hint" id="finder-meta">Spiele &amp; Apps durchsuchen</span>
+          </div>
+          <div class="filter-box finder-box">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+            <input id="finder-input" type="search" placeholder="Spiel oder App auf dieser Seite finden …" aria-label="Inhalte durchsuchen" spellcheck="false" />
+          </div>
+          <div class="finder-results" id="finder-results" aria-live="polite" hidden></div>
+        </article>
+
+        <article class="panel span-4 panel-weather">
+          <div class="panel-head">
+            <span class="panel-label">Wetter</span>
+            <button class="icon-btn subtle" id="weather-refresh" type="button" aria-label="Wetter neu laden" title="Neu laden">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36" /><path d="M21 3v6h-6" /></svg>
+            </button>
+          </div>
+          <div class="weather-main">
+            <span class="weather-emoji" id="weather-emoji">⛅</span>
+            <div>
+              <div class="weather-temp" id="weather-temp">--°</div>
+              <div class="weather-city" id="weather-city">Wird geladen …</div>
+            </div>
+          </div>
+          <div class="weather-meta" id="weather-meta"></div>
+          <button class="ghost-link" id="weather-geo" type="button">Meinen Standort verwenden</button>
+        </article>
+
+        <article class="panel span-4 panel-fact">
+          <div class="panel-head">
+            <span class="panel-label" id="fact-label">Fakt des Tages</span>
+            <button class="icon-btn subtle" id="fact-refresh" type="button" aria-label="Neuen Fakt laden" title="Neu laden">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36" /><path d="M21 3v6h-6" /></svg>
+            </button>
+          </div>
+          <blockquote class="fact-text" id="fact-text">Wird geladen …</blockquote>
+          <span class="fact-source" id="fact-source"></span>
+        </article>
+
+        <article class="panel span-4 panel-favs">
+          <div class="panel-head">
+            <span class="panel-label">Schnellzugriff</span>
+            <span class="panel-hint" id="fav-count">0 gespeichert</span>
+          </div>
+          <ul class="fav-list" id="fav-list"></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ======================= GAMES (ONLINE) ======================= -->
+    <section class="view" id="view-games-online" data-view="games-online" role="tabpanel" aria-labelledby="tab-games-online" hidden>
+      <div class="section-head">
+        <div>
+          <h2>Games <span class="grad">Online</span></h2>
+        </div>
+        <div class="filter-box">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+          <input type="search" data-filter="games-online" placeholder="Online-Spiele durchsuchen …" aria-label="Online-Spiele durchsuchen" spellcheck="false" />
+        </div>
+      </div>
+      <div class="chips-row" data-chips="games-online" role="group" aria-label="Unterkategorien von Games Online"></div>
+      <div class="list-meta">
+        <span class="status-legend">
+          <span class="status-dot online"></span> funktioniert
+          <span class="status-dot blocked"></span> blockiert
+          <span class="status-dot network"></span> Netzwerk dicht
+          <span class="legend-hint">Punkt antippen = manuell setzen</span>
+        </span>
+        <span data-count="games-online">wird geladen …</span>
+      </div>
+      <div class="grid" data-grid="games-online" aria-live="polite"></div>
+    </section>
+
+    <!-- ======================== GAMES (LOCAL) ======================= -->
+    <section class="view" id="view-games-local" data-view="games-local" role="tabpanel" aria-labelledby="tab-games-local" hidden>
+      <div class="section-head">
+        <div>
+          <h2>Games <span class="grad">Local</span></h2>
+        </div>
+        <div class="filter-box">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+          <input type="search" data-filter="games-local" placeholder="Lokale Spiele durchsuchen …" aria-label="Lokale Spiele durchsuchen" spellcheck="false" />
+        </div>
+      </div>
+      <div class="chips-row" data-chips="games-local" role="group" aria-label="Unterkategorien von Games Local"></div>
+      <div class="list-meta">
+        <span class="status-legend">
+          <span class="status-dot online"></span> funktioniert
+          <span class="status-dot blocked"></span> blockiert
+          <span class="status-dot network"></span> Netzwerk dicht
+          <span class="legend-hint">Punkt antippen = manuell setzen</span>
+        </span>
+        <span data-count="games-local">wird geladen …</span>
+      </div>
+      <div class="grid" data-grid="games-local" aria-live="polite"></div>
+    </section>
+
+    <!-- ============================= APPS ============================ -->
+    <section class="view" id="view-apps" data-view="apps" role="tabpanel" aria-labelledby="tab-apps" hidden>
+      <div class="section-head">
+        <div>
+          <h2>Apps <span class="grad">&amp; Tools</span></h2>
+        </div>
+        <div class="filter-box">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+          <input type="search" data-filter="apps" placeholder="Apps durchsuchen …" aria-label="Apps durchsuchen" spellcheck="false" />
+        </div>
+      </div>
+      <div class="chips-row" data-chips="apps" role="group" aria-label="Unterkategorien von Apps"></div>
+      <div class="list-meta">
+        <span class="status-legend">
+          <span class="status-dot online"></span> funktioniert
+          <span class="status-dot blocked"></span> blockiert
+          <span class="status-dot network"></span> Netzwerk dicht
+          <span class="legend-hint">Punkt antippen = manuell setzen</span>
+        </span>
+        <span data-count="apps">wird geladen …</span>
+      </div>
+      <div class="grid" data-grid="apps" aria-live="polite"></div>
+    </section>
+
+    <!-- ============================ SITES =========================== -->
+    <section class="view" id="view-sites" data-view="sites" role="tabpanel" aria-labelledby="tab-sites" hidden>
+      <div class="section-head">
+        <div>
+          <h2>Unblocked <span class="grad">Sites</span></h2>
+        </div>
+        <div class="filter-box">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+          <input type="search" data-filter="sites" placeholder="Seiten durchsuchen …" aria-label="Unblocked-Seiten durchsuchen" spellcheck="false" />
+        </div>
+      </div>
+      <div class="chips-row" data-chips="sites" role="group" aria-label="Unterkategorien von Sites"></div>
+      <div class="list-meta">
+        <span class="status-legend">
+          <span class="status-dot online"></span> funktioniert
+          <span class="status-dot blocked"></span> blockiert
+          <span class="status-dot network"></span> Netzwerk dicht
+          <span class="legend-hint">Punkt antippen = manuell setzen</span>
+        </span>
+        <span data-count="sites">wird geladen …</span>
+      </div>
+      <div class="grid" data-grid="sites" aria-live="polite"></div>
+    </section>
+
+    <!-- ============================ E-MAIL ========================== -->
+    <section class="view" id="view-email" data-view="email" role="tabpanel" aria-labelledby="tab-email" hidden>
+      <div class="section-head">
+        <div>
+          <h2>Web-<span class="grad">E-Mail</span></h2>
+        </div>
+        <div class="filter-box">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+          <input type="search" data-filter="email" placeholder="Anbieter durchsuchen …" aria-label="E-Mail-Anbieter durchsuchen" spellcheck="false" />
+        </div>
+      </div>
+      <div class="chips-row" data-chips="email" role="group" aria-label="Unterkategorien von E-Mail"></div>
+      <div class="list-meta">
+        <span class="status-legend">
+          <span class="status-dot online"></span> funktioniert
+          <span class="status-dot blocked"></span> blockiert
+          <span class="status-dot network"></span> Netzwerk dicht
+          <span class="legend-hint">Punkt antippen = manuell setzen</span>
+        </span>
+        <span data-count="email">wird geladen …</span>
+      </div>
+      <div class="grid" data-grid="email" aria-live="polite"></div>
+    </section>
+
+    <!-- ============================ PROXY =========================== -->
+    <section class="view" id="view-proxy" data-view="proxy" role="tabpanel" aria-labelledby="tab-proxy" hidden>
+      <div class="section-head">
+        <div>
+          <h2>Proxy <span class="grad">Seiten</span></h2>
+        </div>
+        <div class="filter-box">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+          <input type="search" data-filter="proxy" placeholder="Proxy-Seiten durchsuchen …" aria-label="Proxy-Seiten durchsuchen" spellcheck="false" />
+        </div>
+      </div>
+      <div class="chips-row" data-chips="proxy" role="group" aria-label="Unterkategorien von Proxy"></div>
+      <div class="list-meta">
+        <span class="status-legend">
+          <span class="status-dot online"></span> funktioniert
+          <span class="status-dot blocked"></span> blockiert
+          <span class="status-dot network"></span> Netzwerk dicht
+          <span class="legend-hint">Punkt antippen = manuell setzen</span>
+        </span>
+        <span data-count="proxy">wird geladen …</span>
+      </div>
+      <div class="grid" data-grid="proxy" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <!-- ========================== SETTINGS ========================== -->
+  <div class="modal-backdrop" id="settings-modal" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="settings-title">
+      <header class="modal-head">
+        <div>
+          <h2 id="settings-title">Einstellungen</h2>
+          <p class="modal-sub">Alles wird nur lokal in deinem Browser gespeichert.</p>
+        </div>
+        <button class="icon-btn" id="close-settings" type="button" aria-label="Einstellungen schließen">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" /></svg>
+        </button>
+      </header>
+
+      <div class="modal-body">
+        <section class="setting">
+          <h3>Darstellung</h3>
+          <div class="segmented" role="group" aria-label="Farbschema">
+            <button type="button" data-theme-choice="dark">🌙 Dark</button>
+            <button type="button" data-theme-choice="light">☀️ Light</button>
+            <button type="button" data-theme-choice="system">💻 System</button>
+          </div>
+        </section>
+
+        <section class="setting">
+          <h3>Suche</h3>
+          <label class="field">
+            <span>Standard-Suchmaschine</span>
+            <select id="set-engine"></select>
+          </label>
+          <label class="switch-row">
+            <span class="switch-text"><strong>Cloak-Modus</strong><small>Öffnet Suchen in einem neutralen about:blank-Tab mit eingebetteter Seite.</small></span>
+            <input type="checkbox" id="set-cloak" class="switch-input" />
+            <span class="switch" aria-hidden="true"></span>
+          </label>
+        </section>
+
+        <section class="setting">
+          <h3>Wetter</h3>
+          <label class="field">
+            <span>Fallback-Stadt</span>
+            <input id="set-city" type="text" maxlength="60" placeholder="z. B. Berlin" />
+          </label>
+          <p class="setting-note">Wird genutzt, wenn kein Standort freigegeben ist. Daten von Open-Meteo, ohne API-Key.</p>
+        </section>
+
+        <section class="setting">
+          <h3>Sicherheit</h3>
+          <label class="field">
+            <span>Panic-Key</span>
+            <input id="set-panic-key" type="text" readonly placeholder="Taste drücken" aria-describedby="panic-help" />
+          </label>
+          <label class="field">
+            <span>Panic-Ziel</span>
+            <input id="set-panic-url" type="text" placeholder="https://classroom.google.com" />
+          </label>
+          <p class="setting-note" id="panic-help">Feld anklicken und eine Taste (ggf. mit Strg/Alt/Shift) drücken. Der Key wechselt sofort zur Zielseite — auch <code>about:blank</code> ist erlaubt.</p>
+        </section>
+
+        <section class="setting">
+          <h3>Link-Checker</h3>
+          <label class="switch-row">
+            <span class="switch-text"><strong>Erreichbarkeit prüfen</strong><small>Ein Punkt pro Link: funktioniert, blockiert oder Netzwerk dicht. Läuft im Browser ohne Backend.</small></span>
+            <input type="checkbox" id="set-check" class="switch-input" />
+            <span class="switch" aria-hidden="true"></span>
+          </label>
+        </section>
+
+        <section class="setting">
+          <h3>Daten</h3>
+          <div class="setting-actions">
+            <button class="btn btn-ghost" id="clear-favs" type="button">Favoriten löschen</button>
+            <button class="btn btn-danger" id="reset-all" type="button">Alles zurücksetzen</button>
+          </div>
+        </section>
+      </div>
+
+      <footer class="modal-foot">
+        <button class="btn btn-primary" id="done-settings" type="button">Fertig</button>
+      </footer>
+    </div>
+  </div>
+
+  <!-- =========================== PLAYER =========================== -->
+  <div class="player-backdrop" id="player" hidden>
+    <div class="player-shell" id="player-shell">
+      <header class="player-bar">
+        <div class="player-id">
+          <span class="player-icon" id="player-icon" aria-hidden="true"></span>
+          <span class="player-id-text">
+            <strong class="player-name" id="player-title">Spiel</strong>
+            <span class="player-host" id="player-host"></span>
+          </span>
+        </div>
+        <div class="player-actions">
+          <button class="player-btn" id="player-home" type="button" title="Zurück zur Übersicht">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z" /></svg>
+            <span class="player-btn-label">Home</span>
+          </button>
+          <button class="player-btn" id="player-reload" type="button" title="Spiel neu laden">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36" /><path d="M21 3v6h-6" /></svg>
+            <span class="player-btn-label">Neu laden</span>
+          </button>
+          <button class="player-btn" id="player-fullscreen" type="button" title="Vollbild" aria-pressed="false">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H4a1 1 0 0 0-1 1v4M16 3h4a1 1 0 0 1 1 1v4M8 21H4a1 1 0 0 1-1-1v-4M16 21h4a1 1 0 0 0 1-1v-4" /></svg>
+            <span class="player-btn-label">Vollbild</span>
+          </button>
+          <a class="player-btn" id="player-external" href="#" target="_blank" rel="noopener noreferrer" title="Im neuen Tab öffnen">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9" /><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" /></svg>
+            <span class="player-btn-label">Neuer Tab</span>
+          </a>
+          <button class="player-btn player-btn-close" id="player-close" type="button" title="Player schließen" aria-label="Player schließen">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" /></svg>
+          </button>
+        </div>
+      </header>
+      <div class="player-stage">
+        <iframe id="player-frame" title="Spiel-Player" loading="eager"
+          allow="fullscreen; autoplay; gamepad; clipboard-read; clipboard-write; encrypted-media; picture-in-picture; screen-wake-lock; web-share; accelerometer; gyroscope; storage-access; cross-origin-isolated"
+          allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <div class="player-note" id="player-note">
+          <p><strong>Spiel wird geladen …</strong><br />Manche Portale verbieten das Einbetten — dann hilft <em>Neuer Tab</em> oben rechts.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================== INTRO ============================== -->
+  <div class="intro" id="intro">
+    <div class="intro-stage">
+      <div class="intro-col" aria-label="Zensur- und Filter-Tools">
+        <button class="censor-icon" type="button" data-censor="fortinet">
+          <span class="censor-logo"><img src="img/censor/fortinet.svg" alt="" draggable="false" /></span>
+          <span class="censor-name">Fortinet</span>
+        </button>
+        <button class="censor-icon" type="button" data-censor="fortiguard">
+          <span class="censor-logo"><img src="img/censor/fortiguard.svg" alt="" draggable="false" /></span>
+          <span class="censor-name">FortiGuard</span>
+        </button>
+        <button class="censor-icon" type="button" data-censor="sophos">
+          <span class="censor-logo"><img src="img/censor/sophos.svg" alt="" draggable="false" /></span>
+          <span class="censor-name">Sophos</span>
+        </button>
+        <button class="censor-icon" type="button" data-censor="paloalto">
+          <span class="censor-logo"><img src="img/censor/paloalto.svg" alt="" draggable="false" /></span>
+          <span class="censor-name">Palo Alto</span>
+        </button>
+        <button class="censor-icon is-dark" type="button" data-censor="cisco-umbrella">
+          <span class="censor-logo"><img src="img/censor/opendns.svg" alt="" draggable="false" /></span>
+          <span class="censor-name">Cisco Umbrella</span>
+        </button>
+        <button class="censor-icon" type="button" data-censor="lightspeed">
+          <span class="censor-logo"><img src="img/censor/lightspeed.svg" alt="" draggable="false" /></span>
+          <span class="censor-name">Lightspeed</span>
+        </button>
+        <button class="censor-icon" type="button" data-censor="unifi">
+          <span class="censor-logo"><img src="img/censor/ubiquiti.svg" alt="" draggable="false" /></span>
+          <span class="censor-name">UniFi</span>
+        </button>
+      </div>
+
+      <div class="intro-bin-wrap">
+        <button class="intro-bin" id="intro-bin" type="button">
+          <span class="intro-bin-shadow" aria-hidden="true"></span>
+          <span class="intro-bin-glow" aria-hidden="true"></span>
+          <img src="img/censor/recycle-bin-empty.png" alt="Papierkorb (Windows 7)" width="256" height="256" draggable="false" decoding="async" />
+        </button>
+      </div>
+
+      <div class="intro-col" aria-label="Weitere Blockier-Tools">
+        <button class="censor-icon" type="button" data-censor="goguardian">
+          <span class="censor-logo"><img src="img/censor/goguardian.png" alt="" draggable="false" /></span>
+          <span class="censor-name">GoGuardian</span>
+        </button>
+        <button class="censor-icon" type="button" data-censor="securly">
+          <span class="censor-logo"><img src="img/censor/securly.svg" alt="" draggable="false" /></span>
+          <span class="censor-name">Securly</span>
+        </button>
+        <button class="censor-icon" type="button" data-censor="smoothwall">
+          <span class="censor-logo"><img src="img/censor/smoothwall.svg" alt="" draggable="false" /></span>
+          <span class="censor-name">Smoothwall</span>
+        </button>
+        <button class="censor-icon" type="button" data-censor="barracuda">
+          <span class="censor-logo"><img src="img/censor/barracuda.svg" alt="" draggable="false" /></span>
+          <span class="censor-name">Barracuda</span>
+        </button>
+        <button class="censor-icon" type="button" data-censor="bluecoat">
+          <span class="censor-logo"><img src="img/censor/bluecoat.svg" alt="" draggable="false" /></span>
+          <span class="censor-name">Blue Coat</span>
+        </button>
+        <button class="censor-icon" type="button" data-censor="watchguard">
+          <span class="censor-logo"><img src="img/censor/watchguard.svg" alt="" draggable="false" /></span>
+          <span class="censor-name">WatchGuard</span>
+        </button>
+        <button class="censor-icon" type="button" data-censor="netnanny">
+          <span class="censor-logo"><img src="img/censor/netnanny.png" alt="" draggable="false" /></span>
+          <span class="censor-name">Net Nanny</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="intro-shatter" id="intro-shatter" hidden aria-hidden="true">
+      <div class="shatter-lock" id="shatter-lock">
+        <svg class="lock-shape" id="lock-shape" viewBox="0 0 120 150" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path class="lock-shackle" d="M36 64V46a24 24 0 0 1 48 0v18" stroke="#7dffc4" stroke-width="8" />
+          <rect class="lock-body" x="16" y="62" width="88" height="70" rx="13" fill="rgba(9,38,29,.55)" stroke="#7dffc4" stroke-width="8" />
+          <circle class="lock-hole" cx="60" cy="90" r="7" fill="#7dffc4" stroke="none" />
+          <path class="lock-leg" d="M60 96v14" stroke="#7dffc4" stroke-width="7" />
+          <path class="lock-crack" d="M16 84l24 6 14-18 18 24 20-12" stroke="#ff5d7a" stroke-width="2.6" />
+        </svg>
+        <div class="shatter-shards" id="shatter-shards"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toasts" id="toasts" aria-live="polite" aria-atomic="false"></div>
+
+  <noscript>
+    <div class="wrap noscript">Bitte aktiviere JavaScript — die Inhalte werden aus JSON-Dateien geladen.</div>
+  </noscript>
+
+  <script src="js/checker.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>

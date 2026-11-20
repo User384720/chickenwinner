@@ -1,0 +1,137 @@
+{
+  "_hinweis": "Neue Unterkategorie: Objekt in 'groups' ergänzen (id, name, icon, items). Mehrere Unterkategorien sind erlaubt, items bleiben unverändert.",
+  "title": "Games Local",
+  "groups": [
+    {
+      "id": "arcade",
+      "name": "Arcade-Klassiker",
+      "icon": "🕹️",
+      "items": [
+        {
+          "name": "Neon Breakout",
+          "icon": "local-games/demo-game/icon.svg",
+          "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "local-games/demo-game/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Pac-Man",
+          "icon": "local-games/pacman/icon.svg",
+          "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "local-games/pacman/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Space Invaders",
+          "icon": "local-games/space-invaders/icon.svg",
+          "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "local-games/space-invaders/index.html"
+            }
+          ]
+        },
+        {
+          "name": "T-Rex Runner",
+          "icon": "local-games/t-rex-runner/icon.svg",
+          "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "local-games/t-rex-runner/index.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "puzzle",
+      "name": "Puzzle & Denken",
+      "icon": "🧩",
+      "items": [
+        {
+          "name": "2048",
+          "icon": "local-games/2048/favicon.ico",
+          "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "local-games/2048/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Hextris",
+          "icon": "local-games/hextris/favicon.ico",
+          "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "local-games/hextris/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Tetris",
+          "icon": "local-games/tetris/icon.svg",
+          "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "local-games/tetris/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Minesweeper",
+          "icon": "local-games/minesweeper/icon.svg",
+          "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "local-games/minesweeper/index.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skill",
+      "name": "Skill & Reaktion",
+      "icon": "🏁",
+      "items": [
+        {
+          "name": "Clumsy Bird",
+          "icon": "local-games/clumsy-bird/data/img/touch-icon-iphone-retina.png",
+          "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "local-games/clumsy-bird/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Astray",
+          "icon": "local-games/astray/icon.svg",
+          "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "local-games/astray/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Racer",
+          "icon": "local-games/racer/icon.svg",
+          "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "local-games/racer/index.html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

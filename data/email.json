@@ -1,0 +1,188 @@
+{
+  "_hinweis": "Neue Unterkategorie: Objekt in 'groups' ergänzen (id, name, icon, items). Mehrere Unterkategorien sind erlaubt, items bleiben unverändert.",
+  "title": "Web-E-Mail",
+  "groups": [
+    {
+      "id": "grosse-anbieter",
+      "name": "Große Anbieter",
+      "icon": "📬",
+      "items": [
+        {
+          "name": "Gmail",
+          "icon": "https://www.google.com/s2/favicons?domain=mail.google.com&sz=128",
+          "urls": [
+            { "label": "mail.google.com", "url": "https://mail.google.com" }
+          ]
+        },
+        {
+          "name": "Outlook Mail",
+          "icon": "https://www.google.com/s2/favicons?domain=outlook.live.com&sz=128",
+          "urls": [
+            { "label": "outlook.live.com", "url": "https://outlook.live.com/mail" }
+          ]
+        },
+        {
+          "name": "Yahoo Mail",
+          "icon": "https://www.google.com/s2/favicons?domain=mail.yahoo.com&sz=128",
+          "urls": [
+            { "label": "mail.yahoo.com", "url": "https://mail.yahoo.com" }
+          ]
+        },
+        {
+          "name": "iCloud Mail",
+          "icon": "https://www.google.com/s2/favicons?domain=icloud.com&sz=128",
+          "urls": [
+            { "label": "icloud.com/mail", "url": "https://www.icloud.com/mail" }
+          ]
+        },
+        {
+          "name": "GMX",
+          "icon": "https://www.google.com/s2/favicons?domain=gmx.net&sz=128",
+          "urls": [
+            { "label": "gmx.net", "url": "https://www.gmx.net/mail" }
+          ]
+        },
+        {
+          "name": "WEB.DE Mail",
+          "icon": "https://www.google.com/s2/favicons?domain=web.de&sz=128",
+          "urls": [
+            { "label": "web.de", "url": "https://web.de/mail" }
+          ]
+        },
+        {
+          "name": "mail.com",
+          "icon": "https://www.google.com/s2/favicons?domain=mail.com&sz=128",
+          "urls": [
+            { "label": "mail.com", "url": "https://www.mail.com" }
+          ]
+        },
+        {
+          "name": "Zoho Mail",
+          "icon": "https://www.google.com/s2/favicons?domain=zoho.com&sz=128",
+          "urls": [
+            { "label": "mail.zoho.com", "url": "https://mail.zoho.com" }
+          ]
+        },
+        {
+          "name": "AOL Mail",
+          "icon": "https://www.google.com/s2/favicons?domain=mail.aol.com&sz=128",
+          "urls": [
+            { "label": "mail.aol.com", "url": "https://mail.aol.com" }
+          ]
+        },
+        {
+          "name": "Yandex Mail",
+          "icon": "https://www.google.com/s2/favicons?domain=mail.yandex.com&sz=128",
+          "urls": [
+            { "label": "mail.yandex.com", "url": "https://mail.yandex.com" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "verschluesselt",
+      "name": "Verschlüsselt & privat",
+      "icon": "🔐",
+      "items": [
+        {
+          "name": "Proton Mail",
+          "icon": "https://www.google.com/s2/favicons?domain=mail.proton.me&sz=128",
+          "urls": [
+            { "label": "mail.proton.me", "url": "https://mail.proton.me" }
+          ]
+        },
+        {
+          "name": "Tuta Mail",
+          "icon": "https://www.google.com/s2/favicons?domain=tuta.com&sz=128",
+          "urls": [
+            { "label": "app.tuta.com", "url": "https://app.tuta.com" }
+          ]
+        },
+        {
+          "name": "Fastmail",
+          "icon": "https://www.google.com/s2/favicons?domain=fastmail.com&sz=128",
+          "urls": [
+            { "label": "app.fastmail.com", "url": "https://app.fastmail.com" }
+          ]
+        },
+        {
+          "name": "Mailfence",
+          "icon": "https://www.google.com/s2/favicons?domain=mailfence.com&sz=128",
+          "urls": [
+            { "label": "mail.mailfence.com", "url": "https://mail.mailfence.com" }
+          ]
+        },
+        {
+          "name": "StartMail",
+          "icon": "https://www.google.com/s2/favicons?domain=startmail.com&sz=128",
+          "urls": [
+            { "label": "startmail.com", "url": "https://www.startmail.com" }
+          ]
+        },
+        {
+          "name": "Posteo",
+          "icon": "https://www.google.com/s2/favicons?domain=posteo.de&sz=128",
+          "urls": [
+            { "label": "posteo.de", "url": "https://posteo.de" }
+          ]
+        },
+        {
+          "name": "Mailbox.org",
+          "icon": "https://www.google.com/s2/favicons?domain=mailbox.org&sz=128",
+          "urls": [
+            { "label": "mailbox.org", "url": "https://mailbox.org" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wegwerf",
+      "name": "Wegwerf-Adressen",
+      "icon": "🗑️",
+      "items": [
+        {
+          "name": "Temp-Mail",
+          "icon": "https://www.google.com/s2/favicons?domain=temp-mail.org&sz=128",
+          "urls": [
+            { "label": "temp-mail.org", "url": "https://temp-mail.org" }
+          ]
+        },
+        {
+          "name": "Guerrilla Mail",
+          "icon": "https://www.google.com/s2/favicons?domain=guerrillamail.com&sz=128",
+          "urls": [
+            { "label": "guerrillamail.com", "url": "https://www.guerrillamail.com" }
+          ]
+        },
+        {
+          "name": "Mailinator",
+          "icon": "https://www.google.com/s2/favicons?domain=mailinator.com&sz=128",
+          "urls": [
+            { "label": "mailinator.com", "url": "https://www.mailinator.com" }
+          ]
+        },
+        {
+          "name": "10 Minute Mail",
+          "icon": "https://www.google.com/s2/favicons?domain=10minutemail.com&sz=128",
+          "urls": [
+            { "label": "10minutemail.com", "url": "https://10minutemail.com" }
+          ]
+        },
+        {
+          "name": "YOPmail",
+          "icon": "https://www.google.com/s2/favicons?domain=yopmail.com&sz=128",
+          "urls": [
+            { "label": "yopmail.com", "url": "https://yopmail.com" }
+          ]
+        },
+        {
+          "name": "Maildrop",
+          "icon": "https://www.google.com/s2/favicons?domain=maildrop.cc&sz=128",
+          "urls": [
+            { "label": "maildrop.cc", "url": "https://maildrop.cc" }
+          ]
+        }
+      ]
+    }
+  ]
+}

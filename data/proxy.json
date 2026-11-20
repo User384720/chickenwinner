@@ -1,0 +1,181 @@
+{
+  "_hinweis": "Neue Unterkategorie: Objekt in 'groups' ergänzen (id, name, icon, items). Mehrere Unterkategorien sind erlaubt, items bleiben unverändert.",
+  "title": "Proxy",
+  "groups": [
+    {
+      "id": "web-proxies",
+      "name": "Web-Proxies",
+      "icon": "🌐",
+      "items": [
+        {
+          "name": "CroxyProxy",
+          "icon": "https://www.google.com/s2/favicons?domain=croxyproxy.com&sz=128",
+          "urls": [
+            { "label": "croxyproxy.com", "url": "https://www.croxyproxy.com" }
+          ]
+        },
+        {
+          "name": "ProxySite",
+          "icon": "https://www.google.com/s2/favicons?domain=proxysite.com&sz=128",
+          "urls": [
+            { "label": "proxysite.com", "url": "https://www.proxysite.com" }
+          ]
+        },
+        {
+          "name": "hide.me Web-Proxy",
+          "icon": "https://www.google.com/s2/favicons?domain=hide.me&sz=128",
+          "urls": [
+            { "label": "hide.me/proxy", "url": "https://hide.me/en/proxy" }
+          ]
+        },
+        {
+          "name": "4everproxy",
+          "icon": "https://www.google.com/s2/favicons?domain=4everproxy.com&sz=128",
+          "urls": [
+            { "label": "4everproxy.com", "url": "https://www.4everproxy.com" }
+          ]
+        },
+        {
+          "name": "Whoer Webproxy",
+          "icon": "https://www.google.com/s2/favicons?domain=whoer.net&sz=128",
+          "urls": [
+            { "label": "whoer.net/webproxy", "url": "https://whoer.net/webproxy" }
+          ]
+        },
+        {
+          "name": "BlockAway",
+          "icon": "https://www.google.com/s2/favicons?domain=blockaway.net&sz=128",
+          "urls": [
+            { "label": "blockaway.net", "url": "https://www.blockaway.net" }
+          ]
+        },
+        {
+          "name": "ProxFree",
+          "icon": "https://www.google.com/s2/favicons?domain=proxfree.com&sz=128",
+          "urls": [
+            { "label": "proxfree.com", "url": "https://www.proxfree.com" }
+          ]
+        },
+        {
+          "name": "FilterBypass",
+          "icon": "https://www.google.com/s2/favicons?domain=filterbypass.me&sz=128",
+          "urls": [
+            { "label": "filterbypass.me", "url": "https://www.filterbypass.me" }
+          ]
+        },
+        {
+          "name": "Proxy-Tools",
+          "icon": "https://www.google.com/s2/favicons?domain=proxy-tools.com&sz=128",
+          "urls": [
+            { "label": "proxy-tools.com", "url": "https://www.proxy-tools.com" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unblocker",
+      "name": "Unblocker",
+      "icon": "🛡️",
+      "items": [
+        {
+          "name": "Titanium Network",
+          "icon": "https://www.google.com/s2/favicons?domain=titaniumnetwork.org&sz=128",
+          "urls": [
+            { "label": "titaniumnetwork.org", "url": "https://titaniumnetwork.org" }
+          ]
+        },
+        {
+          "name": "Holy Unblocker",
+          "icon": "https://www.google.com/s2/favicons?domain=holyubofficial.net&sz=128",
+          "urls": [
+            { "label": "holyubofficial.net", "url": "https://holyubofficial.net" }
+          ]
+        },
+        {
+          "name": "Rammerhead",
+          "icon": "https://www.google.com/s2/favicons?domain=rammerhead.org&sz=128",
+          "urls": [
+            { "label": "rammerhead.org", "url": "https://rammerhead.org" }
+          ]
+        },
+        {
+          "name": "Interstellar",
+          "icon": "https://www.google.com/s2/favicons?domain=interstellar.gg&sz=128",
+          "urls": [
+            { "label": "interstellar.gg", "url": "https://interstellar.gg" }
+          ]
+        },
+        {
+          "name": "Nebula",
+          "icon": "https://www.google.com/s2/favicons?domain=nebula.holyub.dev&sz=128",
+          "urls": [
+            { "label": "nebula.holyub.dev", "url": "https://nebula.holyub.dev" }
+          ]
+        },
+        {
+          "name": "Utopia",
+          "icon": "https://www.google.com/s2/favicons?domain=utopia.pw&sz=128",
+          "urls": [
+            { "label": "utopia.pw", "url": "https://utopia.pw" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anonymitaet",
+      "name": "Anonymität & DNS",
+      "icon": "🧅",
+      "items": [
+        {
+          "name": "Tor Project",
+          "icon": "https://www.google.com/s2/favicons?domain=torproject.org&sz=128",
+          "urls": [
+            { "label": "torproject.org", "url": "https://www.torproject.org" }
+          ]
+        },
+        {
+          "name": "Mullvad VPN",
+          "icon": "https://www.google.com/s2/favicons?domain=mullvad.net&sz=128",
+          "urls": [
+            { "label": "mullvad.net", "url": "https://mullvad.net" }
+          ]
+        },
+        {
+          "name": "Proton VPN",
+          "icon": "https://www.google.com/s2/favicons?domain=protonvpn.com&sz=128",
+          "urls": [
+            { "label": "protonvpn.com", "url": "https://protonvpn.com" }
+          ]
+        },
+        {
+          "name": "Cloudflare 1.1.1.1",
+          "icon": "https://www.google.com/s2/favicons?domain=one.one.one.one&sz=128",
+          "urls": [
+            { "label": "one.one.one.one", "url": "https://one.one.one.one" }
+          ]
+        },
+        {
+          "name": "Quad9",
+          "icon": "https://www.google.com/s2/favicons?domain=quad9.net&sz=128",
+          "urls": [
+            { "label": "quad9.net", "url": "https://quad9.net" }
+          ]
+        },
+        {
+          "name": "NextDNS",
+          "icon": "https://www.google.com/s2/favicons?domain=nextdns.io&sz=128",
+          "urls": [
+            { "label": "nextdns.io", "url": "https://nextdns.io" }
+          ]
+        },
+        {
+          "name": "DNS-Leak-Test",
+          "icon": "https://www.google.com/s2/favicons?domain=dnsleaktest.com&sz=128",
+          "urls": [
+            { "label": "dnsleaktest.com", "url": "https://www.dnsleaktest.com" }
+          ]
+        }
+      ]
+    }
+  ]
+}

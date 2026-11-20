@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Neon Breakout — fbtarchive Demo</title>
+  <link rel="icon" href="icon.svg" />
+  <style>
+    :root {
+      --neon: #8b7cff;
+      --cyan: #38e1d0;
+      --ink: #eef1ff;
+      --muted: #9aa3bf;
+      --bg: #06070d;
+      --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      padding: 22px 16px 30px;
+      color: var(--ink);
+      font-family: var(--font);
+      background:
+        radial-gradient(60vmax 60vmax at 12% -10%, rgba(109, 94, 252, 0.35), transparent 60%),
+        radial-gradient(50vmax 50vmax at 95% 110%, rgba(34, 211, 238, 0.28), transparent 60%),
+        var(--bg);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      width: min(100%, 480px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .back {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.8rem;
+      padding: 7px 11px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.05);
+      transition: color 0.2s ease, border-color 0.2s ease;
+    }
+    .back:hover { color: var(--ink); border-color: rgba(255, 255, 255, 0.24); }
+
+    .title {
+      font-size: 0.78rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      font-weight: 700;
+    }
+
+    .hud {
+      width: min(100%, 480px);
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: 0.78rem;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+    }
+    .hud b {
+      display: block;
+      font-size: 1rem;
+      color: var(--ink);
+      margin-top: 2px;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .stage {
+      position: relative;
+      width: min(100%, 480px);
+      aspect-ratio: 3 / 4;
+      max-height: calc(100vh - 250px);
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid rgba(139, 124, 255, 0.35);
+      box-shadow: 0 30px 70px -30px rgba(0, 0, 0, 0.9), 0 0 0 1px rgba(255, 255, 255, 0.04);
+      background: #080a14;
+      touch-action: none;
+    }
+
+    canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+      touch-action: none;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 26px;
+      text-align: center;
+      background: rgba(6, 8, 16, 0.72);
+      -webkit-backdrop-filter: blur(8px);
+      backdrop-filter: blur(8px);
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+    .overlay.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+    .overlay h2 { margin: 0; font-size: 1.5rem; letter-spacing: -0.02em; }
+    .overlay p { margin: 0; font-size: 0.86rem; line-height: 1.55; color: var(--muted); max-width: 280px; }
+
+    .overlay button {
+      appearance: none;
+      margin-top: 8px;
+      font: inherit;
+      font-size: 0.88rem;
+      font-weight: 650;
+      color: #fff;
+      padding: 12px 22px;
+      border: 0;
+      border-radius: 12px;
+      cursor: pointer;
+      background: linear-gradient(135deg, var(--neon), #6a5ae0 55%, var(--cyan));
+      box-shadow: 0 16px 34px -16px var(--neon);
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
+    .overlay button:hover { transform: translateY(-1px); box-shadow: 0 20px 40px -16px var(--neon); }
+    .overlay button:active { transform: translateY(0); }
+
+    .hint {
+      margin: 0;
+      font-size: 0.74rem;
+      color: var(--muted);
+      text-align: center;
+      max-width: 480px;
+      line-height: 1.6;
+    }
+
+    kbd {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.72rem;
+      padding: 2px 5px;
+      border-radius: 5px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      background: rgba(255, 255, 255, 0.07);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="back" href="../../index.html">← Zurück zum Archiv</a>
+    <span class="title">fbtarchive · Demo</span>
+  </header>
+
+  <div class="hud">
+    <span>Score<b id="score">0</b></span>
+    <span>Leben<b id="lives">3</b></span>
+    <span>Best<b id="best">0</b></span>
+  </div>
+
+  <div class="stage" id="stage">
+    <canvas id="game" aria-label="Neon Breakout Spielfeld"></canvas>
+    <div class="overlay" id="overlay">
+      <h2 id="ov-title">Neon Breakout</h2>
+      <p id="ov-text">Zerstöre alle Reihen mit dem Ball. Bewege das Paddle mit Maus, Finger oder den Pfeiltasten.</p>
+      <button id="start" type="button">Spiel starten</button>
+    </div>
+  </div>
+
+  <p class="hint">Maus / Finger bewegen · <kbd>←</kbd> <kbd>→</kbd> oder <kbd>A</kbd> <kbd>D</kbd> · <kbd>Leertaste</kbd> pausiert</p>
+
+  <script>
+    (function () {
+      'use strict';
+
+      var canvas = document.getElementById('game');
+      var ctx = canvas.getContext('2d');
+      var stage = document.getElementById('stage');
+      var overlay = document.getElementById('overlay');
+      var ovTitle = document.getElementById('ov-title');
+      var ovText = document.getElementById('ov-text');
+      var startBtn = document.getElementById('start');
+      var scoreEl = document.getElementById('score');
+      var livesEl = document.getElementById('lives');
+      var bestEl = document.getElementById('best');
+
+      var W = 480;
+      var H = 640;
+      var DPR = Math.min(window.devicePixelRatio || 1, 2);
+      canvas.width = W * DPR;
+      canvas.height = H * DPR;
+      ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+
+      var BEST_KEY = 'fbtarchive.demo.breakout.best';
+      var LEGACY_BEST_KEY = 'nexus.demo.breakout.best';
+      var best = 0;
+      try {
+        var legacyBest = localStorage.getItem(LEGACY_BEST_KEY);
+        if (legacyBest !== null && localStorage.getItem(BEST_KEY) === null) {
+          localStorage.setItem(BEST_KEY, legacyBest);
+          localStorage.removeItem(LEGACY_BEST_KEY);
+        }
+      } catch (err) { /* ignore */ }
+      try { best = Number(localStorage.getItem(BEST_KEY) || 0) || 0; } catch (err) { best = 0; }
+      bestEl.textContent = best;
+
+      var paddle = { w: 96, h: 13, x: (W - 96) / 2, y: H - 46, speed: 640 };
+      var ball = { x: W / 2, y: H - 78, r: 8, vx: 0, vy: 0, speed: 330, stuck: true };
+
+      var COLS = 7;
+      var ROWS = 5;
+      var BW = 54;
+      var BH = 20;
+      var GAP = 8;
+      var OFFSET_X = (W - (COLS * BW + (COLS - 1) * GAP)) / 2;
+      var OFFSET_Y = 78;
+      var COLORS = ['#8b7cff', '#5aa9ff', '#38e1d0', '#ffd166', '#ff7ac6'];
+
+      var bricks = [];
+      var score = 0;
+      var lives = 3;
+      var running = false;
+      var paused = false;
+      var keys = {};
+      var last = 0;
+
+      function resetBall() {
+        ball.stuck = true;
+        ball.x = paddle.x + paddle.w / 2;
+        ball.y = paddle.y - ball.r - 4;
+        ball.vx = 0;
+        ball.vy = 0;
+      }
+
+      function buildBricks() {
+        bricks.length = 0;
+        for (var r = 0; r < ROWS; r++) {
+          for (var c = 0; c < COLS; c++) {
+            bricks.push({
+              x: OFFSET_X + c * (BW + GAP),
+              y: OFFSET_Y + r * (BH + GAP),
+              w: BW,
+              h: BH,
+              alive: true,
+              color: COLORS[r % COLORS.length]
+            });
+          }
+        }
+      }
+
+      function launch() {
+        if (!ball.stuck) return;
+        ball.stuck = false;
+        var dir = Math.random() < 0.5 ? -1 : 1;
+        ball.vx = dir * ball.speed * (0.35 + Math.random() * 0.35);
+        ball.vy = -Math.sqrt(Math.max(ball.speed * ball.speed - ball.vx * ball.vx, 1));
+      }
+
+      function clamp(value, min, max) {
+        return Math.max(min, Math.min(max, value));
+      }
+
+      function roundRect(x, y, w, h, r) {
+        var radius = Math.min(r, w / 2, h / 2);
+        ctx.beginPath();
+        ctx.moveTo(x + radius, y);
+        ctx.arcTo(x + w, y, x + w, y + h, radius);
+        ctx.arcTo(x + w, y + h, x, y + h, radius);
+        ctx.arcTo(x, y + h, x, y, radius);
+        ctx.arcTo(x, y, x + w, y, radius);
+        ctx.closePath();
+      }
+
+      function update(dt) {
+        var left = keys.ArrowLeft || keys.a || keys.A;
+        var right = keys.ArrowRight || keys.d || keys.D;
+        if (left) paddle.x -= paddle.speed * dt;
+        if (right) paddle.x += paddle.speed * dt;
+        paddle.x = clamp(paddle.x, 12, W - paddle.w - 12);
+
+        if (ball.stuck) {
+          ball.x = paddle.x + paddle.w / 2;
+          ball.y = paddle.y - ball.r - 4;
+          return;
+        }
+
+        ball.x += ball.vx * dt;
+        ball.y += ball.vy * dt;
+
+        if (ball.x - ball.r < 10) {
+          ball.x = 10 + ball.r;
+          ball.vx = Math.abs(ball.vx);
+        }
+        if (ball.x + ball.r > W - 10) {
+          ball.x = W - 10 - ball.r;
+          ball.vx = -Math.abs(ball.vx);
+        }
+        if (ball.y - ball.r < 10) {
+          ball.y = 10 + ball.r;
+          ball.vy = Math.abs(ball.vy);
+        }
+
+        if (ball.vy > 0 && ball.y + ball.r >= paddle.y && ball.y - ball.r <= paddle.y + paddle.h &&
+            ball.x >= paddle.x - ball.r && ball.x <= paddle.x + paddle.w + ball.r) {
+          var rel = (ball.x - (paddle.x + paddle.w / 2)) / (paddle.w / 2);
+          var angle = clamp(rel, -1, 1) * (Math.PI / 3);
+          ball.vx = Math.sin(angle) * ball.speed;
+          ball.vy = -Math.cos(angle) * ball.speed;
+          ball.y = paddle.y - ball.r - 1;
+        }
+
+        for (var i = 0; i < bricks.length; i++) {
+          var brick = bricks[i];
+          if (!brick.alive) continue;
+          if (ball.x + ball.r > brick.x && ball.x - ball.r < brick.x + brick.w &&
+              ball.y + ball.r > brick.y && ball.y - ball.r < brick.y + brick.h) {
+            brick.alive = false;
+            score += 10;
+            scoreEl.textContent = score;
+
+            var overlapX = Math.min(ball.x + ball.r - brick.x, brick.x + brick.w - (ball.x - ball.r));
+            var overlapY = Math.min(ball.y + ball.r - brick.y, brick.y + brick.h - (ball.y - ball.r));
+            if (overlapX < overlapY) ball.vx = -ball.vx;
+            else ball.vy = -ball.vy;
+
+            if (bricks.every(function (item) { return !item.alive; })) {
+              endGame(true);
+            }
+            break;
+          }
+        }
+
+        if (ball.y - ball.r > H + 4) loseLife();
+      }
+
+      function loseLife() {
+        lives -= 1;
+        livesEl.textContent = lives;
+        if (lives <= 0) {
+          endGame(false);
+          return;
+        }
+        resetBall();
+      }
+
+      function draw() {
+        var bg = ctx.createLinearGradient(0, 0, 0, H);
+        bg.addColorStop(0, '#0a0c18');
+        bg.addColorStop(1, '#070810');
+        ctx.fillStyle = bg;
+        ctx.fillRect(0, 0, W, H);
+
+        ctx.lineWidth = 1;
+        ctx.strokeStyle = 'rgba(139, 124, 255, 0.08)';
+        var x;
+        var y;
+        for (x = 0; x <= W; x += 40) {
+          ctx.beginPath();
+          ctx.moveTo(x, 0);
+          ctx.lineTo(x, H);
+          ctx.stroke();
+        }
+        for (y = 0; y <= H; y += 40) {
+          ctx.beginPath();
+          ctx.moveTo(0, y);
+          ctx.lineTo(W, y);
+          ctx.stroke();
+        }
+
+        for (var i = 0; i < bricks.length; i++) {
+          var brick = bricks[i];
+          if (!brick.alive) continue;
+          roundRect(brick.x, brick.y, brick.w, brick.h, 5);
+          ctx.fillStyle = brick.color;
+          ctx.shadowColor = brick.color;
+          ctx.shadowBlur = 12;
+          ctx.fill();
+          ctx.shadowBlur = 0;
+        }
+
+        var paddleGradient = ctx.createLinearGradient(paddle.x, 0, paddle.x + paddle.w, 0);
+        paddleGradient.addColorStop(0, '#38e1d0');
+        paddleGradient.addColorStop(1, '#8b7cff');
+        roundRect(paddle.x, paddle.y, paddle.w, paddle.h, 7);
+        ctx.fillStyle = paddleGradient;
+        ctx.shadowColor = '#38e1d0';
+        ctx.shadowBlur = 18;
+        ctx.fill();
+        ctx.shadowBlur = 0;
+
+        ctx.beginPath();
+        ctx.arc(ball.x, ball.y, ball.r, 0, Math.PI * 2);
+        ctx.fillStyle = '#ffffff';
+        ctx.shadowColor = '#7cf9ff';
+        ctx.shadowBlur = 22;
+        ctx.fill();
+        ctx.shadowBlur = 0;
+
+        if (paused && running) {
+          ctx.fillStyle = 'rgba(6, 8, 16, 0.6)';
+          ctx.fillRect(0, 0, W, H);
+          ctx.fillStyle = '#eef1ff';
+          ctx.font = '600 26px ui-sans-serif, system-ui, sans-serif';
+          ctx.textAlign = 'center';
+          ctx.fillText('Pause', W / 2, H / 2);
+          ctx.font = '400 14px ui-sans-serif, system-ui, sans-serif';
+          ctx.fillStyle = '#9aa3bf';
+          ctx.fillText('Leertaste oder Klick zum Weiter spielen', W / 2, H / 2 + 28);
+        }
+      }
+
+      function loop(timestamp) {
+        if (!last) last = timestamp;
+        var dt = Math.min((timestamp - last) / 1000, 1 / 30);
+        last = timestamp;
+        if (running && !paused) update(dt);
+        draw();
+        window.requestAnimationFrame(loop);
+      }
+
+      function showOverlay(title, text, action) {
+        ovTitle.textContent = title;
+        ovText.textContent = text;
+        startBtn.textContent = action;
+        overlay.classList.remove('hidden');
+      }
+
+      function startGame() {
+        score = 0;
+        lives = 3;
+        scoreEl.textContent = '0';
+        livesEl.textContent = '3';
+        buildBricks();
+        resetBall();
+        overlay.classList.add('hidden');
+        running = true;
+        paused = false;
+        last = 0;
+        launch();
+      }
+
+      function endGame(won) {
+        running = false;
+        if (score > best) {
+          best = score;
+          bestEl.textContent = best;
+          try { localStorage.setItem(BEST_KEY, String(best)); } catch (err) { /* ignore */ }
+        }
+        showOverlay(
+          won ? 'Gewonnen! 🎉' : 'Game Over',
+          won
+            ? 'Alle Reihen zerstört – ' + score + ' Punkte. Bestwert: ' + best + '.'
+            : 'Punkte: ' + score + ' · Bestwert: ' + best + '. Gleich nochmal?',
+          'Nochmal spielen'
+        );
+      }
+
+      window.addEventListener('keydown', function (event) {
+        if (event.key === 'ArrowLeft' || event.key === 'ArrowRight' || event.key === ' ' || event.key === 'Spacebar') {
+          event.preventDefault();
+        }
+        keys[event.key] = true;
+
+        if ((event.key === ' ' || event.key === 'Spacebar') && running) {
+          if (paused) {
+            paused = false;
+          } else if (ball.stuck) {
+            launch();
+          } else {
+            paused = true;
+          }
+        }
+      });
+
+      window.addEventListener('keyup', function (event) {
+        keys[event.key] = false;
+      });
+
+      window.addEventListener('blur', function () {
+        keys = {};
+        if (running && !ball.stuck) paused = true;
+      });
+
+      function movePaddle(clientX) {
+        var rect = canvas.getBoundingClientRect();
+        var x = (clientX - rect.left) * (W / rect.width);
+        paddle.x = clamp(x - paddle.w / 2, 12, W - paddle.w - 12);
+      }
+
+      stage.addEventListener('pointermove', function (event) {
+        if (event.pointerType !== 'mouse') return;
+        if (running) movePaddle(event.clientX);
+      });
+
+      stage.addEventListener('pointerdown', function (event) {
+        if (!running) return;
+        if (paused) {
+          paused = false;
+          return;
+        }
+        movePaddle(event.clientX);
+        if (ball.stuck) launch();
+      });
+
+      startBtn.addEventListener('click', startGame);
+
+      buildBricks();
+      resetBall();
+      showOverlay(
+        'Neon Breakout',
+        'Zerstöre alle Reihen mit dem Ball. Bewege das Paddle mit Maus, Finger oder den Pfeiltasten.',
+        'Spiel starten'
+      );
+      window.requestAnimationFrame(loop);
+    })();
+  </script>
+</body>
+</html>
