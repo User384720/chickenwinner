@@ -1,5 +1,5 @@
 {
-  "_hinweis": "Neue Unterkategorie: Objekt in 'groups' ergänzen (id, name, icon, items). Farbe pro Link: in 'urls' beim Link einfach \"color\" setzen, z.B. {\"label\": \"…\", \"url\": \"…\", \"color\": \"#ff8a4c\"} – erlaubt sind Hex (#f80, #ff8800), Farbnamen (tomato) oder rgb()/hsl(). Eine \"color\" direkt am Eintrag gilt für alle seine Links. Die Gruppe \"Web-Ports\" stammt aus ported2browser.com (nur geprüfte, erreichbare Spiel-Links). Spiele mit Frame-Sperre (Zusatz \"· neuer Tab\", z.B. die NFS-Ports) starten nur über den Button \"Neuer Tab\" oben rechts im Player.",
+  "_hinweis": "Struktur: Objekt in 'groups' ergänzen (id, name, icon, items). Farbe pro Link: in 'urls' beim Link einfach \"color\" setzen, z.B. {\"label\": \"…\", \"url\": \"…\", \"color\": \"#ff8a4c\"} – erlaubt sind Hex (#f80, #ff8800), Farbnamen (tomato) oder rgb()/hsl(). Eine \"color\" direkt am Eintrag gilt für alle seine Links. Quellen: \"Web-Ports\" = ported2browser.com, \"Kleine Webspiele\" = attogram/games (fosiper.com), \"MonkeyGG2\" = MonkeyGG2/monkeygg2.github.io, \"Offline-Paket\" = CoolDude2349/Offline-HTML-Games-Pack (über raw.githack.com eingebettet). MonkeyGG2 verbietet das Einbetten, diese Links öffnen im neuen Tab.",
   "title": "Games Online",
   "groups": [
     {
@@ -835,6 +835,20 @@
               "label": "nfsu2mod.xyz (nur neuer Tab)",
               "url": "https://nfsu2mod.xyz/",
               "color": "#ff8a4c"
+            }
+          ]
+        },
+        {
+          "name": "Geometry Dash",
+          "icon": "https://www.google.com/s2/favicons?domain=gd-webport.pages.dev&sz=128",
+          "urls": [
+            {
+              "label": "gd-webport.pages.dev",
+              "url": "https://gd-webport.pages.dev/"
+            },
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/Ale7208/Geometry-Dash-webport/main/index.html"
             }
           ]
         }
@@ -2825,6 +2839,4366 @@
             {
               "label": "wasmarcade.app · neuer Tab",
               "url": "https://wasmarcade.app/play/xiao-xiao-4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "monkeygg2",
+      "name": "MonkeyGG2",
+      "icon": "🐵",
+      "items": [
+        {
+          "name": "10 Minutes Till Dawn",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/10-minutes-till-dawn/"
+            }
+          ],
+          "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/10-minutes-till-dawn/icon.png"
+        },
+        {
+          "name": "1v1.LOL",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/1v1-lol/"
+            }
+          ],
+          "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/1v1-lol/logo.png"
+        },
+        {
+          "name": "2048",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/2048/"
+            }
+          ],
+          "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/2048/favicon.ico"
+        },
+        {
+          "name": "A Dark Room",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/a-dark-room/"
+            }
+          ],
+          "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/a-dark-room/favicon.ico"
+        },
+        {
+          "name": "Abandoned",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/abandoned/"
+            }
+          ]
+        },
+        {
+          "name": "Abandoned 2",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/abandoned-2/"
+            }
+          ]
+        },
+        {
+          "name": "Ages Of Conflict",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/ages-of-conflict/"
+            }
+          ]
+        },
+        {
+          "name": "Aground",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/aground/"
+            }
+          ]
+        },
+        {
+          "name": "Amidst The Sky",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/amidst-the-sky/"
+            }
+          ]
+        },
+        {
+          "name": "Ampler Launcher",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/ampler-launcher/"
+            }
+          ]
+        },
+        {
+          "name": "Another Gentlemans Adventure",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/another-gentlemans-adventure/"
+            }
+          ]
+        },
+        {
+          "name": "Awesome Tanks",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/awesome-tanks/"
+            }
+          ]
+        },
+        {
+          "name": "Awesome Tanks 2",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/awesome-tanks-2/"
+            }
+          ]
+        },
+        {
+          "name": "Babel Tower",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/babel-tower/"
+            }
+          ]
+        },
+        {
+          "name": "Basket Random",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/basket-random/"
+            }
+          ]
+        },
+        {
+          "name": "Basketball Stars",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/basketball-stars/"
+            }
+          ]
+        },
+        {
+          "name": "Bit Life",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/bit-life/"
+            }
+          ],
+          "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/bit-life/logo.png"
+        },
+        {
+          "name": "Boxing Random",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/boxing-random/"
+            }
+          ]
+        },
+        {
+          "name": "Brawl Stars Project Laser",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/brawl-stars-project-laser/"
+            }
+          ]
+        },
+        {
+          "name": "Breaklock",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/breaklock/"
+            }
+          ]
+        },
+        {
+          "name": "Chrome Dino",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/chrome-dino/"
+            }
+          ]
+        },
+        {
+          "name": "Clicker Heroes",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/clicker-heroes/"
+            }
+          ],
+          "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/clicker-heroes/favicon.ico"
+        },
+        {
+          "name": "Clicker Heroes Updated",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/clicker-heroes-updated/"
+            }
+          ]
+        },
+        {
+          "name": "Conways Game Of Life",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/conways-game-of-life/"
+            }
+          ]
+        },
+        {
+          "name": "Cookie Clicker",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/cookie-clicker/"
+            }
+          ]
+        },
+        {
+          "name": "Core Ball",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/core-ball/"
+            }
+          ]
+        },
+        {
+          "name": "Crossy Road",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/crossy-road/"
+            }
+          ]
+        },
+        {
+          "name": "Cut The Rope",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/cut-the-rope/"
+            }
+          ],
+          "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/cut-the-rope/favicon.ico"
+        },
+        {
+          "name": "Doge Miner",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/doge-miner/"
+            }
+          ],
+          "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/doge-miner/favicon.ico"
+        },
+        {
+          "name": "Doodle Jump",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/doodle-jump/"
+            }
+          ]
+        },
+        {
+          "name": "Drift Boss",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/drift-boss/"
+            }
+          ]
+        },
+        {
+          "name": "Drive Mad",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/drive-mad/"
+            }
+          ]
+        },
+        {
+          "name": "Drive Mad S",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/drive-mad-s/"
+            }
+          ],
+          "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/drive-mad-s/favicon.ico"
+        },
+        {
+          "name": "Duck Life 4",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/duck-life-4/"
+            }
+          ]
+        },
+        {
+          "name": "Dune",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/dune/"
+            }
+          ],
+          "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/dune/logo.jpg"
+        },
+        {
+          "name": "Eggy Car",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/eggy-car/"
+            }
+          ]
+        },
+        {
+          "name": "Evowars",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/evowars/"
+            }
+          ]
+        },
+        {
+          "name": "Family Feud",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/family-feud/"
+            }
+          ]
+        },
+        {
+          "name": "Fireboy And Watergirl",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/fireboy-and-watergirl/"
+            }
+          ]
+        },
+        {
+          "name": "Fireboy And Watergirl 2",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/fireboy-and-watergirl-2/"
+            }
+          ]
+        },
+        {
+          "name": "Fireboy And Watergirl 3",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/fireboy-and-watergirl-3/"
+            }
+          ]
+        },
+        {
+          "name": "Fireboy And Watergirl 4",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/fireboy-and-watergirl-4/"
+            }
+          ]
+        },
+        {
+          "name": "Five Nights At Epsteins",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/five-nights-at-epsteins/"
+            }
+          ],
+          "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/five-nights-at-epsteins/favicon.ico"
+        },
+        {
+          "name": "Flappy Bird",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/flappy-bird/"
+            }
+          ]
+        },
+        {
+          "name": "Flash",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/flash/"
+            }
+          ]
+        },
+        {
+          "name": "Friday Night Funkin",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/friday-night-funkin/"
+            }
+          ],
+          "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/friday-night-funkin/favicon.png"
+        },
+        {
+          "name": "Geometry Dash Lite",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/geometry-dash-lite/"
+            }
+          ]
+        },
+        {
+          "name": "Geometry Dash Remastered",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/geometry-dash-remastered/"
+            }
+          ]
+        },
+        {
+          "name": "Geometry Vibes",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/geometry-vibes/"
+            }
+          ]
+        },
+        {
+          "name": "Geometry Vibes Monster",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/geometry-vibes-monster/"
+            }
+          ]
+        },
+        {
+          "name": "Geometry Vibes X Ball",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/geometry-vibes-x-ball/"
+            }
+          ]
+        },
+        {
+          "name": "Getaway Shootout",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/getaway-shootout/"
+            }
+          ],
+          "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/getaway-shootout/favicon.ico"
+        },
+        {
+          "name": "Gons Io",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/gons-io/"
+            }
+          ]
+        },
+        {
+          "name": "Gunspin",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/gunspin/"
+            }
+          ]
+        },
+        {
+          "name": "Hextris",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/hextris/"
+            }
+          ],
+          "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/hextris/favicon.ico"
+        },
+        {
+          "name": "Idle Breakout",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/idle-breakout/"
+            }
+          ]
+        },
+        {
+          "name": "Incremancer",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/incremancer/"
+            }
+          ],
+          "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/incremancer/favicon.ico"
+        },
+        {
+          "name": "Lion Soldiers Vengeance",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/lion-soldiers-vengeance/"
+            }
+          ]
+        },
+        {
+          "name": "Maptroid",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/maptroid/"
+            }
+          ],
+          "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/maptroid/favicon.ico"
+        },
+        {
+          "name": "Mario Game",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/mario-game/"
+            }
+          ]
+        },
+        {
+          "name": "Monkey Mart",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/monkey-mart/"
+            }
+          ]
+        },
+        {
+          "name": "Motox3m",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/motox3m/"
+            }
+          ]
+        },
+        {
+          "name": "N Step Steve Part 1",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/n-step-steve-part-1/"
+            }
+          ]
+        },
+        {
+          "name": "N Step Steve Part 2",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/n-step-steve-part-2/"
+            }
+          ]
+        },
+        {
+          "name": "N-Gon",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/n-gon/"
+            }
+          ],
+          "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/n-gon/favicon.ico"
+        },
+        {
+          "name": "Ovo",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/ovo/"
+            }
+          ]
+        },
+        {
+          "name": "Particle Clicker",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/particle-clicker/"
+            }
+          ],
+          "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/particle-clicker/favicon.ico"
+        },
+        {
+          "name": "PCraft",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/pcraft/"
+            }
+          ]
+        },
+        {
+          "name": "Planet Life",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/planet-life/"
+            }
+          ]
+        },
+        {
+          "name": "Progress Knight Quest",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/progress-knight-quest/"
+            }
+          ]
+        },
+        {
+          "name": "Progress Knight Reborn",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/progress-knight-reborn/"
+            }
+          ]
+        },
+        {
+          "name": "Pull Of War",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/pull-of-war/"
+            }
+          ]
+        },
+        {
+          "name": "Reach The Core",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/reach-the-core/"
+            }
+          ]
+        },
+        {
+          "name": "Restless Wing Syndrome",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/restless-wing-syndrome/"
+            }
+          ]
+        },
+        {
+          "name": "Retro Bowl",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/retro-bowl/"
+            }
+          ]
+        },
+        {
+          "name": "Retro Bowl Old",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/retro-bowl-old/"
+            }
+          ]
+        },
+        {
+          "name": "Rift Shift",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/rift-shift/"
+            }
+          ]
+        },
+        {
+          "name": "Rocket League 2d",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/rocket-league-2d/"
+            }
+          ]
+        },
+        {
+          "name": "Rooftop Snipers",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/rooftop-snipers/"
+            }
+          ]
+        },
+        {
+          "name": "Rookie Bowman",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/rookie-bowman/"
+            }
+          ]
+        },
+        {
+          "name": "Run 3",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/run-3/"
+            }
+          ]
+        },
+        {
+          "name": "Run 3 Beta",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/run-3-beta/"
+            }
+          ],
+          "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/run-3-beta/favicon.png"
+        },
+        {
+          "name": "Sabercut",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/sabercut/"
+            }
+          ]
+        },
+        {
+          "name": "Sandspiel",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/sandspiel/"
+            }
+          ]
+        },
+        {
+          "name": "Scuba Bear",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/scuba-bear/"
+            }
+          ]
+        },
+        {
+          "name": "Shadow Fight",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/shadow-fight/"
+            }
+          ]
+        },
+        {
+          "name": "Slice Master",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/slice-master/"
+            }
+          ]
+        },
+        {
+          "name": "Slope",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/slope/"
+            }
+          ]
+        },
+        {
+          "name": "Smart Ball",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/smart-ball/"
+            }
+          ]
+        },
+        {
+          "name": "Smash Karts",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/smash-karts/"
+            }
+          ]
+        },
+        {
+          "name": "Soccer Random",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/soccer-random/"
+            }
+          ]
+        },
+        {
+          "name": "Station Saturn",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/station-saturn/"
+            }
+          ]
+        },
+        {
+          "name": "Stickman Hook",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/stickman-hook/"
+            }
+          ]
+        },
+        {
+          "name": "Subway Surfers",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/subway-surfers/"
+            }
+          ]
+        },
+        {
+          "name": "Subway Surfers Ny",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/subway-surfers-ny/"
+            }
+          ]
+        },
+        {
+          "name": "Tanuki Sunset",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/tanuki-sunset/"
+            }
+          ]
+        },
+        {
+          "name": "Temple Run 2",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/temple-run-2/"
+            }
+          ]
+        },
+        {
+          "name": "The Final Earth",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/the-final-earth/"
+            }
+          ]
+        },
+        {
+          "name": "The Treasure",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/the-treasure/"
+            }
+          ]
+        },
+        {
+          "name": "There Is No Game",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/there-is-no-game/"
+            }
+          ]
+        },
+        {
+          "name": "Tic Tac What",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/tic-tac-what/"
+            }
+          ],
+          "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/tic-tac-what/logo.png"
+        },
+        {
+          "name": "Time Shooter",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/time-shooter/"
+            }
+          ],
+          "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/time-shooter/logo.png"
+        },
+        {
+          "name": "Time Shooter 3",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/time-shooter-3/"
+            }
+          ],
+          "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/time-shooter-3/logo.png"
+        },
+        {
+          "name": "Tiny Fishing",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/tiny-fishing/"
+            }
+          ]
+        },
+        {
+          "name": "Trace",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/trace/"
+            }
+          ]
+        },
+        {
+          "name": "Tunnel Rush",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/tunnel-rush/"
+            }
+          ]
+        },
+        {
+          "name": "Two Ball 3d",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/two-ball-3d/"
+            }
+          ]
+        },
+        {
+          "name": "Vex 3",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/vex-3/"
+            }
+          ],
+          "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/vex-3/favicon.ico"
+        },
+        {
+          "name": "Vex 4",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/vex-4/"
+            }
+          ],
+          "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/vex-4/favicon.ico"
+        },
+        {
+          "name": "Vex 5",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/vex-5/"
+            }
+          ],
+          "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/vex-5/favicon.ico"
+        },
+        {
+          "name": "Vex 6",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/vex-6/"
+            }
+          ],
+          "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/vex-6/favicon.ico"
+        },
+        {
+          "name": "Vex 7",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/vex-7/"
+            }
+          ],
+          "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/vex-7/favicon.ico"
+        },
+        {
+          "name": "Volley Random",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/volley-random/"
+            }
+          ]
+        },
+        {
+          "name": "Web Osu",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/web-osu/"
+            }
+          ],
+          "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/web-osu/favicon.png"
+        },
+        {
+          "name": "Where Is The Water",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/where-is-the-water/"
+            }
+          ]
+        },
+        {
+          "name": "X Trench Run",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/x-trench-run/"
+            }
+          ]
+        },
+        {
+          "name": "Yohoho",
+          "urls": [
+            {
+              "label": "monkeygg2.org · neuer Tab",
+              "url": "https://monkeygg2.org/games/yohoho/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "offline-pack",
+      "name": "Offline-Paket",
+      "icon": "📦",
+      "items": [
+        {
+          "name": "1 On 1 Soccer",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/1-on-1-soccer.html"
+            }
+          ]
+        },
+        {
+          "name": "1 On 1 Tennis",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/1-on-1-tennis.html"
+            }
+          ]
+        },
+        {
+          "name": "10 Minutes Till Dawn",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/10-minutes-till-dawn.html"
+            }
+          ]
+        },
+        {
+          "name": "12 Mini Battles",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/12-mini-battles.html"
+            }
+          ]
+        },
+        {
+          "name": "1v1.lol",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/1v1.lol.html"
+            }
+          ]
+        },
+        {
+          "name": "2048",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/2048.html"
+            }
+          ]
+        },
+        {
+          "name": "2048 Cupcakes",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/2048-cupcakes.html"
+            }
+          ]
+        },
+        {
+          "name": "3D Flight Simulator",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/3D-flight-simulator.html"
+            }
+          ]
+        },
+        {
+          "name": "3d Free Kick",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/3d-free-kick.html"
+            }
+          ]
+        },
+        {
+          "name": "8 Ball Classic",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/8-ball-classic.html"
+            }
+          ]
+        },
+        {
+          "name": "9007199254740992",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/9007199254740992.html"
+            }
+          ]
+        },
+        {
+          "name": "Agar Io Lite",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/agar-io-lite.html"
+            }
+          ]
+        },
+        {
+          "name": "Age Of War",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/age-of-war.html"
+            }
+          ]
+        },
+        {
+          "name": "Age Of War 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/age-of-war-2.html"
+            }
+          ]
+        },
+        {
+          "name": "Ages Of Conflict",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/ages-of-conflict.html"
+            }
+          ]
+        },
+        {
+          "name": "Among Us",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/among-us.html"
+            }
+          ]
+        },
+        {
+          "name": "Angry Birds",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/angry-birds.html"
+            }
+          ]
+        },
+        {
+          "name": "Angry Birds Showdown",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/angry-birds-showdown.html"
+            }
+          ]
+        },
+        {
+          "name": "Angry Birds Space",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/angry-birds-space.html"
+            }
+          ]
+        },
+        {
+          "name": "Awesome Tanks",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/awesome-tanks.html"
+            }
+          ]
+        },
+        {
+          "name": "Awesome Tanks 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/awesome-tanks-2.html"
+            }
+          ]
+        },
+        {
+          "name": "Backrooms",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/backrooms.html"
+            }
+          ]
+        },
+        {
+          "name": "Bacon May Die",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/bacon-may-die.html"
+            }
+          ]
+        },
+        {
+          "name": "Bad Ice Cream",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/bad-ice-cream.html"
+            }
+          ]
+        },
+        {
+          "name": "Bad Ice Cream 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/bad-ice-cream-2.html"
+            }
+          ]
+        },
+        {
+          "name": "Bad Ice Cream 3",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/bad-ice-cream-3.html"
+            }
+          ]
+        },
+        {
+          "name": "Bad Parenting",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/bad-parenting.html"
+            }
+          ]
+        },
+        {
+          "name": "Bad Piggies",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/bad-piggies.html"
+            }
+          ]
+        },
+        {
+          "name": "Bad Time Simulator",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/bad-time-simulator.html"
+            }
+          ]
+        },
+        {
+          "name": "Baldis Basics",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/baldis-basics.html"
+            }
+          ]
+        },
+        {
+          "name": "Bank Robbery 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/bank-robbery-2.html"
+            }
+          ]
+        },
+        {
+          "name": "Bank Robbery 3",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/bank-robbery-3.html"
+            }
+          ]
+        },
+        {
+          "name": "Baseball Bros",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/baseball-bros.html"
+            }
+          ]
+        },
+        {
+          "name": "Basket Bros",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/basket-bros.html"
+            }
+          ]
+        },
+        {
+          "name": "Basket Random",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/basket-random.html"
+            }
+          ]
+        },
+        {
+          "name": "Basketball Legends",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/basketball-legends.html"
+            }
+          ]
+        },
+        {
+          "name": "Basketball Stars",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/basketball-stars.html"
+            }
+          ]
+        },
+        {
+          "name": "Big Ice Tower Tiny Square",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/big-ice-tower-tiny-square.html"
+            }
+          ]
+        },
+        {
+          "name": "Big Neon Tower Tiny Square",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/big-neon-tower-tiny-square.html"
+            }
+          ]
+        },
+        {
+          "name": "Big Tower Tiny Square",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/big-tower-tiny-square.html"
+            }
+          ]
+        },
+        {
+          "name": "Big Tower Tiny Square 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/big-tower-tiny-square-2.html"
+            }
+          ]
+        },
+        {
+          "name": "Bitlife",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/bitlife.html"
+            }
+          ]
+        },
+        {
+          "name": "Blocky Snakes",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/blocky-snakes.html"
+            }
+          ]
+        },
+        {
+          "name": "Bloons TD",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/bloons-TD.html"
+            }
+          ]
+        },
+        {
+          "name": "Bloons TD 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/bloons-TD-2.html"
+            }
+          ]
+        },
+        {
+          "name": "Bloons TD 3",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/bloons-TD-3.html"
+            }
+          ]
+        },
+        {
+          "name": "Bloons TD 4",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/bloons-TD-4.html"
+            }
+          ]
+        },
+        {
+          "name": "Bloons TD 5",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/bloons-TD-5.html"
+            }
+          ]
+        },
+        {
+          "name": "Bloxorz",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/bloxorz.html"
+            }
+          ]
+        },
+        {
+          "name": "Blumgi Racers",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/blumgi-racers.html"
+            }
+          ]
+        },
+        {
+          "name": "Blumgi Rocket",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/blumgi-rocket.html"
+            }
+          ]
+        },
+        {
+          "name": "Bob The Robber",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/bob-the-robber.html"
+            }
+          ]
+        },
+        {
+          "name": "Bob The Robber 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/bob-the-robber-2.html"
+            }
+          ]
+        },
+        {
+          "name": "Bob The Robber 5",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/bob-the-robber-5.html"
+            }
+          ]
+        },
+        {
+          "name": "Bouncy Motors",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/bouncy-motors.html"
+            }
+          ]
+        },
+        {
+          "name": "Bow Masters",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/bow-masters.html"
+            }
+          ]
+        },
+        {
+          "name": "Boxel Rebound",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/boxel-rebound.html"
+            }
+          ]
+        },
+        {
+          "name": "Breaking The Bank",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/breaking-the-bank.html"
+            }
+          ]
+        },
+        {
+          "name": "Bubble Shooter",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/bubble-shooter.html"
+            }
+          ]
+        },
+        {
+          "name": "Burrito Bison Launcha Libre",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/burrito-bison-launcha-libre.html"
+            }
+          ]
+        },
+        {
+          "name": "Candy Crush",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/candy-crush.html"
+            }
+          ]
+        },
+        {
+          "name": "Capybara Clicker",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/capybara-clicker.html"
+            }
+          ]
+        },
+        {
+          "name": "Car Drawing",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/car-drawing.html"
+            }
+          ]
+        },
+        {
+          "name": "Car King Arena",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/car-king-arena.html"
+            }
+          ]
+        },
+        {
+          "name": "Chaos Faction 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/chaos-faction-2.html"
+            }
+          ]
+        },
+        {
+          "name": "Chess",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/chess.html"
+            }
+          ]
+        },
+        {
+          "name": "Choppy Orc",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/choppy-orc.html"
+            }
+          ]
+        },
+        {
+          "name": "circloO",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/circloO.html"
+            }
+          ]
+        },
+        {
+          "name": "circloO 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/circloO-2.html"
+            }
+          ]
+        },
+        {
+          "name": "Clash Of Vikings",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/clash-of-vikings.html"
+            }
+          ]
+        },
+        {
+          "name": "Cleanup Io",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/cleanup-io.html"
+            }
+          ]
+        },
+        {
+          "name": "Cluster Rush",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/cluster-rush.html"
+            }
+          ]
+        },
+        {
+          "name": "Coreball",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/coreball.html"
+            }
+          ]
+        },
+        {
+          "name": "Crazy Cars",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/crazy-cars.html"
+            }
+          ]
+        },
+        {
+          "name": "Crazy Cattle 3D",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/crazy-cattle-3D.html"
+            }
+          ]
+        },
+        {
+          "name": "Crazy Crash Landing",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/crazy-crash-landing.html"
+            }
+          ]
+        },
+        {
+          "name": "Crazy Motorcycle",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/crazy-motorcycle.html"
+            }
+          ]
+        },
+        {
+          "name": "Cut The Rope",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/cut-the-rope.html"
+            }
+          ]
+        },
+        {
+          "name": "Cut The Rope 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/cut-the-rope-2.html"
+            }
+          ]
+        },
+        {
+          "name": "Cut The Rope Holiday Gift",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/cut-the-rope-holiday-gift.html"
+            }
+          ]
+        },
+        {
+          "name": "Cut The Rope Time Travel",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/cut-the-rope-time-travel.html"
+            }
+          ]
+        },
+        {
+          "name": "Dadish",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/dadish.html"
+            }
+          ]
+        },
+        {
+          "name": "Dadish 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/dadish-2.html"
+            }
+          ]
+        },
+        {
+          "name": "Dadish 3",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/dadish-3.html"
+            }
+          ]
+        },
+        {
+          "name": "Deadly Descent",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/deadly-descent.html"
+            }
+          ]
+        },
+        {
+          "name": "Death Chase",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/death-chase.html"
+            }
+          ]
+        },
+        {
+          "name": "Death Run 3D",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/death-run-3D.html"
+            }
+          ]
+        },
+        {
+          "name": "Demolition Derby Crash Racing",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/demolition-derby-crash-racing.html"
+            }
+          ]
+        },
+        {
+          "name": "Doodle Jump",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/doodle-jump.html"
+            }
+          ]
+        },
+        {
+          "name": "Draw Climber",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/draw-climber.html"
+            }
+          ]
+        },
+        {
+          "name": "Drift Hunters Pro",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/drift-hunters-pro.html"
+            }
+          ]
+        },
+        {
+          "name": "Duck Life",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/duck-life.html"
+            }
+          ]
+        },
+        {
+          "name": "Duck Life 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/duck-life-2.html"
+            }
+          ]
+        },
+        {
+          "name": "Duck Life 3",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/duck-life-3.html"
+            }
+          ]
+        },
+        {
+          "name": "Duck Life 4",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/duck-life-4.html"
+            }
+          ]
+        },
+        {
+          "name": "Duck Life 5",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/duck-life-5.html"
+            }
+          ]
+        },
+        {
+          "name": "Ducklings Io",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/ducklings-io.html"
+            }
+          ]
+        },
+        {
+          "name": "Eagle Ride",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/eagle-ride.html"
+            }
+          ]
+        },
+        {
+          "name": "Eaglercraft 1.12",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/1.12.html"
+            }
+          ]
+        },
+        {
+          "name": "Eaglercraft 1.12 (WASM)",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/1.12_WASM.html"
+            }
+          ]
+        },
+        {
+          "name": "Eaglercraft 1.5",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/1.5.html"
+            }
+          ]
+        },
+        {
+          "name": "Eaglercraft 1.8",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/1.8.html"
+            }
+          ]
+        },
+        {
+          "name": "Eaglercraft 1.8 (WASM)",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/1.8_WASM.html"
+            }
+          ]
+        },
+        {
+          "name": "Eaglercraft Alpha 1.2.6",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/Alpha_1.2.6.html"
+            }
+          ]
+        },
+        {
+          "name": "Eaglercraft Beta 1.3",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/Beta_1.3.html"
+            }
+          ]
+        },
+        {
+          "name": "Eaglercraft Indev",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/Indev.html"
+            }
+          ]
+        },
+        {
+          "name": "Earn To Die",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/earn-to-die.html"
+            }
+          ]
+        },
+        {
+          "name": "Earn To Die 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/earn-to-die-2.html"
+            }
+          ]
+        },
+        {
+          "name": "Eggy Car",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/eggy-car.html"
+            }
+          ]
+        },
+        {
+          "name": "Escape Road",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/escape-road.html"
+            }
+          ]
+        },
+        {
+          "name": "Escape Road 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/escape-road-2.html"
+            }
+          ]
+        },
+        {
+          "name": "Escape Road 3",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/escape-road-3.html"
+            }
+          ]
+        },
+        {
+          "name": "Escaping The Prison",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/escaping-the-prison.html"
+            }
+          ]
+        },
+        {
+          "name": "Eugenes Life",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/eugenes-life.html"
+            }
+          ]
+        },
+        {
+          "name": "Evil Glitch",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/evil-glitch.html"
+            }
+          ]
+        },
+        {
+          "name": "Fancy Pants Adventure",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/fancy-pants-adventure.html"
+            }
+          ]
+        },
+        {
+          "name": "Fancy Pants Adventure 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/fancy-pants-adventure-2.html"
+            }
+          ]
+        },
+        {
+          "name": "Fireblob",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/fireblob.html"
+            }
+          ]
+        },
+        {
+          "name": "Fireboy And Watergirl",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/fireboy-and-watergirl.html"
+            }
+          ]
+        },
+        {
+          "name": "Fireboy And Watergirl 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/fireboy-and-watergirl-2.html"
+            }
+          ]
+        },
+        {
+          "name": "Fireboy And Watergirl 3",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/fireboy-and-watergirl-3.html"
+            }
+          ]
+        },
+        {
+          "name": "Fireboy And Watergirl 4",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/fireboy-and-watergirl-4.html"
+            }
+          ]
+        },
+        {
+          "name": "Flappy Bird",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/flappy-bird.html"
+            }
+          ]
+        },
+        {
+          "name": "Fleeing The Complex",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/fleeing-the-complex.html"
+            }
+          ]
+        },
+        {
+          "name": "Flood Runner 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/flood-runner-2.html"
+            }
+          ]
+        },
+        {
+          "name": "Flood Runner 3",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/flood-runner-3.html"
+            }
+          ]
+        },
+        {
+          "name": "Flood Runner 4",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/flood-runner-4.html"
+            }
+          ]
+        },
+        {
+          "name": "Fnaf",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/fnaf.html"
+            }
+          ]
+        },
+        {
+          "name": "Fnaf 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/fnaf-2.html"
+            }
+          ]
+        },
+        {
+          "name": "Fnaf 3",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/fnaf-3.html"
+            }
+          ]
+        },
+        {
+          "name": "Fnaf 4",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/fnaf-4.html"
+            }
+          ]
+        },
+        {
+          "name": "Fnaf Sister Location",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/fnaf-sister-location.html"
+            }
+          ]
+        },
+        {
+          "name": "Football Bros",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/football-bros.html"
+            }
+          ]
+        },
+        {
+          "name": "Football Legends",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/football-legends.html"
+            }
+          ]
+        },
+        {
+          "name": "Free Rider 3",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/free-rider-3.html"
+            }
+          ]
+        },
+        {
+          "name": "Friday Night Funkin",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/friday-night-funkin.html"
+            }
+          ]
+        },
+        {
+          "name": "Fruit Ninja",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/fruit-ninja.html"
+            }
+          ]
+        },
+        {
+          "name": "Funny Battle",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/funny-battle.html"
+            }
+          ]
+        },
+        {
+          "name": "Funny Battle 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/funny-battle-2.html"
+            }
+          ]
+        },
+        {
+          "name": "Funny Mad Racing",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/funny-mad-racing.html"
+            }
+          ]
+        },
+        {
+          "name": "Funny Shooter 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/funny-shooter-2.html"
+            }
+          ]
+        },
+        {
+          "name": "Geometry Dash",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/geometry-dash.html"
+            }
+          ]
+        },
+        {
+          "name": "Geometry Dash Lite",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/geometry-dash-lite.html"
+            }
+          ]
+        },
+        {
+          "name": "Geometry Vibes",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/geometry-vibes.html"
+            }
+          ]
+        },
+        {
+          "name": "Get On Top",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/get-on-top.html"
+            }
+          ]
+        },
+        {
+          "name": "Getaway Shootout",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/getaway-shootout.html"
+            }
+          ]
+        },
+        {
+          "name": "Gladi Hoppers",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/gladi-hoppers.html"
+            }
+          ]
+        },
+        {
+          "name": "Google Baseball",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/google-baseball.html"
+            }
+          ]
+        },
+        {
+          "name": "Google Dino",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/google-dino.html"
+            }
+          ]
+        },
+        {
+          "name": "Granny",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/granny.html"
+            }
+          ]
+        },
+        {
+          "name": "Granny 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/granny-2.html"
+            }
+          ]
+        },
+        {
+          "name": "Guess Their Answer",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/guess-their-answer.html"
+            }
+          ]
+        },
+        {
+          "name": "Hanger 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/hanger-2.html"
+            }
+          ]
+        },
+        {
+          "name": "Happy Wheels",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/happy-wheels.html"
+            }
+          ]
+        },
+        {
+          "name": "Helix Jump",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/helix-jump.html"
+            }
+          ]
+        },
+        {
+          "name": "Highway Traffic",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/highway-traffic.html"
+            }
+          ]
+        },
+        {
+          "name": "Hill Climb Racing Lite",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/hill-climb-racing-lite.html"
+            }
+          ]
+        },
+        {
+          "name": "Hole Io",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/hole-io.html"
+            }
+          ]
+        },
+        {
+          "name": "House Of Hazards",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/house-of-hazards.html"
+            }
+          ]
+        },
+        {
+          "name": "Hover Racer Drive",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/hover-racer-drive.html"
+            }
+          ]
+        },
+        {
+          "name": "Ice Dodo",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/ice-dodo.html"
+            }
+          ]
+        },
+        {
+          "name": "Idle Breakout",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/idle-breakout.html"
+            }
+          ]
+        },
+        {
+          "name": "Idle Dice",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/idle-dice.html"
+            }
+          ]
+        },
+        {
+          "name": "Infiltrating The Airship",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/infiltrating-the-airship.html"
+            }
+          ]
+        },
+        {
+          "name": "Iron Snout",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/iron-snout.html"
+            }
+          ]
+        },
+        {
+          "name": "Jacksmith",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/jacksmith.html"
+            }
+          ]
+        },
+        {
+          "name": "Jetpack Joyride",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/jetpack-joyride.html"
+            }
+          ]
+        },
+        {
+          "name": "Johnny Trigger",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/johnny-trigger.html"
+            }
+          ]
+        },
+        {
+          "name": "Jumping Shell",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/jumping-shell.html"
+            }
+          ]
+        },
+        {
+          "name": "Karate Bros",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/karate-bros.html"
+            }
+          ]
+        },
+        {
+          "name": "Kart Bros",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/kart-bros.html"
+            }
+          ]
+        },
+        {
+          "name": "Kittytoy",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/kittytoy.html"
+            }
+          ]
+        },
+        {
+          "name": "Learn To Fly",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/learn-to-fly.html"
+            }
+          ]
+        },
+        {
+          "name": "Learn To Fly 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/learn-to-fly-2.html"
+            }
+          ]
+        },
+        {
+          "name": "Learn To Fly 3",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/learn-to-fly-3.html"
+            }
+          ]
+        },
+        {
+          "name": "Learn To Fly Idle",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/learn-to-fly-idle.html"
+            }
+          ]
+        },
+        {
+          "name": "Level Devil",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/level-devil.html"
+            }
+          ]
+        },
+        {
+          "name": "Little Alchemy 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/little-alchemy-2.html"
+            }
+          ]
+        },
+        {
+          "name": "Madalin Stunt Cars 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/madalin-stunt-cars-2.html"
+            }
+          ]
+        },
+        {
+          "name": "Madness Project Nexus",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/madness-project-nexus.html"
+            }
+          ]
+        },
+        {
+          "name": "Melon Playground",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/melon-playground.html"
+            }
+          ]
+        },
+        {
+          "name": "Merge Round Racers",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/merge-round-racers.html"
+            }
+          ]
+        },
+        {
+          "name": "Minesweeper",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/minesweeper.html"
+            }
+          ]
+        },
+        {
+          "name": "Monster Tracks",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/monster-tracks.html"
+            }
+          ]
+        },
+        {
+          "name": "Motherload",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/motherload.html"
+            }
+          ]
+        },
+        {
+          "name": "Moto X3m 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/moto-x3m-2.html"
+            }
+          ]
+        },
+        {
+          "name": "Moto X3m 3",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/moto-x3m-3.html"
+            }
+          ]
+        },
+        {
+          "name": "Moto X3m Pool Party",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/moto-x3m-pool-party.html"
+            }
+          ]
+        },
+        {
+          "name": "Moto X3m Spooky Land",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/moto-x3m-spooky-land.html"
+            }
+          ]
+        },
+        {
+          "name": "Moto X3m Winter",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/moto-x3m-winter.html"
+            }
+          ]
+        },
+        {
+          "name": "Murder",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/murder.html"
+            }
+          ]
+        },
+        {
+          "name": "Noob Miner",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/noob-miner.html"
+            }
+          ]
+        },
+        {
+          "name": "openTTD",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/openTTD.html"
+            }
+          ]
+        },
+        {
+          "name": "Opposite Day",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/opposite-day.html"
+            }
+          ]
+        },
+        {
+          "name": "Ovo",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/ovo.html"
+            }
+          ]
+        },
+        {
+          "name": "Ovo 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/ovo-2.html"
+            }
+          ]
+        },
+        {
+          "name": "Ovo 3 Dimensions",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/ovo-3-dimensions.html"
+            }
+          ]
+        },
+        {
+          "name": "Pac Man",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/pac-man.html"
+            }
+          ]
+        },
+        {
+          "name": "Papas Bakeria",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/papas-bakeria.html"
+            }
+          ]
+        },
+        {
+          "name": "Papas Burgeria",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/papas-burgeria.html"
+            }
+          ]
+        },
+        {
+          "name": "Papas Cheeseria",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/papas-cheeseria.html"
+            }
+          ]
+        },
+        {
+          "name": "Papas Cupcakeria",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/papas-cupcakeria.html"
+            }
+          ]
+        },
+        {
+          "name": "Papas Donuteria",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/papas-donuteria.html"
+            }
+          ]
+        },
+        {
+          "name": "Papas Freezeria",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/papas-freezeria.html"
+            }
+          ]
+        },
+        {
+          "name": "Papas Hot Doggeria",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/papas-hot-doggeria.html"
+            }
+          ]
+        },
+        {
+          "name": "Papas Pancakeria",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/papas-pancakeria.html"
+            }
+          ]
+        },
+        {
+          "name": "Papas Pastaria",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/papas-pastaria.html"
+            }
+          ]
+        },
+        {
+          "name": "Papas Pizzeria",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/papas-pizzeria.html"
+            }
+          ]
+        },
+        {
+          "name": "Papas Scooperia",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/papas-scooperia.html"
+            }
+          ]
+        },
+        {
+          "name": "Papas Sushiria",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/papas-sushiria.html"
+            }
+          ]
+        },
+        {
+          "name": "Papas Taco Mia",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/papas-taco-mia.html"
+            }
+          ]
+        },
+        {
+          "name": "Papas Wingeria",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/papas-wingeria.html"
+            }
+          ]
+        },
+        {
+          "name": "Parking Fury",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/parking-fury.html"
+            }
+          ]
+        },
+        {
+          "name": "Parking Fury 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/parking-fury-2.html"
+            }
+          ]
+        },
+        {
+          "name": "Parking Fury 3",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/parking-fury-3.html"
+            }
+          ]
+        },
+        {
+          "name": "Picos School",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/picos-school.html"
+            }
+          ]
+        },
+        {
+          "name": "Ping Pong Chaos",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/ping-pong-chaos.html"
+            }
+          ]
+        },
+        {
+          "name": "Pixel Speedrun",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/pixel-speedrun.html"
+            }
+          ]
+        },
+        {
+          "name": "Plants Vs Zombies",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/plants-vs-zombies.html"
+            }
+          ]
+        },
+        {
+          "name": "Plonky",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/plonky.html"
+            }
+          ]
+        },
+        {
+          "name": "Polytrack",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/polytrack.html"
+            }
+          ]
+        },
+        {
+          "name": "Poor Bunny",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/poor-bunny.html"
+            }
+          ]
+        },
+        {
+          "name": "Pou",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/pou.html"
+            }
+          ]
+        },
+        {
+          "name": "Ragdoll Hit",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/ragdoll-hit.html"
+            }
+          ]
+        },
+        {
+          "name": "Ragdoll Soccer",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/ragdoll-soccer.html"
+            }
+          ]
+        },
+        {
+          "name": "Red Ball 4 Vol 1",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/red-ball-4-vol-1.html"
+            }
+          ]
+        },
+        {
+          "name": "Red Ball 4 Vol 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/red-ball-4-vol-2.html"
+            }
+          ]
+        },
+        {
+          "name": "Red Ball 4 Vol 3",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/red-ball-4-vol-3.html"
+            }
+          ]
+        },
+        {
+          "name": "Retro Bowl",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/retro-bowl.html"
+            }
+          ]
+        },
+        {
+          "name": "Retro Bowl College",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/retro-bowl-college.html"
+            }
+          ]
+        },
+        {
+          "name": "Retro Highway",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/retro-highway.html"
+            }
+          ]
+        },
+        {
+          "name": "Retro Ping Pong",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/retro-ping-pong.html"
+            }
+          ]
+        },
+        {
+          "name": "Riddle School",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/riddle-school.html"
+            }
+          ]
+        },
+        {
+          "name": "Riddle School 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/riddle-school-2.html"
+            }
+          ]
+        },
+        {
+          "name": "Riddle School 3",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/riddle-school-3.html"
+            }
+          ]
+        },
+        {
+          "name": "Riddle School 4",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/riddle-school-4.html"
+            }
+          ]
+        },
+        {
+          "name": "Riddle School 5",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/riddle-school-5.html"
+            }
+          ]
+        },
+        {
+          "name": "Riddle Transfer",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/riddle-transfer.html"
+            }
+          ]
+        },
+        {
+          "name": "Riddle Transfer 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/riddle-transfer-2.html"
+            }
+          ]
+        },
+        {
+          "name": "Rocket Soccer Derby",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/rocket-soccer-derby.html"
+            }
+          ]
+        },
+        {
+          "name": "Rooftop Run",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/rooftop-run.html"
+            }
+          ]
+        },
+        {
+          "name": "Rooftop Snipers 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/rooftop-snipers-2.html"
+            }
+          ]
+        },
+        {
+          "name": "Run",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/run.html"
+            }
+          ]
+        },
+        {
+          "name": "Run 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/run-2.html"
+            }
+          ]
+        },
+        {
+          "name": "Run 3",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/run-3.html"
+            }
+          ]
+        },
+        {
+          "name": "Sand Game",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/sand-game.html"
+            }
+          ]
+        },
+        {
+          "name": "Sandbox City",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/sandbox-city.html"
+            }
+          ]
+        },
+        {
+          "name": "Short Life",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/short-life.html"
+            }
+          ]
+        },
+        {
+          "name": "Six Cats Under",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/six-cats-under.html"
+            }
+          ]
+        },
+        {
+          "name": "Slope",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/slope.html"
+            }
+          ]
+        },
+        {
+          "name": "Slope 2 Player",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/slope-2-player.html"
+            }
+          ]
+        },
+        {
+          "name": "Slope 3",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/slope-3.html"
+            }
+          ]
+        },
+        {
+          "name": "Slow Roads",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/slow-roads.html"
+            }
+          ]
+        },
+        {
+          "name": "Sm 63",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/sm-63.html"
+            }
+          ]
+        },
+        {
+          "name": "Sm 64",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/sm-64.html"
+            }
+          ]
+        },
+        {
+          "name": "Snail Bob",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/snail-bob.html"
+            }
+          ]
+        },
+        {
+          "name": "Snail Bob 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/snail-bob-2.html"
+            }
+          ]
+        },
+        {
+          "name": "Snail Bob 3",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/snail-bob-3.html"
+            }
+          ]
+        },
+        {
+          "name": "Snail Bob 4",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/snail-bob-4.html"
+            }
+          ]
+        },
+        {
+          "name": "Snail Bob 5",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/snail-bob-5.html"
+            }
+          ]
+        },
+        {
+          "name": "Snail Bob 6",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/snail-bob-6.html"
+            }
+          ]
+        },
+        {
+          "name": "Snail Bob 7",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/snail-bob-7.html"
+            }
+          ]
+        },
+        {
+          "name": "Snail Bob 8",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/snail-bob-8.html"
+            }
+          ]
+        },
+        {
+          "name": "Snowball Io",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/snowball-io.html"
+            }
+          ]
+        },
+        {
+          "name": "Soccer Bros",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/soccer-bros.html"
+            }
+          ]
+        },
+        {
+          "name": "Space Is Key",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/space-is-key.html"
+            }
+          ]
+        },
+        {
+          "name": "Space Is Key 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/space-is-key-2.html"
+            }
+          ]
+        },
+        {
+          "name": "Space Waves",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/space-waves.html"
+            }
+          ]
+        },
+        {
+          "name": "Spacebar Clicker",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/spacebar-clicker.html"
+            }
+          ]
+        },
+        {
+          "name": "Speed Stars",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/speed-stars.html"
+            }
+          ]
+        },
+        {
+          "name": "Sprunki",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/sprunki.html"
+            }
+          ]
+        },
+        {
+          "name": "Stack",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/stack.html"
+            }
+          ]
+        },
+        {
+          "name": "Stacktris",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/stacktris.html"
+            }
+          ]
+        },
+        {
+          "name": "State Io",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/state-io.html"
+            }
+          ]
+        },
+        {
+          "name": "Stealing The Diamond",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/stealing-the-diamond.html"
+            }
+          ]
+        },
+        {
+          "name": "Stick Archers Battle",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/stick-archers-battle.html"
+            }
+          ]
+        },
+        {
+          "name": "Stick Fighter",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/stick-fighter.html"
+            }
+          ]
+        },
+        {
+          "name": "Stick Merge",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/stick-merge.html"
+            }
+          ]
+        },
+        {
+          "name": "Stickman Hook",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/stickman-hook.html"
+            }
+          ]
+        },
+        {
+          "name": "Subway Surfers Beijing",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/subway-surfers-beijing.html"
+            }
+          ]
+        },
+        {
+          "name": "Subway Surfers Havana",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/subway-surfers-havana.html"
+            }
+          ]
+        },
+        {
+          "name": "Subway Surfers San Francisco",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/subway-surfers-san-francisco.html"
+            }
+          ]
+        },
+        {
+          "name": "Super Bike The Champion",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/super-bike-the-champion.html"
+            }
+          ]
+        },
+        {
+          "name": "Super Liquid Soccer",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/super-liquid-soccer.html"
+            }
+          ]
+        },
+        {
+          "name": "Super Star Car",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/super-star-car.html"
+            }
+          ]
+        },
+        {
+          "name": "Superhot",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/superhot.html"
+            }
+          ]
+        },
+        {
+          "name": "Table Tennis World Tour",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/table-tennis-world-tour.html"
+            }
+          ]
+        },
+        {
+          "name": "Tag",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/tag.html"
+            }
+          ]
+        },
+        {
+          "name": "Tanuki Sunset",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/tanuki-sunset.html"
+            }
+          ]
+        },
+        {
+          "name": "Tap Road",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/tap-road.html"
+            }
+          ]
+        },
+        {
+          "name": "Temple Of Boom",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/temple-of-boom.html"
+            }
+          ]
+        },
+        {
+          "name": "Territorial Io",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/territorial-io.html"
+            }
+          ]
+        },
+        {
+          "name": "Tetrominoes",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/tetrominoes.html"
+            }
+          ]
+        },
+        {
+          "name": "The Impossible Quiz",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/the-impossible-quiz.html"
+            }
+          ]
+        },
+        {
+          "name": "The Impossible Quiz 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/the-impossible-quiz-2.html"
+            }
+          ]
+        },
+        {
+          "name": "There Is No G",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/there-is-no-g.html"
+            }
+          ]
+        },
+        {
+          "name": "They Are Coming",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/they-are-coming.html"
+            }
+          ]
+        },
+        {
+          "name": "This Is The Only Level",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/this-is-the-only-level.html"
+            }
+          ]
+        },
+        {
+          "name": "This Is The Only Level Too",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/this-is-the-only-level-too.html"
+            }
+          ]
+        },
+        {
+          "name": "Time Shooter 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/time-shooter-2.html"
+            }
+          ]
+        },
+        {
+          "name": "Tiny Fishing",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/tiny-fishing.html"
+            }
+          ]
+        },
+        {
+          "name": "Trap The Cat",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/trap-the-cat.html"
+            }
+          ]
+        },
+        {
+          "name": "Trivia Crack",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/trivia-crack.html"
+            }
+          ]
+        },
+        {
+          "name": "Tube Jumpers",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/tube-jumpers.html"
+            }
+          ]
+        },
+        {
+          "name": "Tunnel Rush",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/tunnel-rush.html"
+            }
+          ]
+        },
+        {
+          "name": "Unicycle Hero",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/unicycle-hero.html"
+            }
+          ]
+        },
+        {
+          "name": "Vex 4",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/vex-4.html"
+            }
+          ]
+        },
+        {
+          "name": "Vex 5",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/vex-5.html"
+            }
+          ]
+        },
+        {
+          "name": "Vex X3m",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/vex-x3m.html"
+            }
+          ]
+        },
+        {
+          "name": "Vex X3m 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/vex-x3m-2.html"
+            }
+          ]
+        },
+        {
+          "name": "Volley Random",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/volley-random.html"
+            }
+          ]
+        },
+        {
+          "name": "War The Knights",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/war-the-knights.html"
+            }
+          ]
+        },
+        {
+          "name": "We Become What We Behold",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/we-become-what-we-behold.html"
+            }
+          ]
+        },
+        {
+          "name": "Wheelie Bike",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/wheelie-bike.html"
+            }
+          ]
+        },
+        {
+          "name": "Wheely",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/wheely.html"
+            }
+          ]
+        },
+        {
+          "name": "Wheely 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/wheely-2.html"
+            }
+          ]
+        },
+        {
+          "name": "Wheely 3",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/wheely-3.html"
+            }
+          ]
+        },
+        {
+          "name": "Wheely 4",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/wheely-4.html"
+            }
+          ]
+        },
+        {
+          "name": "Wheely 5",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/wheely-5.html"
+            }
+          ]
+        },
+        {
+          "name": "Wheely 6",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/wheely-6.html"
+            }
+          ]
+        },
+        {
+          "name": "Wheely 7",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/wheely-7.html"
+            }
+          ]
+        },
+        {
+          "name": "Wheely 8",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/wheely-8.html"
+            }
+          ]
+        },
+        {
+          "name": "Wordle Unlimited",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/wordle-unlimited.html"
+            }
+          ]
+        },
+        {
+          "name": "Worlds Hardest Game",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/worlds-hardest-game.html"
+            }
+          ]
+        },
+        {
+          "name": "Worlds Hardest Game 2",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/worlds-hardest-game-2.html"
+            }
+          ]
+        },
+        {
+          "name": "Worlds Hardest Game 3",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/worlds-hardest-game-3.html"
+            }
+          ]
+        },
+        {
+          "name": "Wrestle Bros",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/wrestle-bros.html"
+            }
+          ]
+        },
+        {
+          "name": "Yohoho Io",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/yohoho-io.html"
+            }
+          ]
+        },
+        {
+          "name": "Zombie Rush",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/zombie-rush.html"
+            }
+          ]
+        },
+        {
+          "name": "Zrist",
+          "urls": [
+            {
+              "label": "raw.githack.com",
+              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/zrist.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mini-web",
+      "name": "Kleine Webspiele",
+      "icon": "🕹️",
+      "items": [
+        {
+          "name": "2048",
+          "urls": [
+            {
+              "label": "fosiper.com",
+              "url": "https://fosiper.com/games/2048-lite/"
+            }
+          ]
+        },
+        {
+          "name": "3d.city",
+          "urls": [
+            {
+              "label": "fosiper.com",
+              "url": "https://fosiper.com/games/3d.city/"
+            }
+          ]
+        },
+        {
+          "name": "Asteroids",
+          "urls": [
+            {
+              "label": "fosiper.com",
+              "url": "https://fosiper.com/games/html5-asteroids/"
+            }
+          ]
+        },
+        {
+          "name": "Chess",
+          "urls": [
+            {
+              "label": "fosiper.com",
+              "url": "https://fosiper.com/games/chess/"
+            }
+          ]
+        },
+        {
+          "name": "Chordomatic",
+          "urls": [
+            {
+              "label": "fosiper.com",
+              "url": "https://fosiper.com/games/chordomatic/app/chord-player.html"
+            }
+          ]
+        },
+        {
+          "name": "Clumsy Bird",
+          "urls": [
+            {
+              "label": "fosiper.com",
+              "url": "https://fosiper.com/games/clumsy-bird/"
+            }
+          ]
+        },
+        {
+          "name": "Colorful Life",
+          "urls": [
+            {
+              "label": "fosiper.com",
+              "url": "https://fosiper.com/games/colorful-life/"
+            }
+          ]
+        },
+        {
+          "name": "Dead Valley",
+          "urls": [
+            {
+              "label": "fosiper.com",
+              "url": "https://fosiper.com/games/dead-valley/"
+            }
+          ]
+        },
+        {
+          "name": "Eight Queens",
+          "urls": [
+            {
+              "label": "fosiper.com",
+              "url": "https://fosiper.com/games/EightQueens/"
+            }
+          ]
+        },
+        {
+          "name": "Fire 'n Ice",
+          "urls": [
+            {
+              "label": "fosiper.com",
+              "url": "https://fosiper.com/games/fire-n-ice/"
+            }
+          ]
+        },
+        {
+          "name": "Hearts",
+          "urls": [
+            {
+              "label": "fosiper.com",
+              "url": "https://fosiper.com/games/html5-hearts/"
+            }
+          ]
+        },
+        {
+          "name": "HexGL",
+          "urls": [
+            {
+              "label": "fosiper.com",
+              "url": "https://fosiper.com/games/hexgl-lite/"
+            }
+          ]
+        },
+        {
+          "name": "Hextris",
+          "urls": [
+            {
+              "label": "fosiper.com",
+              "url": "https://fosiper.com/games/hextris-lite/"
+            }
+          ]
+        },
+        {
+          "name": "Hyperspace Garbage Collection",
+          "urls": [
+            {
+              "label": "fosiper.com",
+              "url": "https://fosiper.com/games/hyperspace-garbage-collection/"
+            }
+          ]
+        },
+        {
+          "name": "JavaScript Piano",
+          "urls": [
+            {
+              "label": "fosiper.com",
+              "url": "https://fosiper.com/games/javascript-piano/"
+            }
+          ]
+        },
+        {
+          "name": "Life",
+          "urls": [
+            {
+              "label": "fosiper.com",
+              "url": "https://fosiper.com/games/life/"
+            }
+          ]
+        },
+        {
+          "name": "Mah-jongg",
+          "urls": [
+            {
+              "label": "fosiper.com",
+              "url": "https://fosiper.com/games/mah-jongg/"
+            }
+          ]
+        },
+        {
+          "name": "Missile Game",
+          "urls": [
+            {
+              "label": "fosiper.com",
+              "url": "https://fosiper.com/games/missile-game/"
+            }
+          ]
+        },
+        {
+          "name": "NS-Shaft",
+          "urls": [
+            {
+              "label": "fosiper.com",
+              "url": "https://fosiper.com/games/ns-shaft/"
+            }
+          ]
+        },
+        {
+          "name": "Pacman",
+          "urls": [
+            {
+              "label": "fosiper.com",
+              "url": "https://fosiper.com/games/pacman-lite/"
+            }
+          ]
+        },
+        {
+          "name": "Paint Run",
+          "urls": [
+            {
+              "label": "fosiper.com",
+              "url": "https://fosiper.com/games/paint-run/"
+            }
+          ]
+        },
+        {
+          "name": "Particle Clicker",
+          "urls": [
+            {
+              "label": "fosiper.com",
+              "url": "https://fosiper.com/games/particle-clicker/"
+            }
+          ]
+        },
+        {
+          "name": "Pool",
+          "urls": [
+            {
+              "label": "fosiper.com",
+              "url": "https://fosiper.com/games/classic-pool/"
+            }
+          ]
+        },
+        {
+          "name": "Raging Gardens",
+          "urls": [
+            {
+              "label": "fosiper.com",
+              "url": "https://fosiper.com/games/raging-gardens/"
+            }
+          ]
+        },
+        {
+          "name": "Snakisms",
+          "urls": [
+            {
+              "label": "fosiper.com",
+              "url": "https://fosiper.com/games/snakisms/"
+            }
+          ]
+        },
+        {
+          "name": "Tap Tap Tap",
+          "urls": [
+            {
+              "label": "fosiper.com",
+              "url": "https://fosiper.com/games/taptaptap/play/"
+            }
+          ]
+        },
+        {
+          "name": "The House",
+          "urls": [
+            {
+              "label": "fosiper.com",
+              "url": "https://fosiper.com/games/the-house/"
+            }
+          ]
+        },
+        {
+          "name": "The Pond",
+          "urls": [
+            {
+              "label": "fosiper.com",
+              "url": "https://fosiper.com/games/pond/"
+            }
+          ]
+        },
+        {
+          "name": "Tower",
+          "urls": [
+            {
+              "label": "fosiper.com",
+              "url": "https://fosiper.com/games/tower/"
+            }
+          ]
+        },
+        {
+          "name": "Twisty Polyhedra",
+          "urls": [
+            {
+              "label": "fosiper.com",
+              "url": "https://fosiper.com/games/twisty-polyhedra/"
+            }
+          ]
+        },
+        {
+          "name": "Underrun",
+          "urls": [
+            {
+              "label": "fosiper.com",
+              "url": "https://fosiper.com/games/underrun/index-debug.html"
+            }
+          ]
+        },
+        {
+          "name": "Virtual Piano",
+          "urls": [
+            {
+              "label": "fosiper.com",
+              "url": "https://fosiper.com/games/virtual-piano/"
             }
           ]
         }

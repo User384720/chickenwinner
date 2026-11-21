@@ -791,7 +791,7 @@ button.fav-link {
   backdrop-filter: blur(12px);
   box-shadow: 0 14px 34px -26px rgba(0, 0, 0, 0.9);
   animation: cardIn 0.45s ease both;
-  animation-delay: calc(var(--i, 0) * 32ms);
+  animation-delay: calc(min(var(--i, 0), 20) * 32ms);
   transition: transform 0.24s ease, border-color 0.24s ease, box-shadow 0.24s ease;
 }
 
