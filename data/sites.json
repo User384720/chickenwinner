@@ -18,6 +18,16 @@
           ]
         },
         {
+          "name": "Yandex Games",
+          "icon": "https://www.google.com/s2/favicons?domain=yandex.com&sz=128",
+          "urls": [
+            {
+              "label": "yandex.com/games",
+              "url": "https://yandex.com/games/"
+            }
+          ]
+        },
+        {
           "name": "CrazyGames",
           "icon": "https://www.google.com/s2/favicons?domain=crazygames.com&sz=128",
           "urls": [
@@ -74,6 +84,16 @@
             {
               "label": "now.gg",
               "url": "https://now.gg"
+            }
+          ]
+        },
+        {
+          "name": "Viverse",
+          "icon": "https://www.google.com/s2/favicons?domain=viverse.com&sz=128",
+          "urls": [
+            {
+              "label": "viverse.com",
+              "url": "https://www.viverse.com/"
             }
           ]
         }
