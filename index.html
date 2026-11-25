@@ -78,6 +78,7 @@
           <div class="search-hint">
             <span><kbd>/</kbd> fokussiert die Suche</span>
             <span><kbd>Strg</kbd> + <kbd>K</kbd> überall</span>
+            <button class="ghost-link" type="button" id="open-site-tab">ganze Seite in neuem Tab öffnen ↗</button>
             <span id="cloak-state">Cloak: aus</span>
           </div>
         </article>
@@ -97,11 +98,11 @@
         <article class="panel span-12 panel-finder">
           <div class="panel-head">
             <span class="panel-label">Auf dieser Seite suchen</span>
-            <span class="panel-hint" id="finder-meta">Spiele &amp; Apps durchsuchen</span>
+            <span class="panel-hint" id="finder-meta">Spiele, Apps &amp; Tarnungen durchsuchen</span>
           </div>
           <div class="filter-box finder-box">
             <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
-            <input id="finder-input" type="search" placeholder="Spiel oder App auf dieser Seite finden …" aria-label="Inhalte durchsuchen" spellcheck="false" />
+            <input id="finder-input" type="search" placeholder="Spiel, App oder Tarnung auf dieser Seite finden …" aria-label="Inhalte durchsuchen" spellcheck="false" />
           </div>
           <div class="finder-actions" id="finder-actions">
             <button class="btn" type="button" id="finder-more" hidden>mehr laden</button>
@@ -616,6 +617,6 @@
   </noscript>
 
   <script src="js/checker.js?v=11" defer></script>
-  <script src="js/app.js?v=13" defer></script>
+  <script src="js/app.js?v=14" defer></script>
 </body>
 </html>

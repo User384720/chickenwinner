@@ -1154,11 +1154,30 @@
       if (!entry || entry.status !== 'ready') return;
       entry.groups.forEach(function (group) {
         group.items.forEach(function (item) {
-          out.push({ key: key, item: item, group: group });
+          out.push({ key: key, item: item, group: group, source: DATA_SOURCES[key] });
         });
       });
     });
     return out;
+  }
+
+  /* Der Tab „Cloak“ hat keine JSON-Datei – seine Tarnungen kommen direkt hierher. */
+  var CLOAK_SOURCE = { title: 'Tab Cloak' };
+
+  function cloakEntries() {
+    return CLOAK_PRESETS.map(function (preset) {
+      return {
+        key: 'cloak',
+        preset: preset,
+        source: CLOAK_SOURCE,
+        item: { name: preset.title, icon: preset.icon, urls: [] },
+        group: { name: 'Tarnung' }
+      };
+    });
+  }
+
+  function finderRows() {
+    return catalogEntries().concat(cloakEntries());
   }
 
   function catalogLoading() {
@@ -1169,8 +1188,9 @@
   }
 
   function finderMatches(query) {
-    return catalogEntries().filter(function (row) {
-      var haystack = [row.item.name, DATA_SOURCES[row.key].title, row.key, row.group && row.group.name];
+    return finderRows().filter(function (row) {
+      var haystack = [row.item.name, row.source.title, row.key, row.group && row.group.name];
+      if (row.preset) haystack.push(row.preset.title, row.preset.path, 'cloak', 'tarnung', 'tarnen');
       (row.item.urls || []).forEach(function (u) {
         haystack.push(u && u.label, u && u.url);
       });
@@ -1181,11 +1201,13 @@
   function finderItemMarkup(row, index) {
     var item = row.item;
     var primary = primaryUrl(item);
-    var host = primary ? hostOf(primary) : 'lokal';
-    var tag = DATA_SOURCES[row.key].title + (row.group && row.group.name ? ' · ' + row.group.name : '');
+    var host = row.preset ? (row.preset.path || 'ohne Pfad') : (primary ? hostOf(primary) : 'lokal');
+    var tag = row.source.title + (row.group && row.group.name ? ' · ' + row.group.name : '');
     var action = '';
 
-    if (primary) {
+    if (row.preset) {
+      action = '<button class="btn finder-btn" type="button" data-cloak-use="' + esc(row.preset.id) + '">Tarnen</button>';
+    } else if (primary) {
       var isGame = row.key === 'games-online' || row.key === 'games-local';
       action = '<button class="btn btn-primary finder-btn" type="button" ' +
         'data-play-url="' + esc(primary) + '" data-play-name="' + esc(item.name) + '" data-play-icon="' + esc(item.icon || '') + '" ' +
@@ -1318,7 +1340,7 @@
     if (!query) {
       box.hidden = true;
       box.innerHTML = '';
-      meta.textContent = 'Spiele & Apps durchsuchen';
+      meta.textContent = 'Spiele, Apps & Tarnungen durchsuchen';
       finderSetNote('');
       finderUpdateButtons();
       return;
@@ -1376,6 +1398,20 @@
       });
     }
 
+    var results = $('#finder-results');
+    if (results) {
+      results.addEventListener('click', function (event) {
+        var btn = event.target.closest('[data-cloak-use]');
+        if (!btn) return;
+        var id = btn.getAttribute('data-cloak-use');
+        var preset = CLOAK_PRESETS.find(function (p) { return p.id === id; });
+        if (!preset) return;
+        applyCloak(preset);
+        toast('Tarnung aktiv: ' + preset.title, 'success');
+        window.location.hash = '#/cloak';
+      });
+    }
+
     var auto = $('#finder-auto');
     if (auto) {
       auto.addEventListener('click', function () {
@@ -1392,6 +1428,29 @@
         }
       });
     }
+  }
+
+  /* Knopf auf Home: öffnet die ganze Seite als eigene URL in einem neuen Tab. */
+  function siteUrl() {
+    try {
+      return new URL('./', document.baseURI).href;
+    } catch (err) {
+      return window.location.href.split('#')[0];
+    }
+  }
+
+  function bindSiteTab() {
+    var btn = $('#open-site-tab');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      var win = window.open(siteUrl(), '_blank');
+      if (!win) {
+        toast('Popup blockiert – erlaub bitte Pop-ups für diese Seite.', 'error');
+        return;
+      }
+      try { win.opener = null; } catch (err) { /* egal */ }
+      toast('Seite in neuem Tab geöffnet', 'success');
+    });
   }
 
   /* ------------------------------------------------------------------ */
@@ -2877,6 +2936,7 @@
     bindCardEvents();
     bindFilters();
     bindFinder();
+    bindSiteTab();
     bindPlayer();
     bindWidgets();
     bindCloak();
