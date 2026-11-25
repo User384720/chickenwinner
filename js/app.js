@@ -230,7 +230,7 @@
       'proxy': { q: '', group: '' }
     },
     weather: { coords: null },
-    rss: { nextPage: 0, loading: false },
+    rss: { nextPage: 0, loading: false, exhausted: false, chain: 0, searchTimer: 0 },
     player: { url: '', type: '', open: false, timer: null }
   };
 
@@ -428,7 +428,7 @@
      Browser; die JSON-Datei dient als Rückfall, wenn der Feed nicht antwortet. */
   var RSS_GAMES = {
     feed: 'https://feeds.gamepix.com/v2/json/?order=quality&pagination=12&sid=E05E6&page=',
-    pagesPerLoad: 5,
+    pagesPerLoad: 15,
     cacheKey: 'fbtarchive.rss-games.v2'
   };
 
@@ -542,24 +542,52 @@
     });
   }
 
-  function loadMoreRss() {
+  /* Wie viele Spiele zeigt der aktuelle Filter (Suche + Kategorie)? */
+  function rssVisibleCount() {
+    var entry = state.data['rss-games'];
+    if (!entry || entry.status !== 'ready') return 0;
+    var filter = state.filters['rss-games'] || { q: '', group: '' };
+    var query = String(filter.q || '').trim().toLowerCase();
+    var active = filter.group || '';
+    var count = 0;
+    entry.groups.forEach(function (group) {
+      if (active && group.id !== active) return;
+      group.items.forEach(function (item) {
+        if (groupHasQuery(group, item, query)) count++;
+      });
+    });
+    return count;
+  }
+
+  function setRssNote(text) {
+    var note = $('#rss-more-note');
+    if (note) note.textContent = text;
+  }
+
+  /* Nachladen: still = ohne Meldung (für Auto-Nachladen beim Scrollen/Suchen). */
+  function loadMoreRss(silent) {
     var entry = state.data['rss-games'];
     var button = $('#rss-more');
-    if (!entry || entry.status !== 'ready' || state.rss.loading) return;
+    var empty = { added: 0, visibleAdded: 0 };
+    if (!entry || entry.status !== 'ready' || state.rss.loading) return Promise.resolve(empty);
 
     var from = state.rss.nextPage || 0;
     if (!from) {
-      toast('Der Feed ist gerade nicht erreichbar – Nachladen geht nicht.', 'error');
-      return;
+      if (!silent) toast('Der Feed ist gerade nicht erreichbar – Nachladen geht nicht.', 'error');
+      return Promise.resolve(empty);
     }
 
+    var visibleBefore = rssVisibleCount();
     state.rss.loading = true;
-    if (button) { button.disabled = true; button.textContent = 'Wird geladen …'; }
+    if (button && !silent) { button.disabled = true; button.textContent = 'Wird geladen …'; }
 
-    fetchRssPages(from, RSS_GAMES.pagesPerLoad).then(function (items) {
+    return fetchRssPages(from, RSS_GAMES.pagesPerLoad).then(function (items) {
       if (!items.length) {
-        toast('Der Feed hat keine weiteren Spiele.', 'info');
-        return;
+        state.rss.exhausted = true;
+        if (button) button.hidden = true;
+        setRssNote('Alle Spiele aus dem Feed geladen.');
+        if (!silent) toast('Der Feed hat keine weiteren Spiele.', 'info');
+        return empty;
       }
 
       var added = 0;
@@ -584,13 +612,81 @@
       rememberRss(entry.groups, state.rss.nextPage);
       renderGrid('rss-games');
       updateGamesCounter();
-      toast(added + ' weitere Spiele geladen', 'success');
+      if (!silent && added) toast(added + ' weitere Spiele geladen', 'success');
+      return { added: added, visibleAdded: rssVisibleCount() - visibleBefore };
     }).catch(function () {
-      toast('Weitere Spiele konnten nicht geladen werden.', 'error');
-    }).then(function () {
+      if (!silent) toast('Weitere Spiele konnten nicht geladen werden.', 'error');
+      return { added: 0, visibleAdded: 0, failed: true };
+    }).then(function (result) {
       state.rss.loading = false;
       if (button) { button.disabled = false; button.textContent = 'Weitere Spiele laden'; }
+      return result;
     });
+  }
+
+  /* Automatisch nachladen: am Listenende und wenn eine Suche zu wenig Treffer hat. */
+  var RSS_AUTO = { max: 8, cooldown: 900 };
+
+  function rssNeedsMore() {
+    var entry = state.data['rss-games'];
+    if (!entry || entry.status !== 'ready') return false;
+    if (state.rss.loading || state.rss.exhausted || !state.rss.nextPage) return false;
+    if (state.rss.chain >= RSS_AUTO.max) return false;
+    var query = String((state.filters['rss-games'] || { q: '' }).q || '').trim();
+    if (!query) return true;
+    return rssVisibleCount() < 12;
+  }
+
+  function rssTailInView() {
+    var sentinel = $('#rss-sentinel');
+    if (!sentinel) return false;
+    return sentinel.getBoundingClientRect().top <= window.innerHeight + 400;
+  }
+
+  function rssAutoLoad() {
+    if (state.route !== 'rss-games' || !rssNeedsMore()) return;
+    var query = String((state.filters['rss-games'] || { q: '' }).q || '').trim();
+    if (!query && !rssTailInView()) return;
+
+    state.rss.chain++;
+    loadMoreRss(true).then(function (result) {
+      if (!result || result.failed) return;
+      if (!result.visibleAdded) {
+        state.rss.chain = RSS_AUTO.max;
+        setRssNote(query
+          ? 'Keine weiteren Treffer im Feed – such nach etwas anderem.'
+          : 'Für diese Kategorie kam nichts Neues – „Weitere Spiele laden“ holt trotzdem mehr.');
+        return;
+      }
+      window.setTimeout(rssAutoLoad, RSS_AUTO.cooldown);
+    });
+  }
+
+  /* Beim Tippen in der Suche erst kurz warten, dann Treffer auffüllen. */
+  function scheduleRssSearchLoad() {
+    window.clearTimeout(state.rss.searchTimer);
+    state.rss.searchTimer = window.setTimeout(function () {
+      state.rss.chain = 0;
+      rssAutoLoad();
+    }, 500);
+  }
+
+  function bindRssAutoLoad() {
+    var sentinel = $('#rss-sentinel');
+    if (!sentinel) return;
+
+    if ('IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(function (entries) {
+        if (!entries.some(function (entry) { return entry.isIntersecting; })) return;
+        state.rss.chain = 0;
+        rssAutoLoad();
+      }, { rootMargin: '400px 0px' });
+      observer.observe(sentinel);
+    }
+
+    window.addEventListener('scroll', function () {
+      state.rss.chain = 0; /* beim Scrollen darf wieder nachgeladen werden */
+    }, { passive: true });
   }
 
   function loadData(key) {
@@ -1809,6 +1905,7 @@
         var filter = state.filters[key] || (state.filters[key] = { q: '', group: '' });
         filter.q = input.value;
         renderGrid(key);
+        if (key === 'rss-games') scheduleRssSearchLoad();
       });
     });
 
@@ -1821,6 +1918,10 @@
         var next = chip.dataset.chipGroup || '';
         filter.group = filter.group === next ? '' : next;
         renderGrid(key);
+        if (key === 'rss-games') {
+          state.rss.chain = 0;
+          rssAutoLoad();
+        }
       });
     });
   }
@@ -2501,6 +2602,7 @@
     bindPlayer();
     bindWidgets();
     bindCloak();
+    bindRssAutoLoad();
 
     var hasIntro = !!$('#intro');
     bindIntro();

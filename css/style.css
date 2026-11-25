@@ -2178,3 +2178,6 @@ html.intro-dragging body { cursor: grabbing; }
 .cloak-actions { display: flex; gap: 10px; flex-wrap: wrap; }
 .cloak-note { margin: 0; font-size: 0.76rem; line-height: 1.55; color: var(--muted); }
 .cloak-note code { font-family: var(--mono); font-size: 0.74rem; }
+
+/* ---------- RSS Games: automatisches Nachladen ---------- */
+.rss-sentinel { height: 1px; margin-top: 8px; }
