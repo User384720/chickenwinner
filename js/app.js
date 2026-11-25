@@ -1430,7 +1430,7 @@
     }
   }
 
-  /* Knopf auf Home: öffnet die ganze Seite als eigene URL in einem neuen Tab. */
+  /* Knopf auf Home: öffnet die ganze Seite als eigene URL in einem about:blank-Tab. */
   function siteUrl(hash) {
     var base;
     try {
@@ -1446,13 +1446,16 @@
     Array.prototype.forEach.call(buttons, function (btn) {
       btn.addEventListener('click', function () {
         var route = btn.getAttribute('data-open-tab');
-        var win = window.open(siteUrl(route), '_blank');
+        var url = siteUrl(route);
+        // Erst ein neutraler about:blank-Tab, dann die Seite darin laden.
+        var win = window.open('about:blank', '_blank');
         if (!win) {
           toast('Popup blockiert – erlaub bitte Pop-ups für diese Seite.', 'error');
           return;
         }
         try { win.opener = null; } catch (err) { /* egal */ }
-        toast(route ? 'Spiele-Seite in neuem Tab geöffnet' : 'Seite in neuem Tab geöffnet', 'success');
+        try { win.location.replace(url); } catch (err) { win.location.href = url; }
+        toast(route ? 'Spiele-Seite in about:blank geöffnet' : 'Seite in about:blank geöffnet', 'success');
       });
     });
   }

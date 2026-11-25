@@ -192,6 +192,33 @@
           ]
         }
       ]
+    },
+    {
+      "id": "cloud",
+      "name": "Cloud-Gaming",
+      "icon": "☁️",
+      "items": [
+        {
+          "name": "GeForce NOW",
+          "icon": "https://www.google.com/s2/favicons?domain=nvidia.com&sz=128",
+          "urls": [
+            {
+              "label": "play.geforcenow.com",
+              "url": "https://play.geforcenow.com/"
+            }
+          ]
+        },
+        {
+          "name": "Xbox Cloud Gaming",
+          "icon": "https://www.google.com/s2/favicons?domain=xbox.com&sz=128",
+          "urls": [
+            {
+              "label": "xbox.com/play",
+              "url": "https://www.xbox.com/play"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
