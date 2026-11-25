@@ -728,7 +728,7 @@
         'data-play-url="' + esc(u.url) + '" data-play-name="' + esc(item.name) + '" data-play-icon="' + esc(item.icon || '') + '" ' +
         'data-play-type="' + esc(type) + '" ' +
         (color ? 'style="--badge-color:' + esc(color) + '" ' : '') +
-        'title="Im Player öffnen: ' + esc(u.url) + '">' +
+        'title="Im Player öffnen' + (type === 'rss-games' ? '' : ': ' + esc(u.url)) + '">' +
         dot + PLAY_ICON + esc(label) +
       '</button>';
     }).join('');
@@ -1929,7 +1929,8 @@
     var close = $('#player-close');
 
     if (title) title.textContent = name;
-    if (host) host.textContent = hostOf(opts.url);
+    /* Feed-Spiele zeigen im Player keine Adresse. */
+    if (host) host.textContent = state.player.type === 'rss-games' ? '' : hostOf(opts.url);
     if (external) external.href = opts.url;
 
     if (icon) {

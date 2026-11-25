@@ -1,6 +1,6 @@
 {
-  "_hinweis": "Rückfall-Kopie des GamePix-Feeds (sid=E05E6). Die Seite lädt den Feed live; diese Datei greift nur, wenn der Feed nicht antwortet. Struktur wie die anderen Kataloge: groups mit id, name, icon, items.",
-  "title": "RSS Games (GamePix)",
+  "_hinweis": "Rückfall-Kopie des RSS-Feeds (sid=E05E6). Die Seite lädt den Feed live; diese Datei greift nur, wenn der Feed nicht antwortet. Struktur wie die anderen Kataloge: groups mit id, name, icon, items.",
+  "title": "RSS Games",
   "source": "https://feeds.gamepix.com/v2/json/?order=quality&pagination=12&sid=E05E6&page=1",
   "generated": "2026-11-25",
   "groups": [
