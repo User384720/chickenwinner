@@ -6,8 +6,8 @@
   <meta name="theme-color" id="theme-color" content="#06070d" />
   <title></title>
   <meta name="description" content="Freies Archiv für Browser-Spiele, lokale Games und Web-Tools." />
-  <link rel="icon" href="data:," />
-  <link rel="stylesheet" href="css/style.css?v=6" />
+  <link rel="icon" id="favicon" href="data:," />
+  <link rel="stylesheet" href="css/style.css?v=8" />
   <link rel="preload" as="image" href="img/censor/recycle-bin-empty.png" fetchpriority="high" />
   <script>
     /* Theme before first paint — avoids a flash of the wrong theme. */
@@ -38,6 +38,7 @@
         <button class="tab" id="tab-sites" data-route="sites" role="tab" aria-selected="false" aria-controls="view-sites">Sites</button>
         <button class="tab" id="tab-email" data-route="email" role="tab" aria-selected="false" aria-controls="view-email">E-Mail</button>
         <button class="tab" id="tab-proxy" data-route="proxy" role="tab" aria-selected="false" aria-controls="view-proxy">Proxy</button>
+        <button class="tab" id="tab-cloak" data-route="cloak" role="tab" aria-selected="false" aria-controls="view-cloak">Cloak</button>
       </nav>
 
       <div class="nav-actions">
@@ -140,6 +141,21 @@
             <span class="panel-hint" id="fav-count">0 gespeichert</span>
           </div>
           <ul class="fav-list" id="fav-list"></ul>
+        </article>
+
+        <article class="panel span-12 panel-games-count">
+          <div class="panel-head">
+            <span class="panel-label">Spiele gesamt</span>
+            <span class="panel-hint">Games Online · RSS Feed · Lokal</span>
+          </div>
+          <div class="games-count-row">
+            <div class="games-count-value" id="games-count-total">–</div>
+            <div class="games-count-links">
+              <a href="#/games-online"><strong id="games-count-online">–</strong> Games Online</a>
+              <a href="#/rss-games"><strong id="games-count-rss">–</strong> RSS Games</a>
+              <a href="#/games-local"><strong id="games-count-local">–</strong> Games Local</a>
+            </div>
+          </div>
         </article>
 
         <article class="panel span-12 panel-clicks">
@@ -338,6 +354,38 @@
         <span data-count="proxy">wird geladen …</span>
       </div>
       <div class="grid" data-grid="proxy" aria-live="polite"></div>
+    </section>
+
+    <!-- ============================= CLOAK =========================== -->
+    <section class="view" id="view-cloak" data-view="cloak" role="tabpanel" aria-labelledby="tab-cloak" hidden>
+      <div class="section-head">
+        <div>
+          <h2>Tab <span class="grad">Cloak</span></h2>
+        </div>
+      </div>
+      <p class="feed-note">Titel, Icon und Pfad werden getarnt – die Tarnung bleibt bei jedem Öffnen der Seite aktiv.</p>
+      <div class="cloak-grid" id="cloak-presets"></div>
+      <div class="panel cloak-custom">
+        <div class="panel-head">
+          <span class="panel-label">Eigene Tarnung</span>
+          <span class="panel-hint" id="cloak-state">nichts aktiv</span>
+        </div>
+        <div class="cloak-fields">
+          <label class="cloak-field">
+            <span>Titel im Tab</span>
+            <input type="text" id="cloak-title-input" placeholder="z. B. Google" spellcheck="false" />
+          </label>
+          <label class="cloak-field">
+            <span>Pfad in der Adressleiste</span>
+            <input type="text" id="cloak-path-input" placeholder="z. B. search?q=wetter" spellcheck="false" />
+          </label>
+        </div>
+        <div class="cloak-actions">
+          <button class="btn btn-primary" type="button" id="cloak-apply">Tarnung anwenden</button>
+          <button class="btn" type="button" id="cloak-reset">Tarnung aus</button>
+        </div>
+        <p class="cloak-note">Die Domain kann eine Website nicht ändern – getarnt werden Tab-Titel, Favicon und der Pfad dahinter. Nach einem Neuladen führt ein getarnter Pfad automatisch zurück zur App.</p>
+      </div>
     </section>
   </main>
 
@@ -562,7 +610,7 @@
     <div class="wrap noscript">Bitte aktiviere JavaScript — die Inhalte werden aus JSON-Dateien geladen.</div>
   </noscript>
 
-  <script src="js/checker.js?v=6" defer></script>
-  <script src="js/app.js?v=7" defer></script>
+  <script src="js/checker.js?v=8" defer></script>
+  <script src="js/app.js?v=8" defer></script>
 </body>
 </html>

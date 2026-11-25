@@ -31,7 +31,7 @@
     icons: ['icon.svg', 'icon.png', 'icon.webp', 'icon.jpg', 'icon.jpeg', 'favicon.ico', 'favicon.png']
   };
 
-  var ROUTES = ['home', 'games-online', 'rss-games', 'games-local', 'apps', 'sites', 'email', 'proxy'];
+  var ROUTES = ['home', 'games-online', 'rss-games', 'games-local', 'apps', 'sites', 'email', 'proxy', 'cloak'];
 
   var ENGINES = [
     { id: 'duckduckgo', name: 'DuckDuckGo',   url: 'https://duckduckgo.com/?q=%s' },
@@ -59,7 +59,10 @@
     city: 'Berlin',
     checkUrls: true,
     panicKey: '`',
-    panicUrl: 'https://classroom.google.com'
+    panicUrl: 'https://classroom.google.com',
+    pageTitle: '',
+    pageIcon: '',
+    pagePath: ''
   };
 
   var WMO = {
@@ -287,6 +290,8 @@
       refreshFavoritesView();
       ensureCatalog();
       renderFinder();
+    } else if (route === 'cloak') {
+      syncCloakUI();
     } else {
       loadData(route);
       var ready = state.data[route];
@@ -578,6 +583,7 @@
       state.rss.nextPage = from + RSS_GAMES.pagesPerLoad;
       rememberRss(entry.groups, state.rss.nextPage);
       renderGrid('rss-games');
+      updateGamesCounter();
       toast(added + ' weitere Spiele geladen', 'success');
     }).catch(function () {
       toast('Weitere Spiele konnten nicht geladen werden.', 'error');
@@ -611,10 +617,12 @@
         });
         state.data[key] = { status: 'ready', groups: groups, items: flat };
         renderGrid(key);
+        updateGamesCounter();
         if (state.route === 'home') renderFinder();
       })
       .catch(function (err) {
         state.data[key] = { status: 'error', items: [], error: err.message };
+        updateGamesCounter();
         var gridNow = $('[data-grid="' + key + '"]');
         if (gridNow) gridNow.innerHTML = errorMarkup(key, err.message);
         var countNow = $('[data-count="' + key + '"]');
@@ -851,6 +859,27 @@
     var node = $('[data-count="' + key + '"]');
     if (!node) return;
     node.textContent = total ? shown + ' von ' + total + ' Einträgen' : 'keine Einträge';
+  }
+
+  /* Zähler auf Home: Games Online + RSS-Feed + lokale Spiele. */
+  function updateGamesCounter() {
+    var sources = {
+      'games-online': 'games-count-online',
+      'rss-games': 'games-count-rss',
+      'games-local': 'games-count-local'
+    };
+    var total = 0;
+
+    Object.keys(sources).forEach(function (key) {
+      var entry = state.data[key];
+      var count = entry && entry.status === 'ready' ? entry.items.length : 0;
+      total += count;
+      var node = $('#' + sources[key]);
+      if (node) node.textContent = count.toLocaleString('de-DE');
+    });
+
+    var totalNode = $('#games-count-total');
+    if (totalNode) totalNode.textContent = total ? total.toLocaleString('de-DE') : '–';
   }
 
   function hydrateIcons(root) {
@@ -2327,12 +2356,139 @@
   }
 
   /* ------------------------------------------------------------------ */
+  /* Tab-Cloak: Titel, Favicon und Pfad tarnen                           */
+  /* ------------------------------------------------------------------ */
+
+  var CLOAK_PRESETS = [
+    { id: 'google', title: 'Google', icon: 'https://www.google.com/favicon.ico', path: 'search?q=wetter' },
+    { id: 'newtab', title: 'Neue Tab', icon: '', path: '' },
+    { id: 'classroom', title: 'Google Classroom', icon: 'https://ssl.gstatic.com/classroom/favicon.png', path: '' },
+    { id: 'gmail', title: 'Gmail', icon: 'https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico', path: '' },
+    { id: 'docs', title: 'Google Docs', icon: 'https://ssl.gstatic.com/docs/documents/images/kix-favicon7.ico', path: '' },
+    { id: 'wikipedia', title: 'Wikipedia', icon: 'https://de.wikipedia.org/favicon.ico', path: '' }
+  ];
+
+  function setPageMeta(title, icon) {
+    document.title = title || '';
+    var link = $('#favicon');
+    if (link) link.setAttribute('href', icon || 'data:,');
+  }
+
+  /* Die Domain kann eine Seite nicht ändern – nur den Pfad dahinter. */
+  function applyCloakPath(path) {
+    if (!window.history || !window.history.replaceState) return;
+    try {
+      var base = window.location.pathname.replace(/[^/]*$/, '');
+      var target = base + String(path || '').replace(/^\/+/, '');
+      window.history.replaceState(null, '', target + (window.location.hash || ''));
+    } catch (err) { /* ohne History-API bleibt es beim Titel */ }
+  }
+
+  function cloakIsActive() {
+    return !!(state.settings.pageTitle || state.settings.pageIcon || state.settings.pagePath);
+  }
+
+  function applyCloak(patch) {
+    saveSettings({
+      pageTitle: String(patch.title || ''),
+      pageIcon: String(patch.icon || ''),
+      pagePath: String(patch.path || '')
+    });
+    setPageMeta(state.settings.pageTitle, state.settings.pageIcon);
+    applyCloakPath(state.settings.pagePath);
+    syncCloakUI();
+  }
+
+  function renderCloakPresets() {
+    var box = $('#cloak-presets');
+    if (!box || box.childElementCount) return;
+    box.innerHTML = CLOAK_PRESETS.map(function (preset) {
+      return '<button class="cloak-card" type="button" data-cloak-id="' + esc(preset.id) + '" aria-pressed="false">' +
+        '<span class="cloak-card-icon">' +
+          (preset.icon ? '<img src="' + esc(preset.icon) + '" alt="" loading="lazy">' : '📄') +
+        '</span>' +
+        '<span class="cloak-card-text">' +
+          '<span>' + esc(preset.title) + '</span>' +
+          '<small>' + esc(preset.path || 'ohne Pfad') + '</small>' +
+        '</span>' +
+      '</button>';
+    }).join('');
+  }
+
+  function syncCloakUI() {
+    renderCloakPresets();
+
+    var titleInput = $('#cloak-title-input');
+    var pathInput = $('#cloak-path-input');
+    if (titleInput) titleInput.value = state.settings.pageTitle || '';
+    if (pathInput) pathInput.value = state.settings.pagePath || '';
+
+    var label = $('#cloak-state');
+    if (label) {
+      label.textContent = cloakIsActive()
+        ? 'aktiv: ' + (state.settings.pageTitle || 'ohne Titel')
+        : 'nichts aktiv';
+    }
+
+    $$('#cloak-presets .cloak-card').forEach(function (card) {
+      var preset = CLOAK_PRESETS.find(function (p) { return p.id === card.dataset.cloakId; });
+      var active = !!preset &&
+        preset.title === (state.settings.pageTitle || '') &&
+        (preset.path || '') === (state.settings.pagePath || '');
+      card.classList.toggle('is-active', active);
+      card.setAttribute('aria-pressed', String(active));
+    });
+  }
+
+  function bindCloak() {
+    var presets = $('#cloak-presets');
+    if (presets) {
+      presets.addEventListener('click', function (event) {
+        var card = event.target.closest('[data-cloak-id]');
+        if (!card) return;
+        var preset = CLOAK_PRESETS.find(function (p) { return p.id === card.dataset.cloakId; });
+        if (!preset) return;
+        applyCloak(preset);
+        toast('Tarnung aktiv: ' + preset.title, 'success');
+      });
+    }
+
+    var apply = $('#cloak-apply');
+    if (apply) {
+      apply.addEventListener('click', function () {
+        var title = $('#cloak-title-input');
+        var path = $('#cloak-path-input');
+        var nextTitle = title ? title.value.trim() : '';
+        applyCloak({
+          title: nextTitle,
+          icon: nextTitle && nextTitle === state.settings.pageTitle ? state.settings.pageIcon : '',
+          path: path ? path.value.trim() : ''
+        });
+        toast(nextTitle ? 'Tarnung gespeichert: ' + nextTitle : 'Tarnung aus', 'success');
+      });
+    }
+
+    var reset = $('#cloak-reset');
+    if (reset) {
+      reset.addEventListener('click', function () {
+        applyCloak({ title: '', icon: '', path: '' });
+        toast('Tarnung aus', 'info');
+      });
+    }
+  }
+
+  /* ------------------------------------------------------------------ */
   /* Init                                                                */
   /* ------------------------------------------------------------------ */
 
   function init() {
     buildEngineOptions();
     applyTheme();
+
+    /* Tarnung sofort setzen – noch bevor der Rest der Seite aufgebaut ist. */
+    setPageMeta(state.settings.pageTitle, state.settings.pageIcon);
+    applyCloakPath(state.settings.pagePath);
+
     bindRouter();
     bindSearch();
     bindSettings();
@@ -2343,6 +2499,7 @@
     bindFinder();
     bindPlayer();
     bindWidgets();
+    bindCloak();
 
     var hasIntro = !!$('#intro');
     bindIntro();
@@ -2351,6 +2508,7 @@
     setInterval(tickClock, 1000);
 
     refreshFavoritesView();
+    updateGamesCounter();
     if (!hasIntro) bootMain();
   }
 
