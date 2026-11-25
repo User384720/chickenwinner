@@ -424,7 +424,7 @@
   var RSS_GAMES = {
     feed: 'https://feeds.gamepix.com/v2/json/?order=quality&pagination=12&sid=E05E6&page=',
     pagesPerLoad: 5,
-    cacheKey: 'fbtarchive.rss-games.v1'
+    cacheKey: 'fbtarchive.rss-games.v2'
   };
 
   /* Der Feed hat dutzende Kleinst-Kategorien – hier zu wenigen Themen gebündelt. */
@@ -454,7 +454,7 @@
     return {
       name: String(item.title || item.namespace || 'Spiel'),
       icon: item.image || item.banner_image || '',
-      urls: [{ label: 'gamepix.com', url: item.url }]
+      urls: [{ label: 'Spielen', url: item.url }]
     };
   }
 
@@ -703,6 +703,7 @@
     var primary = primaryUrl(item);
     var isFav = primary ? isFavorite(primary) : false;
     var host = type === 'games-local' ? 'lokal' : (primary ? hostOf(primary) : '');
+    if (type === 'rss-games') host = ''; /* Feed-Karten zeigen keine Adressen */
     var groupTag = group && group.name
       ? '<div class="card-tags"><span class="card-tag">' +
           (group.icon ? '<span aria-hidden="true">' + esc(group.icon) + '</span>' : '') +
@@ -735,7 +736,7 @@
         '<div class="card-title">' +
           '<h3 title="' + esc(item.name) + '">' + esc(item.name) + '</h3>' +
           '<div class="card-sub">' +
-            '<span>' + esc(host) + '</span>' +
+            (host ? '<span>' + esc(host) + '</span>' : '') +
           '</div>' +
         '</div>' +
         '<button class="card-fav' + (isFav ? ' is-fav' : '') + '" type="button" ' +
