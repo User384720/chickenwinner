@@ -7,7 +7,7 @@
   <title></title>
   <meta name="description" content="Freies Archiv für Browser-Spiele, lokale Games und Web-Tools." />
   <link rel="icon" href="data:," />
-  <link rel="stylesheet" href="css/style.css?v=5" />
+  <link rel="stylesheet" href="css/style.css?v=6" />
   <link rel="preload" as="image" href="img/censor/recycle-bin-empty.png" fetchpriority="high" />
   <script>
     /* Theme before first paint — avoids a flash of the wrong theme. */
@@ -32,6 +32,7 @@
       <nav class="tabs" role="tablist" aria-label="Hauptnavigation">
         <button class="tab active" id="tab-home" data-route="home" role="tab" aria-selected="true" aria-controls="view-home">Home</button>
         <button class="tab" id="tab-games-online" data-route="games-online" role="tab" aria-selected="false" aria-controls="view-games-online">Games Online</button>
+        <button class="tab" id="tab-rss-games" data-route="rss-games" role="tab" aria-selected="false" aria-controls="view-rss-games">RSS Games</button>
         <button class="tab" id="tab-games-local" data-route="games-local" role="tab" aria-selected="false" aria-controls="view-games-local">Games Local</button>
         <button class="tab" id="tab-apps" data-route="apps" role="tab" aria-selected="false" aria-controls="view-apps">Apps</button>
         <button class="tab" id="tab-sites" data-route="sites" role="tab" aria-selected="false" aria-controls="view-sites">Sites</button>
@@ -188,6 +189,35 @@
         <span data-count="games-online">wird geladen …</span>
       </div>
       <div class="grid" data-grid="games-online" aria-live="polite"></div>
+    </section>
+
+    <!-- ========================== RSS GAMES ========================== -->
+    <section class="view" id="view-rss-games" data-view="rss-games" role="tabpanel" aria-labelledby="tab-rss-games" hidden>
+      <div class="section-head">
+        <div>
+          <h2>RSS <span class="grad">Games</span></h2>
+        </div>
+        <div class="filter-box">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+          <input type="search" data-filter="rss-games" placeholder="Feed-Spiele durchsuchen …" aria-label="Feed-Spiele durchsuchen" spellcheck="false" />
+        </div>
+      </div>
+      <p class="feed-note">Live aus dem GamePix-Feed (JSON) – nach Qualität sortiert. Über „Weitere Spiele laden“ kommen neue Seiten dazu.</p>
+      <div class="chips-row" data-chips="rss-games" role="group" aria-label="Kategorien der Feed-Spiele"></div>
+      <div class="list-meta">
+        <span class="status-legend">
+          <span class="status-dot online"></span> funktioniert
+          <span class="status-dot blocked"></span> blockiert
+          <span class="status-dot network"></span> Netzwerk dicht
+          <span class="legend-hint">Punkt antippen = manuell setzen</span>
+        </span>
+        <span data-count="rss-games">wird geladen …</span>
+      </div>
+      <div class="grid" data-grid="rss-games" aria-live="polite"></div>
+      <div class="feed-actions">
+        <button class="btn btn-primary" type="button" id="rss-more">Weitere Spiele laden</button>
+        <span class="muted" id="rss-more-note"></span>
+      </div>
     </section>
 
     <!-- ======================== GAMES (LOCAL) ======================= -->
@@ -532,7 +562,7 @@
     <div class="wrap noscript">Bitte aktiviere JavaScript — die Inhalte werden aus JSON-Dateien geladen.</div>
   </noscript>
 
-  <script src="js/checker.js?v=5" defer></script>
-  <script src="js/app.js?v=5" defer></script>
+  <script src="js/checker.js?v=6" defer></script>
+  <script src="js/app.js?v=6" defer></script>
 </body>
 </html>

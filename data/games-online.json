@@ -1,5 +1,5 @@
 {
-  "_hinweis": "Struktur: Objekt in 'groups' ergänzen (id, name, icon, items). Farbe pro Link: in 'urls' beim Link einfach \"color\" setzen, z.B. {\"label\": \"…\", \"url\": \"…\", \"color\": \"#ff8a4c\"} – erlaubt sind Hex (#f80, #ff8800), Farbnamen (tomato) oder rgb()/hsl(). Eine \"color\" direkt am Eintrag gilt für alle seine Links. Quellen: \"Web-Ports\" = ported2browser.com, \"Kleine Webspiele\" = attogram/games (fosiper.com), \"MonkeyGG2\" = MonkeyGG2/monkeygg2.github.io, \"Offline-Paket\" = CoolDude2349/Offline-HTML-Games-Pack (über raw.githack.com eingebettet). MonkeyGG2 verbietet das Einbetten, diese Links öffnen im neuen Tab.",
+  "_hinweis": "Struktur: Objekt in 'groups' ergänzen (id, name, icon, items). Farbe pro Link: in 'urls' beim Link einfach \"color\" setzen, z.B. {\"label\": \"…\", \"url\": \"…\", \"color\": \"#ff8a4c\"} – erlaubt sind Hex (#f80, #ff8800), Farbnamen (tomato) oder rgb()/hsl(). Eine \"color\" direkt am Eintrag gilt für alle seine Links. Quellen: \"Ultimate Katalog\" = Carter54git/Ultimate-Catalog-Of-Web-Game-Ports (nur Einträge mit Spielbar-Link), \"Web-Ports\" = ported2browser.com, \"Kleine Webspiele\" = attogram/games (fosiper.com), \"MonkeyGG2\" = MonkeyGG2/monkeygg2.github.io, \"Offline-Paket\" = CoolDude2349/Offline-HTML-Games-Pack (über raw.githack.com eingebettet). MonkeyGG2 verbietet das Einbetten, diese Links öffnen im neuen Tab.",
   "title": "Games Online",
   "groups": [
     {
@@ -2854,6 +2854,5223 @@
             {
               "label": "wasmarcade.app · neuer Tab",
               "url": "https://wasmarcade.app/play/xiao-xiao-4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "catalog",
+      "name": "Ultimate Katalog",
+      "icon": "🗃️",
+      "items": [
+        {
+          "name": "-3",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=816"
+            }
+          ]
+        },
+        {
+          "name": "3D Pinball for Windows - Space Cadet",
+          "icon": "https://www.google.com/s2/favicons?domain=ksylvestre.itch.io&sz=128",
+          "urls": [
+            {
+              "label": "ksylvestre.itch.io",
+              "url": "https://ksylvestre.itch.io/space-cadet-pinball"
+            }
+          ]
+        },
+        {
+          "name": "4th & Fury",
+          "icon": "https://www.google.com/s2/favicons?domain=nearbycoder.github.io&sz=128",
+          "urls": [
+            {
+              "label": "nearbycoder.github.io",
+              "url": "https://nearbycoder.github.io/4th-and-fury/play/"
+            }
+          ]
+        },
+        {
+          "name": "A Bite at Freddy's",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=258"
+            }
+          ]
+        },
+        {
+          "name": "Alley Cat",
+          "icon": "https://www.google.com/s2/favicons?domain=petarov.github.io&sz=128",
+          "urls": [
+            {
+              "label": "petarov.github.io",
+              "url": "https://petarov.github.io/alleycat.exe/"
+            }
+          ]
+        },
+        {
+          "name": "Amanda The Adventurer",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.github.io&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.github.io",
+              "url": "https://gn-math.github.io/web-port/amanda-the-adventurer/"
+            }
+          ]
+        },
+        {
+          "name": "American McGee’s Alice",
+          "icon": "https://www.google.com/s2/favicons?domain=github.com&sz=128",
+          "urls": [
+            {
+              "label": "github.com",
+              "url": "https://github.com/yselimarslan98-dot/alice-web"
+            }
+          ]
+        },
+        {
+          "name": "Andy's Apple Farm",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.github.io&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.github.io",
+              "url": "https://gn-math.github.io/web-port/andys-apple-farm/"
+            }
+          ]
+        },
+        {
+          "name": "Animal Crossing (GAMECUBE)",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=828"
+            }
+          ]
+        },
+        {
+          "name": "Antonblast",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=711"
+            }
+          ]
+        },
+        {
+          "name": "Apes vs Helium",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=783"
+            }
+          ]
+        },
+        {
+          "name": "Arthur's Nightmare",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=645"
+            }
+          ]
+        },
+        {
+          "name": "Arx Fatalis (Arxwasm Demo)",
+          "icon": "https://www.google.com/s2/favicons?domain=wasm.continuation-labs.com&sz=128",
+          "urls": [
+            {
+              "label": "wasm.continuation-labs.com",
+              "url": "https://wasm.continuation-labs.com/arxdemo/"
+            }
+          ]
+        },
+        {
+          "name": "Arx Fatalis (rgc.zone)",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/arxweb/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Astral Siege",
+          "icon": "https://www.google.com/s2/favicons?domain=cel23010997.github.io&sz=128",
+          "urls": [
+            {
+              "label": "cel23010997.github.io",
+              "url": "https://cel23010997.github.io/astral-siege/"
+            }
+          ]
+        },
+        {
+          "name": "Atlantis: The Lost Tales",
+          "icon": "https://www.google.com/s2/favicons?domain=ripleyxlr8.github.io&sz=128",
+          "urls": [
+            {
+              "label": "ripleyxlr8.github.io",
+              "url": "https://ripleyxlr8.github.io/atlantis-native/"
+            }
+          ]
+        },
+        {
+          "name": "Bad Parenting 1",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=166"
+            }
+          ]
+        },
+        {
+          "name": "Baldi's Basics Classic Remastered",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.github.io&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.github.io",
+              "url": "https://gn-math.github.io/web-port/baldi-remaster/"
+            }
+          ]
+        },
+        {
+          "name": "Baldi's Basics Plus",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.github.io&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.github.io",
+              "url": "https://gn-math.github.io/web-port/baldi-plus/"
+            }
+          ]
+        },
+        {
+          "name": "Ballerburg SDL",
+          "icon": "https://www.google.com/s2/favicons?domain=baller.tuxfamily.org&sz=128",
+          "urls": [
+            {
+              "label": "baller.tuxfamily.org",
+              "url": "https://baller.tuxfamily.org/"
+            }
+          ]
+        },
+        {
+          "name": "Battle City",
+          "icon": "https://www.google.com/s2/favicons?domain=battle-city.berrry.app&sz=128",
+          "urls": [
+            {
+              "label": "battle-city.berrry.app",
+              "url": "https://battle-city.berrry.app"
+            }
+          ]
+        },
+        {
+          "name": "Battle Stadium D.O.N",
+          "icon": "https://www.google.com/s2/favicons?domain=battlestadium.online&sz=128",
+          "urls": [
+            {
+              "label": "battlestadium.online",
+              "url": "https://battlestadium.online/"
+            }
+          ]
+        },
+        {
+          "name": "BattleTanx (Source64)",
+          "icon": "https://www.google.com/s2/favicons?domain=source64.dev&sz=128",
+          "urls": [
+            {
+              "label": "source64.dev",
+              "url": "https://source64.dev/"
+            }
+          ]
+        },
+        {
+          "name": "BattleTanx: Global Assault (Source64)",
+          "icon": "https://www.google.com/s2/favicons?domain=source64.dev&sz=128",
+          "urls": [
+            {
+              "label": "source64.dev",
+              "url": "https://source64.dev/"
+            }
+          ]
+        },
+        {
+          "name": "Bendy and The Ink Machine (2)",
+          "icon": "https://www.google.com/s2/favicons?domain=wasm.rip&sz=128",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/BATIM/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Bendy and The Ink Machine (3)",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.github.io&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.github.io",
+              "url": "https://gn-math.github.io/web-port/bendy/"
+            }
+          ]
+        },
+        {
+          "name": "Bendy and the Ink Machine: ALL CHAPTERS",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=803"
+            }
+          ]
+        },
+        {
+          "name": "Beneath a Steel Sky (ScummWeb)",
+          "icon": "https://www.google.com/s2/favicons?domain=scummweb.tsilva.eu&sz=128",
+          "urls": [
+            {
+              "label": "scummweb.tsilva.eu",
+              "url": "https://scummweb.tsilva.eu/beneath-a-steel-sky/play"
+            }
+          ]
+        },
+        {
+          "name": "Blast Corps (DozerEncore)",
+          "icon": "https://www.google.com/s2/favicons?domain=doridian.github.io&sz=128",
+          "urls": [
+            {
+              "label": "doridian.github.io",
+              "url": "https://doridian.github.io/DozerEncore/"
+            }
+          ]
+        },
+        {
+          "name": "Brawlhalla",
+          "icon": "https://www.google.com/s2/favicons?domain=truffled.lol&sz=128",
+          "urls": [
+            {
+              "label": "truffled.lol",
+              "url": "https://truffled.lol/games/brawlhalla/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Brotato",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=723"
+            }
+          ]
+        },
+        {
+          "name": "Brotato (2)",
+          "icon": "https://www.google.com/s2/favicons?domain=wasm.rip&sz=128",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/bpac/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Brutal Doom",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/brutaldoom/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Bumpy's Arcade Fantasy",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/bumpyweb/openbumpy.html"
+            }
+          ]
+        },
+        {
+          "name": "Buster Jam",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=646"
+            }
+          ]
+        },
+        {
+          "name": "Caesar II",
+          "icon": "https://www.google.com/s2/favicons?domain=second-impressions.github.io&sz=128",
+          "urls": [
+            {
+              "label": "second-impressions.github.io",
+              "url": "https://second-impressions.github.io/caesar2-port/"
+            }
+          ]
+        },
+        {
+          "name": "Call of Duty Web Collection",
+          "icon": "https://www.google.com/s2/favicons?domain=cod-webports.pages.dev&sz=128",
+          "urls": [
+            {
+              "label": "cod-webports.pages.dev",
+              "url": "https://cod-webports.pages.dev/"
+            }
+          ]
+        },
+        {
+          "name": "Call of Duty: Black Ops Zombies (2)",
+          "icon": "https://www.google.com/s2/favicons?domain=vel.gg&sz=128",
+          "urls": [
+            {
+              "label": "vel.gg",
+              "url": "https://vel.gg/bsz"
+            }
+          ]
+        },
+        {
+          "name": "Call of Duty: Modern Warfare 2",
+          "icon": "https://www.google.com/s2/favicons?domain=ovz-game-production.up.railway.app&sz=128",
+          "urls": [
+            {
+              "label": "ovz-game-production.up.railway.app",
+              "url": "https://ovz-game-production.up.railway.app"
+            }
+          ]
+        },
+        {
+          "name": "Call of Mini: Dino Hunter (Revival)",
+          "icon": "https://www.google.com/s2/favicons?domain=comdh.krig.games&sz=128",
+          "urls": [
+            {
+              "label": "comdh.krig.games",
+              "url": "https://comdh.krig.games/"
+            }
+          ]
+        },
+        {
+          "name": "Carmageddon",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/carmaweb/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Carmageddon II: Carpocalypse Now",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/carma2web/index.html"
+            }
+          ]
+        },
+        {
+          "name": "CaseOh's Basics in Eating and Fast Food",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=758"
+            }
+          ]
+        },
+        {
+          "name": "Castle Crashers",
+          "icon": "https://www.google.com/s2/favicons?domain=truffled.lol&sz=128",
+          "urls": [
+            {
+              "label": "truffled.lol",
+              "url": "https://truffled.lol/games/castle/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Celeste (2)",
+          "icon": "https://www.google.com/s2/favicons?domain=celeste.r58playz.dev&sz=128",
+          "urls": [
+            {
+              "label": "celeste.r58playz.dev",
+              "url": "https://celeste.r58playz.dev/"
+            }
+          ]
+        },
+        {
+          "name": "Chasm: The Rift",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/chasmweb/run.html"
+            }
+          ]
+        },
+        {
+          "name": "Cheese Cube",
+          "icon": "https://www.google.com/s2/favicons?domain=cheese-cube.pages.dev&sz=128",
+          "urls": [
+            {
+              "label": "cheese-cube.pages.dev",
+              "url": "http://cheese-cube.pages.dev"
+            }
+          ]
+        },
+        {
+          "name": "Christmas Massacre",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=734"
+            }
+          ]
+        },
+        {
+          "name": "Chromium B.S.U.",
+          "icon": "https://www.google.com/s2/favicons?domain=midzer.de&sz=128",
+          "urls": [
+            {
+              "label": "midzer.de",
+              "url": "https://midzer.de/wasm/chromium-bsu/"
+            }
+          ]
+        },
+        {
+          "name": "Class of '09",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.github.io&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.github.io",
+              "url": "https://gn-math.github.io/web-port/class-of-09/"
+            }
+          ]
+        },
+        {
+          "name": "Claude of Duty: Vibe Slops II",
+          "icon": "https://www.google.com/s2/favicons?domain=froydinger.github.io&sz=128",
+          "urls": [
+            {
+              "label": "froydinger.github.io",
+              "url": "https://froydinger.github.io/claude-of-duty/"
+            }
+          ]
+        },
+        {
+          "name": "Claude of Duty: Vibe Slops II (GoofyAhhBro69420 mirror)",
+          "icon": "https://www.google.com/s2/favicons?domain=goofyahhbro69420.github.io&sz=128",
+          "urls": [
+            {
+              "label": "goofyahhbro69420.github.io",
+              "url": "https://goofyahhbro69420.github.io/Black-Ops-2/"
+            }
+          ]
+        },
+        {
+          "name": "Command & Conquer: Generals (wasm.com.br)",
+          "icon": "https://www.google.com/s2/favicons?domain=generals.wasm.com.br&sz=128",
+          "urls": [
+            {
+              "label": "generals.wasm.com.br",
+              "url": "https://generals.wasm.com.br/"
+            }
+          ]
+        },
+        {
+          "name": "Command & Conquer: Generals Zero Hour",
+          "icon": "https://www.google.com/s2/favicons?domain=generals.wasm.ltd&sz=128",
+          "urls": [
+            {
+              "label": "generals.wasm.ltd",
+              "url": "https://generals.wasm.ltd"
+            }
+          ]
+        },
+        {
+          "name": "Command & Conquer: Red Alert 2",
+          "icon": "https://www.google.com/s2/favicons?domain=chronodivide.com&sz=128",
+          "urls": [
+            {
+              "label": "chronodivide.com",
+              "url": "https://chronodivide.com/"
+            }
+          ]
+        },
+        {
+          "name": "Command & Conquer: Renegade (Open Commando)",
+          "icon": "https://www.google.com/s2/favicons?domain=open-commando.netanelgilad.workers.dev&sz=128",
+          "urls": [
+            {
+              "label": "open-commando.netanelgilad.workers.dev",
+              "url": "https://open-commando.netanelgilad.workers.dev"
+            }
+          ]
+        },
+        {
+          "name": "Commander Keen",
+          "icon": "https://www.google.com/s2/favicons?domain=jamesfmackenzie.com&sz=128",
+          "urls": [
+            {
+              "label": "jamesfmackenzie.com",
+              "url": "https://www.jamesfmackenzie.com/chocolatekeen/"
+            }
+          ]
+        },
+        {
+          "name": "Counter Strike & Half Life (2)",
+          "icon": "https://www.google.com/s2/favicons?domain=pixelsuft.github.io&sz=128",
+          "urls": [
+            {
+              "label": "pixelsuft.github.io",
+              "url": "https://pixelsuft.github.io/hl/"
+            }
+          ]
+        },
+        {
+          "name": "Counter Strike 1.6 (2)",
+          "icon": "https://www.google.com/s2/favicons?domain=csjs.live&sz=128",
+          "urls": [
+            {
+              "label": "csjs.live",
+              "url": "https://csjs.live"
+            }
+          ]
+        },
+        {
+          "name": "Counter Strike 2019",
+          "icon": "https://www.google.com/s2/favicons?domain=webstrike.me&sz=128",
+          "urls": [
+            {
+              "label": "webstrike.me",
+              "url": "https://webstrike.me"
+            }
+          ]
+        },
+        {
+          "name": "Counter-Strike (GStrike)",
+          "icon": "https://www.google.com/s2/favicons?domain=wasm.rip&sz=128",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/gstrike/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Counter-Strike 2 (cs2go, Three.js)",
+          "icon": "https://www.google.com/s2/favicons?domain=cs2go.3kh0.net&sz=128",
+          "urls": [
+            {
+              "label": "cs2go.3kh0.net",
+              "url": "https://cs2go.3kh0.net"
+            }
+          ]
+        },
+        {
+          "name": "Counter-Strike: Source Bunnyhop",
+          "icon": "https://www.google.com/s2/favicons?domain=bunnyhop.lol&sz=128",
+          "urls": [
+            {
+              "label": "bunnyhop.lol",
+              "url": "https://bunnyhop.lol"
+            }
+          ]
+        },
+        {
+          "name": "Counter-Strike: Source Surf",
+          "icon": "https://www.google.com/s2/favicons?domain=surfd.net&sz=128",
+          "urls": [
+            {
+              "label": "surfd.net",
+              "url": "http://surfd.net"
+            }
+          ]
+        },
+        {
+          "name": "Crash Bash Online",
+          "icon": "https://www.google.com/s2/favicons?domain=crashbash.app&sz=128",
+          "urls": [
+            {
+              "label": "crashbash.app",
+              "url": "https://crashbash.app/"
+            }
+          ]
+        },
+        {
+          "name": "Crash Nitro Kart",
+          "icon": "https://www.google.com/s2/favicons?domain=crashnitrokart.online&sz=128",
+          "urls": [
+            {
+              "label": "crashnitrokart.online",
+              "url": "https://crashnitrokart.online/"
+            }
+          ]
+        },
+        {
+          "name": "Crash Team Racing (High Octane)",
+          "icon": "https://www.google.com/s2/favicons?domain=rinnegatamante.github.io&sz=128",
+          "urls": [
+            {
+              "label": "rinnegatamante.github.io",
+              "url": "https://rinnegatamante.github.io/Crash-Team-Racing-High-Octane/"
+            }
+          ]
+        },
+        {
+          "name": "Crash Team Racing Turbocharged",
+          "icon": "https://www.google.com/s2/favicons?domain=ctr.cmzi.uk&sz=128",
+          "urls": [
+            {
+              "label": "ctr.cmzi.uk",
+              "url": "https://ctr.cmzi.uk/"
+            }
+          ]
+        },
+        {
+          "name": "Createrria",
+          "icon": "https://www.google.com/s2/favicons?domain=nomadic-ua.itch.io&sz=128",
+          "urls": [
+            {
+              "label": "nomadic-ua.itch.io",
+              "url": "https://nomadic-ua.itch.io/createrria"
+            }
+          ]
+        },
+        {
+          "name": "Crisis Core: Final Fantasy VII",
+          "icon": "https://www.google.com/s2/favicons?domain=crisiscorefinalfantasy7.online&sz=128",
+          "urls": [
+            {
+              "label": "crisiscorefinalfantasy7.online",
+              "url": "https://crisiscorefinalfantasy7.online/"
+            }
+          ]
+        },
+        {
+          "name": "Cro-Mag Rally",
+          "icon": "https://www.google.com/s2/favicons?domain=midzer.de&sz=128",
+          "urls": [
+            {
+              "label": "midzer.de",
+              "url": "https://midzer.de/wasm/cromagrally/"
+            }
+          ]
+        },
+        {
+          "name": "Cruelty Squad",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=825"
+            }
+          ]
+        },
+        {
+          "name": "Cube 2: Sauerbraten (BananaBread demo)",
+          "icon": "https://www.google.com/s2/favicons?domain=kripken.github.io&sz=128",
+          "urls": [
+            {
+              "label": "kripken.github.io",
+              "url": "https://kripken.github.io/BananaBread/cube2/bb.html"
+            }
+          ]
+        },
+        {
+          "name": "Cuphead (4)",
+          "icon": "https://www.google.com/s2/favicons?domain=wasm.rip&sz=128",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/cuphead/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Cut the Rope (H5DX)",
+          "icon": "https://www.google.com/s2/favicons?domain=yell0wsuit.github.io&sz=128",
+          "urls": [
+            {
+              "label": "yell0wsuit.github.io",
+              "url": "https://yell0wsuit.github.io/cuttherope-h5dx/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Cyberpunk 2077",
+          "icon": "https://www.google.com/s2/favicons?domain=cyberpunk2077.lol&sz=128",
+          "urls": [
+            {
+              "label": "cyberpunk2077.lol",
+              "url": "https://cyberpunk2077.lol/"
+            }
+          ]
+        },
+        {
+          "name": "Daggerfall (DaggerfallJS)",
+          "icon": "https://www.google.com/s2/favicons?domain=daggerfalljs.dev&sz=128",
+          "urls": [
+            {
+              "label": "daggerfalljs.dev",
+              "url": "https://daggerfalljs.dev/"
+            }
+          ]
+        },
+        {
+          "name": "Daytona USA",
+          "icon": "https://www.google.com/s2/favicons?domain=johannruiz.github.io&sz=128",
+          "urls": [
+            {
+              "label": "johannruiz.github.io",
+              "url": "https://johannruiz.github.io/Daytona-USA-Web/"
+            }
+          ]
+        },
+        {
+          "name": "Deadseat",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.github.io&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.github.io",
+              "url": "https://gn-math.github.io/web-port/deadseat/"
+            }
+          ]
+        },
+        {
+          "name": "Deltarune",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.github.io&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.github.io",
+              "url": "https://gn-math.github.io/web-port/deltatraveler/"
+            }
+          ]
+        },
+        {
+          "name": "Deltarune Chapters 1-4",
+          "icon": "https://www.google.com/s2/favicons?domain=aukak.itch.io&sz=128",
+          "urls": [
+            {
+              "label": "aukak.itch.io",
+              "url": "https://aukak.itch.io/deltarune"
+            }
+          ]
+        },
+        {
+          "name": "Deltatraveler",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=560"
+            }
+          ]
+        },
+        {
+          "name": "Descent",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/descentweb/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Descent (d1wasm)",
+          "icon": "https://www.google.com/s2/favicons?domain=descent.2ar.nl&sz=128",
+          "urls": [
+            {
+              "label": "descent.2ar.nl",
+              "url": "https://descent.2ar.nl/"
+            }
+          ]
+        },
+        {
+          "name": "Descent (DXX-Rebirth)",
+          "icon": "https://www.google.com/s2/favicons?domain=midzer.de&sz=128",
+          "urls": [
+            {
+              "label": "midzer.de",
+              "url": "https://midzer.de/wasm/descent1/"
+            }
+          ]
+        },
+        {
+          "name": "Diablo (diablo_web)",
+          "icon": "https://www.google.com/s2/favicons?domain=johnimril.github.io&sz=128",
+          "urls": [
+            {
+              "label": "johnimril.github.io",
+              "url": "https://johnimril.github.io/diablo_web/"
+            }
+          ]
+        },
+        {
+          "name": "Diablo II: Lord of Destruction (D2-Web)",
+          "icon": "https://www.google.com/s2/favicons?domain=diablo2.virtastic.app&sz=128",
+          "urls": [
+            {
+              "label": "diablo2.virtastic.app",
+              "url": "https://diablo2.virtastic.app/"
+            }
+          ]
+        },
+        {
+          "name": "Diddy Kong Racing (Golden Balloon)",
+          "icon": "https://www.google.com/s2/favicons?domain=akratch.github.io&sz=128",
+          "urls": [
+            {
+              "label": "akratch.github.io",
+              "url": "https://akratch.github.io/golden-balloon/"
+            }
+          ]
+        },
+        {
+          "name": "DOKDO (restoration)",
+          "icon": "https://www.google.com/s2/favicons?domain=dokdo.online&sz=128",
+          "urls": [
+            {
+              "label": "dokdo.online",
+              "url": "https://dokdo.online"
+            }
+          ]
+        },
+        {
+          "name": "Doki Doki Literature Club Plus!",
+          "icon": "https://www.google.com/s2/favicons?domain=selenite.cc&sz=128",
+          "urls": [
+            {
+              "label": "selenite.cc",
+              "url": "https://selenite.cc/resources/semag/ddlcplus/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Doom (joeheyming, classic and mods)",
+          "icon": "https://www.google.com/s2/favicons?domain=joeheyming.github.io&sz=128",
+          "urls": [
+            {
+              "label": "joeheyming.github.io",
+              "url": "https://joeheyming.github.io/doom/"
+            }
+          ]
+        },
+        {
+          "name": "Doom (wasoom)",
+          "icon": "https://www.google.com/s2/favicons?domain=wasoom.pages.dev&sz=128",
+          "urls": [
+            {
+              "label": "wasoom.pages.dev",
+              "url": "https://wasoom.pages.dev/"
+            }
+          ]
+        },
+        {
+          "name": "Doom (WebDOOM)",
+          "icon": "https://www.google.com/s2/favicons?domain=ustymukhman.github.io&sz=128",
+          "urls": [
+            {
+              "label": "ustymukhman.github.io",
+              "url": "https://ustymukhman.github.io/WebDOOM/public/"
+            }
+          ]
+        },
+        {
+          "name": "Doom 3",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=626"
+            }
+          ]
+        },
+        {
+          "name": "Doom 3 (D3Wasm)",
+          "icon": "https://www.google.com/s2/favicons?domain=recompiledgames.com&sz=128",
+          "urls": [
+            {
+              "label": "recompiledgames.com",
+              "url": "https://recompiledgames.com/doom-3-recompiled"
+            }
+          ]
+        },
+        {
+          "name": "Doom 3 Demo",
+          "icon": "https://www.google.com/s2/favicons?domain=wasm.continuation-labs.com&sz=128",
+          "urls": [
+            {
+              "label": "wasm.continuation-labs.com",
+              "url": "https://wasm.continuation-labs.com/d3demo/"
+            }
+          ]
+        },
+        {
+          "name": "DOOM I & II",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/truedoom/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Dos.Zone",
+          "icon": "https://www.google.com/s2/favicons?domain=dos.zone&sz=128",
+          "urls": [
+            {
+              "label": "dos.zone",
+              "url": "https://dos.zone"
+            }
+          ]
+        },
+        {
+          "name": "Dragon Ball Z: Budokai 2",
+          "icon": "https://www.google.com/s2/favicons?domain=budokai2onlline.cc&sz=128",
+          "urls": [
+            {
+              "label": "budokai2onlline.cc",
+              "url": "https://budokai2onlline.cc/"
+            }
+          ]
+        },
+        {
+          "name": "Dragon Ball Z: Budokai 3",
+          "icon": "https://www.google.com/s2/favicons?domain=dragonballbudokai3.online&sz=128",
+          "urls": [
+            {
+              "label": "dragonballbudokai3.online",
+              "url": "https://dragonballbudokai3.online/"
+            }
+          ]
+        },
+        {
+          "name": "Dragon Ball Z: Budokai Tenkaichi 2",
+          "icon": "https://www.google.com/s2/favicons?domain=dragonballbt2.online&sz=128",
+          "urls": [
+            {
+              "label": "dragonballbt2.online",
+              "url": "https://dragonballbt2.online/"
+            }
+          ]
+        },
+        {
+          "name": "Dragon Ball Z: Budokai Tenkaichi 3",
+          "icon": "https://www.google.com/s2/favicons?domain=dragonballbt3.online&sz=128",
+          "urls": [
+            {
+              "label": "dragonballbt3.online",
+              "url": "https://dragonballbt3.online/"
+            }
+          ]
+        },
+        {
+          "name": "Drakan: The Ancients' Gates (Drakan2PC)",
+          "icon": "https://www.google.com/s2/favicons?domain=christophervr.github.io&sz=128",
+          "urls": [
+            {
+              "label": "christophervr.github.io",
+              "url": "https://christophervr.github.io/Drakan2PC/"
+            }
+          ]
+        },
+        {
+          "name": "Drascula: The Vampire Strikes Back (ScummWeb)",
+          "icon": "https://www.google.com/s2/favicons?domain=scummweb.tsilva.eu&sz=128",
+          "urls": [
+            {
+              "label": "scummweb.tsilva.eu",
+              "url": "https://scummweb.tsilva.eu/drascula-the-vampire-strikes-back"
+            }
+          ]
+        },
+        {
+          "name": "Duck Life 8",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=695"
+            }
+          ]
+        },
+        {
+          "name": "Dude Simulator",
+          "icon": "https://www.google.com/s2/favicons?domain=dude-simulator-webgl.netlify.app&sz=128",
+          "urls": [
+            {
+              "label": "dude-simulator-webgl.netlify.app",
+              "url": "https://dude-simulator-webgl.netlify.app/"
+            }
+          ]
+        },
+        {
+          "name": "Dude Simulator 2",
+          "icon": "https://www.google.com/s2/favicons?domain=dude-sim-2-webgl-ported-by-carteryes.netlify.app&sz=128",
+          "urls": [
+            {
+              "label": "dude-sim-2-webgl-ported-by-carteryes.netlify.app",
+              "url": "https://dude-sim-2-webgl-ported-by-carteryes.netlify.app/"
+            }
+          ]
+        },
+        {
+          "name": "Duke Caribbean: Life's a Beach",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/8779-duke-vacation/run.html"
+            }
+          ]
+        },
+        {
+          "name": "Duke It Out in D.C.",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/8780-duke-dc/run.html"
+            }
+          ]
+        },
+        {
+          "name": "Duke Nukem 3D (eduke32-wasm)",
+          "icon": "https://www.google.com/s2/favicons?domain=digitalcybersoft.github.io&sz=128",
+          "urls": [
+            {
+              "label": "digitalcybersoft.github.io",
+              "url": "https://digitalcybersoft.github.io/eduke32-wasm/"
+            }
+          ]
+        },
+        {
+          "name": "Duke Nukem 3D TG",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/duke3dtg/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Duke: Nuclear Winter",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/8781-duke-nwinter/run.html"
+            }
+          ]
+        },
+        {
+          "name": "DUNE II TG",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/dune2tg/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Dungeon Keeper",
+          "icon": "https://www.google.com/s2/favicons?domain=dk-browser.tiiny.site&sz=128",
+          "urls": [
+            {
+              "label": "dk-browser.tiiny.site",
+              "url": "https://dk-browser.tiiny.site/"
+            }
+          ]
+        },
+        {
+          "name": "EA Sports Cricket 07",
+          "icon": "https://www.google.com/s2/favicons?domain=cricket07.dhaiwat.com&sz=128",
+          "urls": [
+            {
+              "label": "cricket07.dhaiwat.com",
+              "url": "https://cricket07.dhaiwat.com/"
+            }
+          ]
+        },
+        {
+          "name": "Eaglercraft",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/eaglecarftg/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Endoparasitic",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=286"
+            }
+          ]
+        },
+        {
+          "name": "Endoparasitic 2",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=724"
+            }
+          ]
+        },
+        {
+          "name": "F1 Race (MTK)",
+          "icon": "https://www.google.com/s2/favicons?domain=lab.exlmoto.ru&sz=128",
+          "urls": [
+            {
+              "label": "lab.exlmoto.ru",
+              "url": "https://lab.exlmoto.ru/f1/"
+            }
+          ]
+        },
+        {
+          "name": "Fallout",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=585"
+            }
+          ]
+        },
+        {
+          "name": "Fallout: Nevada / Sonora",
+          "icon": "https://www.google.com/s2/favicons?domain=fallout-nevada.ru&sz=128",
+          "urls": [
+            {
+              "label": "fallout-nevada.ru",
+              "url": "https://fallout-nevada.ru/#/en"
+            }
+          ]
+        },
+        {
+          "name": "Fallout: New Vegas (fnv-web-recomp)",
+          "icon": "https://www.google.com/s2/favicons?domain=falloutnewvegasweb.com&sz=128",
+          "urls": [
+            {
+              "label": "falloutnewvegasweb.com",
+              "url": "https://falloutnewvegasweb.com/"
+            }
+          ]
+        },
+        {
+          "name": "Faster Than Light: Demo",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/ftldemo/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Fatal Racing",
+          "icon": "https://www.google.com/s2/favicons?domain=play.fatal.racing&sz=128",
+          "urls": [
+            {
+              "label": "play.fatal.racing",
+              "url": "https://play.fatal.racing/"
+            }
+          ]
+        },
+        {
+          "name": "Fear & Hunger 2: Termina",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=794"
+            }
+          ]
+        },
+        {
+          "name": "Fears To Fathom",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.github.io&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.github.io",
+              "url": "https://gn-math.github.io/web-port/fears-to-fathom/"
+            }
+          ]
+        },
+        {
+          "name": "Fears to Fathom: Home Alone",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=460"
+            }
+          ]
+        },
+        {
+          "name": "Feed & Grow Fish",
+          "icon": "https://www.google.com/s2/favicons?domain=reeyukifish.pages.dev&sz=128",
+          "urls": [
+            {
+              "label": "reeyukifish.pages.dev",
+              "url": "https://reeyukifish.pages.dev/"
+            }
+          ]
+        },
+        {
+          "name": "FIFA 10 (PSP)",
+          "icon": "https://www.google.com/s2/favicons?domain=fifa10.website&sz=128",
+          "urls": [
+            {
+              "label": "fifa10.website",
+              "url": "https://fifa10.website/"
+            }
+          ]
+        },
+        {
+          "name": "FIFA 11",
+          "icon": "https://www.google.com/s2/favicons?domain=fifa11.online&sz=128",
+          "urls": [
+            {
+              "label": "fifa11.online",
+              "url": "https://fifa11.online/"
+            }
+          ]
+        },
+        {
+          "name": "FIFA 12",
+          "icon": "https://www.google.com/s2/favicons?domain=fifa12.online&sz=128",
+          "urls": [
+            {
+              "label": "fifa12.online",
+              "url": "https://fifa12.online/"
+            }
+          ]
+        },
+        {
+          "name": "FIFA 13",
+          "icon": "https://www.google.com/s2/favicons?domain=fifa13.online&sz=128",
+          "urls": [
+            {
+              "label": "fifa13.online",
+              "url": "https://fifa13.online/"
+            }
+          ]
+        },
+        {
+          "name": "FIFA 14 (PSP)",
+          "icon": "https://www.google.com/s2/favicons?domain=fifa14.online&sz=128",
+          "urls": [
+            {
+              "label": "fifa14.online",
+              "url": "https://fifa14.online/"
+            }
+          ]
+        },
+        {
+          "name": "FIFA Street",
+          "icon": "https://www.google.com/s2/favicons?domain=fifastreet.online&sz=128",
+          "urls": [
+            {
+              "label": "fifastreet.online",
+              "url": "https://fifastreet.online/"
+            }
+          ]
+        },
+        {
+          "name": "Fih",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=797"
+            }
+          ]
+        },
+        {
+          "name": "Five Nights at Candy's",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=503"
+            }
+          ]
+        },
+        {
+          "name": "Five Nights at Candy's 2",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=504"
+            }
+          ]
+        },
+        {
+          "name": "Five Nights at Freddy's",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=38"
+            }
+          ]
+        },
+        {
+          "name": "Five Nights at Freddy's 2",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=39"
+            }
+          ]
+        },
+        {
+          "name": "Five Nights at Freddy's 3",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=40"
+            }
+          ]
+        },
+        {
+          "name": "Five Nights at Freddy's 4",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=41"
+            }
+          ]
+        },
+        {
+          "name": "Five Nights at Freddy's 4: Halloween",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=428"
+            }
+          ]
+        },
+        {
+          "name": "Five Nights at Freddy's World: Refreshed",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=704"
+            }
+          ]
+        },
+        {
+          "name": "Five Nights at Freddy's: Pizza Simulator",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=191"
+            }
+          ]
+        },
+        {
+          "name": "Five Nights at Freddy's: Sister Location",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=185"
+            }
+          ]
+        },
+        {
+          "name": "Five Nights at Freddy's: Ultimate Custom Night",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=192"
+            }
+          ]
+        },
+        {
+          "name": "Five Nights at Freddy's: World",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=190"
+            }
+          ]
+        },
+        {
+          "name": "Five Nights at Frickbear's 3",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=813"
+            }
+          ]
+        },
+        {
+          "name": "Five Nights at Last Breath",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=750"
+            }
+          ]
+        },
+        {
+          "name": "FlatOut 2 (dezm0n web port)",
+          "icon": "https://www.google.com/s2/favicons?domain=itch.io&sz=128",
+          "urls": [
+            {
+              "label": "itch.io",
+              "url": "https://itch.io/event/46481004"
+            }
+          ]
+        },
+        {
+          "name": "Flight of the Amazon Queen (ScummWeb)",
+          "icon": "https://www.google.com/s2/favicons?domain=scummweb.tsilva.eu&sz=128",
+          "urls": [
+            {
+              "label": "scummweb.tsilva.eu",
+              "url": "https://scummweb.tsilva.eu/#game-flight-of-the-amazon-queen"
+            }
+          ]
+        },
+        {
+          "name": "Flying Gorilla 3D",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=763"
+            }
+          ]
+        },
+        {
+          "name": "Freeciv (Freeciv-web)",
+          "icon": "https://www.google.com/s2/favicons?domain=webciv.org&sz=128",
+          "urls": [
+            {
+              "label": "webciv.org",
+              "url": "https://webciv.org/webclient/?action=new&type=singleplayer"
+            }
+          ]
+        },
+        {
+          "name": "Fundamental Paper Novel",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=746"
+            }
+          ]
+        },
+        {
+          "name": "Fused 240",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=722"
+            }
+          ]
+        },
+        {
+          "name": "Gabriel's Awesome Schoolhouse (GASH)",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=784"
+            }
+          ]
+        },
+        {
+          "name": "Geometry Dash (Ale7208)",
+          "icon": "https://www.google.com/s2/favicons?domain=gd-webport.pages.dev&sz=128",
+          "urls": [
+            {
+              "label": "gd-webport.pages.dev",
+              "url": "https://gd-webport.pages.dev/"
+            }
+          ]
+        },
+        {
+          "name": "Geometry Dash (Web Dashers)",
+          "icon": "https://www.google.com/s2/favicons?domain=web-dashers.github.io&sz=128",
+          "urls": [
+            {
+              "label": "web-dashers.github.io",
+              "url": "https://web-dashers.github.io/"
+            }
+          ]
+        },
+        {
+          "name": "Getting Over It",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.github.io&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.github.io",
+              "url": "https://gn-math.github.io/web-port/getting-over-it/"
+            }
+          ]
+        },
+        {
+          "name": "Getting Over It with Bennett Foddy",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=557"
+            }
+          ]
+        },
+        {
+          "name": "God of War: Chains of Olympus",
+          "icon": "https://www.google.com/s2/favicons?domain=godofwarchains.online&sz=128",
+          "urls": [
+            {
+              "label": "godofwarchains.online",
+              "url": "https://godofwarchains.online/"
+            }
+          ]
+        },
+        {
+          "name": "God of War: Ghost of Sparta",
+          "icon": "https://www.google.com/s2/favicons?domain=godofwarsparta.online&sz=128",
+          "urls": [
+            {
+              "label": "godofwarsparta.online",
+              "url": "https://godofwarsparta.online/"
+            }
+          ]
+        },
+        {
+          "name": "Gold Miner Special Edition",
+          "icon": "https://www.google.com/s2/favicons?domain=wasmarcade.app&sz=128",
+          "urls": [
+            {
+              "label": "wasmarcade.app",
+              "url": "https://wasmarcade.app/play/gold-miner"
+            }
+          ]
+        },
+        {
+          "name": "Golden Sun",
+          "icon": "https://www.google.com/s2/favicons?domain=shmargus.github.io&sz=128",
+          "urls": [
+            {
+              "label": "shmargus.github.io",
+              "url": "https://shmargus.github.io/GSRecomp/"
+            }
+          ]
+        },
+        {
+          "name": "GoldenEye 007 (GoldenWeb64)",
+          "icon": "https://www.google.com/s2/favicons?domain=goldenweb64.com&sz=128",
+          "urls": [
+            {
+              "label": "goldenweb64.com",
+              "url": "https://goldenweb64.com/"
+            }
+          ]
+        },
+        {
+          "name": "Gorilla Tag",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=668"
+            }
+          ]
+        },
+        {
+          "name": "Gran Turismo 2",
+          "icon": "https://www.google.com/s2/favicons?domain=ydubr-gt2.surge.sh&sz=128",
+          "urls": [
+            {
+              "label": "ydubr-gt2.surge.sh",
+              "url": "https://ydubr-gt2.surge.sh/"
+            }
+          ]
+        },
+        {
+          "name": "Grand Theft Auto 2",
+          "icon": "https://www.google.com/s2/favicons?domain=m1stermo.github.io&sz=128",
+          "urls": [
+            {
+              "label": "m1stermo.github.io",
+              "url": "https://m1stermo.github.io/gta2/"
+            }
+          ]
+        },
+        {
+          "name": "Grand Theft Auto III (wasm.rip)",
+          "icon": "https://www.google.com/s2/favicons?domain=wasm.rip&sz=128",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/gta3/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Grand Theft Auto III Online (quenq)",
+          "icon": "https://www.google.com/s2/favicons?domain=iii.quenq.com&sz=128",
+          "urls": [
+            {
+              "label": "iii.quenq.com",
+              "url": "https://iii.quenq.com/"
+            }
+          ]
+        },
+        {
+          "name": "Grand Theft Auto: Chinatown Wars (PPSSPP Web)",
+          "icon": "https://www.google.com/s2/favicons?domain=gta-chinatown-wars.pages.dev&sz=128",
+          "urls": [
+            {
+              "label": "gta-chinatown-wars.pages.dev",
+              "url": "https://gta-chinatown-wars.pages.dev/"
+            }
+          ]
+        },
+        {
+          "name": "Grand Theft Auto: Vice City (quenq)",
+          "icon": "https://www.google.com/s2/favicons?domain=vc.quenq.com&sz=128",
+          "urls": [
+            {
+              "label": "vc.quenq.com",
+              "url": "https://vc.quenq.com/"
+            }
+          ]
+        },
+        {
+          "name": "Grand Theft Auto: Vice City (revc.wasm.ltd)",
+          "icon": "https://www.google.com/s2/favicons?domain=revc.wasm.ltd&sz=128",
+          "urls": [
+            {
+              "label": "revc.wasm.ltd",
+              "url": "https://revc.wasm.ltd/"
+            }
+          ]
+        },
+        {
+          "name": "Gravity Defied (gravity-defied-web)",
+          "icon": "https://www.google.com/s2/favicons?domain=litomore.github.io&sz=128",
+          "urls": [
+            {
+              "label": "litomore.github.io",
+              "url": "https://litomore.github.io/gravity-defied-web/"
+            }
+          ]
+        },
+        {
+          "name": "GTA 3 (3)",
+          "icon": "https://www.google.com/s2/favicons?domain=wasmarcade.com&sz=128",
+          "urls": [
+            {
+              "label": "wasmarcade.com",
+              "url": "https://wasmarcade.com/gta3"
+            }
+          ]
+        },
+        {
+          "name": "GTA V",
+          "icon": "https://www.google.com/s2/favicons?domain=web.archive.org&sz=128",
+          "urls": [
+            {
+              "label": "web.archive.org",
+              "url": "https://web.archive.org/web/20261006055917/https://playgta5.com/"
+            }
+          ]
+        },
+        {
+          "name": "GTA V (GrandV V2)",
+          "icon": "https://www.google.com/s2/favicons?domain=v2.fiveplay.lol&sz=128",
+          "urls": [
+            {
+              "label": "v2.fiveplay.lol",
+              "url": "https://v2.fiveplay.lol/launcher.html"
+            }
+          ]
+        },
+        {
+          "name": "GTA V (gta5-web, WebGPU)",
+          "icon": "https://www.google.com/s2/favicons?domain=hammadshakeelai.github.io&sz=128",
+          "urls": [
+            {
+              "label": "hammadshakeelai.github.io",
+              "url": "https://hammadshakeelai.github.io/gta5-web/"
+            }
+          ]
+        },
+        {
+          "name": "GTA V (playgta5-to-rust)",
+          "icon": "https://www.google.com/s2/favicons?domain=gta.caruno.wtf&sz=128",
+          "urls": [
+            {
+              "label": "gta.caruno.wtf",
+              "url": "https://gta.caruno.wtf:8443/"
+            }
+          ]
+        },
+        {
+          "name": "GTA Vice City (2)",
+          "icon": "https://www.google.com/s2/favicons?domain=joncodeofficial.github.io&sz=128",
+          "urls": [
+            {
+              "label": "joncodeofficial.github.io",
+              "url": "https://joncodeofficial.github.io/gta-vice-city-wasm/"
+            }
+          ]
+        },
+        {
+          "name": "GTA: Vice City (projetoescola)",
+          "icon": "https://www.google.com/s2/favicons?domain=gtavc.projetoescola.com&sz=128",
+          "urls": [
+            {
+              "label": "gtavc.projetoescola.com",
+              "url": "https://gtavc.projetoescola.com/"
+            }
+          ]
+        },
+        {
+          "name": "Guitar Hero III (Browser Edition)",
+          "icon": "https://www.google.com/s2/favicons?domain=gh3.thediaryofchris.net&sz=128",
+          "urls": [
+            {
+              "label": "gh3.thediaryofchris.net",
+              "url": "https://gh3.thediaryofchris.net/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Half Life",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=262"
+            }
+          ]
+        },
+        {
+          "name": "Half Life 2",
+          "icon": "https://www.google.com/s2/favicons?domain=hl2.slqnt.dev&sz=128",
+          "urls": [
+            {
+              "label": "hl2.slqnt.dev",
+              "url": "https://hl2.slqnt.dev/"
+            }
+          ]
+        },
+        {
+          "name": "Half Life: Opposing Force",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=693"
+            }
+          ]
+        },
+        {
+          "name": "Half-Life and Counter-Strike 1.6 (WebXash)",
+          "icon": "https://www.google.com/s2/favicons?domain=x8bitrain.github.io&sz=128",
+          "urls": [
+            {
+              "label": "x8bitrain.github.io",
+              "url": "https://x8bitrain.github.io/webXash/"
+            }
+          ]
+        },
+        {
+          "name": "Halo: Combat Evolved (Combat Lab)",
+          "icon": "https://www.google.com/s2/favicons?domain=mitchellhynes.com&sz=128",
+          "urls": [
+            {
+              "label": "mitchellhynes.com",
+              "url": "https://mitchellhynes.com/combat-lab/"
+            }
+          ]
+        },
+        {
+          "name": "Halo: Combat Evolved (OpenCE)",
+          "icon": "https://www.google.com/s2/favicons?domain=opencommunityedition.com&sz=128",
+          "urls": [
+            {
+              "label": "opencommunityedition.com",
+              "url": "https://opencommunityedition.com/"
+            }
+          ]
+        },
+        {
+          "name": "Halo: Combat Evolved Mobile",
+          "icon": "https://www.google.com/s2/favicons?domain=hcemobile.com&sz=128",
+          "urls": [
+            {
+              "label": "hcemobile.com",
+              "url": "https://hcemobile.com/"
+            }
+          ]
+        },
+        {
+          "name": "Happy Sheepies",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.github.io&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.github.io",
+              "url": "https://gn-math.github.io/web-port/happy-sheepies/"
+            }
+          ]
+        },
+        {
+          "name": "Hard Truck / Hard Truck 2 (Дальнобойщики 1 и 2)",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/hardtruck/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Harry Potter and the Chamber of Secrets",
+          "icon": "https://www.google.com/s2/favicons?domain=hp2.mihaimateias.com&sz=128",
+          "urls": [
+            {
+              "label": "hp2.mihaimateias.com",
+              "url": "https://hp2.mihaimateias.com/"
+            }
+          ]
+        },
+        {
+          "name": "Heaven for Death",
+          "icon": "https://www.google.com/s2/favicons?domain=ymdryo.github.io&sz=128",
+          "urls": [
+            {
+              "label": "ymdryo.github.io",
+              "url": "https://ymdryo.github.io/heavenfordeath/"
+            }
+          ]
+        },
+        {
+          "name": "Hedgewars (WebWars)",
+          "icon": "https://www.google.com/s2/favicons?domain=webwars.link&sz=128",
+          "urls": [
+            {
+              "label": "webwars.link",
+              "url": "https://webwars.link"
+            }
+          ]
+        },
+        {
+          "name": "Helltaker (2)",
+          "icon": "https://www.google.com/s2/favicons?domain=wasm.rip&sz=128",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/Helltaker/helltaker.html"
+            }
+          ]
+        },
+        {
+          "name": "HERETIC / HEXEN",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/heretichex/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Heroes of Might and Magic II",
+          "icon": "https://www.google.com/s2/favicons?domain=midzer.de&sz=128",
+          "urls": [
+            {
+              "label": "midzer.de",
+              "url": "https://midzer.de/wasm/heroes2/"
+            }
+          ]
+        },
+        {
+          "name": "Heroes of Might and Magic II (fheroes2, rgc.zone)",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/fheroes2weblast/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Heroes of Might and Magic IV (HoMM4Recomp)",
+          "icon": "https://www.google.com/s2/favicons?domain=gamerecomp.github.io&sz=128",
+          "urls": [
+            {
+              "label": "gamerecomp.github.io",
+              "url": "https://gamerecomp.github.io/HoMM4Recomp/"
+            }
+          ]
+        },
+        {
+          "name": "Hexen II (Hexenwail)",
+          "icon": "https://www.google.com/s2/favicons?domain=hexenwail.github.io&sz=128",
+          "urls": [
+            {
+              "label": "hexenwail.github.io",
+              "url": "https://hexenwail.github.io/hexenwail/"
+            }
+          ]
+        },
+        {
+          "name": "Hollow Knight (dezm0n web port)",
+          "icon": "https://www.google.com/s2/favicons?domain=dezm0n.itch.io&sz=128",
+          "urls": [
+            {
+              "label": "dezm0n.itch.io",
+              "url": "https://dezm0n.itch.io/hollow-knight-web-port"
+            }
+          ]
+        },
+        {
+          "name": "Hollow Knight: Silksong",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=771"
+            }
+          ]
+        },
+        {
+          "name": "Hot Shots Tennis (OpenTennis)",
+          "icon": "https://www.google.com/s2/favicons?domain=opentennis.dev&sz=128",
+          "urls": [
+            {
+              "label": "opentennis.dev",
+              "url": "https://opentennis.dev/"
+            }
+          ]
+        },
+        {
+          "name": "Human Expenditure Program",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.github.io&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.github.io",
+              "url": "https://gn-math.github.io/web-port/human-expenditure-program/"
+            }
+          ]
+        },
+        {
+          "name": "I Can't Believe It's Not Sonic 1",
+          "icon": "https://www.google.com/s2/favicons?domain=jojudge.com&sz=128",
+          "urls": [
+            {
+              "label": "jojudge.com",
+              "url": "https://jojudge.com/ICBINS1/"
+            }
+          ]
+        },
+        {
+          "name": "I Wanna Be The Guy",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=834"
+            }
+          ]
+        },
+        {
+          "name": "In Stars and Time",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=667"
+            }
+          ]
+        },
+        {
+          "name": "Jak and Daxter: The Lost Frontier",
+          "icon": "https://www.google.com/s2/favicons?domain=jakdaxterlostfrontier.online&sz=128",
+          "urls": [
+            {
+              "label": "jakdaxterlostfrontier.online",
+              "url": "https://jakdaxterlostfrontier.online/"
+            }
+          ]
+        },
+        {
+          "name": "Jeffrey Epstein Basics In Education And Kidnapping",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=751"
+            }
+          ]
+        },
+        {
+          "name": "Jumbo Mario",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=712"
+            }
+          ]
+        },
+        {
+          "name": "Just Shapes & Beats",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=826"
+            }
+          ]
+        },
+        {
+          "name": "Kagetsu Tohya",
+          "icon": "https://www.google.com/s2/favicons?domain=kagetsu.pages.dev&sz=128",
+          "urls": [
+            {
+              "label": "kagetsu.pages.dev",
+              "url": "https://kagetsu.pages.dev/"
+            }
+          ]
+        },
+        {
+          "name": "Karlson",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.github.io&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.github.io",
+              "url": "https://gn-math.github.io/web-port/karlson/"
+            }
+          ]
+        },
+        {
+          "name": "Karlson 2D",
+          "icon": "https://www.google.com/s2/favicons?domain=truffled.lol&sz=128",
+          "urls": [
+            {
+              "label": "truffled.lol",
+              "url": "https://truffled.lol/games/karlson2d/truffledkarlson2d/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Kindergarten",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=445"
+            }
+          ]
+        },
+        {
+          "name": "Kindergarten 1 & 2",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.github.io&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.github.io",
+              "url": "https://gn-math.github.io/web-port/kindergarten/"
+            }
+          ]
+        },
+        {
+          "name": "Kindergarten 2",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=446"
+            }
+          ]
+        },
+        {
+          "name": "Kindergarten 3",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=501"
+            }
+          ]
+        },
+        {
+          "name": "Kingdom Hearts: Chain of Memories (RepliCoM)",
+          "icon": "https://www.google.com/s2/favicons?domain=replicom.dev&sz=128",
+          "urls": [
+            {
+              "label": "replicom.dev",
+              "url": "https://replicom.dev/"
+            }
+          ]
+        },
+        {
+          "name": "Kingdom Rush (Flash Edition)",
+          "icon": "https://www.google.com/s2/favicons?domain=wasmarcade.app&sz=128",
+          "urls": [
+            {
+              "label": "wasmarcade.app",
+              "url": "https://wasmarcade.app/play/kingdom-rush"
+            }
+          ]
+        },
+        {
+          "name": "Kino der Toten",
+          "icon": "https://www.google.com/s2/favicons?domain=kino-der-toten.pages.dev&sz=128",
+          "urls": [
+            {
+              "label": "kino-der-toten.pages.dev",
+              "url": "http://kino-der-toten.pages.dev"
+            }
+          ]
+        },
+        {
+          "name": "Kino der Toten (GoofyAhhBro69420 mirror)",
+          "icon": "https://www.google.com/s2/favicons?domain=goofyahhbro69420.github.io&sz=128",
+          "urls": [
+            {
+              "label": "goofyahhbro69420.github.io",
+              "url": "https://goofyahhbro69420.github.io/COD-ZOMBIES/"
+            }
+          ]
+        },
+        {
+          "name": "Kino der Toten (theeagler1234 mirror)",
+          "icon": "https://www.google.com/s2/favicons?domain=theeagler1234-alt.github.io&sz=128",
+          "urls": [
+            {
+              "label": "theeagler1234-alt.github.io",
+              "url": "https://theeagler1234-alt.github.io/kino-der-toten/"
+            }
+          ]
+        },
+        {
+          "name": "Kirby & The Amazing Mirror (katam-port)",
+          "icon": "https://www.google.com/s2/favicons?domain=sh1ftmaker.github.io&sz=128",
+          "urls": [
+            {
+              "label": "sh1ftmaker.github.io",
+              "url": "https://sh1ftmaker.github.io/katam-port/"
+            }
+          ]
+        },
+        {
+          "name": "Kirby ~ Soft & Wet",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=692"
+            }
+          ]
+        },
+        {
+          "name": "koi/_flixel",
+          "icon": "https://www.google.com/s2/favicons?domain=oldgrounds.xyz&sz=128",
+          "urls": [
+            {
+              "label": "oldgrounds.xyz",
+              "url": "https://oldgrounds.xyz/"
+            }
+          ]
+        },
+        {
+          "name": "La Madriguera (Lazy Bear Game)",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=843"
+            }
+          ]
+        },
+        {
+          "name": "Lacey's Flash Games",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.github.io&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.github.io",
+              "url": "https://gn-math.github.io/web-port/laceys-flash-games/"
+            }
+          ]
+        },
+        {
+          "name": "Legend of Legaia",
+          "icon": "https://www.google.com/s2/favicons?domain=andrewaltimit.github.io&sz=128",
+          "urls": [
+            {
+              "label": "andrewaltimit.github.io",
+              "url": "https://andrewaltimit.github.io/legend-of-legaia-re/play.html"
+            }
+          ]
+        },
+        {
+          "name": "LEGO Star Wars: The Video Game",
+          "icon": "https://www.google.com/s2/favicons?domain=down1oads.github.io&sz=128",
+          "urls": [
+            {
+              "label": "down1oads.github.io",
+              "url": "https://down1oads.github.io/LSWWEB/"
+            }
+          ]
+        },
+        {
+          "name": "Lenin: First Blood",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/8770-blood-lenin/run.html"
+            }
+          ]
+        },
+        {
+          "name": "Lethal Ape",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=793"
+            }
+          ]
+        },
+        {
+          "name": "Limbo",
+          "icon": "https://www.google.com/s2/favicons?domain=truffled.lol&sz=128",
+          "urls": [
+            {
+              "label": "truffled.lol",
+              "url": "https://truffled.lol/games/limbo/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Liquidator 3D",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/8778-liquidator/run.html"
+            }
+          ]
+        },
+        {
+          "name": "Look Outside",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=649"
+            }
+          ]
+        },
+        {
+          "name": "Luanti (Minetest)",
+          "icon": "https://www.google.com/s2/favicons?domain=wasmga.me&sz=128",
+          "urls": [
+            {
+              "label": "wasmga.me",
+              "url": "https://wasmga.me/games/luanti"
+            }
+          ]
+        },
+        {
+          "name": "Lugaru",
+          "icon": "https://www.google.com/s2/favicons?domain=loganwalkerdev.github.io&sz=128",
+          "urls": [
+            {
+              "label": "loganwalkerdev.github.io",
+              "url": "https://loganwalkerdev.github.io/lugaru-web/"
+            }
+          ]
+        },
+        {
+          "name": "Luigi's Picture Poker",
+          "icon": "https://www.google.com/s2/favicons?domain=marcy4000.itch.io&sz=128",
+          "urls": [
+            {
+              "label": "marcy4000.itch.io",
+              "url": "https://marcy4000.itch.io/luigis-picture-poker"
+            }
+          ]
+        },
+        {
+          "name": "Madden NFL 08",
+          "icon": "https://www.google.com/s2/favicons?domain=maddennfl08.online&sz=128",
+          "urls": [
+            {
+              "label": "maddennfl08.online",
+              "url": "https://maddennfl08.online/"
+            }
+          ]
+        },
+        {
+          "name": "Magic Tower: 50 Floors",
+          "icon": "https://www.google.com/s2/favicons?domain=wasmarcade.app&sz=128",
+          "urls": [
+            {
+              "label": "wasmarcade.app",
+              "url": "https://wasmarcade.app/play/magic-tower"
+            }
+          ]
+        },
+        {
+          "name": "Maisy's Playhouse",
+          "icon": "https://www.google.com/s2/favicons?domain=games.nostalgiarealm.com&sz=128",
+          "urls": [
+            {
+              "label": "games.nostalgiarealm.com",
+              "url": "https://games.nostalgiarealm.com/maisysplayhouse/"
+            }
+          ]
+        },
+        {
+          "name": "MechCommander 2 (mc2-rust)",
+          "icon": "https://www.google.com/s2/favicons?domain=justinbukoski.github.io&sz=128",
+          "urls": [
+            {
+              "label": "justinbukoski.github.io",
+              "url": "https://justinbukoski.github.io/mc2-rust/"
+            }
+          ]
+        },
+        {
+          "name": "Medabots AX",
+          "icon": "https://www.google.com/s2/favicons?domain=medabots-ax.meme.ar&sz=128",
+          "urls": [
+            {
+              "label": "medabots-ax.meme.ar",
+              "url": "https://medabots-ax.meme.ar/"
+            }
+          ]
+        },
+        {
+          "name": "Metal Gear Solid (Shadow Moses Web)",
+          "icon": "https://www.google.com/s2/favicons?domain=mgs.ravenlight.net&sz=128",
+          "urls": [
+            {
+              "label": "mgs.ravenlight.net",
+              "url": "https://mgs.ravenlight.net/"
+            }
+          ]
+        },
+        {
+          "name": "Midnight Club 3: DUB Edition",
+          "icon": "https://www.google.com/s2/favicons?domain=midnighhtclub3.online&sz=128",
+          "urls": [
+            {
+              "label": "midnighhtclub3.online",
+              "url": "https://midnighhtclub3.online/"
+            }
+          ]
+        },
+        {
+          "name": "Midnight Club 3: DUB Edition (mc3-web-study)",
+          "icon": "https://www.google.com/s2/favicons?domain=dubedition.xyz&sz=128",
+          "urls": [
+            {
+              "label": "dubedition.xyz",
+              "url": "https://dubedition.xyz"
+            }
+          ]
+        },
+        {
+          "name": "Midnight Shift",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=658"
+            }
+          ]
+        },
+        {
+          "name": "Milk inside a bag of milk inside a bag of milk",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=650"
+            }
+          ]
+        },
+        {
+          "name": "Milk outside a bag of milk outside a bag of milk",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=651"
+            }
+          ]
+        },
+        {
+          "name": "Milkman Karlson",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.github.io&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.github.io",
+              "url": "https://gn-math.github.io/web-port/milkman-karlson/"
+            }
+          ]
+        },
+        {
+          "name": "Mindwave",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=648"
+            }
+          ]
+        },
+        {
+          "name": "Minecraft 0.6.1",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/minecraft061/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Minecraft 1.8.8 (EaglercraftX)",
+          "icon": "https://www.google.com/s2/favicons?domain=wasmarcade.com&sz=128",
+          "urls": [
+            {
+              "label": "wasmarcade.com",
+              "url": "https://wasmarcade.com/minecraft"
+            }
+          ]
+        },
+        {
+          "name": "Minecraft Pocket Edition",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=754"
+            }
+          ]
+        },
+        {
+          "name": "Minesweeper Plus",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.github.io&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.github.io",
+              "url": "https://gn-math.github.io/web-port/minesweeperplus/"
+            }
+          ]
+        },
+        {
+          "name": "Mini DayZ",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/minidayz/index.html"
+            }
+          ]
+        },
+        {
+          "name": "MiSide",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=814"
+            }
+          ]
+        },
+        {
+          "name": "MiSide (2)",
+          "icon": "https://www.google.com/s2/favicons?domain=wasm.rip&sz=128",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/miside/miside.html"
+            }
+          ]
+        },
+        {
+          "name": "Mobile Suit Gundam: Federation vs. Zeon DX (re-gvs-fvzdx)",
+          "icon": "https://www.google.com/s2/favicons?domain=sennett-lau.github.io&sz=128",
+          "urls": [
+            {
+              "label": "sennett-lau.github.io",
+              "url": "https://sennett-lau.github.io/re-gvs-fvzdx/"
+            }
+          ]
+        },
+        {
+          "name": "Monster Hunter Freedom Unite",
+          "icon": "https://www.google.com/s2/favicons?domain=mhfu.online&sz=128",
+          "urls": [
+            {
+              "label": "mhfu.online",
+              "url": "https://mhfu.online/"
+            }
+          ]
+        },
+        {
+          "name": "Moon (Black Ops Zombies, vel.gg)",
+          "icon": "https://www.google.com/s2/favicons?domain=vel.gg&sz=128",
+          "urls": [
+            {
+              "label": "vel.gg",
+              "url": "https://vel.gg/bo1z/moon"
+            }
+          ]
+        },
+        {
+          "name": "Moon (Zombies)",
+          "icon": "https://www.google.com/s2/favicons?domain=moon-zombies.pages.dev&sz=128",
+          "urls": [
+            {
+              "label": "moon-zombies.pages.dev",
+              "url": "http://moon-zombies.pages.dev"
+            }
+          ]
+        },
+        {
+          "name": "Mortal Kombat: Armageddon",
+          "icon": "https://www.google.com/s2/favicons?domain=mka.lauta.site&sz=128",
+          "urls": [
+            {
+              "label": "mka.lauta.site",
+              "url": "https://mka.lauta.site/"
+            }
+          ]
+        },
+        {
+          "name": "Mortal Kombat: Shaolin Monks",
+          "icon": "https://www.google.com/s2/favicons?domain=mortalkombatsm.online&sz=128",
+          "urls": [
+            {
+              "label": "mortalkombatsm.online",
+              "url": "https://mortalkombatsm.online/"
+            }
+          ]
+        },
+        {
+          "name": "Motocross Madness 2 (mcm2-web)",
+          "icon": "https://www.google.com/s2/favicons?domain=rzrabbi.github.io&sz=128",
+          "urls": [
+            {
+              "label": "rzrabbi.github.io",
+              "url": "https://rzrabbi.github.io/mcm2-web/"
+            }
+          ]
+        },
+        {
+          "name": "MozPong",
+          "icon": "https://www.google.com/s2/favicons?domain=yqnn.github.io&sz=128",
+          "urls": [
+            {
+              "label": "yqnn.github.io",
+              "url": "https://yqnn.github.io/mozpong-web-port/"
+            }
+          ]
+        },
+        {
+          "name": "My Talking Baby Hippo",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=840"
+            }
+          ]
+        },
+        {
+          "name": "Nacht der Untoten",
+          "icon": "https://www.google.com/s2/favicons?domain=zombies.bitcoinsapi.com&sz=128",
+          "urls": [
+            {
+              "label": "zombies.bitcoinsapi.com",
+              "url": "https://zombies.bitcoinsapi.com/"
+            }
+          ]
+        },
+        {
+          "name": "Nacht der Untoten (2)",
+          "icon": "https://www.google.com/s2/favicons?domain=zombies.concentric.live&sz=128",
+          "urls": [
+            {
+              "label": "zombies.concentric.live",
+              "url": "https://zombies.concentric.live/"
+            }
+          ]
+        },
+        {
+          "name": "Nagano Winter Olympics ’98 (Source64)",
+          "icon": "https://www.google.com/s2/favicons?domain=source64.dev&sz=128",
+          "urls": [
+            {
+              "label": "source64.dev",
+              "url": "https://source64.dev/"
+            }
+          ]
+        },
+        {
+          "name": "NAM / Napalm",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/namweb/run.html"
+            }
+          ]
+        },
+        {
+          "name": "Naruto Shippuden: Ultimate Ninja 5",
+          "icon": "https://www.google.com/s2/favicons?domain=narutoshippuden5.online&sz=128",
+          "urls": [
+            {
+              "label": "narutoshippuden5.online",
+              "url": "https://narutoshippuden5.online/"
+            }
+          ]
+        },
+        {
+          "name": "Naruto Shippuden: Ultimate Ninja Impact",
+          "icon": "https://www.google.com/s2/favicons?domain=narutoimpact.online&sz=128",
+          "urls": [
+            {
+              "label": "narutoimpact.online",
+              "url": "https://narutoimpact.online/"
+            }
+          ]
+        },
+        {
+          "name": "NBA 2K12",
+          "icon": "https://www.google.com/s2/favicons?domain=nba2k12.online&sz=128",
+          "urls": [
+            {
+              "label": "nba2k12.online",
+              "url": "https://nba2k12.online/"
+            }
+          ]
+        },
+        {
+          "name": "NBA Street V3",
+          "icon": "https://www.google.com/s2/favicons?domain=nbastreet3.online&sz=128",
+          "urls": [
+            {
+              "label": "nbastreet3.online",
+              "url": "https://nbastreet3.online/"
+            }
+          ]
+        },
+        {
+          "name": "NBlood",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/nbloodweb/run.html"
+            }
+          ]
+        },
+        {
+          "name": "NCAA Football 10 (PSP Recomp)",
+          "icon": "https://www.google.com/s2/favicons?domain=awest813.github.io&sz=128",
+          "urls": [
+            {
+              "label": "awest813.github.io",
+              "url": "https://awest813.github.io/NCAA-10-PSP-Recomp/"
+            }
+          ]
+        },
+        {
+          "name": "Need for Speed III: Hot Pursuit (nfs3-web)",
+          "icon": "https://www.google.com/s2/favicons?domain=nfs3.xyz&sz=128",
+          "urls": [
+            {
+              "label": "nfs3.xyz",
+              "url": "https://nfs3.xyz/"
+            }
+          ]
+        },
+        {
+          "name": "Need for Speed: Carbon (online multiplayer)",
+          "icon": "https://www.google.com/s2/favicons?domain=nfscrb.xyz&sz=128",
+          "urls": [
+            {
+              "label": "nfscrb.xyz",
+              "url": "https://nfscrb.xyz/"
+            }
+          ]
+        },
+        {
+          "name": "Need for Speed: Most Wanted (2005) (dezm0n web port)",
+          "icon": "https://www.google.com/s2/favicons?domain=dezm0n.itch.io&sz=128",
+          "urls": [
+            {
+              "label": "dezm0n.itch.io",
+              "url": "https://dezm0n.itch.io/nfs-most-wanted-web-port"
+            }
+          ]
+        },
+        {
+          "name": "Need for Speed: Most Wanted (2005) (NFSMW Online web)",
+          "icon": "https://www.google.com/s2/favicons?domain=web.nfsmwo.com&sz=128",
+          "urls": [
+            {
+              "label": "web.nfsmwo.com",
+              "url": "https://web.nfsmwo.com/"
+            }
+          ]
+        },
+        {
+          "name": "Need for Speed: Most Wanted (2005) (NFSMW Online)",
+          "icon": "https://www.google.com/s2/favicons?domain=nfsmwonline.com&sz=128",
+          "urls": [
+            {
+              "label": "nfsmwonline.com",
+              "url": "https://nfsmwonline.com"
+            }
+          ]
+        },
+        {
+          "name": "Need for Speed: Most Wanted (Most Wanted Revived)",
+          "icon": "https://www.google.com/s2/favicons?domain=nfsmw-web.xyz&sz=128",
+          "urls": [
+            {
+              "label": "nfsmw-web.xyz",
+              "url": "https://nfsmw-web.xyz/"
+            }
+          ]
+        },
+        {
+          "name": "Need for Speed: Most Wanted (nfsmw-webport)",
+          "icon": "https://www.google.com/s2/favicons?domain=iker3329.github.io&sz=128",
+          "urls": [
+            {
+              "label": "iker3329.github.io",
+              "url": "https://iker3329.github.io/nfsmw-webport/"
+            }
+          ]
+        },
+        {
+          "name": "Need for Speed: Underground 2",
+          "icon": "https://www.google.com/s2/favicons?domain=nfsu2.xyz&sz=128",
+          "urls": [
+            {
+              "label": "nfsu2.xyz",
+              "url": "https://nfsu2.xyz/"
+            }
+          ]
+        },
+        {
+          "name": "Need for Speed: Underground 2 (nfsunderground2.site)",
+          "icon": "https://www.google.com/s2/favicons?domain=nfsunderground2.site&sz=128",
+          "urls": [
+            {
+              "label": "nfsunderground2.site",
+              "url": "https://nfsunderground2.site/"
+            }
+          ]
+        },
+        {
+          "name": "Needy Streamer Overload",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=708"
+            }
+          ]
+        },
+        {
+          "name": "NetQuake.io",
+          "icon": "https://www.google.com/s2/favicons?domain=netquake.io&sz=128",
+          "urls": [
+            {
+              "label": "netquake.io",
+              "url": "https://www.netquake.io/"
+            }
+          ]
+        },
+        {
+          "name": "Neverball",
+          "icon": "https://www.google.com/s2/favicons?domain=play.neverball.org&sz=128",
+          "urls": [
+            {
+              "label": "play.neverball.org",
+              "url": "https://play.neverball.org/"
+            }
+          ]
+        },
+        {
+          "name": "NFL Street",
+          "icon": "https://www.google.com/s2/favicons?domain=nflstreet.online&sz=128",
+          "urls": [
+            {
+              "label": "nflstreet.online",
+              "url": "https://nflstreet.online/"
+            }
+          ]
+        },
+        {
+          "name": "NFL Street 2 (NIL Street)",
+          "icon": "https://www.google.com/s2/favicons?domain=nilstreet.playthecombine.com&sz=128",
+          "urls": [
+            {
+              "label": "nilstreet.playthecombine.com",
+              "url": "https://nilstreet.playthecombine.com/"
+            }
+          ]
+        },
+        {
+          "name": "NHL '94",
+          "icon": "https://www.google.com/s2/favicons?domain=kingof94.web.app&sz=128",
+          "urls": [
+            {
+              "label": "kingof94.web.app",
+              "url": "https://kingof94.web.app/"
+            }
+          ]
+        },
+        {
+          "name": "No One Lives Forever",
+          "icon": "https://www.google.com/s2/favicons?domain=playnolf.com&sz=128",
+          "urls": [
+            {
+              "label": "playnolf.com",
+              "url": "https://playnolf.com/"
+            }
+          ]
+        },
+        {
+          "name": "Nubby's Number Factory",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=517"
+            }
+          ]
+        },
+        {
+          "name": "Ogre Battle 64: Person of Lordly Caliber (experimental web build)",
+          "icon": "https://www.google.com/s2/favicons?domain=lfarroco.github.io&sz=128",
+          "urls": [
+            {
+              "label": "lfarroco.github.io",
+              "url": "https://lfarroco.github.io/ogre-battle-64-recomp/"
+            }
+          ]
+        },
+        {
+          "name": "OMORI",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.github.io&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.github.io",
+              "url": "https://gn-math.github.io/web-port/omori-fixed/"
+            }
+          ]
+        },
+        {
+          "name": "Oneshot (Legacy)",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=622"
+            }
+          ]
+        },
+        {
+          "name": "Oneshot: World Machine Edition",
+          "icon": "https://www.google.com/s2/favicons?domain=wasm.rip&sz=128",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/oneshot-wme/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Open Sonic",
+          "icon": "https://www.google.com/s2/favicons?domain=clarkeadg.github.io&sz=128",
+          "urls": [
+            {
+              "label": "clarkeadg.github.io",
+              "url": "https://clarkeadg.github.io/opensonic-js/"
+            }
+          ]
+        },
+        {
+          "name": "Overburden",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=760"
+            }
+          ]
+        },
+        {
+          "name": "Passage",
+          "icon": "https://www.google.com/s2/favicons?domain=judooochp.github.io&sz=128",
+          "urls": [
+            {
+              "label": "judooochp.github.io",
+              "url": "https://judooochp.github.io/Passage/"
+            }
+          ]
+        },
+        {
+          "name": "PEAK (VERY wip)",
+          "icon": "https://www.google.com/s2/favicons?domain=wasm.rip&sz=128",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/peak/PEAK.html"
+            }
+          ]
+        },
+        {
+          "name": "Peaks of Yore",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=717"
+            }
+          ]
+        },
+        {
+          "name": "Pekka Kana 2",
+          "icon": "https://www.google.com/s2/favicons?domain=gmh-code.github.io&sz=128",
+          "urls": [
+            {
+              "label": "gmh-code.github.io",
+              "url": "https://gmh-code.github.io/pk2/"
+            }
+          ]
+        },
+        {
+          "name": "Penthouse Paradise",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/8782-duke-penthouse/run.html"
+            }
+          ]
+        },
+        {
+          "name": "People Playground",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.github.io&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.github.io",
+              "url": "https://gn-math.github.io/web-port/people-playground/"
+            }
+          ]
+        },
+        {
+          "name": "Pepsiman",
+          "icon": "https://www.google.com/s2/favicons?domain=pepsiman.ol.mr&sz=128",
+          "urls": [
+            {
+              "label": "pepsiman.ol.mr",
+              "url": "https://pepsiman.ol.mr/"
+            }
+          ]
+        },
+        {
+          "name": "Perfect Dark",
+          "icon": "https://www.google.com/s2/favicons?domain=perfectdark.royal-cake-5abc.workers.dev&sz=128",
+          "urls": [
+            {
+              "label": "perfectdark.royal-cake-5abc.workers.dev",
+              "url": "https://perfectdark.royal-cake-5abc.workers.dev/"
+            }
+          ]
+        },
+        {
+          "name": "Phantasy Star Online (PSO Reborn)",
+          "icon": "https://www.google.com/s2/favicons?domain=recompiledgames.com&sz=128",
+          "urls": [
+            {
+              "label": "recompiledgames.com",
+              "url": "https://recompiledgames.com/phantasy-star-online-recompiled"
+            }
+          ]
+        },
+        {
+          "name": "Phantasy Star Online Episode I & II (PSO Reborn)",
+          "icon": "https://www.google.com/s2/favicons?domain=psoreborn.com&sz=128",
+          "urls": [
+            {
+              "label": "psoreborn.com",
+              "url": "https://psoreborn.com/"
+            }
+          ]
+        },
+        {
+          "name": "Phineas and Ferb in the Transport-inators of Doooom",
+          "icon": "https://www.google.com/s2/favicons?domain=stelight.games&sz=128",
+          "urls": [
+            {
+              "label": "stelight.games",
+              "url": "https://stelight.games/play/webports/stellite.games/stellite/doom/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Pikmin",
+          "icon": "https://www.google.com/s2/favicons?domain=truffled.lol&sz=128",
+          "urls": [
+            {
+              "label": "truffled.lol",
+              "url": "https://truffled.lol/games/pikmin/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Pizza Tower",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.github.io&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.github.io",
+              "url": "https://gn-math.github.io/web-port/pizza-tower/"
+            }
+          ]
+        },
+        {
+          "name": "Pizza Tower: Scoutdigo",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=628"
+            }
+          ]
+        },
+        {
+          "name": "Plants vs Zombies: GOTY Edition",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=842"
+            }
+          ]
+        },
+        {
+          "name": "Plunder & Pillage",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/8786-plunder/run.html"
+            }
+          ]
+        },
+        {
+          "name": "Pokémon Mystery Dungeon (Web Mystery Dungeon)",
+          "icon": "https://www.google.com/s2/favicons?domain=frequentgamer.itch.io&sz=128",
+          "urls": [
+            {
+              "label": "frequentgamer.itch.io",
+              "url": "https://frequentgamer.itch.io/pmdweb"
+            }
+          ]
+        },
+        {
+          "name": "Portal",
+          "icon": "https://www.google.com/s2/favicons?domain=yikes.pw&sz=128",
+          "urls": [
+            {
+              "label": "yikes.pw",
+              "url": "https://yikes.pw/portal/"
+            }
+          ]
+        },
+        {
+          "name": "POSTAL 2 (KahnStation)",
+          "icon": "https://www.google.com/s2/favicons?domain=kahn.lol&sz=128",
+          "urls": [
+            {
+              "label": "kahn.lol",
+              "url": "https://kahn.lol/gopostal"
+            }
+          ]
+        },
+        {
+          "name": "Power Hover",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=743"
+            }
+          ]
+        },
+        {
+          "name": "Powerslave",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/8774-powerslave/run.html"
+            }
+          ]
+        },
+        {
+          "name": "Prince of Persia",
+          "icon": "https://www.google.com/s2/favicons?domain=princejs.com&sz=128",
+          "urls": [
+            {
+              "label": "princejs.com",
+              "url": "https://princejs.com/"
+            }
+          ]
+        },
+        {
+          "name": "Pro Evolution Soccer 2011",
+          "icon": "https://www.google.com/s2/favicons?domain=pes11.optijuegos.net&sz=128",
+          "urls": [
+            {
+              "label": "pes11.optijuegos.net",
+              "url": "https://pes11.optijuegos.net/"
+            }
+          ]
+        },
+        {
+          "name": "Pro Evolution Soccer 2012",
+          "icon": "https://www.google.com/s2/favicons?domain=pes12.online&sz=128",
+          "urls": [
+            {
+              "label": "pes12.online",
+              "url": "https://pes12.online/"
+            }
+          ]
+        },
+        {
+          "name": "Pro Evolution Soccer 2014 (PSP)",
+          "icon": "https://www.google.com/s2/favicons?domain=pes14.online&sz=128",
+          "urls": [
+            {
+              "label": "pes14.online",
+              "url": "https://pes14.online/"
+            }
+          ]
+        },
+        {
+          "name": "Project I.G.I.: I'm Going In",
+          "icon": "https://www.google.com/s2/favicons?domain=playigi.com&sz=128",
+          "urls": [
+            {
+              "label": "playigi.com",
+              "url": "https://playigi.com/game/"
+            }
+          ]
+        },
+        {
+          "name": "Promises to Keep",
+          "icon": "https://www.google.com/s2/favicons?domain=gitea.mcalec.dev&sz=128",
+          "urls": [
+            {
+              "label": "gitea.mcalec.dev",
+              "url": "https://gitea.mcalec.dev/mcalec/ptk"
+            }
+          ]
+        },
+        {
+          "name": "Purble Place (decomp)",
+          "icon": "https://www.google.com/s2/favicons?domain=areshkew.github.io&sz=128",
+          "urls": [
+            {
+              "label": "areshkew.github.io",
+              "url": "https://areshkew.github.io/purble-place-decomp/"
+            }
+          ]
+        },
+        {
+          "name": "Quake",
+          "icon": "https://www.google.com/s2/favicons?domain=qwasm.m-h.org.uk&sz=128",
+          "urls": [
+            {
+              "label": "qwasm.m-h.org.uk",
+              "url": "https://qwasm.m-h.org.uk/"
+            }
+          ]
+        },
+        {
+          "name": "Quake II",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/Q2web/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Quake II (q2.pieter.com)",
+          "icon": "https://www.google.com/s2/favicons?domain=q2.pieter.com&sz=128",
+          "urls": [
+            {
+              "label": "q2.pieter.com",
+              "url": "http://q2.pieter.com"
+            }
+          ]
+        },
+        {
+          "name": "Quake II (Quake WASM2)",
+          "icon": "https://www.google.com/s2/favicons?domain=qwasm2.m-h.org.uk&sz=128",
+          "urls": [
+            {
+              "label": "qwasm2.m-h.org.uk",
+              "url": "https://qwasm2.m-h.org.uk/"
+            }
+          ]
+        },
+        {
+          "name": "Quake III Arena",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=263"
+            }
+          ]
+        },
+        {
+          "name": "Quake III Arena (q3.pieter.com)",
+          "icon": "https://www.google.com/s2/favicons?domain=q3.pieter.com&sz=128",
+          "urls": [
+            {
+              "label": "q3.pieter.com",
+              "url": "https://q3.pieter.com"
+            }
+          ]
+        },
+        {
+          "name": "Quake III Arena (q3js)",
+          "icon": "https://www.google.com/s2/favicons?domain=q3js.com&sz=128",
+          "urls": [
+            {
+              "label": "q3js.com",
+              "url": "https://q3js.com/"
+            }
+          ]
+        },
+        {
+          "name": "Quake TG",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/quaketg/index.html"
+            }
+          ]
+        },
+        {
+          "name": "QuakeWorld",
+          "icon": "https://www.google.com/s2/favicons?domain=q1.pieter.com&sz=128",
+          "urls": [
+            {
+              "label": "q1.pieter.com",
+              "url": "http://q1.pieter.com"
+            }
+          ]
+        },
+        {
+          "name": "Quest for Al-Qa'eda",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/8790-quest-alqaeda/run.html"
+            }
+          ]
+        },
+        {
+          "name": "Quest for Hussein",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/8789-quest-hussein/run.html"
+            }
+          ]
+        },
+        {
+          "name": "R.E.P.O",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.github.io&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.github.io",
+              "url": "https://gn-math.github.io/web-port/repo/"
+            }
+          ]
+        },
+        {
+          "name": "Rain World",
+          "icon": "https://www.google.com/s2/favicons?domain=stelight.games&sz=128",
+          "urls": [
+            {
+              "label": "stelight.games",
+              "url": "https://stelight.games/play/webports/stellite.games/stellite/rain-world/"
+            }
+          ]
+        },
+        {
+          "name": "Raldi's Crackhouse",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=670"
+            }
+          ]
+        },
+        {
+          "name": "Ratchet & Clank",
+          "icon": "https://www.google.com/s2/favicons?domain=re-rac.github.io&sz=128",
+          "urls": [
+            {
+              "label": "re-rac.github.io",
+              "url": "https://re-rac.github.io/"
+            }
+          ]
+        },
+        {
+          "name": "Ratchet & Clank: Size Matters",
+          "icon": "https://www.google.com/s2/favicons?domain=ratchetclanksizematters.online&sz=128",
+          "urls": [
+            {
+              "label": "ratchetclanksizematters.online",
+              "url": "https://ratchetclanksizematters.online/"
+            }
+          ]
+        },
+        {
+          "name": "RE:RUN",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=260"
+            }
+          ]
+        },
+        {
+          "name": "Redneck Rampage",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/redneckrweb/run.html"
+            }
+          ]
+        },
+        {
+          "name": "Redneck Rampage: Rides Again",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/rrridesagain/run.html"
+            }
+          ]
+        },
+        {
+          "name": "Redneck Rampage: Route 66",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/rrroute66/run.html"
+            }
+          ]
+        },
+        {
+          "name": "Resident Evil 4",
+          "icon": "https://www.google.com/s2/favicons?domain=residentevil4.online&sz=128",
+          "urls": [
+            {
+              "label": "residentevil4.online",
+              "url": "https://residentevil4.online/"
+            }
+          ]
+        },
+        {
+          "name": "Resident Evil Outbreak File #1 & #2 (Outbreak Web)",
+          "icon": "https://www.google.com/s2/favicons?domain=outbreakweb.com&sz=128",
+          "urls": [
+            {
+              "label": "outbreakweb.com",
+              "url": "https://outbreakweb.com/"
+            }
+          ]
+        },
+        {
+          "name": "Return to Castle Wolfenstein",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/castlewolf/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Return to Castle Wolfenstein (rtcw.pieter.com)",
+          "icon": "https://www.google.com/s2/favicons?domain=rtcw.pieter.com&sz=128",
+          "urls": [
+            {
+              "label": "rtcw.pieter.com",
+              "url": "http://rtcw.pieter.com"
+            }
+          ]
+        },
+        {
+          "name": "Rimworld",
+          "icon": "https://www.google.com/s2/favicons?domain=wasm.rip&sz=128",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/rimworld/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Road Rash (Three.js)",
+          "icon": "https://www.google.com/s2/favicons?domain=roadrash.pages.dev&sz=128",
+          "urls": [
+            {
+              "label": "roadrash.pages.dev",
+              "url": "https://roadrash.pages.dev/"
+            }
+          ]
+        },
+        {
+          "name": "Rocks'n'Diamonds",
+          "icon": "https://www.google.com/s2/favicons?domain=artsoft.org&sz=128",
+          "urls": [
+            {
+              "label": "artsoft.org",
+              "url": "https://www.artsoft.org/rocksndiamonds/"
+            }
+          ]
+        },
+        {
+          "name": "RollerCoaster Tycoon 2 (OpenRCT2)",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/openrct2/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Rolling Sky (web port)",
+          "icon": "https://www.google.com/s2/favicons?domain=rollingsky.3kh0.net&sz=128",
+          "urls": [
+            {
+              "label": "rollingsky.3kh0.net",
+              "url": "https://rollingsky.3kh0.net"
+            }
+          ]
+        },
+        {
+          "name": "Rugby 08 (mitchivin)",
+          "icon": "https://www.google.com/s2/favicons?domain=mitchivin.github.io&sz=128",
+          "urls": [
+            {
+              "label": "mitchivin.github.io",
+              "url": "https://mitchivin.github.io/rugby08/"
+            }
+          ]
+        },
+        {
+          "name": "Rugrats: Scavenger Hunt (Source64)",
+          "icon": "https://www.google.com/s2/favicons?domain=source64.dev&sz=128",
+          "urls": [
+            {
+              "label": "source64.dev",
+              "url": "https://source64.dev/"
+            }
+          ]
+        },
+        {
+          "name": "RuneScape Classic",
+          "icon": "https://www.google.com/s2/favicons?domain=runescapeclassic.gold&sz=128",
+          "urls": [
+            {
+              "label": "runescapeclassic.gold",
+              "url": "https://runescapeclassic.gold/"
+            }
+          ]
+        },
+        {
+          "name": "S.P.L.I.T",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=839"
+            }
+          ]
+        },
+        {
+          "name": "S.T.A.L.K.E.R.: Call of Pripyat (ZoneVM)",
+          "icon": "https://www.google.com/s2/favicons?domain=zonevm.btr.pm&sz=128",
+          "urls": [
+            {
+              "label": "zonevm.btr.pm",
+              "url": "https://zonevm.btr.pm/"
+            }
+          ]
+        },
+        {
+          "name": "Saihate Station (さいはて駅)",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=737"
+            }
+          ]
+        },
+        {
+          "name": "Samokatogeddon (Carmageddon II mod)",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/carma2/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Scampton The Great",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=802"
+            }
+          ]
+        },
+        {
+          "name": "Schoolboy Runaway",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.github.io&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.github.io",
+              "url": "https://gn-math.github.io/web-port/schoolboy-runaway/"
+            }
+          ]
+        },
+        {
+          "name": "SCP: Containment Breach",
+          "icon": "https://www.google.com/s2/favicons?domain=wasm.rip&sz=128",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/scp/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Sesame Street: Elmo’s Letter Adventure (Source64)",
+          "icon": "https://www.google.com/s2/favicons?domain=source64.dev&sz=128",
+          "urls": [
+            {
+              "label": "source64.dev",
+              "url": "https://source64.dev/"
+            }
+          ]
+        },
+        {
+          "name": "Sesame Street: Elmo’s Number Journey (Source64)",
+          "icon": "https://www.google.com/s2/favicons?domain=source64.dev&sz=128",
+          "urls": [
+            {
+              "label": "source64.dev",
+              "url": "https://source64.dev/"
+            }
+          ]
+        },
+        {
+          "name": "Shadow Warrior",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/8775-swarrior/run.html"
+            }
+          ]
+        },
+        {
+          "name": "Shadow Warrior: Twin Dragon",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/8787-sw-twindragon/run.html"
+            }
+          ]
+        },
+        {
+          "name": "Shadow Warrior: Wanton Destruction",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/8788-sw-wanton/run.html"
+            }
+          ]
+        },
+        {
+          "name": "Shift at Midnight",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=721"
+            }
+          ]
+        },
+        {
+          "name": "Silent Hill: Origins",
+          "icon": "https://www.google.com/s2/favicons?domain=silenthillorigins.zeliaopen.space&sz=128",
+          "urls": [
+            {
+              "label": "silenthillorigins.zeliaopen.space",
+              "url": "https://silenthillorigins.zeliaopen.space/"
+            }
+          ]
+        },
+        {
+          "name": "Silkroad Online (OpenSRO)",
+          "icon": "https://www.google.com/s2/favicons?domain=opensro.online&sz=128",
+          "urls": [
+            {
+              "label": "opensro.online",
+              "url": "https://opensro.online/"
+            }
+          ]
+        },
+        {
+          "name": "SimCity (micropolisJS)",
+          "icon": "https://www.google.com/s2/favicons?domain=graememcc.co.uk&sz=128",
+          "urls": [
+            {
+              "label": "graememcc.co.uk",
+              "url": "https://www.graememcc.co.uk/micropolisJS/"
+            }
+          ]
+        },
+        {
+          "name": "SimGolf",
+          "icon": "https://www.google.com/s2/favicons?domain=richardatct.github.io&sz=128",
+          "urls": [
+            {
+              "label": "richardatct.github.io",
+              "url": "https://richardatct.github.io/simgolf-web/"
+            }
+          ]
+        },
+        {
+          "name": "SimTower (benphelps)",
+          "icon": "https://www.google.com/s2/favicons?domain=benphelps.github.io&sz=128",
+          "urls": [
+            {
+              "label": "benphelps.github.io",
+              "url": "https://benphelps.github.io/simtower/"
+            }
+          ]
+        },
+        {
+          "name": "Skate × Rust (Global Terror)",
+          "icon": "https://www.google.com/s2/favicons?domain=global-terror.net&sz=128",
+          "urls": [
+            {
+              "label": "global-terror.net",
+              "url": "https://global-terror.net/"
+            }
+          ]
+        },
+        {
+          "name": "Skate 3",
+          "icon": "https://www.google.com/s2/favicons?domain=skate.aaddpp.lol&sz=128",
+          "urls": [
+            {
+              "label": "skate.aaddpp.lol",
+              "url": "http://skate.aaddpp.lol"
+            }
+          ]
+        },
+        {
+          "name": "Slay the Spire",
+          "icon": "https://www.google.com/s2/favicons?domain=truffled.lol&sz=128",
+          "urls": [
+            {
+              "label": "truffled.lol",
+              "url": "https://truffled.lol/games/sts/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Slender: The 8 Pages",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=451"
+            }
+          ]
+        },
+        {
+          "name": "Slender: The Eight Pages",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.github.io&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.github.io",
+              "url": "https://gn-math.github.io/web-port/slender/"
+            }
+          ]
+        },
+        {
+          "name": "Slendytubbies 1",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=796"
+            }
+          ]
+        },
+        {
+          "name": "Slendytubbies 2",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=806"
+            }
+          ]
+        },
+        {
+          "name": "Slendytubbies 2D",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=807"
+            }
+          ]
+        },
+        {
+          "name": "Slime Rancher",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=591"
+            }
+          ]
+        },
+        {
+          "name": "Slingshot",
+          "icon": "https://www.google.com/s2/favicons?domain=phoenox.github.io&sz=128",
+          "urls": [
+            {
+              "label": "phoenox.github.io",
+              "url": "https://phoenox.github.io/Slingshot/"
+            }
+          ]
+        },
+        {
+          "name": "Sobosuba",
+          "icon": "https://www.google.com/s2/favicons?domain=kn0tzer.work.gd&sz=128",
+          "urls": [
+            {
+              "label": "kn0tzer.work.gd",
+              "url": "https://kn0tzer.work.gd/sobosuba"
+            }
+          ]
+        },
+        {
+          "name": "SOCOM II: U.S. Navy SEALs (SOCOM Legacy)",
+          "icon": "https://www.google.com/s2/favicons?domain=socomlegacy.com&sz=128",
+          "urls": [
+            {
+              "label": "socomlegacy.com",
+              "url": "https://socomlegacy.com/"
+            }
+          ]
+        },
+        {
+          "name": "Sonic CD",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=589"
+            }
+          ]
+        },
+        {
+          "name": "Sonic CD (Sonic-CD-WASM)",
+          "icon": "https://www.google.com/s2/favicons?domain=tws2401.github.io&sz=128",
+          "urls": [
+            {
+              "label": "tws2401.github.io",
+              "url": "https://tws2401.github.io/Sonic-CD-WASM/"
+            }
+          ]
+        },
+        {
+          "name": "Sonic Mania",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=590"
+            }
+          ]
+        },
+        {
+          "name": "Sonic Robo Blast 2",
+          "icon": "https://www.google.com/s2/favicons?domain=afd2025.srb2.org&sz=128",
+          "urls": [
+            {
+              "label": "afd2025.srb2.org",
+              "url": "https://afd2025.srb2.org/"
+            }
+          ]
+        },
+        {
+          "name": "Sonic Robo Blast 2 Kart",
+          "icon": "https://www.google.com/s2/favicons?domain=skyleite.github.io&sz=128",
+          "urls": [
+            {
+              "label": "skyleite.github.io",
+              "url": "https://skyleite.github.io/Kart-Public-WASM/"
+            }
+          ]
+        },
+        {
+          "name": "Sonic Robo Blast 2 Kart (SRB2KartWeb)",
+          "icon": "https://www.google.com/s2/favicons?domain=kartweb.gvbvdxx.me&sz=128",
+          "urls": [
+            {
+              "label": "kartweb.gvbvdxx.me",
+              "url": "https://kartweb.gvbvdxx.me"
+            }
+          ]
+        },
+        {
+          "name": "Sonic Robo Blast 2 Legacy (SRB2LegacyWeb)",
+          "icon": "https://www.google.com/s2/favicons?domain=legacyweb.gvbvdxx.me&sz=128",
+          "urls": [
+            {
+              "label": "legacyweb.gvbvdxx.me",
+              "url": "http://legacyweb.gvbvdxx.me/"
+            }
+          ]
+        },
+        {
+          "name": "Sonic the Fighters",
+          "icon": "https://www.google.com/s2/favicons?domain=play.sonicthefighte.rs&sz=128",
+          "urls": [
+            {
+              "label": "play.sonicthefighte.rs",
+              "url": "https://play.sonicthefighte.rs/"
+            }
+          ]
+        },
+        {
+          "name": "Sonic the Hedgehog (2013)",
+          "icon": "https://www.google.com/s2/favicons?domain=vinmannie.github.io&sz=128",
+          "urls": [
+            {
+              "label": "vinmannie.github.io",
+              "url": "https://vinmannie.github.io/Sonic-1-WASM/"
+            }
+          ]
+        },
+        {
+          "name": "Sonic the Hedgehog 4: Episode I",
+          "icon": "https://www.google.com/s2/favicons?domain=wamwoowam.co.uk&sz=128",
+          "urls": [
+            {
+              "label": "wamwoowam.co.uk",
+              "url": "https://wamwoowam.co.uk/sonic4/"
+            }
+          ]
+        },
+        {
+          "name": "Sonic Worlds Next",
+          "icon": "https://www.google.com/s2/favicons?domain=grubbyplaya.github.io&sz=128",
+          "urls": [
+            {
+              "label": "grubbyplaya.github.io",
+              "url": "https://grubbyplaya.github.io/Sonic-Worlds-Next-WASM/Sonic%20Worlds%20Next.html"
+            }
+          ]
+        },
+        {
+          "name": "SONIC.EXE",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.github.io&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.github.io",
+              "url": "https://gn-math.github.io/web-port/sonic.exe/"
+            }
+          ]
+        },
+        {
+          "name": "Sonic.EXE (ORIGINAL)",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=606"
+            }
+          ]
+        },
+        {
+          "name": "Soul of Darkness",
+          "icon": "https://www.google.com/s2/favicons?domain=jubayer-cmd.github.io&sz=128",
+          "urls": [
+            {
+              "label": "jubayer-cmd.github.io",
+              "url": "https://jubayer-cmd.github.io/sod-web-port/play/"
+            }
+          ]
+        },
+        {
+          "name": "Space Rangers: Quests",
+          "icon": "https://www.google.com/s2/favicons?domain=spacerangers.gitlab.io&sz=128",
+          "urls": [
+            {
+              "label": "spacerangers.gitlab.io",
+              "url": "https://spacerangers.gitlab.io/"
+            }
+          ]
+        },
+        {
+          "name": "Space Station 13 (ss13.live)",
+          "icon": "https://www.google.com/s2/favicons?domain=ss13.live&sz=128",
+          "urls": [
+            {
+              "label": "ss13.live",
+              "url": "https://ss13.live"
+            }
+          ]
+        },
+        {
+          "name": "Spaceflight Simulator",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=808"
+            }
+          ]
+        },
+        {
+          "name": "Speedy Blupi / Speedy Eggbert 2 / Planet Blupi",
+          "icon": "https://www.google.com/s2/favicons?domain=speedyblupi.com&sz=128",
+          "urls": [
+            {
+              "label": "speedyblupi.com",
+              "url": "https://speedyblupi.com/"
+            }
+          ]
+        },
+        {
+          "name": "Spider-Man 2",
+          "icon": "https://www.google.com/s2/favicons?domain=spiderman2.online&sz=128",
+          "urls": [
+            {
+              "label": "spiderman2.online",
+              "url": "https://spiderman2.online/"
+            }
+          ]
+        },
+        {
+          "name": "SSX 3",
+          "icon": "https://www.google.com/s2/favicons?domain=ssx3.online&sz=128",
+          "urls": [
+            {
+              "label": "ssx3.online",
+              "url": "https://ssx3.online/"
+            }
+          ]
+        },
+        {
+          "name": "Star Fox Adventures",
+          "icon": "https://www.google.com/s2/favicons?domain=foxhollow.dev&sz=128",
+          "urls": [
+            {
+              "label": "foxhollow.dev",
+              "url": "https://foxhollow.dev/"
+            }
+          ]
+        },
+        {
+          "name": "Star Wars Battlefront II (SWBF2O)",
+          "icon": "https://www.google.com/s2/favicons?domain=swbf2o.com&sz=128",
+          "urls": [
+            {
+              "label": "swbf2o.com",
+              "url": "https://swbf2o.com/"
+            }
+          ]
+        },
+        {
+          "name": "Star Wars Jedi Knight Dark Forces 2",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/oswjkdf2/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Star Wars Jedi Knight: Jedi Academy",
+          "icon": "https://www.google.com/s2/favicons?domain=jk.q3js.com&sz=128",
+          "urls": [
+            {
+              "label": "jk.q3js.com",
+              "url": "https://jk.q3js.com"
+            }
+          ]
+        },
+        {
+          "name": "Star Wars Jedi Knight: Jedi Academy (OpenJK, rgc.zone)",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/openjkspweb/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Star Wars: Empire at War (Browser Edition)",
+          "icon": "https://www.google.com/s2/favicons?domain=playeaw.com&sz=128",
+          "urls": [
+            {
+              "label": "playeaw.com",
+              "url": "https://playeaw.com"
+            }
+          ]
+        },
+        {
+          "name": "Stardew Valley",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=789"
+            }
+          ]
+        },
+        {
+          "name": "Stick War",
+          "icon": "https://www.google.com/s2/favicons?domain=wasmarcade.app&sz=128",
+          "urls": [
+            {
+              "label": "wasmarcade.app",
+              "url": "https://wasmarcade.app/play/stick-war"
+            }
+          ]
+        },
+        {
+          "name": "Stick with It",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=502"
+            }
+          ]
+        },
+        {
+          "name": "Street Fighter Anniversary Collection",
+          "icon": "https://www.google.com/s2/favicons?domain=streetfighteranniversary.online&sz=128",
+          "urls": [
+            {
+              "label": "streetfighteranniversary.online",
+              "url": "https://streetfighteranniversary.online/"
+            }
+          ]
+        },
+        {
+          "name": "Street Fighter III: 3rd Strike",
+          "icon": "https://www.google.com/s2/favicons?domain=streetfighter3.online&sz=128",
+          "urls": [
+            {
+              "label": "streetfighter3.online",
+              "url": "https://streetfighter3.online/"
+            }
+          ]
+        },
+        {
+          "name": "Stunts (PlayStunts)",
+          "icon": "https://www.google.com/s2/favicons?domain=playstunts.com&sz=128",
+          "urls": [
+            {
+              "label": "playstunts.com",
+              "url": "https://playstunts.com/"
+            }
+          ]
+        },
+        {
+          "name": "Super Mario 64 (multiplayer, olivers.tools)",
+          "icon": "https://www.google.com/s2/favicons?domain=olivers.tools&sz=128",
+          "urls": [
+            {
+              "label": "olivers.tools",
+              "url": "https://olivers.tools/?play"
+            }
+          ]
+        },
+        {
+          "name": "Super Mario 64 (rgc.zone)",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/sm64-main/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Super Mario 64 (sm3das)",
+          "icon": "https://www.google.com/s2/favicons?domain=heyitsheart.github.io&sz=128",
+          "urls": [
+            {
+              "label": "heyitsheart.github.io",
+              "url": "https://heyitsheart.github.io/sm3das/64/"
+            }
+          ]
+        },
+        {
+          "name": "Super Mario 64 (sm64-cleanroom)",
+          "icon": "https://www.google.com/s2/favicons?domain=andrewnakas.github.io&sz=128",
+          "urls": [
+            {
+              "label": "andrewnakas.github.io",
+              "url": "https://andrewnakas.github.io/sm64-cleanroom/"
+            }
+          ]
+        },
+        {
+          "name": "Super Mario 64 (sm64coopdx in browser)",
+          "icon": "https://www.google.com/s2/favicons?domain=b1t64.github.io&sz=128",
+          "urls": [
+            {
+              "label": "b1t64.github.io",
+              "url": "https://b1t64.github.io/m64-dl6t2g/"
+            }
+          ]
+        },
+        {
+          "name": "Super Mario 64 Multiplayer",
+          "icon": "https://www.google.com/s2/favicons?domain=olivers.tools&sz=128",
+          "urls": [
+            {
+              "label": "olivers.tools",
+              "url": "https://olivers.tools/play/"
+            }
+          ]
+        },
+        {
+          "name": "Super Mario Bros. Remastered",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=736"
+            }
+          ]
+        },
+        {
+          "name": "Super Mario Kart (SM-Kart-ZX Web Port)",
+          "icon": "https://www.google.com/s2/favicons?domain=burnedpopcorn.github.io&sz=128",
+          "urls": [
+            {
+              "label": "burnedpopcorn.github.io",
+              "url": "https://burnedpopcorn.github.io/SM-Kart-ZX-Web-Port/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Super Mario Sunshine",
+          "icon": "https://www.google.com/s2/favicons?domain=truffled.lol&sz=128",
+          "urls": [
+            {
+              "label": "truffled.lol",
+              "url": "https://truffled.lol/games/sms/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Super Mario Zombies",
+          "icon": "https://www.google.com/s2/favicons?domain=smz.fun&sz=128",
+          "urls": [
+            {
+              "label": "smz.fun",
+              "url": "https://smz.fun/"
+            }
+          ]
+        },
+        {
+          "name": "Super Monkey Ball",
+          "icon": "https://www.google.com/s2/favicons?domain=monkeyball-online.pages.dev&sz=128",
+          "urls": [
+            {
+              "label": "monkeyball-online.pages.dev",
+              "url": "https://monkeyball-online.pages.dev/"
+            }
+          ]
+        },
+        {
+          "name": "Super Smash Bros. (smash.fun)",
+          "icon": "https://www.google.com/s2/favicons?domain=smash.fun&sz=128",
+          "urls": [
+            {
+              "label": "smash.fun",
+              "url": "https://smash.fun/"
+            }
+          ]
+        },
+        {
+          "name": "Syndicate",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/syndweb/index.html"
+            }
+          ]
+        },
+        {
+          "name": "t³ (T cubed)",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=818"
+            }
+          ]
+        },
+        {
+          "name": "Taiko no Tatsujin",
+          "icon": "https://www.google.com/s2/favicons?domain=cjdgrevival.com&sz=128",
+          "urls": [
+            {
+              "label": "cjdgrevival.com",
+              "url": "https://cjdgrevival.com/"
+            }
+          ]
+        },
+        {
+          "name": "Tattletail",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.github.io&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.github.io",
+              "url": "https://gn-math.github.io/web-port/tattletail/"
+            }
+          ]
+        },
+        {
+          "name": "Team Fortress 2",
+          "icon": "https://www.google.com/s2/favicons?domain=tf2.riddy.workers.dev&sz=128",
+          "urls": [
+            {
+              "label": "tf2.riddy.workers.dev",
+              "url": "https://tf2.riddy.workers.dev/"
+            }
+          ]
+        },
+        {
+          "name": "Tekken 4",
+          "icon": "https://www.google.com/s2/favicons?domain=tekken4.online&sz=128",
+          "urls": [
+            {
+              "label": "tekken4.online",
+              "url": "https://tekken4.online/"
+            }
+          ]
+        },
+        {
+          "name": "Tekken 5",
+          "icon": "https://www.google.com/s2/favicons?domain=tekken5.online&sz=128",
+          "urls": [
+            {
+              "label": "tekken5.online",
+              "url": "https://tekken5.online/"
+            }
+          ]
+        },
+        {
+          "name": "Tekken 5: Dark Resurrection (Recomp)",
+          "icon": "https://www.google.com/s2/favicons?domain=tkdr-recomp.pages.dev&sz=128",
+          "urls": [
+            {
+              "label": "tkdr-recomp.pages.dev",
+              "url": "https://tkdr-recomp.pages.dev/"
+            }
+          ]
+        },
+        {
+          "name": "Tekken: Dark Resurrection",
+          "icon": "https://www.google.com/s2/favicons?domain=tekkendr.live&sz=128",
+          "urls": [
+            {
+              "label": "tekkendr.live",
+              "url": "https://tekkendr.live/"
+            }
+          ]
+        },
+        {
+          "name": "Tennis Game",
+          "icon": "https://www.google.com/s2/favicons?domain=kyleschichl0x16.github.io&sz=128",
+          "urls": [
+            {
+              "label": "kyleschichl0x16.github.io",
+              "url": "https://kyleschichl0x16.github.io/tennis-online/"
+            }
+          ]
+        },
+        {
+          "name": "Terraria",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=669"
+            }
+          ]
+        },
+        {
+          "name": "Terraria (2)",
+          "icon": "https://www.google.com/s2/favicons?domain=terraria.mercurywork.shop&sz=128",
+          "urls": [
+            {
+              "label": "terraria.mercurywork.shop",
+              "url": "https://terraria.mercurywork.shop/"
+            }
+          ]
+        },
+        {
+          "name": "Terraria (3)",
+          "icon": "https://www.google.com/s2/favicons?domain=playterraria.lol&sz=128",
+          "urls": [
+            {
+              "label": "playterraria.lol",
+              "url": "https://playterraria.lol/"
+            }
+          ]
+        },
+        {
+          "name": "That's Not My Neighbor",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.github.io&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.github.io",
+              "url": "https://gn-math.github.io/web-port/thats-not-my-neighbor/"
+            }
+          ]
+        },
+        {
+          "name": "The Binding of Isaac: Repentance",
+          "icon": "https://www.google.com/s2/favicons?domain=tboi.online&sz=128",
+          "urls": [
+            {
+              "label": "tboi.online",
+              "url": "https://tboi.online/"
+            }
+          ]
+        },
+        {
+          "name": "The Deadseat",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.github.io&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.github.io",
+              "url": "https://gn-math.github.io/web-port/deadseat/"
+            }
+          ]
+        },
+        {
+          "name": "The Elder Scrolls Adventures: Redguard (Cyrus)",
+          "icon": "https://www.google.com/s2/favicons?domain=michidk.github.io&sz=128",
+          "urls": [
+            {
+              "label": "michidk.github.io",
+              "url": "https://michidk.github.io/cyrus/game/"
+            }
+          ]
+        },
+        {
+          "name": "The Elder Scrolls III: Morrowind (OpenMW)",
+          "icon": "https://www.google.com/s2/favicons?domain=morrowind.virtastic.app&sz=128",
+          "urls": [
+            {
+              "label": "morrowind.virtastic.app",
+              "url": "https://morrowind.virtastic.app/"
+            }
+          ]
+        },
+        {
+          "name": "The Legend of Zelda (ZQuest Classic)",
+          "icon": "https://www.google.com/s2/favicons?domain=web.zquestclassic.com&sz=128",
+          "urls": [
+            {
+              "label": "web.zquestclassic.com",
+              "url": "https://web.zquestclassic.com/play/"
+            }
+          ]
+        },
+        {
+          "name": "The Legend of Zelda: Ocarina of Time (oot-cleanroom)",
+          "icon": "https://www.google.com/s2/favicons?domain=andrewnakas.github.io&sz=128",
+          "urls": [
+            {
+              "label": "andrewnakas.github.io",
+              "url": "https://andrewnakas.github.io/oot-cleanroom/"
+            }
+          ]
+        },
+        {
+          "name": "The Legend of Zelda: Twilight Princess (Dusklight)",
+          "icon": "https://www.google.com/s2/favicons?domain=dusklight.pages.dev&sz=128",
+          "urls": [
+            {
+              "label": "dusklight.pages.dev",
+              "url": "https://dusklight.pages.dev/"
+            }
+          ]
+        },
+        {
+          "name": "The Man From the Window",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.github.io&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.github.io",
+              "url": "https://gn-math.github.io/web-port/the-man-in-the-window/"
+            }
+          ]
+        },
+        {
+          "name": "The Man From the Window 2",
+          "icon": "https://www.google.com/s2/favicons?domain=wasm.rip&sz=128",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/MFDW2/index.html"
+            }
+          ]
+        },
+        {
+          "name": "The Man In The Window",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=459"
+            }
+          ]
+        },
+        {
+          "name": "The Seven Games of the Soul",
+          "icon": "https://www.google.com/s2/favicons?domain=omnium-games.github.io&sz=128",
+          "urls": [
+            {
+              "label": "omnium-games.github.io",
+              "url": "https://omnium-games.github.io/faust/"
+            }
+          ]
+        },
+        {
+          "name": "The Simpsons: Hit & Run (rgc.zone)",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/simphnr/index.html"
+            }
+          ]
+        },
+        {
+          "name": "The Simpsons: Hit & Run (shar-wasm)",
+          "icon": "https://www.google.com/s2/favicons?domain=shar-wasm.cjoseph.workers.dev&sz=128",
+          "urls": [
+            {
+              "label": "shar-wasm.cjoseph.workers.dev",
+              "url": "https://shar-wasm.cjoseph.workers.dev/"
+            }
+          ]
+        },
+        {
+          "name": "The Simpsons: Hit & Run (Web Port)",
+          "icon": "https://www.google.com/s2/favicons?domain=vheissu.github.io&sz=128",
+          "urls": [
+            {
+              "label": "vheissu.github.io",
+              "url": "https://vheissu.github.io/hit-and-run-web/"
+            }
+          ]
+        },
+        {
+          "name": "The Simpsons: Hit & Run (with mod support)",
+          "icon": "https://www.google.com/s2/favicons?domain=shar.harshvirdhaliwal.com&sz=128",
+          "urls": [
+            {
+              "label": "shar.harshvirdhaliwal.com",
+              "url": "https://shar.harshvirdhaliwal.com/"
+            }
+          ]
+        },
+        {
+          "name": "The Specialists (Half-Life mod, specialists-browser)",
+          "icon": "https://www.google.com/s2/favicons?domain=bulletballet.dev&sz=128",
+          "urls": [
+            {
+              "label": "bulletballet.dev",
+              "url": "https://bulletballet.dev/"
+            }
+          ]
+        },
+        {
+          "name": "The Ur-Quan Masters (Star Control II)",
+          "icon": "https://www.google.com/s2/favicons?domain=urquanmasters.org&sz=128",
+          "urls": [
+            {
+              "label": "urquanmasters.org",
+              "url": "https://urquanmasters.org/"
+            }
+          ]
+        },
+        {
+          "name": "The Warriors",
+          "icon": "https://www.google.com/s2/favicons?domain=thewarriors.online&sz=128",
+          "urls": [
+            {
+              "label": "thewarriors.online",
+              "url": "https://thewarriors.online/"
+            }
+          ]
+        },
+        {
+          "name": "Tomb Raider",
+          "icon": "https://www.google.com/s2/favicons?domain=xproger.info&sz=128",
+          "urls": [
+            {
+              "label": "xproger.info",
+              "url": "http://xproger.info/projects/OpenLara/"
+            }
+          ]
+        },
+        {
+          "name": "Tony Hawk's Pro Skater 3",
+          "icon": "https://www.google.com/s2/favicons?domain=tonyhawkpro3.online&sz=128",
+          "urls": [
+            {
+              "label": "tonyhawkpro3.online",
+              "url": "https://tonyhawkpro3.online/"
+            }
+          ]
+        },
+        {
+          "name": "Tony Hawk's Underground 2",
+          "icon": "https://www.google.com/s2/favicons?domain=tonyhawksunderground2.online&sz=128",
+          "urls": [
+            {
+              "label": "tonyhawksunderground2.online",
+              "url": "https://tonyhawksunderground2.online/"
+            }
+          ]
+        },
+        {
+          "name": "Toonstruck",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/toonstruckweb/index.html#toonstruck-fargus"
+            }
+          ]
+        },
+        {
+          "name": "Totally Accurate Battle Simulator (TABS)",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=827"
+            }
+          ]
+        },
+        {
+          "name": "Touhou Mother",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=523"
+            }
+          ]
+        },
+        {
+          "name": "Tremulous",
+          "icon": "https://www.google.com/s2/favicons?domain=webnova360.com&sz=128",
+          "urls": [
+            {
+              "label": "webnova360.com",
+              "url": "https://webnova360.com/play-tremulous/"
+            }
+          ]
+        },
+        {
+          "name": "Trombone Champ",
+          "icon": "https://www.google.com/s2/favicons?domain=wasm.rip&sz=128",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip/files/tchamp/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Tsukihime (TsukiWeb)",
+          "icon": "https://www.google.com/s2/favicons?domain=tsukiweb.holofield.fr&sz=128",
+          "urls": [
+            {
+              "label": "tsukiweb.holofield.fr",
+              "url": "https://tsukiweb.holofield.fr/"
+            }
+          ]
+        },
+        {
+          "name": "Tyrian (OpenTyrian)",
+          "icon": "https://www.google.com/s2/favicons?domain=midzer.de&sz=128",
+          "urls": [
+            {
+              "label": "midzer.de",
+              "url": "https://midzer.de/wasm/opentyrian/"
+            }
+          ]
+        },
+        {
+          "name": "UFC 2009 Undisputed / Throwdown",
+          "icon": "https://www.google.com/s2/favicons?domain=ufc2.online&sz=128",
+          "urls": [
+            {
+              "label": "ufc2.online",
+              "url": "https://ufc2.online/"
+            }
+          ]
+        },
+        {
+          "name": "UFC Throwdown",
+          "icon": "https://www.google.com/s2/favicons?domain=ufc2.online&sz=128",
+          "urls": [
+            {
+              "label": "ufc2.online",
+              "url": "https://ufc2.online/"
+            }
+          ]
+        },
+        {
+          "name": "Ultima V: Warriors of Destiny (ultima5)",
+          "icon": "https://www.google.com/s2/favicons?domain=synthwave-pixel.github.io&sz=128",
+          "urls": [
+            {
+              "label": "synthwave-pixel.github.io",
+              "url": "https://synthwave-pixel.github.io/ultima5/"
+            }
+          ]
+        },
+        {
+          "name": "ULTRAKILL",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=196"
+            }
+          ]
+        },
+        {
+          "name": "Ultrakill Prelude",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.github.io&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.github.io",
+              "url": "https://gn-math.github.io/web-port/ultrakill/"
+            }
+          ]
+        },
+        {
+          "name": "Ultrapool",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=757"
+            }
+          ]
+        },
+        {
+          "name": "Undertale",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.github.io&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.github.io",
+              "url": "https://gn-math.github.io/web-port/undertale/"
+            }
+          ]
+        },
+        {
+          "name": "Undertale Yellow",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.github.io&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.github.io",
+              "url": "https://gn-math.github.io/web-port/undertale-yellow/"
+            }
+          ]
+        },
+        {
+          "name": "Unreal Tournament (SurrealEngine Web)",
+          "icon": "https://www.google.com/s2/favicons?domain=demensdeum.com&sz=128",
+          "urls": [
+            {
+              "label": "demensdeum.com",
+              "url": "https://demensdeum.com/demos/SurrealEngine/"
+            }
+          ]
+        },
+        {
+          "name": "Untitled Goose Game",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=718"
+            }
+          ]
+        },
+        {
+          "name": "Urban Chaos (OpenChaos)",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/urbanchaosweb/"
+            }
+          ]
+        },
+        {
+          "name": "Urban Terror",
+          "icon": "https://www.google.com/s2/favicons?domain=ut.pieter.com&sz=128",
+          "urls": [
+            {
+              "label": "ut.pieter.com",
+              "url": "http://ut.pieter.com"
+            }
+          ]
+        },
+        {
+          "name": "UvuvwevwevweOnyetenvewveUgwemubwemOssas",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=795"
+            }
+          ]
+        },
+        {
+          "name": "Virtua Fighter",
+          "icon": "https://www.google.com/s2/favicons?domain=vf1-recomp.pages.dev&sz=128",
+          "urls": [
+            {
+              "label": "vf1-recomp.pages.dev",
+              "url": "https://vf1-recomp.pages.dev/"
+            }
+          ]
+        },
+        {
+          "name": "Virtua Tennis 2",
+          "icon": "https://www.google.com/s2/favicons?domain=virtuatennis2.online&sz=128",
+          "urls": [
+            {
+              "label": "virtuatennis2.online",
+              "url": "https://virtuatennis2.online/"
+            }
+          ]
+        },
+        {
+          "name": "Virtual On: Cyber Troopers",
+          "icon": "https://www.google.com/s2/favicons?domain=solid7s.github.io&sz=128",
+          "urls": [
+            {
+              "label": "solid7s.github.io",
+              "url": "https://solid7s.github.io/Virtual-On-Web/"
+            }
+          ]
+        },
+        {
+          "name": "VVVVVV",
+          "icon": "https://www.google.com/s2/favicons?domain=stelight.games&sz=128",
+          "urls": [
+            {
+              "label": "stelight.games",
+              "url": "https://stelight.games/play/webports/stellite.games/stellite/vvvvvv/"
+            }
+          ]
+        },
+        {
+          "name": "WadCMD",
+          "icon": "https://www.google.com/s2/favicons?domain=wadcmd.com&sz=128",
+          "urls": [
+            {
+              "label": "wadcmd.com",
+              "url": "https://wadcmd.com/"
+            }
+          ]
+        },
+        {
+          "name": "Warcraft II (Wargus)",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/Warcraft2web/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Warzone 2100 (Web Edition)",
+          "icon": "https://www.google.com/s2/favicons?domain=wz2100.net&sz=128",
+          "urls": [
+            {
+              "label": "wz2100.net",
+              "url": "https://wz2100.net/news/warzone-2100-web-edition/"
+            }
+          ]
+        },
+        {
+          "name": "WASM Arcade",
+          "icon": "https://www.google.com/s2/favicons?domain=wasmarcade.com&sz=128",
+          "urls": [
+            {
+              "label": "wasmarcade.com",
+              "url": "https://wasmarcade.com/"
+            }
+          ]
+        },
+        {
+          "name": "wasm.rip",
+          "icon": "https://www.google.com/s2/favicons?domain=wasm.rip&sz=128",
+          "urls": [
+            {
+              "label": "wasm.rip",
+              "url": "https://wasm.rip"
+            }
+          ]
+        },
+        {
+          "name": "Webfishing",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.github.io&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.github.io",
+              "url": "https://gn-math.github.io/web-port/web-fishing/"
+            }
+          ]
+        },
+        {
+          "name": "Wheel of Fortune (Source64)",
+          "icon": "https://www.google.com/s2/favicons?domain=source64.dev&sz=128",
+          "urls": [
+            {
+              "label": "source64.dev",
+              "url": "https://source64.dev/"
+            }
+          ]
+        },
+        {
+          "name": "Who's Your Daddy?",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=791"
+            }
+          ]
+        },
+        {
+          "name": "William Shatner's TekWar",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/8777-tekwar/run.html"
+            }
+          ]
+        },
+        {
+          "name": "WipEout",
+          "icon": "https://www.google.com/s2/favicons?domain=phoboslab.org&sz=128",
+          "urls": [
+            {
+              "label": "phoboslab.org",
+              "url": "https://phoboslab.org/wipegame/"
+            }
+          ]
+        },
+        {
+          "name": "Witch's Heart",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.github.io&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.github.io",
+              "url": "https://gn-math.github.io/web-port/witch-heart/"
+            }
+          ]
+        },
+        {
+          "name": "Witchaven",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/8783-witchaven/run.html"
+            }
+          ]
+        },
+        {
+          "name": "Witchaven II",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/8784-witchaven2/run.html"
+            }
+          ]
+        },
+        {
+          "name": "Wolfenstein 3D (HTML5, lazarv)",
+          "icon": "https://www.google.com/s2/favicons?domain=wolf3d.wadcmd.com&sz=128",
+          "urls": [
+            {
+              "label": "wolf3d.wadcmd.com",
+              "url": "https://wolf3d.wadcmd.com/"
+            }
+          ]
+        },
+        {
+          "name": "Wolfenstein 3D TG",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/wolf3dtg/index.html"
+            }
+          ]
+        },
+        {
+          "name": "WW2 GI: Platoon Leader",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/8791-ww2-platoon/run.html"
+            }
+          ]
+        },
+        {
+          "name": "WWE SmackDown vs. Raw 2010",
+          "icon": "https://www.google.com/s2/favicons?domain=wwe2010.online&sz=128",
+          "urls": [
+            {
+              "label": "wwe2010.online",
+              "url": "https://wwe2010.online/"
+            }
+          ]
+        },
+        {
+          "name": "WWE SmackDown vs. Raw 2011",
+          "icon": "https://www.google.com/s2/favicons?domain=wwe2011.online&sz=128",
+          "urls": [
+            {
+              "label": "wwe2011.online",
+              "url": "https://wwe2011.online/"
+            }
+          ]
+        },
+        {
+          "name": "WWE SmackDown! Here Comes the Pain",
+          "icon": "https://www.google.com/s2/favicons?domain=wwepain.online&sz=128",
+          "urls": [
+            {
+              "label": "wwepain.online",
+              "url": "https://wwepain.online/"
+            }
+          ]
+        },
+        {
+          "name": "WWE SmackDown! vs. RAW",
+          "icon": "https://www.google.com/s2/favicons?domain=smackdownvsraw.online&sz=128",
+          "urls": [
+            {
+              "label": "smackdownvsraw.online",
+              "url": "https://smackdownvsraw.online/"
+            }
+          ]
+        },
+        {
+          "name": "WWII GI",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/ww2giweb/run.html"
+            }
+          ]
+        },
+        {
+          "name": "Xiao Xiao 4: Bar Shootout",
+          "icon": "https://www.google.com/s2/favicons?domain=wasmarcade.app&sz=128",
+          "urls": [
+            {
+              "label": "wasmarcade.app",
+              "url": "https://wasmarcade.app/play/xiao-xiao-4"
+            }
+          ]
+        },
+        {
+          "name": "xrick",
+          "icon": "https://www.google.com/s2/favicons?domain=xrick.net&sz=128",
+          "urls": [
+            {
+              "label": "xrick.net",
+              "url": "https://www.xrick.net/"
+            }
+          ]
+        },
+        {
+          "name": "Yandere Simulator",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.github.io&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.github.io",
+              "url": "https://gn-math.github.io/web-port/yandere-simulator/"
+            }
+          ]
+        },
+        {
+          "name": "Your Only Move is Hustle",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.dev&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.dev",
+              "url": "https://gn-math.dev/?id=776"
+            }
+          ]
+        },
+        {
+          "name": "Yume Nikki",
+          "icon": "https://www.google.com/s2/favicons?domain=gn-math.github.io&sz=128",
+          "urls": [
+            {
+              "label": "gn-math.github.io",
+              "url": "https://gn-math.github.io/web-port/yume-nikki/"
+            }
+          ]
+        },
+        {
+          "name": "Zelda II: The Adventure of Link (z2rs)",
+          "icon": "https://www.google.com/s2/favicons?domain=z2rs.com&sz=128",
+          "urls": [
+            {
+              "label": "z2rs.com",
+              "url": "https://z2rs.com/"
+            }
+          ]
+        },
+        {
+          "name": "Девятка (1994)",
+          "icon": "https://www.google.com/s2/favicons?domain=rgc.zone&sz=128",
+          "urls": [
+            {
+              "label": "rgc.zone",
+              "url": "https://rgc.zone/ports/nine-1994/index.html"
             }
           ]
         }

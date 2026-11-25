@@ -2054,3 +2054,20 @@ html.intro-dragging body { cursor: grabbing; }
     scroll-behavior: auto !important;
   }
 }
+
+/* ---------- RSS Games (GamePix-Feed) ---------- */
+.feed-note {
+  margin: -6px 0 16px;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.feed-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 22px 0 8px;
+}
+
+.feed-actions .muted { font-size: 0.8rem; }

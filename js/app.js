@@ -11,6 +11,7 @@
 
   var DATA_SOURCES = {
     'games-online': { file: 'data/games-online.json', title: 'Games Online' },
+    'rss-games':    { file: 'data/games-rss.json',    title: 'RSS Games'    },
     'games-local':  { file: 'data/games-local.json',  title: 'Games Local'  },
     'apps':         { file: 'data/apps.json',         title: 'Apps'           },
     'sites':        { file: 'data/sites.json',        title: 'Sites'          },
@@ -30,7 +31,7 @@
     icons: ['icon.svg', 'icon.png', 'icon.webp', 'icon.jpg', 'icon.jpeg', 'favicon.ico', 'favicon.png']
   };
 
-  var ROUTES = ['home', 'games-online', 'games-local', 'apps', 'sites', 'email', 'proxy'];
+  var ROUTES = ['home', 'games-online', 'rss-games', 'games-local', 'apps', 'sites', 'email', 'proxy'];
 
   var ENGINES = [
     { id: 'duckduckgo', name: 'DuckDuckGo',   url: 'https://duckduckgo.com/?q=%s' },
@@ -218,6 +219,7 @@
     data: {},
     filters: {
       'games-online': { q: '', group: '' },
+      'rss-games': { q: '', group: '' },
       'games-local': { q: '', group: '' },
       'apps': { q: '', group: '' },
       'sites': { q: '', group: '' },
@@ -225,6 +227,7 @@
       'proxy': { q: '', group: '' }
     },
     weather: { coords: null },
+    rss: { nextPage: 0, loading: false },
     player: { url: '', type: '', open: false, timer: null }
   };
 
@@ -411,6 +414,179 @@
     });
   }
 
+  /* ------------------------------------------------------------------ */
+  /* RSS Games (GamePix-JSON-Feed)                                       */
+  /* ------------------------------------------------------------------ */
+
+  /* Der Feed liefert 12 Spiele pro Seite, nach Qualität sortiert.
+     Ohne Backend holt die Seite die ersten Seiten live und merkt sie sich im
+     Browser; die JSON-Datei dient als Rückfall, wenn der Feed nicht antwortet. */
+  var RSS_GAMES = {
+    feed: 'https://feeds.gamepix.com/v2/json/?order=quality&pagination=12&sid=E05E6&page=',
+    pagesPerLoad: 5,
+    cacheKey: 'fbtarchive.rss-games.v1'
+  };
+
+  /* Der Feed hat dutzende Kleinst-Kategorien – hier zu wenigen Themen gebündelt. */
+  var RSS_CLUSTERS = [
+    { id: 'puzzle', name: 'Puzzle & Denken', icon: '🧩', match: ['puzzle', 'memory', 'math', 'trivia', '2048', 'word', 'board', 'card', 'quiz', 'mahjong'] },
+    { id: 'action', name: 'Action & Shooter', icon: '🎯', match: ['action', 'shoot', 'war', 'tank', 'fight', 'zombie', 'battle', 'stickman', 'survival'] },
+    { id: 'racing', name: 'Rennen & Fahren', icon: '🏎️', match: ['rac', 'driv', 'car', 'airplane', 'bike', 'truck', 'parking', 'moto'] },
+    { id: 'sports', name: 'Sport & Ball', icon: '⚽', match: ['sport', 'soccer', 'football', 'basket', 'golf', 'tennis', 'ball', 'pool', 'billiard'] },
+    { id: 'arcade', name: 'Arcade & Skill', icon: '🕹️', match: ['arcade', 'hyper', 'skill', 'clicker', 'jump', 'runner', 'endless', 'reaction'] },
+    { id: 'build', name: 'Strategie & Aufbau', icon: '🏗️', match: ['strateg', 'simulat', 'build', 'farm', 'tower', 'idle', 'defen', 'management', 'city'] },
+    { id: 'adventure', name: 'Abenteuer & Story', icon: '🌍', match: ['adventur', 'hidden object', 'drawing', 'education', 'escape', 'point and click', 'quest'] },
+    { id: 'dressup', name: 'Dress-up & Kreativ', icon: '👗', match: ['dress', 'girl', 'makeup', 'fashion', 'cook', 'decor', 'design', 'music', 'art'] },
+    { id: 'casual', name: 'Casual & Sonstiges', icon: '🎮', match: [] }
+  ];
+
+  function rssCluster(category) {
+    var key = String(category || '').toLowerCase();
+    for (var i = 0; i < RSS_CLUSTERS.length; i++) {
+      var cluster = RSS_CLUSTERS[i];
+      var hit = cluster.match.some(function (term) { return key.indexOf(term) !== -1; });
+      if (hit) return { cluster: cluster, order: i };
+    }
+    return { cluster: RSS_CLUSTERS[RSS_CLUSTERS.length - 1], order: RSS_CLUSTERS.length - 1 };
+  }
+
+  function rssEntry(item) {
+    return {
+      name: String(item.title || item.namespace || 'Spiel'),
+      icon: item.image || item.banner_image || '',
+      urls: [{ label: 'gamepix.com', url: item.url }]
+    };
+  }
+
+  /* Feed-Spiele in die Themen-Gruppen einsortieren, Reihenfolge bleibt fest. */
+  function rssGroups(items) {
+    var buckets = {};
+
+    items.forEach(function (item) {
+      if (!item || !item.url) return;
+      var hit = rssCluster(item.category);
+      var id = hit.cluster.id;
+      if (!buckets[id]) {
+        buckets[id] = {
+          id: id,
+          name: hit.cluster.name,
+          icon: hit.cluster.icon,
+          order: hit.order,
+          items: []
+        };
+      }
+      buckets[id].items.push(rssEntry(item));
+    });
+
+    return Object.keys(buckets).map(function (id) { return buckets[id]; }).sort(function (a, b) {
+      return a.order - b.order;
+    });
+  }
+
+  function fetchRssPage(page) {
+    return fetchJSON(RSS_GAMES.feed + page, 9000).then(function (data) {
+      return data && Array.isArray(data.items) ? data.items : [];
+    });
+  }
+
+  function fetchRssPages(from, amount) {
+    var jobs = [];
+    for (var i = 0; i < amount; i++) {
+      jobs.push(fetchRssPage(from + i).catch(function () { return []; }));
+    }
+    return Promise.all(jobs).then(function (lists) {
+      var items = [];
+      lists.forEach(function (list) {
+        list.forEach(function (item) { items.push(item); });
+      });
+      return items;
+    });
+  }
+
+  function rememberRss(groups, nextPage) {
+    try {
+      window.localStorage.setItem(RSS_GAMES.cacheKey, JSON.stringify({ groups: groups, nextPage: nextPage }));
+    } catch (err) { /* Speicher voll – Seite funktioniert weiter */ }
+  }
+
+  function cachedRss() {
+    try {
+      var raw = window.localStorage.getItem(RSS_GAMES.cacheKey);
+      var parsed = raw ? JSON.parse(raw) : null;
+      return parsed && Array.isArray(parsed.groups) && parsed.groups.length ? parsed : null;
+    } catch (err) {
+      return null;
+    }
+  }
+
+  function loadRssGames() {
+    return fetchRssPages(1, RSS_GAMES.pagesPerLoad).then(function (items) {
+      if (!items.length) throw new Error('Feed leer');
+      var groups = rssGroups(items);
+      state.rss.nextPage = 1 + RSS_GAMES.pagesPerLoad;
+      rememberRss(groups, state.rss.nextPage);
+      return { groups: groups };
+    }).catch(function () {
+      var cached = cachedRss();
+      if (cached) {
+        state.rss.nextPage = cached.nextPage || 0;
+        return { groups: cached.groups };
+      }
+      state.rss.nextPage = 0;
+      return fetchCatalogFile(DATA_SOURCES['rss-games'].file);
+    });
+  }
+
+  function loadMoreRss() {
+    var entry = state.data['rss-games'];
+    var button = $('#rss-more');
+    if (!entry || entry.status !== 'ready' || state.rss.loading) return;
+
+    var from = state.rss.nextPage || 0;
+    if (!from) {
+      toast('Der Feed ist gerade nicht erreichbar – Nachladen geht nicht.', 'error');
+      return;
+    }
+
+    state.rss.loading = true;
+    if (button) { button.disabled = true; button.textContent = 'Wird geladen …'; }
+
+    fetchRssPages(from, RSS_GAMES.pagesPerLoad).then(function (items) {
+      if (!items.length) {
+        toast('Der Feed hat keine weiteren Spiele.', 'info');
+        return;
+      }
+
+      var added = 0;
+      rssGroups(items).forEach(function (group) {
+        var target = entry.groups.find(function (g) { return g.id === group.id; });
+        if (!target) {
+          entry.groups.push(group);
+          added += group.items.length;
+          return;
+        }
+        group.items.forEach(function (item) {
+          var url = item.urls[0].url;
+          var exists = target.items.some(function (known) { return known.urls[0].url === url; });
+          if (exists) return;
+          target.items.push(item);
+          added++;
+        });
+      });
+
+      entry.items = entry.groups.reduce(function (acc, group) { return acc.concat(group.items); }, []);
+      state.rss.nextPage = from + RSS_GAMES.pagesPerLoad;
+      rememberRss(entry.groups, state.rss.nextPage);
+      renderGrid('rss-games');
+      toast(added + ' weitere Spiele geladen', 'success');
+    }).catch(function () {
+      toast('Weitere Spiele konnten nicht geladen werden.', 'error');
+    }).then(function () {
+      state.rss.loading = false;
+      if (button) { button.disabled = false; button.textContent = 'Weitere Spiele laden'; }
+    });
+  }
+
   function loadData(key) {
     var entry = state.data[key];
     if (entry && (entry.status === 'loading' || entry.status === 'ready')) return;
@@ -424,7 +600,7 @@
 
     var request = key === 'games-local'
       ? loadLocalGamesCatalog()
-      : fetchCatalogFile(DATA_SOURCES[key].file);
+      : (key === 'rss-games' ? loadRssGames() : fetchCatalogFile(DATA_SOURCES[key].file));
 
     request
       .then(function (raw) {
@@ -652,6 +828,11 @@
     renderChips(key);
     updateCount(key, rows.length, entry.items.length);
 
+    if (key === 'rss-games') {
+      var rssNote = $('#rss-more-note');
+      if (rssNote) rssNote.textContent = entry.items.length + ' Spiele aus dem Feed geladen';
+    }
+
     if (!rows.length) {
       grid.innerHTML = emptyMarkup(query);
       return;
@@ -716,7 +897,7 @@
   /* Seiten-Suche (Home): durchsucht alle Kategorien                     */
   /* ------------------------------------------------------------------ */
 
-  var CATALOG_KEYS = ['games-online', 'games-local', 'apps', 'sites', 'email', 'proxy'];
+  var CATALOG_KEYS = ['games-online', 'rss-games', 'games-local', 'apps', 'sites', 'email', 'proxy'];
 
   function ensureCatalog() {
     CATALOG_KEYS.forEach(function (key) {
@@ -1563,6 +1744,12 @@
         refreshFavoritesView();
         if (DATA_SOURCES[state.route] && state.data[state.route]) renderGrid(state.route);
         toast('Favorit entfernt', 'info');
+        return;
+      }
+
+      var rssMore = event.target.closest('#rss-more');
+      if (rssMore) {
+        loadMoreRss();
         return;
       }
 

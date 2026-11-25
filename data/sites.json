@@ -88,6 +88,26 @@
           ]
         },
         {
+          "name": "Granny Games",
+          "icon": "https://www.google.com/s2/favicons?domain=granny-games.com&sz=128",
+          "urls": [
+            {
+              "label": "granny-games.com",
+              "url": "https://granny-games.com/"
+            }
+          ]
+        },
+        {
+          "name": "MSN Spiele",
+          "icon": "https://www.google.com/s2/favicons?domain=msn.com&sz=128",
+          "urls": [
+            {
+              "label": "msn.com/de-de/play",
+              "url": "https://www.msn.com/de-de/play/"
+            }
+          ]
+        },
+        {
           "name": "Viverse",
           "icon": "https://www.google.com/s2/favicons?domain=viverse.com&sz=128",
           "urls": [
