@@ -1232,6 +1232,26 @@
           ]
         },
         {
+          "name": "Black Ops 2",
+          "icon": "https://www.google.com/s2/favicons?domain=vibeslops.luckeysystems.com&sz=128",
+          "urls": [
+            {
+              "label": "vibeslops.luckeysystems.com",
+              "url": "https://vibeslops.luckeysystems.com"
+            }
+          ]
+        },
+        {
+          "name": "Black Ops 3 Cheese Cube",
+          "icon": "https://www.google.com/s2/favicons?domain=cheese-cube.pages.dev&sz=128",
+          "urls": [
+            {
+              "label": "cheese-cube.pages.dev",
+              "url": "https://cheese-cube.pages.dev"
+            }
+          ]
+        },
+        {
           "name": "Black Ops Zombies",
           "icon": "https://ported2browser.com/storage/covers/black-ops-zombies.webp",
           "urls": [
@@ -1766,22 +1786,22 @@
           ]
         },
         {
-          "name": "DreamWeb",
-          "icon": "https://ported2browser.com/storage/covers/dreamweb.webp",
-          "urls": [
-            {
-              "label": "scummweb.tsilva.eu",
-              "url": "https://scummweb.tsilva.eu/#game-dreamweb"
-            }
-          ]
-        },
-        {
           "name": "Dráscula: The Vampire Strikes Back",
           "icon": "https://www.google.com/s2/favicons?domain=scummweb.tsilva.eu&sz=128",
           "urls": [
             {
               "label": "scummweb.tsilva.eu",
               "url": "https://scummweb.tsilva.eu/#game-drascula-the-vampire-strikes-back"
+            }
+          ]
+        },
+        {
+          "name": "DreamWeb",
+          "icon": "https://ported2browser.com/storage/covers/dreamweb.webp",
+          "urls": [
+            {
+              "label": "scummweb.tsilva.eu",
+              "url": "https://scummweb.tsilva.eu/#game-dreamweb"
             }
           ]
         },
@@ -2648,6 +2668,16 @@
           ]
         },
         {
+          "name": "Moon (Black Ops Zombies)",
+          "icon": "https://www.google.com/s2/favicons?domain=moon-zombies.pages.dev&sz=128",
+          "urls": [
+            {
+              "label": "moon-zombies.pages.dev",
+              "url": "https://moon-zombies.pages.dev"
+            }
+          ]
+        },
+        {
           "name": "Mouthwashing",
           "icon": "https://ported2browser.com/storage/covers/mouthwashing-web.webp",
           "urls": [
@@ -2714,6 +2744,26 @@
             {
               "label": "pes6.optijuegos.net",
               "url": "https://pes6.optijuegos.net/"
+            }
+          ]
+        },
+        {
+          "name": "Quake 1 / QuakeWorld",
+          "icon": "https://www.google.com/s2/favicons?domain=q1.pieter.com&sz=128",
+          "urls": [
+            {
+              "label": "q1.pieter.com · neuer Tab",
+              "url": "https://q1.pieter.com"
+            }
+          ]
+        },
+        {
+          "name": "Quake 2",
+          "icon": "https://www.google.com/s2/favicons?domain=q2.pieter.com&sz=128",
+          "urls": [
+            {
+              "label": "q2.pieter.com · neuer Tab",
+              "url": "https://q2.pieter.com"
             }
           ]
         },
