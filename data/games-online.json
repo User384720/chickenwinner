@@ -1,5 +1,5 @@
 {
-  "_hinweis": "Struktur: Objekt in 'groups' ergänzen (id, name, icon, items). Farbe pro Link: in 'urls' beim Link einfach \"color\" setzen, z.B. {\"label\": \"…\", \"url\": \"…\", \"color\": \"#ff8a4c\"} – erlaubt sind Hex (#f80, #ff8800), Farbnamen (tomato) oder rgb()/hsl(). Eine \"color\" direkt am Eintrag gilt für alle seine Links. Quellen: \"Ultimate Katalog\" = Carter54git/Ultimate-Catalog-Of-Web-Game-Ports (nur Einträge mit Spielbar-Link), \"Web-Ports\" = ported2browser.com, \"Kleine Webspiele\" = attogram/games (fosiper.com), \"MonkeyGG2\" = MonkeyGG2/monkeygg2.github.io, \"Offline-Paket\" = CoolDude2349/Offline-HTML-Games-Pack (über raw.githack.com eingebettet). MonkeyGG2 verbietet das Einbetten, diese Links öffnen im neuen Tab.",
+  "_hinweis": "Struktur: Objekt in 'groups' ergänzen (id, name, icon, items). Farbe pro Link: in 'urls' beim Link einfach \"color\" setzen, z.B. {\"label\": \"…\", \"url\": \"…\", \"color\": \"#ff8a4c\"} – erlaubt sind Hex (#f80, #ff8800), Farbnamen (tomato) oder rgb()/hsl(). Eine \"color\" direkt am Eintrag gilt für alle seine Links. Quellen: \"Ultimate Katalog\" = Carter54git/Ultimate-Catalog-Of-Web-Game-Ports (nur Einträge mit Spielbar-Link), \"Web-Ports\" = ported2browser.com, \"Kleine Webspiele\" = attogram/games (fosiper.com), \"MonkeyGG2\" = MonkeyGG2/monkeygg2.github.io, \"Offline-Paket\" = CoolDude2349/Offline-HTML-Games-Pack (über raw.githack.com eingebettet). MonkeyGG2 verbietet das Einbetten, diese Links öffnen im neuen Tab. \"Browser Games Directory\" = harshitwaldia.github.io/Browser-Games-Directory.",
   "title": "Games Online",
   "groups": [
     {
@@ -15668,6 +15668,353 @@
             {
               "label": "fosiper.com",
               "url": "https://fosiper.com/games/virtual-piano/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bgd",
+      "name": "Browser Games Directory",
+      "icon": "🗂️",
+      "items": [
+        {
+          "name": "Black Ops 1 Zombies",
+          "icon": "https://www.google.com/s2/favicons?domain=vel.gg&sz=128",
+          "urls": [
+            {
+              "label": "vel.gg",
+              "url": "https://vel.gg/bo1z"
+            }
+          ]
+        },
+        {
+          "name": "Black Ops 2",
+          "icon": "https://www.google.com/s2/favicons?domain=vibeslops.luckeysystems.com&sz=128",
+          "urls": [
+            {
+              "label": "vibeslops.luckeysystems.com",
+              "url": "https://vibeslops.luckeysystems.com"
+            }
+          ]
+        },
+        {
+          "name": "Black Ops 3 Cheese Cube",
+          "icon": "https://www.google.com/s2/favicons?domain=cheese-cube.pages.dev&sz=128",
+          "urls": [
+            {
+              "label": "cheese-cube.pages.dev",
+              "url": "https://cheese-cube.pages.dev"
+            }
+          ]
+        },
+        {
+          "name": "Call of Duty: World at War Zombies (Nacht der Untoten)",
+          "icon": "https://www.google.com/s2/favicons?domain=zombies.bitcoinsapi.com&sz=128",
+          "urls": [
+            {
+              "label": "zombies.bitcoinsapi.com",
+              "url": "https://zombies.bitcoinsapi.com"
+            }
+          ]
+        },
+        {
+          "name": "Command & Conquer: Generals Zero Hour",
+          "icon": "https://www.google.com/s2/favicons?domain=generals.wasm.ltd&sz=128",
+          "urls": [
+            {
+              "label": "generals.wasm.ltd",
+              "url": "https://generals.wasm.ltd"
+            }
+          ]
+        },
+        {
+          "name": "Command & Conquer: Red Alert 2",
+          "icon": "https://www.google.com/s2/favicons?domain=chronodivide.com&sz=128",
+          "urls": [
+            {
+              "label": "chronodivide.com",
+              "url": "https://chronodivide.com"
+            }
+          ]
+        },
+        {
+          "name": "Counter-Strike 1.6",
+          "icon": "https://www.google.com/s2/favicons?domain=csjs.live&sz=128",
+          "urls": [
+            {
+              "label": "csjs.live",
+              "url": "https://csjs.live"
+            }
+          ]
+        },
+        {
+          "name": "CS Surf",
+          "icon": "https://www.google.com/s2/favicons?domain=surfd.net&sz=128",
+          "urls": [
+            {
+              "label": "surfd.net",
+              "url": "https://surfd.net"
+            }
+          ]
+        },
+        {
+          "name": "Crash Bash Online",
+          "icon": "https://www.google.com/s2/favicons?domain=crashbash.app&sz=128",
+          "urls": [
+            {
+              "label": "crashbash.app",
+              "url": "https://crashbash.app"
+            }
+          ]
+        },
+        {
+          "name": "Diablo",
+          "icon": "https://www.google.com/s2/favicons?domain=johnmilril.github.io&sz=128",
+          "urls": [
+            {
+              "label": "johnmilril.github.io",
+              "url": "https://johnmilril.github.io/diablo_web/"
+            }
+          ]
+        },
+        {
+          "name": "GTA 5",
+          "icon": "https://www.google.com/s2/favicons?domain=fiveplay.lol&sz=128",
+          "urls": [
+            {
+              "label": "fiveplay.lol",
+              "url": "https://fiveplay.lol"
+            }
+          ]
+        },
+        {
+          "name": "GTA Chinatown Wars",
+          "icon": "https://www.google.com/s2/favicons?domain=gta-chinatown-wars.pages.dev&sz=128",
+          "urls": [
+            {
+              "label": "gta-chinatown-wars.pages.dev",
+              "url": "https://gta-chinatown-wars.pages.dev"
+            }
+          ]
+        },
+        {
+          "name": "GTA III",
+          "icon": "https://www.google.com/s2/favicons?domain=wasmarcade.com&sz=128",
+          "urls": [
+            {
+              "label": "wasmarcade.com",
+              "url": "https://wasmarcade.com/gta3"
+            }
+          ]
+        },
+        {
+          "name": "GTA Vice City",
+          "icon": "https://www.google.com/s2/favicons?domain=joncodeofficial.github.io&sz=128",
+          "urls": [
+            {
+              "label": "joncodeofficial.github.io",
+              "url": "https://joncodeofficial.github.io/gta-vice-city-wasm/"
+            }
+          ]
+        },
+        {
+          "name": "Half-Life",
+          "icon": "https://www.google.com/s2/favicons?domain=pixelsuft.github.io&sz=128",
+          "urls": [
+            {
+              "label": "pixelsuft.github.io",
+              "url": "https://pixelsuft.github.io/hl/"
+            }
+          ]
+        },
+        {
+          "name": "Halo: Combat Evolved",
+          "icon": "https://www.google.com/s2/favicons?domain=mitchellhynes.com&sz=128",
+          "urls": [
+            {
+              "label": "mitchellhynes.com",
+              "url": "https://mitchellhynes.com/halo/"
+            }
+          ]
+        },
+        {
+          "name": "Halo CE Mobile",
+          "icon": "https://www.google.com/s2/favicons?domain=hcemobile.com&sz=128",
+          "urls": [
+            {
+              "label": "hcemobile.com",
+              "url": "https://hcemobile.com"
+            }
+          ]
+        },
+        {
+          "name": "Hedgewars",
+          "icon": "https://www.google.com/s2/favicons?domain=webwars.link&sz=128",
+          "urls": [
+            {
+              "label": "webwars.link",
+              "url": "https://webwars.link"
+            }
+          ]
+        },
+        {
+          "name": "Kino der Toten",
+          "icon": "https://www.google.com/s2/favicons?domain=kino-der-toten.pages.dev&sz=128",
+          "urls": [
+            {
+              "label": "kino-der-toten.pages.dev",
+              "url": "https://kino-der-toten.pages.dev"
+            }
+          ]
+        },
+        {
+          "name": "LEGO Island",
+          "icon": "https://www.google.com/s2/favicons?domain=isle.pizza&sz=128",
+          "urls": [
+            {
+              "label": "isle.pizza",
+              "url": "https://isle.pizza"
+            }
+          ]
+        },
+        {
+          "name": "Minecraft 1.8.8",
+          "icon": "https://www.google.com/s2/favicons?domain=wasmarcade.com&sz=128",
+          "urls": [
+            {
+              "label": "wasmarcade.com",
+              "url": "https://wasmarcade.com/minecraft"
+            }
+          ]
+        },
+        {
+          "name": "Modern Warfare 2",
+          "icon": "https://www.google.com/s2/favicons?domain=railway.app&sz=128",
+          "urls": [
+            {
+              "label": "railway.app",
+              "url": "https://ovz-game-production.up.railway.app"
+            }
+          ]
+        },
+        {
+          "name": "Moon (Black Ops Zombies)",
+          "icon": "https://www.google.com/s2/favicons?domain=moon-zombies.pages.dev&sz=128",
+          "urls": [
+            {
+              "label": "moon-zombies.pages.dev",
+              "url": "https://moon-zombies.pages.dev"
+            }
+          ]
+        },
+        {
+          "name": "Pepsiman",
+          "icon": "https://www.google.com/s2/favicons?domain=pepsiman.ol.mr&sz=128",
+          "urls": [
+            {
+              "label": "pepsiman.ol.mr",
+              "url": "https://pepsiman.ol.mr"
+            }
+          ]
+        },
+        {
+          "name": "PES 6",
+          "icon": "https://www.google.com/s2/favicons?domain=pes6.optijuegos.net&sz=128",
+          "urls": [
+            {
+              "label": "pes6.optijuegos.net",
+              "url": "https://pes6.optijuegos.net"
+            }
+          ]
+        },
+        {
+          "name": "Quake 1 / QuakeWorld",
+          "icon": "https://www.google.com/s2/favicons?domain=q1.pieter.com&sz=128",
+          "urls": [
+            {
+              "label": "q1.pieter.com",
+              "url": "https://q1.pieter.com"
+            }
+          ]
+        },
+        {
+          "name": "Quake 2",
+          "icon": "https://www.google.com/s2/favicons?domain=q2.pieter.com&sz=128",
+          "urls": [
+            {
+              "label": "q2.pieter.com",
+              "url": "https://q2.pieter.com"
+            }
+          ]
+        },
+        {
+          "name": "Quake 3",
+          "icon": "https://www.google.com/s2/favicons?domain=q3.pieter.com&sz=128",
+          "urls": [
+            {
+              "label": "q3.pieter.com",
+              "url": "https://q3.pieter.com"
+            }
+          ]
+        },
+        {
+          "name": "Return to Castle Wolfenstein",
+          "icon": "https://www.google.com/s2/favicons?domain=rtcw.pieter.com&sz=128",
+          "urls": [
+            {
+              "label": "rtcw.pieter.com",
+              "url": "https://rtcw.pieter.com"
+            }
+          ]
+        },
+        {
+          "name": "Skate 3",
+          "icon": "https://www.google.com/s2/favicons?domain=skate.aaddpp.lol&sz=128",
+          "urls": [
+            {
+              "label": "skate.aaddpp.lol",
+              "url": "https://skate.aaddpp.lol"
+            }
+          ]
+        },
+        {
+          "name": "Skate Rust",
+          "icon": "https://www.google.com/s2/favicons?domain=global-terror.net&sz=128",
+          "urls": [
+            {
+              "label": "global-terror.net",
+              "url": "https://global-terror.net"
+            }
+          ]
+        },
+        {
+          "name": "The Binding of Isaac: Repentance+",
+          "icon": "https://www.google.com/s2/favicons?domain=tboi.online&sz=128",
+          "urls": [
+            {
+              "label": "tboi.online",
+              "url": "https://tboi.online"
+            }
+          ]
+        },
+        {
+          "name": "The Simpsons: Hit & Run",
+          "icon": "https://www.google.com/s2/favicons?domain=cjoseph.workers.dev&sz=128",
+          "urls": [
+            {
+              "label": "cjoseph.workers.dev",
+              "url": "https://shar-wasm.cjoseph.workers.dev/?skipmovie"
+            }
+          ]
+        },
+        {
+          "name": "Urban Terror",
+          "icon": "https://www.google.com/s2/favicons?domain=ut.pieter.com&sz=128",
+          "urls": [
+            {
+              "label": "ut.pieter.com",
+              "url": "https://ut.pieter.com"
             }
           ]
         }

@@ -180,6 +180,16 @@
               "url": "https://www.reddit.com/r/IoGames/wiki/index/"
             }
           ]
+        },
+        {
+          "name": "Browser Games Directory",
+          "icon": "🗂️",
+          "urls": [
+            {
+              "label": "harshitwaldia.github.io · neuer Tab",
+              "url": "https://harshitwaldia.github.io/Browser-Games-Directory/"
+            }
+          ]
         }
       ]
     }

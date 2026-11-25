@@ -1431,25 +1431,29 @@
   }
 
   /* Knopf auf Home: öffnet die ganze Seite als eigene URL in einem neuen Tab. */
-  function siteUrl() {
+  function siteUrl(hash) {
+    var base;
     try {
-      return new URL('./', document.baseURI).href;
+      base = new URL('./', document.baseURI).href;
     } catch (err) {
-      return window.location.href.split('#')[0];
+      base = window.location.href.split('#')[0];
     }
+    return hash ? base + '#' + hash : base;
   }
 
   function bindSiteTab() {
-    var btn = $('#open-site-tab');
-    if (!btn) return;
-    btn.addEventListener('click', function () {
-      var win = window.open(siteUrl(), '_blank');
-      if (!win) {
-        toast('Popup blockiert – erlaub bitte Pop-ups für diese Seite.', 'error');
-        return;
-      }
-      try { win.opener = null; } catch (err) { /* egal */ }
-      toast('Seite in neuem Tab geöffnet', 'success');
+    var buttons = document.querySelectorAll('[data-open-tab]');
+    Array.prototype.forEach.call(buttons, function (btn) {
+      btn.addEventListener('click', function () {
+        var route = btn.getAttribute('data-open-tab');
+        var win = window.open(siteUrl(route), '_blank');
+        if (!win) {
+          toast('Popup blockiert – erlaub bitte Pop-ups für diese Seite.', 'error');
+          return;
+        }
+        try { win.opener = null; } catch (err) { /* egal */ }
+        toast(route ? 'Spiele-Seite in neuem Tab geöffnet' : 'Seite in neuem Tab geöffnet', 'success');
+      });
     });
   }
 
