@@ -14,6 +14,10 @@
             {
               "label": "krunker.io",
               "url": "https://krunker.io"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/krunker/"
             }
           ]
         },
@@ -340,6 +344,10 @@
             {
               "label": "apstudy.github.io",
               "url": "https://apstudy.github.io/games/shell-shockers-unblocked/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/shellshockers/"
             }
           ]
         },
@@ -350,6 +358,10 @@
             {
               "label": "1v1.lol",
               "url": "https://1v1.lol"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/1v1lol/"
             }
           ]
         },
@@ -440,6 +452,10 @@
             {
               "label": "zombsroyale.io",
               "url": "https://zombsroyale.io"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/zombs-royale/"
             }
           ]
         },
@@ -502,6 +518,10 @@
             {
               "label": "paper-io.com",
               "url": "https://paper-io.com"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/paperio2/"
             }
           ]
         },
@@ -680,6 +700,10 @@
             {
               "label": "GitHub",
               "url": "https://gabrielecirulli.github.io/2048/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/2048/"
             }
           ]
         },
@@ -690,6 +714,10 @@
             {
               "label": "hextris.io",
               "url": "https://hextris.io"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/hextris/"
             }
           ]
         },
@@ -720,6 +748,10 @@
             {
               "label": "nytimes.com",
               "url": "https://www.nytimes.com/games/wordle/index.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/wordle/"
             }
           ]
         },
@@ -767,6 +799,10 @@
             {
               "label": "smashkarts.io",
               "url": "https://smashkarts.io"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/smashkarts/"
             }
           ]
         },
@@ -807,6 +843,10 @@
             {
               "label": "basketrandom.com",
               "url": "https://basketrandom.com"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/basket-random/"
             }
           ]
         },
@@ -891,6 +931,10 @@
             {
               "label": "orteil.dashnet.org",
               "url": "https://orteil.dashnet.org/cookieclicker/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/cookie-clicker/"
             }
           ]
         },
@@ -1018,6 +1062,10 @@
             {
               "label": "wasm.rip",
               "url": "https://wasm.rip/files/aoc/index.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/ages-of-conflict/"
             }
           ]
         },
@@ -1028,6 +1076,10 @@
             {
               "label": "truffled.lol",
               "url": "https://truffled.lol/iframe.html?url=/games/alien/index.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/alienhominid/"
             }
           ]
         },
@@ -1068,6 +1120,10 @@
             {
               "label": "wasm.rip",
               "url": "https://wasm.rip/files/amongus/index.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/among-us/"
             }
           ]
         },
@@ -2042,6 +2098,10 @@
             {
               "label": "gamaverse.com",
               "url": "https://gamaverse.com/friday-night-funkin-clay-mod-game/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/fridaynightfunkin/"
             }
           ]
         },
@@ -7091,6 +7151,10 @@
             {
               "label": "wasmarcade.app",
               "url": "https://wasmarcade.app/play/stick-war"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/stickwar/"
             }
           ]
         },
@@ -8127,6 +8191,1933 @@
       ]
     },
     {
+      "id": "native-lite",
+      "name": "Native Lite",
+      "icon": "🎯",
+      "items": [
+        {
+          "name": "100ng",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/100ng/"
+            }
+          ]
+        },
+        {
+          "name": "1v1space",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/1v1space/"
+            }
+          ]
+        },
+        {
+          "name": "2048 Multitask",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/2048-multitask/"
+            }
+          ]
+        },
+        {
+          "name": "A Dance of Fire and Ice",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/a-dance-of-fire-and-ice/"
+            }
+          ]
+        },
+        {
+          "name": "Achievement Unlocked",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/achievementunlocked/"
+            }
+          ]
+        },
+        {
+          "name": "Adrenaline Challenge",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/adrenalinechallenge/"
+            }
+          ]
+        },
+        {
+          "name": "Adventure Drivers",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/adventure-drivers/"
+            }
+          ]
+        },
+        {
+          "name": "Align 4",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/align-4/"
+            }
+          ]
+        },
+        {
+          "name": "Amidst the Clouds",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/amidst-the-clouds/"
+            }
+          ]
+        },
+        {
+          "name": "Angry Sharks",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/angry-sharks/"
+            }
+          ]
+        },
+        {
+          "name": "Aquapark Slides",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/aquapark-slides/"
+            }
+          ]
+        },
+        {
+          "name": "Astray",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/astray/"
+            }
+          ]
+        },
+        {
+          "name": "Avalanche",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/avalanche/"
+            }
+          ]
+        },
+        {
+          "name": "Ballistic Chickens",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/ballistic-chickens/"
+            }
+          ]
+        },
+        {
+          "name": "Basketbros.io",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/basketbros-io/"
+            }
+          ]
+        },
+        {
+          "name": "Battle for Gondor",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/battleforgondor/"
+            }
+          ]
+        },
+        {
+          "name": "Big Red Button",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/bigredbutton/"
+            }
+          ]
+        },
+        {
+          "name": "Black Hole Square",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/blacholesquare/"
+            }
+          ]
+        },
+        {
+          "name": "Black Knight",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/blackknight/"
+            }
+          ]
+        },
+        {
+          "name": "Bloxors",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/bloxors/"
+            }
+          ]
+        },
+        {
+          "name": "BNTTS",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/bntts/"
+            }
+          ]
+        },
+        {
+          "name": "Boxhead 2 Play",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/boxhead2play/"
+            }
+          ]
+        },
+        {
+          "name": "BTTS",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/btts/"
+            }
+          ]
+        },
+        {
+          "name": "Burger and Frights",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/burger-and-frights/"
+            }
+          ]
+        },
+        {
+          "name": "Cannon Basketball 4",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/cannon-basketball-4/"
+            }
+          ]
+        },
+        {
+          "name": "Canyon Defense",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/canyondefense/"
+            }
+          ]
+        },
+        {
+          "name": "Cars Simulator",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/cars-simulator/"
+            }
+          ]
+        },
+        {
+          "name": "Cell Machine",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/cell-machine/"
+            }
+          ]
+        },
+        {
+          "name": "Champion Archer",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/championarcher/"
+            }
+          ]
+        },
+        {
+          "name": "Champion Island",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/champion-island/"
+            }
+          ]
+        },
+        {
+          "name": "Chill Radio",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/chill-radio/"
+            }
+          ]
+        },
+        {
+          "name": "Circlo",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/circlo/"
+            }
+          ]
+        },
+        {
+          "name": "CN Ping Pong",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/cnpingpong/"
+            }
+          ]
+        },
+        {
+          "name": "Connect 3",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/connect3/"
+            }
+          ]
+        },
+        {
+          "name": "Craftmine",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/craftmine/"
+            }
+          ]
+        },
+        {
+          "name": "Creative Kill Chamber",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/creativekillchamber/"
+            }
+          ]
+        },
+        {
+          "name": "CS:GO Clicker",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/csgo-clicker/"
+            }
+          ]
+        },
+        {
+          "name": "CTR",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/ctr/"
+            }
+          ]
+        },
+        {
+          "name": "CTR Holiday",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/ctr-holiday/"
+            }
+          ]
+        },
+        {
+          "name": "CTR TR",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/ctr-tr/"
+            }
+          ]
+        },
+        {
+          "name": "Cubefield",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/cubefield/"
+            }
+          ]
+        },
+        {
+          "name": "Cupcake 2048",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/cupcake2048/"
+            }
+          ]
+        },
+        {
+          "name": "Dante",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/dante/"
+            }
+          ]
+        },
+        {
+          "name": "Deal or No Deal",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/deal-or-no-deal/"
+            }
+          ]
+        },
+        {
+          "name": "Defend the Tank",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/defend-the-tank/"
+            }
+          ]
+        },
+        {
+          "name": "Doctor Acorn 2",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/doctor-acorn2/"
+            }
+          ]
+        },
+        {
+          "name": "Doge 2048",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/doge2048/"
+            }
+          ]
+        },
+        {
+          "name": "Double Wires",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/doublewires/"
+            }
+          ]
+        },
+        {
+          "name": "Dragon vs. Bricks",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/dragon-vs-bricks/"
+            }
+          ]
+        },
+        {
+          "name": "Draw the Hill",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/draw-the-hill/"
+            }
+          ]
+        },
+        {
+          "name": "Drift Hunters",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/drift-hunters/"
+            }
+          ]
+        },
+        {
+          "name": "Duck Life 1",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/ducklife1/"
+            }
+          ]
+        },
+        {
+          "name": "Edge Not Found",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/edgenotfound/"
+            }
+          ]
+        },
+        {
+          "name": "Edge Surf",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/edge-surf/"
+            }
+          ]
+        },
+        {
+          "name": "Eel Slap",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/eel-slap/"
+            }
+          ]
+        },
+        {
+          "name": "Elastic Man",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/elasticman/"
+            }
+          ]
+        },
+        {
+          "name": "Endless War 3",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/endlesswar3/"
+            }
+          ]
+        },
+        {
+          "name": "Evolution",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/evolution/"
+            }
+          ]
+        },
+        {
+          "name": "Exo",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/exo/"
+            }
+          ]
+        },
+        {
+          "name": "Factory Balls",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/factoryballs/"
+            }
+          ]
+        },
+        {
+          "name": "Fairsquares",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/fairsquares/"
+            }
+          ]
+        },
+        {
+          "name": "Fake Virus",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/fake-virus/"
+            }
+          ]
+        },
+        {
+          "name": "Fancy Pants Adventures",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/fancypantsadventures/"
+            }
+          ]
+        },
+        {
+          "name": "Fireboy and Watergirl: Forest Temple",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/fireboywatergirlforesttemple/"
+            }
+          ]
+        },
+        {
+          "name": "Five Nights at Wario's (FNAW)",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/fnaw/"
+            }
+          ]
+        },
+        {
+          "name": "Flappy 2048",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/flappy-2048/"
+            }
+          ]
+        },
+        {
+          "name": "Flash Tetris",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/flashtetris/"
+            }
+          ]
+        },
+        {
+          "name": "Flippy Fish",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/flippy-fish/"
+            }
+          ]
+        },
+        {
+          "name": "Froggy's Battle",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/froggys-battle/"
+            }
+          ]
+        },
+        {
+          "name": "Frying Nemo",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/frying-nemo/"
+            }
+          ]
+        },
+        {
+          "name": "Game Inside",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/game-inside/"
+            }
+          ]
+        },
+        {
+          "name": "Generic Fishing Game",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/generic-fishing-game/"
+            }
+          ]
+        },
+        {
+          "name": "Geo Dash",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/geodash/"
+            }
+          ]
+        },
+        {
+          "name": "George and the Printer",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/georgeandtheprinter/"
+            }
+          ]
+        },
+        {
+          "name": "Gimme the Airpod",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/gimme-the-airpod/"
+            }
+          ]
+        },
+        {
+          "name": "Glass City",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/glass-city/"
+            }
+          ]
+        },
+        {
+          "name": "Go Ball",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/go-ball/"
+            }
+          ]
+        },
+        {
+          "name": "Goodnight",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/goodnight/"
+            }
+          ]
+        },
+        {
+          "name": "Google Feud",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/google-feud/"
+            }
+          ]
+        },
+        {
+          "name": "Google Snake",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/google-snake/"
+            }
+          ]
+        },
+        {
+          "name": "Gravity Soccer",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/gravity-soccer/"
+            }
+          ]
+        },
+        {
+          "name": "Greybox",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/greybox/"
+            }
+          ]
+        },
+        {
+          "name": "Grindcraft",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/grindcraft/"
+            }
+          ]
+        },
+        {
+          "name": "Hacker Type",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/hackertype/"
+            }
+          ]
+        },
+        {
+          "name": "Handshakes",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/handshakes/"
+            }
+          ]
+        },
+        {
+          "name": "Happy Hop",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/happy-hop/"
+            }
+          ]
+        },
+        {
+          "name": "HBA",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/hba/"
+            }
+          ]
+        },
+        {
+          "name": "Helicopter",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/helicopter/"
+            }
+          ]
+        },
+        {
+          "name": "Hex Empire",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/hexempire/"
+            }
+          ]
+        },
+        {
+          "name": "Hungry Lamu",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/hungry-lamu/"
+            }
+          ]
+        },
+        {
+          "name": "Idle Shark",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/idle-shark/"
+            }
+          ]
+        },
+        {
+          "name": "Impossible Quiz",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/impossiblequiz/"
+            }
+          ]
+        },
+        {
+          "name": "Interactive Buddy",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/interactivebuddy/"
+            }
+          ]
+        },
+        {
+          "name": "Just Fall",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/just-fall/"
+            }
+          ]
+        },
+        {
+          "name": "Just One Boss",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/just-one-boss/"
+            }
+          ]
+        },
+        {
+          "name": "Kitchen Gun Game",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/kitchen-gun-game/"
+            }
+          ]
+        },
+        {
+          "name": "Kitten Cannon",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/kittencannon/"
+            }
+          ]
+        },
+        {
+          "name": "Knife Master",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/knife-master/"
+            }
+          ]
+        },
+        {
+          "name": "Madalin Stunt Cars 3",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/madalin-stunt-cars-3/"
+            }
+          ]
+        },
+        {
+          "name": "Mario",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/mario/"
+            }
+          ]
+        },
+        {
+          "name": "Marvin Spectrum",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/marvinspectrum/"
+            }
+          ]
+        },
+        {
+          "name": "Matrix Rampage",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/matrixrampage/"
+            }
+          ]
+        },
+        {
+          "name": "Meme 2048",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/meme2048/"
+            }
+          ]
+        },
+        {
+          "name": "Mine Blocks",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/mineblocks/"
+            }
+          ]
+        },
+        {
+          "name": "Minecraft 1.5",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/minecraft-15/"
+            }
+          ]
+        },
+        {
+          "name": "Minecraft 1.8",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/minecraft-18/"
+            }
+          ]
+        },
+        {
+          "name": "Minecraft Beta",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/minecraftbeta/"
+            }
+          ]
+        },
+        {
+          "name": "Minecraft Classic",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/minecraft-classic/"
+            }
+          ]
+        },
+        {
+          "name": "Mini Putt",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/miniputt/"
+            }
+          ]
+        },
+        {
+          "name": "Missiles",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/missiles/"
+            }
+          ]
+        },
+        {
+          "name": "Moto X3M Pool",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/motox3m-pool/"
+            }
+          ]
+        },
+        {
+          "name": "Moto X3M Spooky",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/motox3m-spooky/"
+            }
+          ]
+        },
+        {
+          "name": "My Rusty Submarine",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/my-rusty-submarine/"
+            }
+          ]
+        },
+        {
+          "name": "Ninja",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/ninja/"
+            }
+          ]
+        },
+        {
+          "name": "Ninja vs Evil Corp",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/ninjavsevilcorp/"
+            }
+          ]
+        },
+        {
+          "name": "Noob Steve Parkour",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/noob-steve-parkour/"
+            }
+          ]
+        },
+        {
+          "name": "NS Resurgence",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/nsresurgence/"
+            }
+          ]
+        },
+        {
+          "name": "Offline Paradise",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/OfflineParadise/"
+            }
+          ]
+        },
+        {
+          "name": "Om Bounce",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/om-bounce/"
+            }
+          ]
+        },
+        {
+          "name": "Pandemic 2",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/pandemic2/"
+            }
+          ]
+        },
+        {
+          "name": "Papery Planes",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/papery-planes/"
+            }
+          ]
+        },
+        {
+          "name": "Pixel Gun Survival",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/pixel-gun-survival/"
+            }
+          ]
+        },
+        {
+          "name": "Polybranch",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/polybranch/"
+            }
+          ]
+        },
+        {
+          "name": "Popcat Classic",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/popcat-classic/"
+            }
+          ]
+        },
+        {
+          "name": "Portal Flash",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/portalflash/"
+            }
+          ]
+        },
+        {
+          "name": "Precision Client",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/precision-client/"
+            }
+          ]
+        },
+        {
+          "name": "Protektor",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/protektor/"
+            }
+          ]
+        },
+        {
+          "name": "Push the Square",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/push-the-square/"
+            }
+          ]
+        },
+        {
+          "name": "Push Your Luck",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/push-your-luck/"
+            }
+          ]
+        },
+        {
+          "name": "Rabbit Samurai",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/rabbit-samurai/"
+            }
+          ]
+        },
+        {
+          "name": "Rabbit Samurai 2",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/rabbit-samurai2/"
+            }
+          ]
+        },
+        {
+          "name": "Resent Client",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/resent-client/"
+            }
+          ]
+        },
+        {
+          "name": "Rolling Forests",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/rolling-forests/"
+            }
+          ]
+        },
+        {
+          "name": "Rolly Vortex",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/rolly-vortex/"
+            }
+          ]
+        },
+        {
+          "name": "Ruffle",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/ruffle/"
+            }
+          ]
+        },
+        {
+          "name": "Sandboxels",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/sandboxels/"
+            }
+          ]
+        },
+        {
+          "name": "Santy is Home",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/santy-is-home/"
+            }
+          ]
+        },
+        {
+          "name": "Scrap Metal",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/scrapmetal/"
+            }
+          ]
+        },
+        {
+          "name": "Shot in the Dark",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/shotinthedark/"
+            }
+          ]
+        },
+        {
+          "name": "Shuttle Deck",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/shuttledeck/"
+            }
+          ]
+        },
+        {
+          "name": "Sky Car Stunt",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/sky-car-stunt/"
+            }
+          ]
+        },
+        {
+          "name": "Slap The Monkey",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/slap-the-monkey/"
+            }
+          ]
+        },
+        {
+          "name": "Slime Rush TD",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/slime-rush-td/"
+            }
+          ]
+        },
+        {
+          "name": "Slope 2",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/slope-2/"
+            }
+          ]
+        },
+        {
+          "name": "Slope Ball",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/slope-ball/"
+            }
+          ]
+        },
+        {
+          "name": "Smoking Barrels",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/smokingbarrels/"
+            }
+          ]
+        },
+        {
+          "name": "Snow Battle",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/snowbattle/"
+            }
+          ]
+        },
+        {
+          "name": "Soccer Skills",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/soccer-skills/"
+            }
+          ]
+        },
+        {
+          "name": "Soldier Legend",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/soldier-legend/"
+            }
+          ]
+        },
+        {
+          "name": "Solitaire",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/solitaire/"
+            }
+          ]
+        },
+        {
+          "name": "Sort the Court",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/sort-the-court/"
+            }
+          ]
+        },
+        {
+          "name": "Soundboard",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/soundboard/"
+            }
+          ]
+        },
+        {
+          "name": "Space Company",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/space-company/"
+            }
+          ]
+        },
+        {
+          "name": "Space Garden",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/spacegarden/"
+            }
+          ]
+        },
+        {
+          "name": "Spinning Rat",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/spinningrat/"
+            }
+          ]
+        },
+        {
+          "name": "Stack Bump 3D",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/stack-bump-3d/"
+            }
+          ]
+        },
+        {
+          "name": "Starve",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/starve/"
+            }
+          ]
+        },
+        {
+          "name": "Station 141",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/station-141/"
+            }
+          ]
+        },
+        {
+          "name": "Stick Archers",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/stick-archers/"
+            }
+          ]
+        },
+        {
+          "name": "Stick Duel Battle",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/stick-duel-battle/"
+            }
+          ]
+        },
+        {
+          "name": "Stickman Boost",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/stickman-boost/"
+            }
+          ]
+        },
+        {
+          "name": "Stickman Golf",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/stickman-golf/"
+            }
+          ]
+        },
+        {
+          "name": "Stickman Survival",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/Stickman-Survival/"
+            }
+          ]
+        },
+        {
+          "name": "Storm the House 2",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/stormthehouse2/"
+            }
+          ]
+        },
+        {
+          "name": "Super Mario Construct",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/supermarioconstruct/"
+            }
+          ]
+        },
+        {
+          "name": "Surviv",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/surviv/"
+            }
+          ]
+        },
+        {
+          "name": "Sushi Unroll",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/sushi-unroll/"
+            }
+          ]
+        },
+        {
+          "name": "Swerve",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/swerve/"
+            }
+          ]
+        },
+        {
+          "name": "Synesthesia",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/synesthesia/"
+            }
+          ]
+        },
+        {
+          "name": "Tactical Assassin 2",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/tacticalassasin2/"
+            }
+          ]
+        },
+        {
+          "name": "Tactical Weapon Pack 2",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/tactical-weapon-pack-2/"
+            }
+          ]
+        },
+        {
+          "name": "Tank Trouble 2",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/tank-trouble-2/"
+            }
+          ]
+        },
+        {
+          "name": "The Battle",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/thebattle/"
+            }
+          ]
+        },
+        {
+          "name": "The Heist",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/theheist/"
+            }
+          ]
+        },
+        {
+          "name": "The Hotel",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/the-hotel/"
+            }
+          ]
+        },
+        {
+          "name": "Tiny Islands",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/tiny-islands/"
+            }
+          ]
+        },
+        {
+          "name": "Toss the Turtle",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/tosstheturtle/"
+            }
+          ]
+        },
+        {
+          "name": "Townscaper",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/townscaper/"
+            }
+          ]
+        },
+        {
+          "name": "TV Static",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/tv-static/"
+            }
+          ]
+        },
+        {
+          "name": "Twitch Tetris",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/twitch-tetris/"
+            }
+          ]
+        },
+        {
+          "name": "Veloce",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/veloce/"
+            }
+          ]
+        },
+        {
+          "name": "Wall Smash",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/wallsmash/"
+            }
+          ]
+        },
+        {
+          "name": "Waterworks",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/waterworks/"
+            }
+          ]
+        },
+        {
+          "name": "WeaveSilk",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/weavesilk/"
+            }
+          ]
+        },
+        {
+          "name": "WebGL Fluid Simulation",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/webgl-fluid-simulation/"
+            }
+          ]
+        },
+        {
+          "name": "WebRetro",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/webretro/"
+            }
+          ]
+        },
+        {
+          "name": "Win the White House",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/win-the-whitehouse/"
+            }
+          ]
+        },
+        {
+          "name": "Wolf 3D",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/wolf3d/"
+            }
+          ]
+        },
+        {
+          "name": "X-Trial Racing",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/x-trial-racing/"
+            }
+          ]
+        },
+        {
+          "name": "xx142-B2.exe",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/xx142-b2exe/"
+            }
+          ]
+        },
+        {
+          "name": "Yoshi Fabrication",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/yoshifabrication/"
+            }
+          ]
+        },
+        {
+          "name": "You Are Bezos",
+          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "urls": [
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/you-are-bezos/"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "monkeygg2",
       "name": "MonkeyGG2",
       "icon": "🐵",
@@ -8137,6 +10128,10 @@
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/10-minutes-till-dawn/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/10-minutes-till-dawn/"
             }
           ],
           "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/10-minutes-till-dawn/icon.png"
@@ -8167,6 +10162,10 @@
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/a-dark-room/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/adarkroom/"
             }
           ],
           "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/a-dark-room/favicon.ico"
@@ -8249,6 +10248,10 @@
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/awesome-tanks-2/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/awesometanks2/"
             }
           ]
         },
@@ -8276,6 +10279,10 @@
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/basketball-stars/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/basketball-stars/"
             }
           ]
         },
@@ -8285,6 +10292,10 @@
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/bit-life/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/bitlife/"
             }
           ],
           "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/bit-life/logo.png"
@@ -8295,6 +10306,10 @@
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/boxing-random/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/boxing-random/"
             }
           ]
         },
@@ -8322,6 +10337,10 @@
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/chrome-dino/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/chrome-dino/"
             }
           ]
         },
@@ -8368,6 +10387,10 @@
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/core-ball/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/core-ball/"
             }
           ]
         },
@@ -8377,6 +10400,10 @@
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/crossy-road/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/crossyroad/"
             }
           ]
         },
@@ -8396,6 +10423,10 @@
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/doge-miner/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/DogeMiner/"
             }
           ],
           "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/doge-miner/favicon.ico"
@@ -8406,6 +10437,10 @@
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/doodle-jump/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/doodle-jump/"
             }
           ]
         },
@@ -8415,6 +10450,10 @@
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/drift-boss/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/drift-boss/"
             }
           ]
         },
@@ -8424,6 +10463,10 @@
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/drive-mad/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/drive-mad/"
             }
           ]
         },
@@ -8443,6 +10486,10 @@
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/duck-life-4/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/ducklife4/"
             }
           ]
         },
@@ -8535,6 +10582,10 @@
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/flappy-bird/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/flappy-bird/"
             }
           ]
         },
@@ -8608,6 +10659,10 @@
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/getaway-shootout/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/getaway-shootout/"
             }
           ],
           "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/getaway-shootout/favicon.ico"
@@ -8646,6 +10701,10 @@
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/idle-breakout/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/idle-breakout/"
             }
           ]
         },
@@ -8702,6 +10761,10 @@
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/motox3m/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/motox3m/"
             }
           ]
         },
@@ -8729,6 +10792,10 @@
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/n-gon/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/n-gon/"
             }
           ],
           "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/n-gon/favicon.ico"
@@ -8739,6 +10806,10 @@
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/ovo/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/ovo/"
             }
           ]
         },
@@ -8748,6 +10819,10 @@
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/particle-clicker/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/particle-clicker/"
             }
           ],
           "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/particle-clicker/favicon.ico"
@@ -8821,6 +10896,10 @@
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/retro-bowl/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/retro-bowl/"
             }
           ]
         },
@@ -8857,6 +10936,10 @@
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/rooftop-snipers/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/rooftop-snipers/"
             }
           ]
         },
@@ -8939,6 +11022,10 @@
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/slope/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/slope/"
             }
           ]
         },
@@ -8966,6 +11053,10 @@
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/soccer-random/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/soccer-random/"
             }
           ]
         },
@@ -8984,6 +11075,10 @@
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/stickman-hook/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/stickman-hook/"
             }
           ]
         },
@@ -8993,6 +11088,10 @@
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/subway-surfers/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/subway-surfers/"
             }
           ]
         },
@@ -9002,6 +11101,10 @@
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/subway-surfers-ny/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/subway-surfers-ny/"
             }
           ]
         },
@@ -9011,6 +11114,10 @@
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/tanuki-sunset/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/tanuki-sunset/"
             }
           ]
         },
@@ -9020,6 +11127,10 @@
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/temple-run-2/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/temple-run-2/"
             }
           ]
         },
@@ -9029,6 +11140,10 @@
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/the-final-earth/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/the-final-earth/"
             }
           ]
         },
@@ -9047,6 +11162,10 @@
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/there-is-no-game/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/there-is-no-game/"
             }
           ]
         },
@@ -9086,6 +11205,10 @@
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/tiny-fishing/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/tiny-fishing/"
             }
           ]
         },
@@ -9104,6 +11227,10 @@
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/tunnel-rush/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/tunnel-rush/"
             }
           ]
         },
@@ -9122,6 +11249,10 @@
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/vex-3/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/vex3/"
             }
           ],
           "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/vex-3/favicon.ico"
@@ -9132,6 +11263,10 @@
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/vex-4/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/vex4/"
             }
           ],
           "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/vex-4/favicon.ico"
@@ -9142,6 +11277,10 @@
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/vex-5/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/vex5/"
             }
           ],
           "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/vex-5/favicon.ico"
@@ -9152,6 +11291,10 @@
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/vex-6/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/vex6/"
             }
           ],
           "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/vex-6/favicon.ico"
@@ -9162,6 +11305,10 @@
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/vex-7/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/vex7/"
             }
           ],
           "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/vex-7/favicon.ico"
@@ -9315,6 +11462,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/9007199254740992.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/9007199254740992/"
             }
           ]
         },
@@ -9414,6 +11565,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/backrooms.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/backrooms/"
             }
           ]
         },
@@ -9432,6 +11587,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/bad-ice-cream.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/bad-ice-cream/"
             }
           ]
         },
@@ -9441,6 +11600,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/bad-ice-cream-2.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/bad-ice-cream-2/"
             }
           ]
         },
@@ -9450,6 +11613,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/bad-ice-cream-3.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/bad-ice-cream-3/"
             }
           ]
         },
@@ -9486,6 +11653,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/baldis-basics.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/baldis-basics/"
             }
           ]
         },
@@ -9612,6 +11783,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/bloons-TD.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/bloonstd/"
             }
           ]
         },
@@ -9621,6 +11796,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/bloons-TD-2.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/bloonstd2/"
             }
           ]
         },
@@ -9693,6 +11872,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/bob-the-robber-2.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/bobtherobber2/"
             }
           ]
         },
@@ -9738,6 +11921,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/breaking-the-bank.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/breakingthebank/"
             }
           ]
         },
@@ -9864,6 +12051,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/cluster-rush.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/cluster-rush/"
             }
           ]
         },
@@ -9999,6 +12190,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/death-run-3D.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/death-run-3d/"
             }
           ]
         },
@@ -10053,6 +12248,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/duck-life-2.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/ducklife2/"
             }
           ]
         },
@@ -10062,6 +12261,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/duck-life-3.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/ducklife3/"
             }
           ]
         },
@@ -10233,6 +12436,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/escaping-the-prison.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/escapingtheprison/"
             }
           ]
         },
@@ -10251,6 +12458,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/evil-glitch.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/evil-glitch/"
             }
           ]
         },
@@ -10449,6 +12660,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/fruit-ninja.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/fruitninja/"
             }
           ]
         },
@@ -10719,6 +12934,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/jetpack-joyride.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/jetpack-joyride/"
             }
           ]
         },
@@ -10773,6 +12992,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/learn-to-fly.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/learntofly/"
             }
           ]
         },
@@ -10782,6 +13005,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/learn-to-fly-2.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/learntofly2/"
             }
           ]
         },
@@ -10827,6 +13054,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/madalin-stunt-cars-2.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/madalin-stunt-cars-2/"
             }
           ]
         },
@@ -10854,6 +13085,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/merge-round-racers.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/merge-round-racers/"
             }
           ]
         },
@@ -10863,6 +13098,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/minesweeper.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/minesweeper/"
             }
           ]
         },
@@ -10890,6 +13129,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/moto-x3m-2.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/motox3m2/"
             }
           ]
         },
@@ -10926,6 +13169,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/moto-x3m-winter.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/motox3m-winter/"
             }
           ]
         },
@@ -11016,6 +13263,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/papas-burgeria.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/papasburgeria/"
             }
           ]
         },
@@ -11088,6 +13339,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/papas-pizzeria.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/papaspizzaria/"
             }
           ]
         },
@@ -11313,6 +13568,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/riddle-school.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/riddleschool/"
             }
           ]
         },
@@ -11322,6 +13581,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/riddle-school-2.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/riddleschool2/"
             }
           ]
         },
@@ -11331,6 +13594,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/riddle-school-3.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/riddleschool3/"
             }
           ]
         },
@@ -11340,6 +13607,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/riddle-school-4.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/riddleschool4/"
             }
           ]
         },
@@ -11349,6 +13620,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/riddle-school-5.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/riddleschool5/"
             }
           ]
         },
@@ -11358,6 +13633,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/riddle-transfer.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/riddletransfer/"
             }
           ]
         },
@@ -11367,6 +13646,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/riddle-transfer-2.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/riddletransfer2/"
             }
           ]
         },
@@ -11430,6 +13713,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/sand-game.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/sand-game/"
             }
           ]
         },
@@ -11664,6 +13951,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/stack.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/stack/"
             }
           ]
         },
@@ -11691,6 +13982,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/stealing-the-diamond.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/stealingthediamond/"
             }
           ]
         },
@@ -11718,6 +14013,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/stick-merge.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/stick-merge/"
             }
           ]
         },
@@ -11790,6 +14089,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/superhot.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/superhot/"
             }
           ]
         },
@@ -11898,6 +14201,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/this-is-the-only-level.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/thisistheonlylevel/"
             }
           ]
         },
@@ -11952,6 +14259,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/tube-jumpers.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/tube-jumpers/"
             }
           ]
         },
@@ -12132,6 +14443,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/worlds-hardest-game.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/worlds-hardest-game/"
             }
           ]
         },
@@ -12141,6 +14456,10 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/worlds-hardest-game-2.html"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/worlds-hardest-game-2/"
             }
           ]
         },
@@ -12301,6 +14620,10 @@
             {
               "label": "fosiper.com",
               "url": "https://fosiper.com/games/hexgl-lite/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/HexGL/"
             }
           ]
         },
@@ -12364,6 +14687,10 @@
             {
               "label": "fosiper.com",
               "url": "https://fosiper.com/games/ns-shaft/"
+            },
+            {
+              "label": "gms.parcoil.com",
+              "url": "https://gms.parcoil.com/ns-shaft/"
             }
           ]
         },
