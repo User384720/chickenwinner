@@ -231,6 +231,7 @@
     },
     weather: { coords: null },
     rss: { nextPage: 0, loading: false, exhausted: false, chain: 0, searchTimer: 0 },
+    pages: {},
     player: { url: '', type: '', open: false, timer: null }
   };
 
@@ -637,16 +638,10 @@
     return rssVisibleCount() < 12;
   }
 
-  function rssTailInView() {
-    var sentinel = $('#rss-sentinel');
-    if (!sentinel) return false;
-    return sentinel.getBoundingClientRect().top <= window.innerHeight + 400;
-  }
-
   function rssAutoLoad() {
     if (state.route !== 'rss-games' || !rssNeedsMore()) return;
     var query = String((state.filters['rss-games'] || { q: '' }).q || '').trim();
-    if (!query && !rssTailInView()) return;
+    if (!query) return; /* beim Blättern laden die Seitenzahlen nach */
 
     state.rss.chain++;
     loadMoreRss(true).then(function (result) {
@@ -671,23 +666,7 @@
     }, 500);
   }
 
-  function bindRssAutoLoad() {
-    var sentinel = $('#rss-sentinel');
-    if (!sentinel) return;
 
-    if ('IntersectionObserver' in window) {
-      var observer = new IntersectionObserver(function (entries) {
-        if (!entries.some(function (entry) { return entry.isIntersecting; })) return;
-        state.rss.chain = 0;
-        rssAutoLoad();
-      }, { rootMargin: '400px 0px' });
-      observer.observe(sentinel);
-    }
-
-    window.addEventListener('scroll', function () {
-      state.rss.chain = 0; /* beim Scrollen darf wieder nachgeladen werden */
-    }, { passive: true });
-  }
 
   function loadData(key) {
     var entry = state.data[key];
@@ -712,6 +691,7 @@
           group.items.forEach(function (item) { flat.push(item); });
         });
         state.data[key] = { status: 'ready', groups: groups, items: flat };
+        state.pages[key] = 1;
         renderGrid(key);
         updateGamesCounter();
         if (state.route === 'home') renderFinder();
@@ -914,9 +894,46 @@
     if (entry.status === 'error') {
       grid.innerHTML = errorMarkup(key, entry.error);
       renderChips(key);
+      renderPager(key, 1, 1, 0);
       return;
     }
 
+    var rows = filteredRows(key);
+    var query = String((state.filters[key] || {}).q || '').trim().toLowerCase();
+
+    renderChips(key);
+
+    if (key === 'rss-games') setRssNote(entry.items.length + ' Spiele aus dem Feed geladen');
+
+    if (!rows.length) {
+      grid.innerHTML = emptyMarkup(query);
+      updateCount(key, 0, 0, 0);
+      renderPager(key, 1, 1, 0);
+      return;
+    }
+
+    var pages = pageCount(rows.length);
+    var page = Math.min(Math.max(1, state.pages[key] || 1), pages);
+    state.pages[key] = page;
+
+    var start = (page - 1) * PAGE_SIZE;
+    var slice = rows.slice(start, start + PAGE_SIZE);
+
+    updateCount(key, slice.length, rows.length, start);
+
+    grid.innerHTML = slice.map(function (row, index) {
+      return cardMarkup(row.item, key, index, row.group);
+    }).join('');
+
+    renderPager(key, page, pages, rows.length);
+    hydrateIcons(grid);
+    runChecker(grid);
+  }
+
+  /* Alle Einträge einer Kategorie, die zum aktuellen Filter passen. */
+  function filteredRows(key) {
+    var entry = state.data[key];
+    if (!entry || !entry.groups) return [];
     var filter = state.filters[key] || (state.filters[key] = { q: '', group: '' });
     var query = String(filter.q || '').trim().toLowerCase();
     var activeGroup = filter.group || '';
@@ -930,34 +947,132 @@
       });
     });
 
-    renderChips(key);
-    updateCount(key, rows.length, entry.items.length);
-
-    if (key === 'rss-games') {
-      var rssNote = $('#rss-more-note');
-      if (rssNote) rssNote.textContent = entry.items.length + ' Spiele aus dem Feed geladen';
-    }
-
-    if (!rows.length) {
-      grid.innerHTML = emptyMarkup(query);
-      return;
-    }
-
-    grid.innerHTML = rows.map(function (row, index) {
-      return cardMarkup(row.item, key, index, row.group);
-    }).join('');
-
-    hydrateIcons(grid);
-    runChecker(grid);
+    return rows;
   }
 
-  function updateCount(key, shown, total) {
+  function updateCount(key, shown, total, start) {
     var node = $('[data-count="' + key + '"]');
     if (!node) return;
-    node.textContent = total ? shown + ' von ' + total + ' Einträgen' : 'keine Einträge';
+    if (!total) {
+      node.textContent = 'keine Einträge';
+      return;
+    }
+    var from = (start || 0) + 1;
+    var to = from + shown - 1;
+    node.textContent = from + '–' + to + ' von ' + total.toLocaleString('de-DE') + ' Einträgen';
   }
 
   /* Zähler auf Home: Games Online + RSS-Feed + lokale Spiele. */
+  /* Seitenweise Anzeige: hält den Browser auch bei Tausenden Spielen schnell. */
+  var PAGE_SIZE = 60;
+
+  function pageCount(total) {
+    return Math.max(1, Math.ceil(total / PAGE_SIZE));
+  }
+
+  function pagerNode(key) {
+    var grid = $('[data-grid="' + key + '"]');
+    if (!grid) return null;
+    var pager = $('#pager-' + key);
+    if (!pager) {
+      pager = document.createElement('nav');
+      pager.className = 'pager';
+      pager.id = 'pager-' + key;
+      pager.setAttribute('aria-label', 'Seiten');
+      grid.parentNode.insertBefore(pager, grid.nextSibling);
+    }
+    return pager;
+  }
+
+  /* Seitennummern wie bei Google: 1 … 4 5 [6] 7 8 … 21 */
+  function pagerWindow(page, pages) {
+    var keep = {};
+    keep[1] = true;
+    keep[pages] = true;
+    for (var i = page - 2; i <= page + 2; i++) {
+      if (i >= 1 && i <= pages) keep[i] = true;
+    }
+    if (page <= 5) {
+      for (var a = 2; a <= Math.min(5, pages); a++) keep[a] = true;
+    }
+    if (page >= pages - 4) {
+      for (var b = Math.max(1, pages - 4); b < pages; b++) keep[b] = true;
+    }
+
+    var numbers = Object.keys(keep).map(Number).sort(function (x, y) { return x - y; });
+    var out = [];
+    var previous = 0;
+    numbers.forEach(function (n) {
+      if (previous && n - previous > 1) out.push('gap');
+      out.push(n);
+      previous = n;
+    });
+    return out;
+  }
+
+  function renderPager(key, page, pages, total) {
+    var pager = pagerNode(key);
+    if (!pager) return;
+
+    var rssHasMore = key === 'rss-games' && !state.rss.exhausted && !!state.rss.nextPage;
+    if (!total) {
+      pager.hidden = true;
+      pager.innerHTML = '';
+      return;
+    }
+
+    var parts = [];
+    parts.push('<button class="pager-step" type="button" data-page-for="' + esc(key) + '" data-page="' + (page - 1) + '"' +
+      (page <= 1 ? ' disabled' : '') + ' aria-label="Vorherige Seite">‹ Zurück</button>');
+
+    pagerWindow(page, pages).forEach(function (entry) {
+      if (entry === 'gap') {
+        parts.push('<span class="pager-gap" aria-hidden="true">…</span>');
+        return;
+      }
+      if (entry === page) {
+        parts.push('<span class="pager-num is-current" aria-current="page">' + entry + '</span>');
+      } else {
+        parts.push('<button class="pager-num" type="button" data-page-for="' + esc(key) + '" data-page="' + entry + '" aria-label="Seite ' + entry + '">' + entry + '</button>');
+      }
+    });
+
+    parts.push('<button class="pager-step" type="button" data-page-for="' + esc(key) + '" data-page="' + (page + 1) + '"' +
+      (page >= pages && !rssHasMore ? ' disabled' : '') + ' aria-label="Nächste Seite">Weiter ›</button>');
+
+    pager.hidden = false;
+    pager.innerHTML = parts.join('');
+  }
+
+  function goToPage(key, page) {
+    var entry = state.data[key];
+    if (!entry || entry.status !== 'ready') return;
+
+    var rows = filteredRows(key);
+    var pages = pageCount(rows.length);
+    if (page < 1) page = 1;
+
+    if (page > pages) {
+      if (key === 'rss-games' && rssNeedsMore()) {
+        state.rss.chain = 0;
+        loadMoreRss(true).then(function (result) {
+          if (result && result.added) goToPage(key, page);
+          else toast('Mehr Seiten sind gerade nicht verfügbar.', 'info');
+        });
+      }
+      return;
+    }
+
+    state.pages[key] = page;
+    renderGrid(key);
+
+    var grid = $('[data-grid="' + key + '"]');
+    if (grid) {
+      var top = grid.getBoundingClientRect().top + window.pageYOffset - 90;
+      window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+    }
+  }
+
   function updateGamesCounter() {
     var sources = {
       'games-online': 'games-count-online',
@@ -1875,7 +1990,16 @@
 
       var rssMore = event.target.closest('#rss-more');
       if (rssMore) {
-        loadMoreRss();
+        loadMoreRss().then(function (result) {
+          if (result && result.added) goToPage('rss-games', pageCount(filteredRows('rss-games').length));
+        });
+        return;
+      }
+
+      var pageButton = event.target.closest('[data-page]');
+      if (pageButton) {
+        var wanted = parseInt(pageButton.dataset.page, 10);
+        if (!isNaN(wanted)) goToPage(pageButton.dataset.pageFor, wanted);
         return;
       }
 
@@ -1904,6 +2028,7 @@
         var key = input.dataset.filter;
         var filter = state.filters[key] || (state.filters[key] = { q: '', group: '' });
         filter.q = input.value;
+        state.pages[key] = 1;
         renderGrid(key);
         if (key === 'rss-games') scheduleRssSearchLoad();
       });
@@ -1917,6 +2042,7 @@
         var filter = state.filters[key] || (state.filters[key] = { q: '', group: '' });
         var next = chip.dataset.chipGroup || '';
         filter.group = filter.group === next ? '' : next;
+        state.pages[key] = 1;
         renderGrid(key);
         if (key === 'rss-games') {
           state.rss.chain = 0;
@@ -2602,7 +2728,6 @@
     bindPlayer();
     bindWidgets();
     bindCloak();
-    bindRssAutoLoad();
 
     var hasIntro = !!$('#intro');
     bindIntro();
