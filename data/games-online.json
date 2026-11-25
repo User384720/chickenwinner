@@ -356,6 +356,10 @@
           "icon": "https://www.google.com/s2/favicons?domain=1v1.lol&sz=128",
           "urls": [
             {
+              "label": "lokal spielen",
+              "url": "games/native-lite/1v1lol/index.html"
+            },
+            {
               "label": "1v1.lol",
               "url": "https://1v1.lol"
             },
@@ -515,6 +519,10 @@
           "name": "Paper.io 2",
           "icon": "https://www.google.com/s2/favicons?domain=paper-io.com&sz=128",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/paperio2/index.html"
+            },
             {
               "label": "paper-io.com",
               "url": "https://paper-io.com"
@@ -694,6 +702,10 @@
           "icon": "https://www.google.com/s2/favicons?domain=play2048.co&sz=128",
           "urls": [
             {
+              "label": "lokal spielen",
+              "url": "games/native-lite/2048/index.html"
+            },
+            {
               "label": "play2048.co",
               "url": "https://play2048.co"
             },
@@ -711,6 +723,10 @@
           "name": "Hextris",
           "icon": "https://www.google.com/s2/favicons?domain=hextris.io&sz=128",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/hextris/index.html"
+            },
             {
               "label": "hextris.io",
               "url": "https://hextris.io"
@@ -745,6 +761,10 @@
           "name": "Wordle",
           "icon": "https://www.google.com/s2/favicons?domain=nytimes.com&sz=128",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/wordle/index.html"
+            },
             {
               "label": "nytimes.com",
               "url": "https://www.nytimes.com/games/wordle/index.html"
@@ -797,6 +817,10 @@
           "icon": "https://www.google.com/s2/favicons?domain=smashkarts.io&sz=128",
           "urls": [
             {
+              "label": "lokal spielen",
+              "url": "games/native-lite/smashkarts/index.html"
+            },
+            {
               "label": "smashkarts.io",
               "url": "https://smashkarts.io"
             },
@@ -840,6 +864,10 @@
           "name": "Basket Random",
           "icon": "https://www.google.com/s2/favicons?domain=basketrandom.com&sz=128",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/basket-random/index.html"
+            },
             {
               "label": "basketrandom.com",
               "url": "https://basketrandom.com"
@@ -928,6 +956,10 @@
           "name": "Cookie Clicker",
           "icon": "https://www.google.com/s2/favicons?domain=orteil.dashnet.org&sz=128",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/cookie-clicker/index.html"
+            },
             {
               "label": "orteil.dashnet.org",
               "url": "https://orteil.dashnet.org/cookieclicker/"
@@ -1060,6 +1092,10 @@
           "icon": "https://ported2browser.com/storage/covers/ages-of-conflict-world-war-simulator.webp",
           "urls": [
             {
+              "label": "lokal spielen",
+              "url": "games/native-lite/ages-of-conflict/index.html"
+            },
+            {
               "label": "wasm.rip",
               "url": "https://wasm.rip/files/aoc/index.html"
             },
@@ -1117,6 +1153,10 @@
           "name": "Among Us",
           "icon": "https://ported2browser.com/storage/covers/among-us.webp",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/among-us/index.html"
+            },
             {
               "label": "wasm.rip",
               "url": "https://wasm.rip/files/amongus/index.html"
@@ -2095,6 +2135,10 @@
           "name": "Friday Night Funkin'",
           "icon": "https://ported2browser.com/storage/covers/friday-night-funkin-cover.webp",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/fridaynightfunkin/index.html"
+            },
             {
               "label": "gamaverse.com",
               "url": "https://gamaverse.com/friday-night-funkin-clay-mod-game/"
@@ -8197,8 +8241,12 @@
       "items": [
         {
           "name": "100ng",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/100ng.jpg",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/100ng/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/100ng/"
@@ -8207,7 +8255,7 @@
         },
         {
           "name": "1v1space",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/1v1space.png",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -8217,8 +8265,12 @@
         },
         {
           "name": "2048 Multitask",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/2048-multitask.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/2048-multitask/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/2048-multitask/"
@@ -8227,8 +8279,12 @@
         },
         {
           "name": "A Dance of Fire and Ice",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/a-dance-of-fire-and-ice.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/a-dance-of-fire-and-ice/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/a-dance-of-fire-and-ice/"
@@ -8237,7 +8293,7 @@
         },
         {
           "name": "Achievement Unlocked",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/achievementunlocked.png",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -8247,7 +8303,7 @@
         },
         {
           "name": "Adrenaline Challenge",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/adrenalinechallenge.jpg",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -8257,8 +8313,12 @@
         },
         {
           "name": "Adventure Drivers",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/adventure-drivers.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/adventure-drivers/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/adventure-drivers/"
@@ -8267,8 +8327,12 @@
         },
         {
           "name": "Align 4",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/align-4.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/align-4/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/align-4/"
@@ -8277,8 +8341,12 @@
         },
         {
           "name": "Amidst the Clouds",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/amidst-the-clouds.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/amidst-the-clouds/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/amidst-the-clouds/"
@@ -8287,8 +8355,12 @@
         },
         {
           "name": "Angry Sharks",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/angry-sharks.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/angry-sharks/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/angry-sharks/"
@@ -8297,8 +8369,12 @@
         },
         {
           "name": "Aquapark Slides",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/aquapark-slides.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/aquapark-slides/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/aquapark-slides/"
@@ -8307,8 +8383,12 @@
         },
         {
           "name": "Astray",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/astray.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/astray/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/astray/"
@@ -8317,7 +8397,7 @@
         },
         {
           "name": "Avalanche",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/avalanche.png",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -8327,8 +8407,12 @@
         },
         {
           "name": "Ballistic Chickens",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/ballistic-chickens.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/ballistic-chickens/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/ballistic-chickens/"
@@ -8337,8 +8421,12 @@
         },
         {
           "name": "Basketbros.io",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/basketbros-io.jpg",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/basketbros-io/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/basketbros-io/"
@@ -8347,7 +8435,7 @@
         },
         {
           "name": "Battle for Gondor",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/battleforgondor.jpg",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -8357,7 +8445,7 @@
         },
         {
           "name": "Big Red Button",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/bigredbutton.png",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -8367,8 +8455,12 @@
         },
         {
           "name": "Black Hole Square",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/blacholesquare.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/blacholesquare/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/blacholesquare/"
@@ -8377,7 +8469,7 @@
         },
         {
           "name": "Black Knight",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/blackknight.png",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -8387,7 +8479,7 @@
         },
         {
           "name": "Bloxors",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/bloxors.png",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -8397,8 +8489,12 @@
         },
         {
           "name": "BNTTS",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/bntts.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/bntts/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/bntts/"
@@ -8407,7 +8503,7 @@
         },
         {
           "name": "Boxhead 2 Play",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/boxhead2play.jpg",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -8417,8 +8513,12 @@
         },
         {
           "name": "BTTS",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/btts.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/btts/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/btts/"
@@ -8427,8 +8527,12 @@
         },
         {
           "name": "Burger and Frights",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/burger-and-frights.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/burger-and-frights/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/burger-and-frights/"
@@ -8437,8 +8541,12 @@
         },
         {
           "name": "Cannon Basketball 4",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/cannon-basketball-4.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/cannon-basketball-4/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/cannon-basketball-4/"
@@ -8447,7 +8555,7 @@
         },
         {
           "name": "Canyon Defense",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/canyondefense.png",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -8457,8 +8565,12 @@
         },
         {
           "name": "Cars Simulator",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/cars-simulator.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/cars-simulator/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/cars-simulator/"
@@ -8467,8 +8579,12 @@
         },
         {
           "name": "Cell Machine",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/cell-machine.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/cell-machine/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/cell-machine/"
@@ -8477,7 +8593,7 @@
         },
         {
           "name": "Champion Archer",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/championarcher.png",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -8487,8 +8603,12 @@
         },
         {
           "name": "Champion Island",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/champion-island.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/champion-island/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/champion-island/"
@@ -8497,8 +8617,12 @@
         },
         {
           "name": "Chill Radio",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/chill-radio.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/chill-radio/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/chill-radio/"
@@ -8507,8 +8631,12 @@
         },
         {
           "name": "Circlo",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/circlo.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/circlo/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/circlo/"
@@ -8517,8 +8645,12 @@
         },
         {
           "name": "CN Ping Pong",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/cnpingpong.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/cnpingpong/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/cnpingpong/"
@@ -8527,8 +8659,12 @@
         },
         {
           "name": "Connect 3",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/connect3.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/connect3/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/connect3/"
@@ -8537,8 +8673,12 @@
         },
         {
           "name": "Craftmine",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/craftmine.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/craftmine/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/craftmine/"
@@ -8547,7 +8687,7 @@
         },
         {
           "name": "Creative Kill Chamber",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/creativekillchamber.jpg",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -8557,8 +8697,12 @@
         },
         {
           "name": "CS:GO Clicker",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/csgo-clicker.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/csgo-clicker/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/csgo-clicker/"
@@ -8567,8 +8711,12 @@
         },
         {
           "name": "CTR",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/ctr.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/ctr/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/ctr/"
@@ -8577,8 +8725,12 @@
         },
         {
           "name": "CTR Holiday",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/ctr-holiday.ico",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/ctr-holiday/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/ctr-holiday/"
@@ -8587,8 +8739,12 @@
         },
         {
           "name": "CTR TR",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/ctr-tr.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/ctr-tr/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/ctr-tr/"
@@ -8597,7 +8753,7 @@
         },
         {
           "name": "Cubefield",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/cubefield.png",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -8607,8 +8763,12 @@
         },
         {
           "name": "Cupcake 2048",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/cupcake2048.ico",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/cupcake2048/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/cupcake2048/"
@@ -8617,8 +8777,12 @@
         },
         {
           "name": "Dante",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/dante.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/dante/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/dante/"
@@ -8627,7 +8791,7 @@
         },
         {
           "name": "Deal or No Deal",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/deal-or-no-deal.jpg",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -8637,8 +8801,12 @@
         },
         {
           "name": "Defend the Tank",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/defend-the-tank.jpg",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/defend-the-tank/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/defend-the-tank/"
@@ -8647,8 +8815,12 @@
         },
         {
           "name": "Doctor Acorn 2",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/doctor-acorn2.jpg",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/doctor-acorn2/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/doctor-acorn2/"
@@ -8657,8 +8829,12 @@
         },
         {
           "name": "Doge 2048",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/doge2048.jpg",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/doge2048/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/doge2048/"
@@ -8667,7 +8843,7 @@
         },
         {
           "name": "Double Wires",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/doublewires.png",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -8677,8 +8853,12 @@
         },
         {
           "name": "Dragon vs. Bricks",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/dragon-vs-bricks.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/dragon-vs-bricks/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/dragon-vs-bricks/"
@@ -8687,8 +8867,12 @@
         },
         {
           "name": "Draw the Hill",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/draw-the-hill.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/draw-the-hill/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/draw-the-hill/"
@@ -8697,8 +8881,12 @@
         },
         {
           "name": "Drift Hunters",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/drift-hunters.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/drift-hunters/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/drift-hunters/"
@@ -8707,7 +8895,7 @@
         },
         {
           "name": "Duck Life 1",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/ducklife1.png",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -8717,8 +8905,12 @@
         },
         {
           "name": "Edge Not Found",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/edgenotfound.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/edgenotfound/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/edgenotfound/"
@@ -8727,8 +8919,12 @@
         },
         {
           "name": "Edge Surf",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/edge-surf.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/edge-surf/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/edge-surf/"
@@ -8737,8 +8933,12 @@
         },
         {
           "name": "Eel Slap",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/eel-slap.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/eel-slap/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/eel-slap/"
@@ -8747,7 +8947,7 @@
         },
         {
           "name": "Elastic Man",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/elasticman.jpg",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -8757,7 +8957,7 @@
         },
         {
           "name": "Endless War 3",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/endlesswar3.png",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -8767,8 +8967,12 @@
         },
         {
           "name": "Evolution",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/evolution.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/evolution/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/evolution/"
@@ -8777,8 +8981,12 @@
         },
         {
           "name": "Exo",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/exo.jpg",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/exo/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/exo/"
@@ -8787,8 +8995,12 @@
         },
         {
           "name": "Factory Balls",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/factoryballs.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/factoryballs/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/factoryballs/"
@@ -8797,8 +9009,12 @@
         },
         {
           "name": "Fairsquares",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/fairsquares.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/fairsquares/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/fairsquares/"
@@ -8807,8 +9023,12 @@
         },
         {
           "name": "Fake Virus",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/fake-virus.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/fake-virus/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/fake-virus/"
@@ -8817,7 +9037,7 @@
         },
         {
           "name": "Fancy Pants Adventures",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/fancypantsadventures.png",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -8827,8 +9047,12 @@
         },
         {
           "name": "Fireboy and Watergirl: Forest Temple",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/fireboywatergirlforesttemple.jpg",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/fireboywatergirlforesttemple/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/fireboywatergirlforesttemple/"
@@ -8837,8 +9061,12 @@
         },
         {
           "name": "Five Nights at Wario's (FNAW)",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/fnaw.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/fnaw/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/fnaw/"
@@ -8847,8 +9075,12 @@
         },
         {
           "name": "Flappy 2048",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/flappy-2048.ico",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/flappy-2048/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/flappy-2048/"
@@ -8857,7 +9089,7 @@
         },
         {
           "name": "Flash Tetris",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/flashtetris.png",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -8867,8 +9099,12 @@
         },
         {
           "name": "Flippy Fish",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/flippy-fish.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/flippy-fish/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/flippy-fish/"
@@ -8877,8 +9113,12 @@
         },
         {
           "name": "Froggy's Battle",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/froggys-battle.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/froggys-battle/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/froggys-battle/"
@@ -8887,8 +9127,12 @@
         },
         {
           "name": "Frying Nemo",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/frying-nemo.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/frying-nemo/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/frying-nemo/"
@@ -8897,8 +9141,12 @@
         },
         {
           "name": "Game Inside",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/game-inside.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/game-inside/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/game-inside/"
@@ -8907,8 +9155,12 @@
         },
         {
           "name": "Generic Fishing Game",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/generic-fishing-game.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/generic-fishing-game/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/generic-fishing-game/"
@@ -8917,8 +9169,12 @@
         },
         {
           "name": "Geo Dash",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/geodash.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/geodash/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/geodash/"
@@ -8927,7 +9183,7 @@
         },
         {
           "name": "George and the Printer",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/georgeandtheprinter.png",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -8937,8 +9193,12 @@
         },
         {
           "name": "Gimme the Airpod",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/gimme-the-airpod.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/gimme-the-airpod/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/gimme-the-airpod/"
@@ -8947,8 +9207,12 @@
         },
         {
           "name": "Glass City",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/glass-city.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/glass-city/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/glass-city/"
@@ -8957,8 +9221,12 @@
         },
         {
           "name": "Go Ball",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/go-ball.jpg",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/go-ball/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/go-ball/"
@@ -8967,7 +9235,7 @@
         },
         {
           "name": "Goodnight",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/goodnight.jpg",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -8977,8 +9245,12 @@
         },
         {
           "name": "Google Feud",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/google-feud.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/google-feud/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/google-feud/"
@@ -8987,8 +9259,12 @@
         },
         {
           "name": "Google Snake",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/google-snake.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/google-snake/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/google-snake/"
@@ -8997,7 +9273,7 @@
         },
         {
           "name": "Gravity Soccer",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/gravity-soccer.png",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -9007,7 +9283,7 @@
         },
         {
           "name": "Greybox",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/greybox.png",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -9017,7 +9293,7 @@
         },
         {
           "name": "Grindcraft",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/grindcraft.png",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -9027,7 +9303,7 @@
         },
         {
           "name": "Hacker Type",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/hackertype.png",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -9037,8 +9313,12 @@
         },
         {
           "name": "Handshakes",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/handshakes.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/handshakes/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/handshakes/"
@@ -9047,8 +9327,12 @@
         },
         {
           "name": "Happy Hop",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/happy-hop.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/happy-hop/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/happy-hop/"
@@ -9057,7 +9341,7 @@
         },
         {
           "name": "HBA",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/hba.jpg",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -9067,7 +9351,7 @@
         },
         {
           "name": "Helicopter",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/helicopter.png",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -9077,7 +9361,7 @@
         },
         {
           "name": "Hex Empire",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/hexempire.jpg",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -9087,8 +9371,12 @@
         },
         {
           "name": "Hungry Lamu",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/hungry-lamu.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/hungry-lamu/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/hungry-lamu/"
@@ -9097,8 +9385,12 @@
         },
         {
           "name": "Idle Shark",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/idle-shark.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/idle-shark/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/idle-shark/"
@@ -9107,7 +9399,7 @@
         },
         {
           "name": "Impossible Quiz",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/impossiblequiz.png",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -9117,7 +9409,7 @@
         },
         {
           "name": "Interactive Buddy",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/interactivebuddy.jpg",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -9127,8 +9419,12 @@
         },
         {
           "name": "Just Fall",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/just-fall.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/just-fall/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/just-fall/"
@@ -9137,8 +9433,12 @@
         },
         {
           "name": "Just One Boss",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/just-one-boss.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/just-one-boss/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/just-one-boss/"
@@ -9147,8 +9447,12 @@
         },
         {
           "name": "Kitchen Gun Game",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/kitchen-gun-game.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/kitchen-gun-game/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/kitchen-gun-game/"
@@ -9157,7 +9461,7 @@
         },
         {
           "name": "Kitten Cannon",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/kittencannon.png",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -9167,8 +9471,12 @@
         },
         {
           "name": "Knife Master",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/knife-master.jpg",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/knife-master/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/knife-master/"
@@ -9177,8 +9485,12 @@
         },
         {
           "name": "Madalin Stunt Cars 3",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/madalin-stunt-cars-3.jpg",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/madalin-stunt-cars-3/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/madalin-stunt-cars-3/"
@@ -9187,8 +9499,12 @@
         },
         {
           "name": "Mario",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/mario.gif",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/mario/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/mario/"
@@ -9197,7 +9513,7 @@
         },
         {
           "name": "Marvin Spectrum",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/marvinspectrum.png",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -9207,7 +9523,7 @@
         },
         {
           "name": "Matrix Rampage",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/matrixrampage.jpg",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -9217,8 +9533,12 @@
         },
         {
           "name": "Meme 2048",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/meme2048.gif",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/meme2048/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/meme2048/"
@@ -9227,8 +9547,12 @@
         },
         {
           "name": "Mine Blocks",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/mineblocks.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/mineblocks/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/mineblocks/"
@@ -9237,8 +9561,12 @@
         },
         {
           "name": "Minecraft 1.5",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/minecraft-15.jpg",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/minecraft-15/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/minecraft-15/"
@@ -9247,8 +9575,12 @@
         },
         {
           "name": "Minecraft 1.8",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/minecraft-18.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/minecraft-18/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/minecraft-18/"
@@ -9257,8 +9589,12 @@
         },
         {
           "name": "Minecraft Beta",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/minecraftbeta.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/minecraftbeta/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/minecraftbeta/"
@@ -9267,8 +9603,12 @@
         },
         {
           "name": "Minecraft Classic",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/minecraft-classic.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/minecraft-classic/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/minecraft-classic/"
@@ -9277,7 +9617,7 @@
         },
         {
           "name": "Mini Putt",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/miniputt.png",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -9287,8 +9627,12 @@
         },
         {
           "name": "Missiles",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/missiles.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/missiles/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/missiles/"
@@ -9297,8 +9641,12 @@
         },
         {
           "name": "Moto X3M Pool",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/motox3m-pool.jpg",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/motox3m-pool/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/motox3m-pool/"
@@ -9307,8 +9655,12 @@
         },
         {
           "name": "Moto X3M Spooky",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/motox3m-spooky.jpg",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/motox3m-spooky/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/motox3m-spooky/"
@@ -9317,8 +9669,12 @@
         },
         {
           "name": "My Rusty Submarine",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/my-rusty-submarine.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/my-rusty-submarine/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/my-rusty-submarine/"
@@ -9327,8 +9683,12 @@
         },
         {
           "name": "Ninja",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/ninja.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/ninja/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/ninja/"
@@ -9337,8 +9697,12 @@
         },
         {
           "name": "Ninja vs Evil Corp",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/ninjavsevilcorp.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/ninjavsevilcorp/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/ninjavsevilcorp/"
@@ -9347,8 +9711,12 @@
         },
         {
           "name": "Noob Steve Parkour",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/noob-steve-parkour.jpg",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/noob-steve-parkour/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/noob-steve-parkour/"
@@ -9357,8 +9725,12 @@
         },
         {
           "name": "NS Resurgence",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/nsresurgence.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/nsresurgence/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/nsresurgence/"
@@ -9367,8 +9739,12 @@
         },
         {
           "name": "Offline Paradise",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/OfflineParadise.jpg",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/OfflineParadise/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/OfflineParadise/"
@@ -9377,8 +9753,12 @@
         },
         {
           "name": "Om Bounce",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/om-bounce.jpg",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/om-bounce/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/om-bounce/"
@@ -9387,7 +9767,7 @@
         },
         {
           "name": "Pandemic 2",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/pandemic2.png",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -9397,7 +9777,7 @@
         },
         {
           "name": "Papery Planes",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/papery-planes.jpg",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -9407,8 +9787,12 @@
         },
         {
           "name": "Pixel Gun Survival",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/pixel-gun-survival.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/pixel-gun-survival/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/pixel-gun-survival/"
@@ -9417,8 +9801,12 @@
         },
         {
           "name": "Polybranch",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/polybranch.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/polybranch/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/polybranch/"
@@ -9427,8 +9815,12 @@
         },
         {
           "name": "Popcat Classic",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/popcat-classic.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/popcat-classic/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/popcat-classic/"
@@ -9437,7 +9829,7 @@
         },
         {
           "name": "Portal Flash",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/portalflash.jpg",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -9447,8 +9839,12 @@
         },
         {
           "name": "Precision Client",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/precision-client.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/precision-client/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/precision-client/"
@@ -9457,8 +9853,12 @@
         },
         {
           "name": "Protektor",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/protektor.jpg",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/protektor/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/protektor/"
@@ -9467,8 +9867,12 @@
         },
         {
           "name": "Push the Square",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/push-the-square.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/push-the-square/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/push-the-square/"
@@ -9477,8 +9881,12 @@
         },
         {
           "name": "Push Your Luck",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/push-your-luck.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/push-your-luck/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/push-your-luck/"
@@ -9487,8 +9895,12 @@
         },
         {
           "name": "Rabbit Samurai",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/rabbit-samurai.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/rabbit-samurai/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/rabbit-samurai/"
@@ -9497,8 +9909,12 @@
         },
         {
           "name": "Rabbit Samurai 2",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/rabbit-samurai2.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/rabbit-samurai2/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/rabbit-samurai2/"
@@ -9507,8 +9923,12 @@
         },
         {
           "name": "Resent Client",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/resent-client.jpg",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/resent-client/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/resent-client/"
@@ -9517,8 +9937,12 @@
         },
         {
           "name": "Rolling Forests",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/rolling-forests.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/rolling-forests/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/rolling-forests/"
@@ -9527,8 +9951,12 @@
         },
         {
           "name": "Rolly Vortex",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/rolly-vortex.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/rolly-vortex/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/rolly-vortex/"
@@ -9537,8 +9965,12 @@
         },
         {
           "name": "Ruffle",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/ruffle.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/ruffle/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/ruffle/"
@@ -9547,8 +9979,12 @@
         },
         {
           "name": "Sandboxels",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/sandboxels.jpg",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/sandboxels/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/sandboxels/"
@@ -9557,8 +9993,12 @@
         },
         {
           "name": "Santy is Home",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/santy-is-home.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/santy-is-home/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/santy-is-home/"
@@ -9567,8 +10007,12 @@
         },
         {
           "name": "Scrap Metal",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/scrapmetal.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/scrapmetal/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/scrapmetal/"
@@ -9577,8 +10021,12 @@
         },
         {
           "name": "Shot in the Dark",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/shotinthedark.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/shotinthedark/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/shotinthedark/"
@@ -9587,8 +10035,12 @@
         },
         {
           "name": "Shuttle Deck",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/shuttledeck.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/shuttledeck/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/shuttledeck/"
@@ -9597,8 +10049,12 @@
         },
         {
           "name": "Sky Car Stunt",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/sky-car-stunt.jpg",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/sky-car-stunt/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/sky-car-stunt/"
@@ -9610,6 +10066,10 @@
           "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
           "urls": [
             {
+              "label": "lokal spielen",
+              "url": "games/native-lite/slap-the-monkey/index.html"
+            },
+            {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/slap-the-monkey/"
             }
@@ -9617,8 +10077,12 @@
         },
         {
           "name": "Slime Rush TD",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/slime-rush-td.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/slime-rush-td/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/slime-rush-td/"
@@ -9627,8 +10091,12 @@
         },
         {
           "name": "Slope 2",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/slope-2.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/slope-2/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/slope-2/"
@@ -9637,8 +10105,12 @@
         },
         {
           "name": "Slope Ball",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/slope-ball.jpg",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/slope-ball/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/slope-ball/"
@@ -9647,7 +10119,7 @@
         },
         {
           "name": "Smoking Barrels",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/smokingbarrels.jpg",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -9657,8 +10129,12 @@
         },
         {
           "name": "Snow Battle",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/snowbattle.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/snowbattle/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/snowbattle/"
@@ -9667,8 +10143,12 @@
         },
         {
           "name": "Soccer Skills",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/soccer-skills.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/soccer-skills/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/soccer-skills/"
@@ -9677,8 +10157,12 @@
         },
         {
           "name": "Soldier Legend",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/soldier-legend.jpg",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/soldier-legend/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/soldier-legend/"
@@ -9687,8 +10171,12 @@
         },
         {
           "name": "Solitaire",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/solitaire.jpg",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/solitaire/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/solitaire/"
@@ -9697,8 +10185,12 @@
         },
         {
           "name": "Sort the Court",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/sort-the-court.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/sort-the-court/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/sort-the-court/"
@@ -9707,8 +10199,12 @@
         },
         {
           "name": "Soundboard",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/soundboard.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/soundboard/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/soundboard/"
@@ -9717,8 +10213,12 @@
         },
         {
           "name": "Space Company",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/space-company.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/space-company/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/space-company/"
@@ -9727,8 +10227,12 @@
         },
         {
           "name": "Space Garden",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/spacegarden.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/spacegarden/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/spacegarden/"
@@ -9737,8 +10241,12 @@
         },
         {
           "name": "Spinning Rat",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/spinningrat.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/spinningrat/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/spinningrat/"
@@ -9747,8 +10255,12 @@
         },
         {
           "name": "Stack Bump 3D",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/stack-bump-3d.jpg",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/stack-bump-3d/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/stack-bump-3d/"
@@ -9757,7 +10269,7 @@
         },
         {
           "name": "Starve",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/starve.png",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -9767,8 +10279,12 @@
         },
         {
           "name": "Station 141",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/station-141.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/station-141/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/station-141/"
@@ -9777,8 +10293,12 @@
         },
         {
           "name": "Stick Archers",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/stick-archers.jpg",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/stick-archers/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/stick-archers/"
@@ -9787,8 +10307,12 @@
         },
         {
           "name": "Stick Duel Battle",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/stick-duel-battle.jpg",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/stick-duel-battle/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/stick-duel-battle/"
@@ -9797,8 +10321,12 @@
         },
         {
           "name": "Stickman Boost",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/stickman-boost.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/stickman-boost/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/stickman-boost/"
@@ -9807,8 +10335,12 @@
         },
         {
           "name": "Stickman Golf",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/stickman-golf.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/stickman-golf/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/stickman-golf/"
@@ -9817,8 +10349,12 @@
         },
         {
           "name": "Stickman Survival",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/Stickman-Survival.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/Stickman-Survival/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/Stickman-Survival/"
@@ -9827,7 +10363,7 @@
         },
         {
           "name": "Storm the House 2",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/stormthehouse2.jpg",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -9837,8 +10373,12 @@
         },
         {
           "name": "Super Mario Construct",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/supermarioconstruct.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/supermarioconstruct/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/supermarioconstruct/"
@@ -9847,7 +10387,7 @@
         },
         {
           "name": "Surviv",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/surviv.png",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -9857,8 +10397,12 @@
         },
         {
           "name": "Sushi Unroll",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/sushi-unroll.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/sushi-unroll/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/sushi-unroll/"
@@ -9867,7 +10411,7 @@
         },
         {
           "name": "Swerve",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/swerve.jpg",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -9877,8 +10421,12 @@
         },
         {
           "name": "Synesthesia",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/synesthesia.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/synesthesia/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/synesthesia/"
@@ -9887,7 +10435,7 @@
         },
         {
           "name": "Tactical Assassin 2",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/tacticalassasin2.png",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -9897,7 +10445,7 @@
         },
         {
           "name": "Tactical Weapon Pack 2",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/tactical-weapon-pack-2.jpg",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -9907,8 +10455,12 @@
         },
         {
           "name": "Tank Trouble 2",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/tank-trouble-2.jpg",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/tank-trouble-2/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/tank-trouble-2/"
@@ -9917,7 +10469,7 @@
         },
         {
           "name": "The Battle",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/thebattle.png",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -9927,7 +10479,7 @@
         },
         {
           "name": "The Heist",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/theheist.jpg",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -9937,8 +10489,12 @@
         },
         {
           "name": "The Hotel",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/the-hotel.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/the-hotel/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/the-hotel/"
@@ -9947,8 +10503,12 @@
         },
         {
           "name": "Tiny Islands",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/tiny-islands.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/tiny-islands/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/tiny-islands/"
@@ -9957,7 +10517,7 @@
         },
         {
           "name": "Toss the Turtle",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/tosstheturtle.png",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -9967,8 +10527,12 @@
         },
         {
           "name": "Townscaper",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/townscaper.jpg",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/townscaper/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/townscaper/"
@@ -9977,8 +10541,12 @@
         },
         {
           "name": "TV Static",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/tv-static.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/tv-static/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/tv-static/"
@@ -9987,8 +10555,12 @@
         },
         {
           "name": "Twitch Tetris",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/twitch-tetris.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/twitch-tetris/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/twitch-tetris/"
@@ -9997,8 +10569,12 @@
         },
         {
           "name": "Veloce",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/veloce.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/veloce/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/veloce/"
@@ -10007,8 +10583,12 @@
         },
         {
           "name": "Wall Smash",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/wallsmash.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/wallsmash/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/wallsmash/"
@@ -10017,8 +10597,12 @@
         },
         {
           "name": "Waterworks",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/waterworks.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/waterworks/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/waterworks/"
@@ -10027,8 +10611,12 @@
         },
         {
           "name": "WeaveSilk",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/weavesilk.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/weavesilk/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/weavesilk/"
@@ -10037,8 +10625,12 @@
         },
         {
           "name": "WebGL Fluid Simulation",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/webgl-fluid-simulation.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/webgl-fluid-simulation/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/webgl-fluid-simulation/"
@@ -10047,8 +10639,12 @@
         },
         {
           "name": "WebRetro",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/webretro.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/webretro/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/webretro/"
@@ -10057,8 +10653,12 @@
         },
         {
           "name": "Win the White House",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/win-the-whitehouse.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/win-the-whitehouse/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/win-the-whitehouse/"
@@ -10067,8 +10667,12 @@
         },
         {
           "name": "Wolf 3D",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/wolf3d.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/wolf3d/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/wolf3d/"
@@ -10077,8 +10681,12 @@
         },
         {
           "name": "X-Trial Racing",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/x-trial-racing.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/x-trial-racing/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/x-trial-racing/"
@@ -10087,8 +10695,12 @@
         },
         {
           "name": "xx142-B2.exe",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/xx142-b2exe.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/xx142-b2exe/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/xx142-b2exe/"
@@ -10097,8 +10709,12 @@
         },
         {
           "name": "Yoshi Fabrication",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/yoshifabrication.png",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/yoshifabrication/index.html"
+            },
             {
               "label": "gms.parcoil.com",
               "url": "https://gms.parcoil.com/yoshifabrication/"
@@ -10107,7 +10723,7 @@
         },
         {
           "name": "You Are Bezos",
-          "icon": "https://www.google.com/s2/favicons?domain=gms.parcoil.com&sz=128",
+          "icon": "img/native-lite/you-are-bezos.png",
           "urls": [
             {
               "label": "gms.parcoil.com",
@@ -10125,6 +10741,10 @@
         {
           "name": "10 Minutes Till Dawn",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/10-minutes-till-dawn/index.html"
+            },
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/10-minutes-till-dawn/"
@@ -10159,6 +10779,10 @@
         {
           "name": "A Dark Room",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/adarkroom/index.html"
+            },
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/a-dark-room/"
@@ -10246,6 +10870,10 @@
           "name": "Awesome Tanks 2",
           "urls": [
             {
+              "label": "lokal spielen",
+              "url": "games/native-lite/awesometanks2/index.html"
+            },
+            {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/awesome-tanks-2/"
             },
@@ -10277,6 +10905,10 @@
           "name": "Basketball Stars",
           "urls": [
             {
+              "label": "lokal spielen",
+              "url": "games/native-lite/basketball-stars/index.html"
+            },
+            {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/basketball-stars/"
             },
@@ -10289,6 +10921,10 @@
         {
           "name": "Bit Life",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/bitlife/index.html"
+            },
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/bit-life/"
@@ -10303,6 +10939,10 @@
         {
           "name": "Boxing Random",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/boxing-random/index.html"
+            },
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/boxing-random/"
@@ -10334,6 +10974,10 @@
         {
           "name": "Chrome Dino",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/chrome-dino/index.html"
+            },
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/chrome-dino/"
@@ -10385,6 +11029,10 @@
           "name": "Core Ball",
           "urls": [
             {
+              "label": "lokal spielen",
+              "url": "games/native-lite/core-ball/index.html"
+            },
+            {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/core-ball/"
             },
@@ -10421,6 +11069,10 @@
           "name": "Doge Miner",
           "urls": [
             {
+              "label": "lokal spielen",
+              "url": "games/native-lite/DogeMiner/index.html"
+            },
+            {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/doge-miner/"
             },
@@ -10435,6 +11087,10 @@
           "name": "Doodle Jump",
           "urls": [
             {
+              "label": "lokal spielen",
+              "url": "games/native-lite/doodle-jump/index.html"
+            },
+            {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/doodle-jump/"
             },
@@ -10448,6 +11104,10 @@
           "name": "Drift Boss",
           "urls": [
             {
+              "label": "lokal spielen",
+              "url": "games/native-lite/drift-boss/index.html"
+            },
+            {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/drift-boss/"
             },
@@ -10460,6 +11120,10 @@
         {
           "name": "Drive Mad",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/drive-mad/index.html"
+            },
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/drive-mad/"
@@ -10483,6 +11147,10 @@
         {
           "name": "Duck Life 4",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/ducklife4/index.html"
+            },
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/duck-life-4/"
@@ -10580,6 +11248,10 @@
           "name": "Flappy Bird",
           "urls": [
             {
+              "label": "lokal spielen",
+              "url": "games/native-lite/flappy-bird/index.html"
+            },
+            {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/flappy-bird/"
             },
@@ -10657,6 +11329,10 @@
           "name": "Getaway Shootout",
           "urls": [
             {
+              "label": "lokal spielen",
+              "url": "games/native-lite/getaway-shootout/index.html"
+            },
+            {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/getaway-shootout/"
             },
@@ -10698,6 +11374,10 @@
         {
           "name": "Idle Breakout",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/idle-breakout/index.html"
+            },
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/idle-breakout/"
@@ -10759,6 +11439,10 @@
           "name": "Motox3m",
           "urls": [
             {
+              "label": "lokal spielen",
+              "url": "games/native-lite/motox3m/index.html"
+            },
+            {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/motox3m/"
             },
@@ -10790,6 +11474,10 @@
           "name": "N-Gon",
           "urls": [
             {
+              "label": "lokal spielen",
+              "url": "games/native-lite/n-gon/index.html"
+            },
+            {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/n-gon/"
             },
@@ -10804,6 +11492,10 @@
           "name": "Ovo",
           "urls": [
             {
+              "label": "lokal spielen",
+              "url": "games/native-lite/ovo/index.html"
+            },
+            {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/ovo/"
             },
@@ -10816,6 +11508,10 @@
         {
           "name": "Particle Clicker",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/particle-clicker/index.html"
+            },
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/particle-clicker/"
@@ -10894,6 +11590,10 @@
           "name": "Retro Bowl",
           "urls": [
             {
+              "label": "lokal spielen",
+              "url": "games/native-lite/retro-bowl/index.html"
+            },
+            {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/retro-bowl/"
             },
@@ -10933,6 +11633,10 @@
         {
           "name": "Rooftop Snipers",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/rooftop-snipers/index.html"
+            },
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/rooftop-snipers/"
@@ -11020,6 +11724,10 @@
           "name": "Slope",
           "urls": [
             {
+              "label": "lokal spielen",
+              "url": "games/native-lite/slope/index.html"
+            },
+            {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/slope/"
             },
@@ -11050,6 +11758,10 @@
         {
           "name": "Soccer Random",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/soccer-random/index.html"
+            },
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/soccer-random/"
@@ -11112,6 +11824,10 @@
           "name": "Tanuki Sunset",
           "urls": [
             {
+              "label": "lokal spielen",
+              "url": "games/native-lite/tanuki-sunset/index.html"
+            },
+            {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/tanuki-sunset/"
             },
@@ -11125,6 +11841,10 @@
           "name": "Temple Run 2",
           "urls": [
             {
+              "label": "lokal spielen",
+              "url": "games/native-lite/temple-run-2/index.html"
+            },
+            {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/temple-run-2/"
             },
@@ -11137,6 +11857,10 @@
         {
           "name": "The Final Earth",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/the-final-earth/index.html"
+            },
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/the-final-earth/"
@@ -11159,6 +11883,10 @@
         {
           "name": "There Is No Game",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/there-is-no-game/index.html"
+            },
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/there-is-no-game/"
@@ -11203,6 +11931,10 @@
           "name": "Tiny Fishing",
           "urls": [
             {
+              "label": "lokal spielen",
+              "url": "games/native-lite/tiny-fishing/index.html"
+            },
+            {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/tiny-fishing/"
             },
@@ -11224,6 +11956,10 @@
         {
           "name": "Tunnel Rush",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/tunnel-rush/index.html"
+            },
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/tunnel-rush/"
@@ -11247,6 +11983,10 @@
           "name": "Vex 3",
           "urls": [
             {
+              "label": "lokal spielen",
+              "url": "games/native-lite/vex3/index.html"
+            },
+            {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/vex-3/"
             },
@@ -11260,6 +12000,10 @@
         {
           "name": "Vex 4",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/vex4/index.html"
+            },
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/vex-4/"
@@ -11275,6 +12019,10 @@
           "name": "Vex 5",
           "urls": [
             {
+              "label": "lokal spielen",
+              "url": "games/native-lite/vex5/index.html"
+            },
+            {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/vex-5/"
             },
@@ -11289,6 +12037,10 @@
           "name": "Vex 6",
           "urls": [
             {
+              "label": "lokal spielen",
+              "url": "games/native-lite/vex6/index.html"
+            },
+            {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/vex-6/"
             },
@@ -11302,6 +12054,10 @@
         {
           "name": "Vex 7",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/vex7/index.html"
+            },
             {
               "label": "monkeygg2.org · neuer Tab",
               "url": "https://monkeygg2.org/games/vex-7/"
@@ -11460,6 +12216,10 @@
           "name": "9007199254740992",
           "urls": [
             {
+              "label": "lokal spielen",
+              "url": "games/native-lite/9007199254740992/index.html"
+            },
+            {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/9007199254740992.html"
             },
@@ -11563,6 +12323,10 @@
           "name": "Backrooms",
           "urls": [
             {
+              "label": "lokal spielen",
+              "url": "games/native-lite/backrooms/index.html"
+            },
+            {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/backrooms.html"
             },
@@ -11585,6 +12349,10 @@
           "name": "Bad Ice Cream",
           "urls": [
             {
+              "label": "lokal spielen",
+              "url": "games/native-lite/bad-ice-cream/index.html"
+            },
+            {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/bad-ice-cream.html"
             },
@@ -11598,6 +12366,10 @@
           "name": "Bad Ice Cream 2",
           "urls": [
             {
+              "label": "lokal spielen",
+              "url": "games/native-lite/bad-ice-cream-2/index.html"
+            },
+            {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/bad-ice-cream-2.html"
             },
@@ -11610,6 +12382,10 @@
         {
           "name": "Bad Ice Cream 3",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/bad-ice-cream-3/index.html"
+            },
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/bad-ice-cream-3.html"
@@ -11650,6 +12426,10 @@
         {
           "name": "Baldis Basics",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/baldis-basics/index.html"
+            },
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/baldis-basics.html"
@@ -11870,6 +12650,10 @@
           "name": "Bob The Robber 2",
           "urls": [
             {
+              "label": "lokal spielen",
+              "url": "games/native-lite/bobtherobber2/index.html"
+            },
+            {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/bob-the-robber-2.html"
             },
@@ -12049,6 +12833,10 @@
           "name": "Cluster Rush",
           "urls": [
             {
+              "label": "lokal spielen",
+              "url": "games/native-lite/cluster-rush/index.html"
+            },
+            {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/cluster-rush.html"
             },
@@ -12187,6 +12975,10 @@
         {
           "name": "Death Run 3D",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/death-run-3d/index.html"
+            },
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/death-run-3D.html"
@@ -12456,6 +13248,10 @@
           "name": "Evil Glitch",
           "urls": [
             {
+              "label": "lokal spielen",
+              "url": "games/native-lite/evil-glitch/index.html"
+            },
+            {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/evil-glitch.html"
             },
@@ -12657,6 +13453,10 @@
         {
           "name": "Fruit Ninja",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/fruitninja/index.html"
+            },
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/fruit-ninja.html"
@@ -12932,6 +13732,10 @@
           "name": "Jetpack Joyride",
           "urls": [
             {
+              "label": "lokal spielen",
+              "url": "games/native-lite/jetpack-joyride/index.html"
+            },
+            {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/jetpack-joyride.html"
             },
@@ -13052,6 +13856,10 @@
           "name": "Madalin Stunt Cars 2",
           "urls": [
             {
+              "label": "lokal spielen",
+              "url": "games/native-lite/madalin-stunt-cars-2/index.html"
+            },
+            {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/madalin-stunt-cars-2.html"
             },
@@ -13083,6 +13891,10 @@
           "name": "Merge Round Racers",
           "urls": [
             {
+              "label": "lokal spielen",
+              "url": "games/native-lite/merge-round-racers/index.html"
+            },
+            {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/merge-round-racers.html"
             },
@@ -13095,6 +13907,10 @@
         {
           "name": "Minesweeper",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/minesweeper/index.html"
+            },
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/minesweeper.html"
@@ -13126,6 +13942,10 @@
         {
           "name": "Moto X3m 2",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/motox3m2/index.html"
+            },
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/moto-x3m-2.html"
@@ -13166,6 +13986,10 @@
         {
           "name": "Moto X3m Winter",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/motox3m-winter/index.html"
+            },
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/moto-x3m-winter.html"
@@ -13260,6 +14084,10 @@
         {
           "name": "Papas Burgeria",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/papasburgeria/index.html"
+            },
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/papas-burgeria.html"
@@ -13711,6 +14539,10 @@
           "name": "Sand Game",
           "urls": [
             {
+              "label": "lokal spielen",
+              "url": "games/native-lite/sand-game/index.html"
+            },
+            {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/sand-game.html"
             },
@@ -13949,6 +14781,10 @@
           "name": "Stack",
           "urls": [
             {
+              "label": "lokal spielen",
+              "url": "games/native-lite/stack/index.html"
+            },
+            {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/stack.html"
             },
@@ -14010,6 +14846,10 @@
         {
           "name": "Stick Merge",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/stick-merge/index.html"
+            },
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/stick-merge.html"
@@ -14086,6 +14926,10 @@
         {
           "name": "Superhot",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/superhot/index.html"
+            },
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/superhot.html"
@@ -14441,6 +15285,10 @@
           "name": "Worlds Hardest Game",
           "urls": [
             {
+              "label": "lokal spielen",
+              "url": "games/native-lite/worlds-hardest-game/index.html"
+            },
+            {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/worlds-hardest-game.html"
             },
@@ -14453,6 +15301,10 @@
         {
           "name": "Worlds Hardest Game 2",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/worlds-hardest-game-2/index.html"
+            },
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/worlds-hardest-game-2.html"
@@ -14618,6 +15470,10 @@
           "name": "HexGL",
           "urls": [
             {
+              "label": "lokal spielen",
+              "url": "games/native-lite/HexGL/index.html"
+            },
+            {
               "label": "fosiper.com",
               "url": "https://fosiper.com/games/hexgl-lite/"
             },
@@ -14684,6 +15540,10 @@
         {
           "name": "NS-Shaft",
           "urls": [
+            {
+              "label": "lokal spielen",
+              "url": "games/native-lite/ns-shaft/index.html"
+            },
             {
               "label": "fosiper.com",
               "url": "https://fosiper.com/games/ns-shaft/"

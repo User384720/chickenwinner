@@ -786,7 +786,8 @@
     });
     var primary = primaryUrl(item);
     var isFav = primary ? isFavorite(primary) : false;
-    var host = type === 'games-local' ? 'lokal' : (primary ? hostOf(primary) : '');
+    var isLocal = !!primary && !/^[a-z][a-z0-9+.-]*:/i.test(primary);
+    var host = (type === 'games-local' || isLocal) ? 'lokal' : (primary ? hostOf(primary) : '');
     if (type === 'rss-games') host = ''; /* Feed-Karten zeigen keine Adressen */
     var groupTag = group && group.name
       ? '<div class="card-tags"><span class="card-tag">' +
