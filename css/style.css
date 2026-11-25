@@ -990,6 +990,30 @@ html[data-theme="light"] .finder-box { background: rgba(255, 255, 255, 0.72); }
 
 .finder-box input { padding: 15px 0; font-size: 0.95rem; }
 
+.finder-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: -4px;
+}
+
+.finder-actions[hidden] { display: none; }
+
+.finder-actions .btn {
+  padding: 7px 12px;
+  font-size: 0.76rem;
+  border-radius: 10px;
+}
+
+.finder-actions .btn.is-active {
+  color: var(--accent);
+  border-color: color-mix(in srgb, var(--accent) 55%, transparent);
+  background: color-mix(in srgb, var(--accent) 16%, var(--surface-2));
+}
+
+.finder-actions .muted { font-size: 0.72rem; }
+
 .finder-results {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));

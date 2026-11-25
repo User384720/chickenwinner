@@ -1202,6 +1202,112 @@
     '</div>';
   }
 
+  /* Der RSS-Feed kommt seitenweise: „mehr laden“ holt weitere Seiten und
+     sucht erneut, „auto mehr“ macht das selbstständig, bis ein Treffer da ist. */
+  var FINDER_AUTO = { max: 12, cooldown: 700 };
+  var FINDER = { auto: false, busy: false, chain: 0, timer: 0 };
+
+  function finderQuery() {
+    var input = $('#finder-input');
+    return input ? input.value.trim().toLowerCase() : '';
+  }
+
+  function finderRssInfo() {
+    var entry = state.data['rss-games'];
+    return {
+      loaded: entry && entry.status === 'ready' ? entry.items.length : 0,
+      more: !!(state.rss.nextPage && !state.rss.exhausted)
+    };
+  }
+
+  function finderSetNote(text) {
+    var note = $('#finder-note');
+    if (note) note.textContent = text || '';
+  }
+
+  function finderUpdateButtons() {
+    var info = finderRssInfo();
+    var query = finderQuery();
+    var more = $('#finder-more');
+    var auto = $('#finder-auto');
+    var row = $('#finder-actions');
+    if (row) row.hidden = !query;
+
+    if (more) {
+      more.hidden = !query;
+      more.disabled = FINDER.busy || !info.more;
+      more.textContent = FINDER.busy ? 'lädt …' : 'mehr laden';
+    }
+    if (auto) {
+      auto.hidden = !query;
+      auto.disabled = !info.more && !FINDER.auto;
+      auto.textContent = FINDER.auto ? 'auto mehr: an' : 'auto mehr';
+      auto.classList.toggle('is-active', FINDER.auto);
+      auto.setAttribute('aria-pressed', String(FINDER.auto));
+    }
+    return info;
+  }
+
+  function finderLoadMore(silent) {
+    var info = finderRssInfo();
+    if (FINDER.busy) return Promise.resolve({ added: 0, found: 0, fresh: 0, done: !info.more });
+    if (!info.more) {
+      if (!silent) toast('Alle Feed-Spiele sind schon geladen.', 'info');
+      return Promise.resolve({ added: 0, found: 0, fresh: 0, done: true });
+    }
+
+    FINDER.busy = true;
+    finderUpdateButtons();
+    var before = finderMatches(finderQuery()).length;
+
+    return loadMoreRss(true).then(function (result) {
+      FINDER.busy = false;
+      var query = finderQuery();
+      var found = query ? finderMatches(query).length : 0;
+      var added = (result && result.added) || 0;
+      renderFinder();
+      if (!silent) {
+        if (added) toast(added + ' weitere Spiele durchsucht', 'success');
+        else if (!finderRssInfo().more) finderSetNote('Alle Feed-Spiele sind geladen.');
+      }
+      return { added: added, found: found, fresh: found - before, done: !finderRssInfo().more };
+    }, function () {
+      FINDER.busy = false;
+      renderFinder();
+      return { added: 0, found: 0, fresh: 0, done: true };
+    });
+  }
+
+  function finderAutoRun() {
+    if (!FINDER.auto || FINDER.busy || state.route !== 'home') return;
+    var query = finderQuery();
+    if (!query) return;
+    if (finderMatches(query).length) { finderSetNote(''); return; }
+    if (!finderRssInfo().more) {
+      finderSetNote('Alle Feed-Spiele durchsucht – nichts gefunden.');
+      return;
+    }
+    if (FINDER.chain >= FINDER_AUTO.max) {
+      finderSetNote('Noch kein Treffer – „mehr laden“ sucht weiter.');
+      return;
+    }
+
+    FINDER.chain++;
+    finderSetNote('Lädt weitere Feed-Spiele … (' + FINDER.chain + ')');
+    finderLoadMore(true).then(function (info) {
+      if (!FINDER.auto) return;
+      if (info.done) {
+        finderSetNote('Alle Feed-Spiele durchsucht – nichts gefunden.');
+        return;
+      }
+      if (finderMatches(finderQuery()).length) {
+        finderSetNote('Treffer gefunden – „mehr laden“ holt weitere Seiten.');
+        return;
+      }
+      FINDER.timer = window.setTimeout(finderAutoRun, FINDER_AUTO.cooldown);
+    });
+  }
+
   function renderFinder() {
     var input = $('#finder-input');
     var box = $('#finder-results');
@@ -1213,17 +1319,25 @@
       box.hidden = true;
       box.innerHTML = '';
       meta.textContent = 'Spiele & Apps durchsuchen';
+      finderSetNote('');
+      finderUpdateButtons();
       return;
     }
 
     var rows = finderMatches(query);
     var loading = catalogLoading();
+    var info = finderUpdateButtons();
     box.hidden = false;
-    meta.textContent = rows.length + ' Treffer' + (loading ? ' · lädt …' : '');
+    meta.textContent = rows.length + ' Treffer' +
+      (loading ? ' · lädt …' : (info.loaded ? ' · ' + info.loaded + ' RSS-Spiele durchsucht' : ''));
 
     if (!rows.length) {
+      var hint;
+      if (loading) hint = 'Einträge werden geladen …';
+      else if (!info.more) hint = 'Alle Feed-Spiele sind geladen – nichts gefunden.';
+      else hint = 'Noch nicht alle Feed-Spiele durchsucht – „mehr laden“ holt weitere.';
       box.innerHTML = '<p class="finder-empty">' +
-        (loading ? 'Einträge werden geladen …' : 'Nichts gefunden für „' + esc(query) + '“.') +
+        (loading ? esc(hint) : 'Nichts gefunden für „' + esc(query) + '“.<br><span class="muted">' + esc(hint) + '</span>') +
       '</p>';
       return;
     }
@@ -1235,12 +1349,49 @@
   function bindFinder() {
     var input = $('#finder-input');
     if (!input) return;
-    input.addEventListener('input', renderFinder);
+
+    input.addEventListener('input', function () {
+      FINDER.chain = 0;
+      window.clearTimeout(FINDER.timer);
+      finderSetNote('');
+      renderFinder();
+      if (FINDER.auto) {
+        FINDER.timer = window.setTimeout(finderAutoRun, 450);
+      }
+    });
+
     input.addEventListener('keydown', function (event) {
       if (event.key !== 'Escape') return;
       input.value = '';
+      FINDER.chain = 0;
+      window.clearTimeout(FINDER.timer);
       renderFinder();
     });
+
+    var more = $('#finder-more');
+    if (more) {
+      more.addEventListener('click', function () {
+        FINDER.chain = 0;
+        finderLoadMore(false);
+      });
+    }
+
+    var auto = $('#finder-auto');
+    if (auto) {
+      auto.addEventListener('click', function () {
+        FINDER.auto = !FINDER.auto;
+        FINDER.chain = 0;
+        window.clearTimeout(FINDER.timer);
+        renderFinder();
+        if (FINDER.auto) {
+          toast('Auto-Mehr an – lädt beim Suchen nach, bis ein Treffer da ist', 'info');
+          finderAutoRun();
+        } else {
+          finderSetNote('');
+          toast('Auto-Mehr aus', 'info');
+        }
+      });
+    }
   }
 
   /* ------------------------------------------------------------------ */
