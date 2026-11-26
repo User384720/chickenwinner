@@ -508,6 +508,16 @@
               "blank": true
             }
           ]
+        },
+        {
+          "name": "Brawl Stars",
+          "icon": "https://www.google.com/s2/favicons?domain=web-games.io&sz=128",
+          "urls": [
+            {
+              "label": "web-games.io",
+              "url": "https://web-games.io/brawl-stars.embed"
+            }
+          ]
         }
       ]
     },
@@ -651,6 +661,26 @@
             {
               "label": "lolbeans.io",
               "url": "https://lolbeans.io/"
+            }
+          ]
+        },
+        {
+          "name": "Hole.io",
+          "icon": "https://www.google.com/s2/favicons?domain=web-games.io&sz=128",
+          "urls": [
+            {
+              "label": "web-games.io",
+              "url": "https://web-games.io/holeio.embed"
+            }
+          ]
+        },
+        {
+          "name": "Steal an Egg",
+          "icon": "https://www.google.com/s2/favicons?domain=web-games.io&sz=128",
+          "urls": [
+            {
+              "label": "web-games.io",
+              "url": "https://web-games.io/steal-an-egg.embed"
             }
           ]
         }
@@ -1005,6 +1035,26 @@
               "url": "https://monkeyball-online.pages.dev/"
             }
           ]
+        },
+        {
+          "name": "Bus Simulator Evo",
+          "icon": "https://www.google.com/s2/favicons?domain=web-games.io&sz=128",
+          "urls": [
+            {
+              "label": "web-games.io",
+              "url": "https://web-games.io/bus-simulator-evo.embed"
+            }
+          ]
+        },
+        {
+          "name": "BMX Stunts 3D",
+          "icon": "https://www.google.com/s2/favicons?domain=web-games.io&sz=128",
+          "urls": [
+            {
+              "label": "web-games.io",
+              "url": "https://web-games.io/bmx-stunts-3d.embed"
+            }
+          ]
         }
       ]
     },
@@ -1068,6 +1118,26 @@
             {
               "label": "neal.fun",
               "url": "https://neal.fun/password-game/"
+            }
+          ]
+        },
+        {
+          "name": "Garry's Mod",
+          "icon": "https://www.google.com/s2/favicons?domain=web-games.io&sz=128",
+          "urls": [
+            {
+              "label": "web-games.io",
+              "url": "https://web-games.io/garrys-mod.embed"
+            }
+          ]
+        },
+        {
+          "name": "Granny 3",
+          "icon": "https://www.google.com/s2/favicons?domain=web-games.io&sz=128",
+          "urls": [
+            {
+              "label": "web-games.io",
+              "url": "https://web-games.io/granny-3.embed"
             }
           ]
         }
