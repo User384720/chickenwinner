@@ -8,6 +8,28 @@
       "icon": "🎯",
       "items": [
         {
+          "name": "INKWAVE: Turf Riot",
+          "icon": "https://www.google.com/s2/favicons?domain=inkwave.pangogames.com&sz=128",
+          "urls": [
+            {
+              "label": "rswaver.com",
+              "url": "https://inkwave.rswaver.com/"
+            },
+            {
+              "label": "games.interjc.net",
+              "url": "https://inkwave.games.interjc.net/"
+            },
+            {
+              "label": "pangogames.com",
+              "url": "https://inkwave.pangogames.com/"
+            },
+            {
+              "label": "pages.dev",
+              "url": "https://inkwave-aah.pages.dev/"
+            }
+          ]
+        },
+        {
           "name": "Krunker",
           "icon": "https://www.google.com/s2/favicons?domain=krunker.io&sz=128",
           "urls": [
