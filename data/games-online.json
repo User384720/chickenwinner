@@ -509,6 +509,20 @@
       "icon": "🐍",
       "items": [
         {
+          "name": "Wizard.io",
+          "icon": "https://www.google.com/s2/favicons?domain=crazygames.com&sz=128",
+          "urls": [
+            {
+              "label": "miniplay.com",
+              "url": "https://www.miniplay.com/embed/wizard-io"
+            },
+            {
+              "label": "crazygames.com · neuer Tab",
+              "url": "https://www.crazygames.com/game/wizard-io"
+            }
+          ]
+        },
+        {
           "name": "Slither.io",
           "icon": "https://www.google.com/s2/favicons?domain=slither.io&sz=128",
           "urls": [
