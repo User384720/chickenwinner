@@ -1582,14 +1582,14 @@ body.player-open { overflow: hidden; }
 .click-embed iframe {
   display: block;
   width: 100%;
-  height: 240px;
+  height: 440px;
   border: 0;
   background: #05060b;
 }
 
 @media (max-width: 900px) {
   .click-tiles { grid-template-columns: 1fr; }
-  .click-embed iframe { height: 280px; }
+  .click-embed iframe { height: 380px; }
 }
 
 /* ---------- Footer ---------- */
