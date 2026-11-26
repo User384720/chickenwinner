@@ -488,17 +488,17 @@
       file: 'data/games-rss2.json',
       pagesPerLoad: 1,
       pageGap: 700,
-      autoCooldown: 1800,
+      autoCooldown: 900,
       /* Der Feed ist riesig und begrenzt die Abrufe: beim Neuladen die schon
          geladene Liste aus dem Speicher nehmen statt wieder bei Seite 1 zu starten. */
       preferCache: true,
-      cacheKey: 'fbtarchive.rss2-games.v3',
+      cacheKey: 'fbtarchive.rss2-games.v4',
       moreButton: '#rss2-more',
       noteNode: '#rss2-more-note',
-      /* 500 pro Abruf: der Feed begrenzt die Anfragen pro Minute, so braucht
-         die ganze Liste nur eine Handvoll Abrufe. */
+      /* 2.000 pro Abruf: der Feed begrenzt die Anfragen pro Minute, so braucht
+         die ganze Liste nur wenige Abrufe und lädt deutlich schneller. */
       feedUrl: function (page) {
-        return 'https://gamemonetize.com/feed.php?format=0&num=500&page=' + page;
+        return 'https://gamemonetize.com/feed.php?format=0&num=2000&page=' + page;
       },
       parse: function (data) {
         var items = Array.isArray(data) ? data : (data && Array.isArray(data.items) ? data.items : []);
@@ -892,7 +892,9 @@
     loadMoreRss(key, true).then(function (result) {
       if (!feedState.autoRun) return;
       if (result && result.failed) {
-        stopAutoRun(key, 'Der Feed antwortet gerade nicht (Anfragelimit) – später nochmal „Auto laden“ drücken.');
+        /* Anfragelimit: kurz pausieren und selbst weiterladen, nicht abbrechen. */
+        setRssNote(key, 'Anfragelimit – Auto-Laden pausiert kurz und macht dann weiter …');
+        window.setTimeout(function () { autoRunStep(key); }, 20000);
         return;
       }
       if (feedState.exhausted || !feedState.nextPage) {
