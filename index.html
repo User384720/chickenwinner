@@ -6,7 +6,7 @@
   <meta name="theme-color" id="theme-color" content="#06070d" />
   <title></title>
   <link rel="icon" id="favicon" href="data:," />
-  <link rel="stylesheet" href="css/style.css?v=13" />
+  <link rel="stylesheet" href="css/style.css?v=14" />
   <link rel="preload" as="image" href="img/censor/recycle-bin-empty.png" fetchpriority="high" />
   <script>
     /* Theme before first paint — avoids a flash of the wrong theme. */
@@ -221,9 +221,15 @@
         <div>
           <h2>Games <span class="grad">∞</span></h2>
         </div>
-        <div class="filter-box">
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
-          <input type="search" data-filter="rss-games" placeholder="Feed-Spiele durchsuchen …" aria-label="Feed-Spiele durchsuchen" spellcheck="false" />
+        <div class="head-tools">
+          <div class="filter-box">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+            <input type="search" data-filter="rss-games" placeholder="Feed-Spiele durchsuchen …" aria-label="Feed-Spiele durchsuchen" spellcheck="false" />
+          </div>
+          <div class="head-actions">
+            <button class="btn btn-sm" type="button" data-feed-more="rss-games">Mehr laden</button>
+            <button class="btn btn-sm" type="button" data-feed-auto="rss-games" aria-pressed="false" title="Spiele automatisch nachladen, bis der Feed zu Ende ist">Auto laden</button>
+          </div>
         </div>
       </div>
       <p class="feed-note"></p>
@@ -250,9 +256,15 @@
         <div>
           <h2>Games <span class="grad">∞</span> 2</h2>
         </div>
-        <div class="filter-box">
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
-          <input type="search" data-filter="rss2-games" placeholder="GameMonetize-Spiele durchsuchen …" aria-label="GameMonetize-Spiele durchsuchen" spellcheck="false" />
+        <div class="head-tools">
+          <div class="filter-box">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+            <input type="search" data-filter="rss2-games" placeholder="GameMonetize-Spiele durchsuchen …" aria-label="GameMonetize-Spiele durchsuchen" spellcheck="false" />
+          </div>
+          <div class="head-actions">
+            <button class="btn btn-sm" type="button" data-feed-more="rss2-games">Mehr laden</button>
+            <button class="btn btn-sm" type="button" data-feed-auto="rss2-games" aria-pressed="false" title="Spiele automatisch nachladen, bis der Feed zu Ende ist">Auto laden</button>
+          </div>
         </div>
       </div>
       <p class="feed-note"></p>
@@ -647,6 +659,6 @@
   </noscript>
 
   <script src="js/checker.js?v=11" defer></script>
-  <script src="js/app.js?v=27" defer></script>
+  <script src="js/app.js?v=29" defer></script>
 </body>
 </html>

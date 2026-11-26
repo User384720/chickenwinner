@@ -294,6 +294,15 @@
 
   function renderRoute(route) {
     state.route = route;
+    /* Auto-Laden nur auf der sichtbaren Feed-Seite weiterlaufen lassen. */
+    Object.keys(RSS_FEEDS).forEach(function (key) {
+      if (key === route) return;
+      var feedState = state.rss[key];
+      if (feedState && feedState.autoRun) {
+        feedState.autoRun = false;
+        setAutoLabel(key, false);
+      }
+    });
     $$('.view').forEach(function (view) {
       view.hidden = view.dataset.view !== route;
     });
@@ -825,6 +834,76 @@
         return;
       }
       window.setTimeout(function () { rssAutoLoad(key); }, (config && config.autoCooldown) || RSS_AUTO.cooldown);
+    });
+  }
+
+  /* Auto-Laden über den Knopf oben: lädt Seite für Seite, bis der Feed zu Ende ist
+     oder der Knopf wieder ausgeschaltet wird. */
+  function setAutoLabel(key, running) {
+    var button = document.querySelector('[data-feed-auto="' + key + '"]');
+    if (!button) return;
+    button.classList.toggle('is-on', running);
+    button.textContent = running ? 'Auto laden: an' : 'Auto laden';
+    button.setAttribute('aria-pressed', String(running));
+  }
+
+  function stopAutoRun(key, note) {
+    var feedState = rssState(key);
+    feedState.autoRun = false;
+    setAutoLabel(key, false);
+    if (note) setRssNote(key, note);
+  }
+
+  function rssAutoRun(key, on) {
+    var feedState = rssState(key);
+    if (!rssConfig(key)) return;
+    feedState.autoRun = typeof on === 'boolean' ? on : !feedState.autoRun;
+    setAutoLabel(key, feedState.autoRun);
+    if (!feedState.autoRun) {
+      setRssNote(key, 'Auto-Laden gestoppt.');
+      return;
+    }
+    if (feedState.exhausted) {
+      stopAutoRun(key, 'Alle Spiele aus dem Feed geladen.');
+      return;
+    }
+    setRssNote(key, 'Auto-Laden läuft …');
+    autoRunStep(key);
+  }
+
+  function autoRunStep(key) {
+    var feedState = rssState(key);
+    var config = rssConfig(key);
+    if (!feedState.autoRun || !config) return;
+    if (state.route !== key) { stopAutoRun(key); return; }
+
+    var entry = state.data[key];
+    if (!entry || entry.status !== 'ready') {
+      setRssNote(key, 'Feed wird noch geladen …');
+      window.setTimeout(function () { autoRunStep(key); }, 800);
+      return;
+    }
+    if (feedState.exhausted) { stopAutoRun(key, 'Alle Spiele aus dem Feed geladen.'); return; }
+    if (!feedState.nextPage) {
+      stopAutoRun(key, 'Der Feed ist gerade nicht erreichbar – später nochmal versuchen.');
+      return;
+    }
+
+    loadMoreRss(key, true).then(function (result) {
+      if (!feedState.autoRun) return;
+      if (result && result.failed) {
+        stopAutoRun(key, 'Der Feed antwortet gerade nicht (Anfragelimit) – später nochmal „Auto laden“ drücken.');
+        return;
+      }
+      if (feedState.exhausted || !feedState.nextPage) {
+        stopAutoRun(key, 'Alle Spiele aus dem Feed geladen.');
+        return;
+      }
+      var added = (result && result.added) || 0;
+      setRssNote(key, added
+        ? added + ' weitere Spiele geladen – Auto-Laden läuft …'
+        : 'Auto-Laden läuft …');
+      window.setTimeout(function () { autoRunStep(key); }, config.autoCooldown || RSS_AUTO.cooldown);
     });
   }
 
@@ -2480,6 +2559,12 @@
         refreshFavoritesView();
         if (DATA_SOURCES[state.route] && state.data[state.route]) renderGrid(state.route);
         toast('Favorit entfernt', 'info');
+        return;
+      }
+
+      var autoButton = event.target.closest('[data-feed-auto]');
+      if (autoButton) {
+        rssAutoRun(autoButton.dataset.feedAuto);
         return;
       }
 

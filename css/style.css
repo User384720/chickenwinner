@@ -2098,6 +2098,39 @@ html.intro-dragging body { cursor: grabbing; }
 
 .feed-actions .muted { font-size: 0.8rem; }
 
+/* Mehr-/Auto-Laden oben neben der Suche */
+.head-tools {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.head-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.btn-sm {
+  padding: 9px 14px;
+  font-size: 0.82rem;
+  border-radius: 11px;
+}
+
+.head-actions .btn.is-on {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 14%, transparent);
+}
+
+@media (max-width: 720px) {
+  .head-tools { width: 100%; }
+  .head-actions { width: 100%; }
+  .head-actions .btn { flex: 1 1 0; }
+}
+
 /* ---------- Spiele-Zähler (Home) ---------- */
 .games-count-row {
   display: flex;
