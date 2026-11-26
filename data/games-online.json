@@ -487,6 +487,16 @@
               "url": "https://studiohammergames.itch.io/baby-sniper-in-vietnam"
             }
           ]
+        },
+        {
+          "name": "2v2.lol",
+          "icon": "https://www.google.com/s2/favicons?domain=2v2.io&sz=128",
+          "urls": [
+            {
+              "label": "2v2.io",
+              "url": "https://2v2.io/"
+            }
+          ]
         }
       ]
     },
@@ -620,6 +630,16 @@
             {
               "label": "yohoho.io",
               "url": "https://yohoho.io"
+            }
+          ]
+        },
+        {
+          "name": "LOLBeans",
+          "icon": "https://www.google.com/s2/favicons?domain=lolbeans.io&sz=128",
+          "urls": [
+            {
+              "label": "lolbeans.io",
+              "url": "https://lolbeans.io/"
             }
           ]
         }
@@ -942,6 +962,16 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/Ale7208/Geometry-Dash-webport/main/index.html"
+            }
+          ]
+        },
+        {
+          "name": "Super Monkey Ball",
+          "icon": "https://www.google.com/s2/favicons?domain=monkeyball-online.pages.dev&sz=128",
+          "urls": [
+            {
+              "label": "monkeyball-online.pages.dev",
+              "url": "https://monkeyball-online.pages.dev/"
             }
           ]
         }
@@ -3018,6 +3048,20 @@
             {
               "label": "wasmarcade.app · neuer Tab",
               "url": "https://wasmarcade.app/play/xiao-xiao-4"
+            }
+          ]
+        },
+        {
+          "name": "Eaglercraft",
+          "icon": "https://www.google.com/s2/favicons?domain=eaglercraft.com&sz=128",
+          "urls": [
+            {
+              "label": "eaglercraft.com",
+              "url": "https://eaglercraft.com/"
+            },
+            {
+              "label": "eaglercraft.com/mc/1.8.8",
+              "url": "https://eaglercraft.com/mc/1.8.8/"
             }
           ]
         }
