@@ -8,6 +8,50 @@
       "icon": "🎯",
       "items": [
         {
+          "name": "SkillWarz",
+          "icon": "https://imgs.crazygames.com/skillwarz_16x9/20260318145302/skillwarz_16x9-cover?metadata=none&quality=100&width=1200&height=630&fit=crop",
+          "urls": [
+            {
+              "label": "crazygames.com/skillwarz · neuer Tab",
+              "url": "https://www.crazygames.com/game/skillwarz",
+              "blank": true
+            }
+          ]
+        },
+        {
+          "name": "Forward Assault Remix",
+          "icon": "https://imgs.crazygames.com/forward-assault_16x9/20261008232135/forward-assault_16x9-cover.png?metadata=none&quality=100&width=1200&height=630&fit=crop",
+          "urls": [
+            {
+              "label": "crazygames.com/forward-assault · neuer Tab",
+              "url": "https://www.crazygames.com/game/forward-assault",
+              "blank": true
+            }
+          ]
+        },
+        {
+          "name": "Station Meltdown",
+          "icon": "https://img.itch.zone/aW1hZ2UvMTQzMjEwNy84MzUzNzM0LnBuZw==/794x1000/ScbuBX.png",
+          "urls": [
+            {
+              "label": "booleet.itch.io/station-meltdown · neuer Tab",
+              "url": "https://booleet.itch.io/station-meltdown",
+              "blank": true
+            }
+          ]
+        },
+        {
+          "name": "Fortzone Battle Royale",
+          "icon": "https://imgs.crazygames.com/fortzone-battle-royale-xkd_16x9/20250513044222/fortzone-battle-royale-xkd_16x9-cover?metadata=none&quality=100&width=1200&height=630&fit=crop",
+          "urls": [
+            {
+              "label": "crazygames.com/fortzone-battle-royale · neuer Tab",
+              "url": "https://www.crazygames.com/game/fortzone-battle-royale-xkd",
+              "blank": true
+            }
+          ]
+        },
+        {
           "name": "INKWAVE: Turf Riot",
           "icon": "https://www.google.com/s2/favicons?domain=inkwave.pangogames.com&sz=128",
           "urls": [
@@ -545,6 +589,17 @@
       "icon": "🐍",
       "items": [
         {
+          "name": "SimplyUp.io",
+          "icon": "https://imgs.crazygames.com/simplyup-io_16x9/20250710064001/simplyup-io_16x9-cover?metadata=none&quality=100&width=1200&height=630&fit=crop",
+          "urls": [
+            {
+              "label": "crazygames.com/simplyup-io · neuer Tab",
+              "url": "https://www.crazygames.com/game/simplyup-io",
+              "blank": true
+            }
+          ]
+        },
+        {
           "name": "Waffle.io",
           "icon": "https://www.google.com/s2/favicons?domain=itch.io&sz=128",
           "urls": [
@@ -845,6 +900,17 @@
       "icon": "🧩",
       "items": [
         {
+          "name": "Prison Escape",
+          "icon": "https://imgs.crazygames.com/prison-escape-lnj_16x9/20250509092652/prison-escape-lnj_16x9-cover?metadata=none&quality=100&width=1200&height=630&fit=crop",
+          "urls": [
+            {
+              "label": "crazygames.com/prison-escape-lnj · neuer Tab",
+              "url": "https://www.crazygames.com/game/prison-escape-lnj",
+              "blank": true
+            }
+          ]
+        },
+        {
           "name": "2048",
           "icon": "https://www.google.com/s2/favicons?domain=play2048.co&sz=128",
           "urls": [
@@ -959,6 +1025,50 @@
       "name": "Skill & Racing",
       "icon": "🏎️",
       "items": [
+        {
+          "name": "Rooftop Run (CrazyGames)",
+          "icon": "https://imgs.crazygames.com/rooftop-run_16x9/20240415041518/rooftop-run_16x9-cover?metadata=none&quality=100&width=1200&height=630&fit=crop",
+          "urls": [
+            {
+              "label": "crazygames.com/rooftop-run · neuer Tab",
+              "url": "https://www.crazygames.com/game/rooftop-run",
+              "blank": true
+            }
+          ]
+        },
+        {
+          "name": "Oops! No Brakes",
+          "icon": "https://img.itch.zone/aW1hZ2UvMTE2NjQxOC82ODAwMzQ4LnBuZw==/794x1000/xxLJEg.png",
+          "urls": [
+            {
+              "label": "thejaspel.itch.io/oops-no-brakes · neuer Tab",
+              "url": "https://thejaspel.itch.io/oops-no-brakes",
+              "blank": true
+            }
+          ]
+        },
+        {
+          "name": "MX Offroad Master",
+          "icon": "https://imgs.crazygames.com/mx-offroad-master_16x9/20261109101215/mx-offroad-master_16x9-cover.jpg?metadata=none&quality=100&width=1200&height=630&fit=crop",
+          "urls": [
+            {
+              "label": "crazygames.com/mx-offroad-master · neuer Tab",
+              "url": "https://www.crazygames.com/game/mx-offroad-master",
+              "blank": true
+            }
+          ]
+        },
+        {
+          "name": "MR RACER Stunt Mania",
+          "icon": "https://imgs.crazygames.com/mr-racer-stunt-mania_16x9/20250820054755/mr-racer-stunt-mania_16x9-cover?metadata=none&quality=100&width=1200&height=630&fit=crop",
+          "urls": [
+            {
+              "label": "crazygames.com/mr-racer-stunt-mania · neuer Tab",
+              "url": "https://www.crazygames.com/game/mr-racer-stunt-mania",
+              "blank": true
+            }
+          ]
+        },
         {
           "name": "Smash Karts",
           "icon": "https://www.google.com/s2/favicons?domain=smashkarts.io&sz=128",
