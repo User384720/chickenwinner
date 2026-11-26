@@ -11,8 +11,8 @@
 
   var DATA_SOURCES = {
     'games-online': { file: 'data/games-online.json', title: 'Games Online' },
-    'rss-games':    { file: 'data/games-rss.json',    title: 'RSS Games'    },
-    'rss2-games':   { file: 'data/games-rss2.json',   title: 'RSS 2 Games'  },
+    'rss-games':    { file: 'data/games-rss.json',    title: 'Games ∞'      },
+    'rss2-games':   { file: 'data/games-rss2.json',   title: 'Games ∞ 2'    },
     'games-local':  { file: 'data/games-local.json',  title: 'Games Local'  },
     'apps':         { file: 'data/apps.json',         title: 'Apps'           },
     'sites':        { file: 'data/sites.json',        title: 'Sites'          },
@@ -431,7 +431,7 @@
      Feed nicht antwortet. */
   var RSS_FEEDS = {
     'rss-games': {
-      title: 'RSS Games',
+      title: 'Games ∞',
       file: 'data/games-rss.json',
       pagesPerLoad: 15,
       cacheKey: 'fbtarchive.rss-games.v2',
@@ -453,7 +453,7 @@
       }
     },
     'rss2-games': {
-      title: 'RSS 2 Games',
+      title: 'Games ∞ 2',
       file: 'data/games-rss2.json',
       pagesPerLoad: 1,
       cacheKey: 'fbtarchive.rss2-games.v1',
