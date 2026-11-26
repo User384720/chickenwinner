@@ -32,6 +32,7 @@
         <button class="tab active" id="tab-home" data-route="home" role="tab" aria-selected="true" aria-controls="view-home">Home</button>
         <button class="tab" id="tab-games-online" data-route="games-online" role="tab" aria-selected="false" aria-controls="view-games-online">Games Online</button>
         <button class="tab" id="tab-rss-games" data-route="rss-games" role="tab" aria-selected="false" aria-controls="view-rss-games">RSS Games</button>
+        <button class="tab" id="tab-rss2-games" data-route="rss2-games" role="tab" aria-selected="false" aria-controls="view-rss2-games">RSS 2 Games</button>
         <button class="tab" id="tab-games-local" data-route="games-local" role="tab" aria-selected="false" aria-controls="view-games-local">Games Local</button>
         <button class="tab" id="tab-apps" data-route="apps" role="tab" aria-selected="false" aria-controls="view-apps">Apps</button>
         <button class="tab" id="tab-sites" data-route="sites" role="tab" aria-selected="false" aria-controls="view-sites">Sites</button>
@@ -151,13 +152,14 @@
         <article class="panel span-12 panel-games-count">
           <div class="panel-head">
             <span class="panel-label">Spiele gesamt</span>
-            <span class="panel-hint">Games Online · RSS Feed · Lokal</span>
+            <span class="panel-hint">Games Online · 2 RSS-Feeds · Lokal</span>
           </div>
           <div class="games-count-row">
             <div class="games-count-value" id="games-count-total">–</div>
             <div class="games-count-links">
               <a href="#/games-online"><strong id="games-count-online">–</strong> Games Online</a>
               <a href="#/rss-games"><strong id="games-count-rss">–</strong> RSS Games</a>
+              <a href="#/rss2-games"><strong id="games-count-rss2">–</strong> RSS 2 Games</a>
               <a href="#/games-local"><strong id="games-count-local">–</strong> Games Local</a>
             </div>
           </div>
@@ -237,8 +239,31 @@
       </div>
       <div class="grid" data-grid="rss-games" aria-live="polite"></div>
       <div class="feed-actions">
-        <button class="btn btn-primary" type="button" id="rss-more">Weitere Spiele laden</button>
+        <button class="btn btn-primary" type="button" id="rss-more" data-feed-more="rss-games">Weitere Spiele laden</button>
         <span class="muted" id="rss-more-note"></span>
+      </div>
+    </section>
+
+    <!-- ========================= RSS 2 GAMES ========================= -->
+    <section class="view" id="view-rss2-games" data-view="rss2-games" role="tabpanel" aria-labelledby="tab-rss2-games" hidden>
+      <div class="section-head">
+        <div>
+          <h2>RSS 2 <span class="grad">Games</span></h2>
+        </div>
+        <div class="filter-box">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+          <input type="search" data-filter="rss2-games" placeholder="GameMonetize-Spiele durchsuchen …" aria-label="GameMonetize-Spiele durchsuchen" spellcheck="false" />
+        </div>
+      </div>
+      <p class="feed-note">Live-Spiele aus dem GameMonetize-Feed – 50 pro Seite. Am Ende der Liste lädt es automatisch weiter.</p>
+      <div class="chips-row" data-chips="rss2-games" role="group" aria-label="Kategorien der GameMonetize-Spiele"></div>
+      <div class="list-meta">
+        <span data-count="rss2-games">wird geladen …</span>
+      </div>
+      <div class="grid" data-grid="rss2-games" aria-live="polite"></div>
+      <div class="feed-actions">
+        <button class="btn btn-primary" type="button" id="rss2-more" data-feed-more="rss2-games">Weitere Spiele laden</button>
+        <span class="muted" id="rss2-more-note"></span>
       </div>
     </section>
 
@@ -618,6 +643,6 @@
   </noscript>
 
   <script src="js/checker.js?v=11" defer></script>
-  <script src="js/app.js?v=19" defer></script>
+  <script src="js/app.js?v=20" defer></script>
 </body>
 </html>
