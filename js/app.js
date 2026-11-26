@@ -799,7 +799,9 @@
     var visibleLinks = 3;
     var links = urls.map(function (u, i) {
       var label = u.label || hostOf(u.url);
-      var dot = statusDotMarkup(u.url, item, u);
+      /* Feed-Spiele sind offizielle Embed-URLs – kein Status-Punkt, damit die
+         Prüfung nicht massenhaft Player-Seiten von GamePix lädt. */
+      var dot = type === 'rss-games' ? '' : statusDotMarkup(u.url, item, u);
       var color = safeColor(u.color) || safeColor(item.color);
       return '<button class="badge badge-play' + (color ? ' has-color' : '') + (i >= visibleLinks ? ' is-extra' : '') + '" type="button" ' +
         'data-play-url="' + esc(u.url) + '" data-play-name="' + esc(item.name) + '" data-play-icon="' + esc(item.icon || '') + '" ' +
@@ -1674,7 +1676,7 @@
           '<!doctype html><html><head><title>Dokument</title>' +
           '<style>html,body{margin:0;height:100%;overflow:hidden;background:#0b0d17}iframe{border:0;width:100%;height:100%;display:block}</style>' +
           '</head><body><iframe src="' + esc(url) + '" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" ' +
-          'allow="fullscreen; autoplay; gamepad; clipboard-read; clipboard-write; encrypted-media; picture-in-picture; screen-wake-lock; storage-access"></iframe></body></html>'
+          'allow="accelerometer; autoplay; clipboard-read; clipboard-write; encrypted-media; fullscreen; gamepad; gyroscope; picture-in-picture; screen-wake-lock; storage-access; web-share"></iframe></body></html>'
         );
         win.document.close();
         toast('Cloak-Tab geöffnet. Manche Seiten verbieten das Einbetten.', 'info');
