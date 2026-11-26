@@ -478,11 +478,18 @@
       title: 'Games ∞ 2',
       file: 'data/games-rss2.json',
       pagesPerLoad: 1,
-      cacheKey: 'fbtarchive.rss2-games.v1',
+      pageGap: 700,
+      autoCooldown: 1800,
+      /* Der Feed ist riesig und begrenzt die Abrufe: beim Neuladen die schon
+         geladene Liste aus dem Speicher nehmen statt wieder bei Seite 1 zu starten. */
+      preferCache: true,
+      cacheKey: 'fbtarchive.rss2-games.v3',
       moreButton: '#rss2-more',
       noteNode: '#rss2-more-note',
+      /* 500 pro Abruf: der Feed begrenzt die Anfragen pro Minute, so braucht
+         die ganze Liste nur eine Handvoll Abrufe. */
       feedUrl: function (page) {
-        return 'https://gamemonetize.com/feed.php?format=0&num=50&page=' + page;
+        return 'https://gamemonetize.com/feed.php?format=0&num=500&page=' + page;
       },
       parse: function (data) {
         var items = Array.isArray(data) ? data : (data && Array.isArray(data.items) ? data.items : []);
@@ -505,7 +512,7 @@
   /* Ladezustand je Feed: nächste Seite, laufender Abruf, Auto-Nachladen. */
   function rssState(key) {
     if (!state.rss[key]) {
-      state.rss[key] = { nextPage: 0, loading: false, exhausted: false, chain: 0, searchTimer: 0 };
+      state.rss[key] = { nextPage: 0, loading: false, exhausted: false, chain: 0, searchTimer: 0, retry: 0, retryTimer: 0 };
     }
     return state.rss[key];
   }
@@ -566,25 +573,53 @@
     });
   }
 
+  /* Eine Feed-Seite holen. Ein Fehler (z. B. Anfragelimit) wird gemeldet,
+     damit die Seite nicht fälschlich als „Feed zu Ende“ gilt. */
   function fetchRssPage(key, page) {
     var config = rssConfig(key);
-    if (!config) return Promise.resolve([]);
-    return fetchJSON(config.feedUrl(page), 12000).then(function (data) {
-      return config.parse(data);
+    if (!config) return Promise.resolve({ items: [], failed: true });
+    return fetchJSON(config.feedUrl(page), 15000).then(function (data) {
+      return { items: config.parse(data), failed: false };
+    }).catch(function () {
+      return { items: [], failed: true };
     });
   }
 
+  /* Seiten nacheinander holen (schont das Anfragelimit) und genau melden,
+     wie viele Seiten wirklich geklappt haben. Nur so weit darf der Zeiger
+     weiterwandern – sonst gehen Spiele verloren. */
   function fetchRssPages(key, from, amount) {
-    var jobs = [];
-    for (var i = 0; i < amount; i++) {
-      jobs.push(fetchRssPage(key, from + i).catch(function () { return []; }));
-    }
-    return Promise.all(jobs).then(function (lists) {
-      var items = [];
-      lists.forEach(function (list) {
-        list.forEach(function (item) { items.push(item); });
+    var config = rssConfig(key);
+    var gap = (config && config.pageGap) || 0;
+    var items = [];
+    var advance = 0;
+    var failed = false;
+    var ended = false;
+    var chain = Promise.resolve();
+
+    function step(page) {
+      chain = chain.then(function () {
+        if (failed || ended) return null;
+        if (gap && page > from) {
+          return new Promise(function (resolve) { window.setTimeout(resolve, gap); });
+        }
+        return null;
+      }).then(function () {
+        if (failed || ended) return null;
+        return fetchRssPage(key, page);
+      }).then(function (result) {
+        if (!result) return;
+        if (result.failed) { failed = true; return; }
+        if (!result.items.length) { ended = true; return; }
+        result.items.forEach(function (item) { items.push(item); });
+        advance++;
       });
-      return items;
+    }
+
+    for (var i = 0; i < amount; i++) step(from + i);
+
+    return chain.then(function () {
+      return { items: items, advance: advance, failed: failed, ended: ended };
     });
   }
 
@@ -613,10 +648,19 @@
     var feedState = rssState(key);
     if (!config) return Promise.resolve({ groups: [] });
 
-    return fetchRssPages(key, 1, config.pagesPerLoad).then(function (items) {
-      if (!items.length) throw new Error('Feed leer');
-      var groups = rssGroups(items);
-      feedState.nextPage = 1 + config.pagesPerLoad;
+    if (config.preferCache) {
+      var stored = cachedRss(key);
+      if (stored && stored.nextPage > 1) {
+        feedState.nextPage = stored.nextPage;
+        return Promise.resolve({ groups: stored.groups });
+      }
+    }
+
+    return fetchRssPages(key, 1, config.pagesPerLoad).then(function (result) {
+      if (!result.items.length) throw new Error('Feed leer');
+      var groups = rssGroups(result.items);
+      feedState.nextPage = 1 + result.advance;
+      feedState.exhausted = !!result.ended;
       rememberRss(key, groups, feedState.nextPage);
       return { groups: groups };
     }).catch(function () {
@@ -674,8 +718,16 @@
     feedState.loading = true;
     if (button && !silent) { button.disabled = true; button.textContent = 'Wird geladen …'; }
 
-    return fetchRssPages(key, from, config.pagesPerLoad).then(function (items) {
-      if (!items.length) {
+    return fetchRssPages(key, from, config.pagesPerLoad).then(function (result) {
+      if (!result.items.length) {
+        if (result.failed) {
+          /* Anfragelimit: nichts als „zu Ende“ verbuchen, sonst fehlen Spiele. */
+          feedState.chain = RSS_AUTO.max;
+          setRssNote(key, 'Der Feed antwortet gerade nicht (Anfragelimit) – kurz warten und dann erneut laden.');
+          if (!silent) toast('Der Feed antwortet gerade nicht – bitte kurz warten und nochmal versuchen.', 'error');
+          scheduleRssRetry(key);
+          return { added: 0, visibleAdded: 0, failed: true };
+        }
         feedState.exhausted = true;
         if (button) button.hidden = true;
         setRssNote(key, 'Alle Spiele aus dem Feed geladen.');
@@ -684,7 +736,7 @@
       }
 
       var added = 0;
-      rssGroups(items).forEach(function (group) {
+      rssGroups(result.items).forEach(function (group) {
         var target = entry.groups.find(function (g) { return g.id === group.id; });
         if (!target) {
           entry.groups.push(group);
@@ -701,7 +753,10 @@
       });
 
       entry.items = entry.groups.reduce(function (acc, group) { return acc.concat(group.items); }, []);
-      feedState.nextPage = from + config.pagesPerLoad;
+      feedState.nextPage = from + result.advance;
+      if (result.ended) feedState.exhausted = true;
+      feedState.retry = 0;
+      if (feedState.retryTimer) { window.clearTimeout(feedState.retryTimer); feedState.retryTimer = 0; }
       rememberRss(key, entry.groups, feedState.nextPage);
       renderGrid(key);
       updateGamesCounter();
@@ -715,6 +770,28 @@
       if (button) { button.disabled = false; button.textContent = 'Weitere Spiele laden'; }
       return result;
     });
+  }
+
+  /* Nach einem Anfragelimit kurz warten und es selbst noch einmal versuchen. */
+  function scheduleRssRetry(key) {
+    var feedState = rssState(key);
+    if (feedState.retry >= 3) return;
+    feedState.retry++;
+    setRssNote(key, 'Der Feed antwortet gerade nicht (Anfragelimit) – neuer Versuch läuft in ein paar Sekunden.');
+    if (feedState.retryTimer) return;
+
+    /* Nach einem Limit braucht es meist eine gute Minute Ruhe. */
+    var wait = [20000, 45000, 90000][feedState.retry - 1] || 90000;
+
+    feedState.retryTimer = window.setTimeout(function () {
+      feedState.retryTimer = 0;
+      feedState.chain = 0;
+      loadMoreRss(key, true).then(function (result) {
+        if (!result || result.failed) return;
+        feedState.retry = 0;
+        if (state.route === key) setRssNote(key, 'Weitere Spiele nachgeladen.');
+      });
+    }, wait);
   }
 
   /* Automatisch nachladen: am Listenende und wenn eine Suche zu wenig Treffer hat. */
@@ -736,6 +813,7 @@
     if (!query) return; /* beim Blättern laden die Seitenzahlen nach */
 
     var feedState = rssState(key);
+    var config = rssConfig(key);
     feedState.chain++;
     loadMoreRss(key, true).then(function (result) {
       if (!result || result.failed) return;
@@ -746,7 +824,7 @@
           : 'Für diese Kategorie kam nichts Neues – „Weitere Spiele laden“ holt trotzdem mehr.');
         return;
       }
-      window.setTimeout(function () { rssAutoLoad(key); }, RSS_AUTO.cooldown);
+      window.setTimeout(function () { rssAutoLoad(key); }, (config && config.autoCooldown) || RSS_AUTO.cooldown);
     });
   }
 
