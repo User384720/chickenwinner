@@ -719,6 +719,26 @@
               "url": "https://www.wolvesville.com"
             }
           ]
+        },
+        {
+          "name": "UNO (Buddy Board Games)",
+          "icon": "https://www.google.com/s2/favicons?domain=buddyboardgames.com&sz=128",
+          "urls": [
+            {
+              "label": "buddyboardgames.com/uno",
+              "url": "https://buddyboardgames.com/uno"
+            }
+          ]
+        },
+        {
+          "name": "Scuffed Uno",
+          "icon": "https://www.google.com/s2/favicons?domain=scuffeduno.online&sz=128",
+          "urls": [
+            {
+              "label": "scuffeduno.online",
+              "url": "https://scuffeduno.online/"
+            }
+          ]
         }
       ]
     },
