@@ -1424,6 +1424,8 @@ body.player-open { overflow: hidden; }
   border-color: color-mix(in srgb, var(--accent-2) 50%, transparent);
   background: color-mix(in srgb, var(--accent-2) 12%, transparent);
 }
+#player-fav.is-fav { color: var(--warn); }
+#player-fav.is-fav svg { fill: currentColor; }
 .player-btn-close { width: 34px; height: 34px; padding: 0; justify-content: center; }
 .player-btn-close:hover { color: var(--danger); border-color: color-mix(in srgb, var(--danger) 45%, transparent); }
 

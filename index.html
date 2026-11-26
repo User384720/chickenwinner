@@ -6,7 +6,7 @@
   <meta name="theme-color" id="theme-color" content="#06070d" />
   <title></title>
   <link rel="icon" id="favicon" href="data:," />
-  <link rel="stylesheet" href="css/style.css?v=12" />
+  <link rel="stylesheet" href="css/style.css?v=13" />
   <link rel="preload" as="image" href="img/censor/recycle-bin-empty.png" fetchpriority="high" />
   <script>
     /* Theme before first paint — avoids a flash of the wrong theme. */
@@ -523,6 +523,10 @@
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36" /><path d="M21 3v6h-6" /></svg>
             <span class="player-btn-label">Neu laden</span>
           </button>
+          <button class="player-btn" id="player-fav" type="button" title="Zu Favoriten hinzufügen" aria-pressed="false">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3.6 2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L3.5 9.8l5.9-.9z" /></svg>
+            <span class="player-btn-label">Favorit</span>
+          </button>
           <button class="player-btn" id="player-fullscreen" type="button" title="Vollbild" aria-pressed="false">
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H4a1 1 0 0 0-1 1v4M16 3h4a1 1 0 0 1 1 1v4M8 21H4a1 1 0 0 1-1-1v-4M16 21h4a1 1 0 0 0 1-1v-4" /></svg>
             <span class="player-btn-label">Vollbild</span>
@@ -643,6 +647,6 @@
   </noscript>
 
   <script src="js/checker.js?v=11" defer></script>
-  <script src="js/app.js?v=21" defer></script>
+  <script src="js/app.js?v=24" defer></script>
 </body>
 </html>

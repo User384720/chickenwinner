@@ -274,7 +274,22 @@
 
   function parseHash() {
     var raw = window.location.hash.replace(/^#\/?/, '').split('?')[0];
-    return ROUTES.indexOf(raw) !== -1 ? raw : 'home';
+    if (ROUTES.indexOf(raw) !== -1) return raw;
+    /* Injizierte Kopie im about:blank-Tab: Startseite steht in __BLANK_ROUTE__. */
+    var fallback = window.__BLANK_ROUTE__ || '';
+    return ROUTES.indexOf(fallback) !== -1 ? fallback : 'home';
+  }
+
+  /* Im injizierten about:blank-Tab darf die Adresszeile nicht auf die echte
+     Adresse springen: Dort wird die Seite nur intern gewechselt. */
+  var BLANK_MODE = typeof window.__BLANK_ROUTE__ === 'string';
+
+  function navigate(route) {
+    if (ROUTES.indexOf(route) === -1) route = 'home';
+    if (BLANK_MODE) { renderRoute(route); return; }
+    var target = '#/' + route;
+    if (window.location.hash === target) renderRoute(route);
+    else window.location.hash = target;
   }
 
   function renderRoute(route) {
@@ -309,11 +324,18 @@
   function bindRouter() {
     $$('.tab').forEach(function (tab) {
       tab.addEventListener('click', function () {
-        var target = '#/' + tab.dataset.route;
-        if (window.location.hash === target) renderRoute(tab.dataset.route);
-        else window.location.hash = target;
+        navigate(tab.dataset.route);
       });
     });
+    /* Im blank-Tab würden #/…-Links gegen <base> auflösen – selbst umschalten. */
+    if (BLANK_MODE) {
+      document.addEventListener('click', function (event) {
+        var link = event.target.closest('a[href^="#/"]');
+        if (!link) return;
+        event.preventDefault();
+        navigate(link.getAttribute('href').replace(/^#\//, ''));
+      });
+    }
     window.addEventListener('hashchange', function () {
       renderRoute(parseHash());
     });
@@ -703,7 +725,6 @@
     if (!entry || entry.status !== 'ready') return false;
     var feedState = rssState(key);
     if (feedState.loading || feedState.exhausted || !feedState.nextPage) return false;
-    if (feedState.chain >= RSS_AUTO.max) return false;
     var query = String((state.filters[key] || { q: '' }).q || '').trim();
     if (!query) return true;
     return rssVisibleCount(key) < 12;
@@ -1304,8 +1325,9 @@
 
   /* Der RSS-Feed kommt seitenweise: „mehr laden“ holt weitere Seiten und
      sucht erneut, „auto mehr“ macht das selbstständig, bis ein Treffer da ist. */
-  var FINDER_AUTO = { max: 12, cooldown: 700 };
-  var FINDER = { auto: false, busy: false, chain: 0, timer: 0 };
+  /* Auto-Mehr läuft, bis der Feed zu Ende ist oder der Knopf wieder gedrückt wird. */
+  var FINDER_AUTO = { cooldown: 700 };
+  var FINDER = { auto: true, busy: false, chain: 0, timer: 0 };
 
   function finderQuery() {
     var input = $('#finder-input');
@@ -1391,26 +1413,22 @@
     if (!FINDER.auto || FINDER.busy || state.route !== 'home') return;
     var query = finderQuery();
     if (!query) return;
-    if (finderMatches(query).length) { finderSetNote(''); return; }
     if (!finderRssInfo().more) {
-      finderSetNote('Alle Feed-Spiele durchsucht – nichts gefunden.');
-      return;
-    }
-    if (FINDER.chain >= FINDER_AUTO.max) {
-      finderSetNote('Noch kein Treffer – „mehr laden“ sucht weiter.');
+      finderSetNote(finderMatches(query).length
+        ? 'Alle Feed-Spiele durchsucht.'
+        : 'Alle Feed-Spiele durchsucht – nichts gefunden.');
+      finderUpdateButtons();
       return;
     }
 
     FINDER.chain++;
-    finderSetNote('Lädt weitere Feed-Spiele … (' + FINDER.chain + ')');
+    finderSetNote('Auto-Mehr lädt … (' + FINDER.chain + '. Seite, ' + finderMatches(query).length + ' Treffer)');
     finderLoadMore(true).then(function (info) {
       if (!FINDER.auto) return;
       if (info.done) {
-        finderSetNote('Alle Feed-Spiele durchsucht – nichts gefunden.');
-        return;
-      }
-      if (finderMatches(finderQuery()).length) {
-        finderSetNote('Treffer gefunden – „mehr laden“ holt weitere Seiten.');
+        finderSetNote(finderMatches(finderQuery()).length
+          ? 'Alle Feed-Spiele durchsucht.'
+          : 'Alle Feed-Spiele durchsucht – nichts gefunden.');
         return;
       }
       FINDER.timer = window.setTimeout(finderAutoRun, FINDER_AUTO.cooldown);
@@ -1495,7 +1513,7 @@
         if (!preset) return;
         applyCloak(preset);
         toast('Tarnung aktiv: ' + preset.title, 'success');
-        window.location.hash = '#/cloak';
+        navigate('cloak');
       });
     }
 
@@ -1507,11 +1525,11 @@
         window.clearTimeout(FINDER.timer);
         renderFinder();
         if (FINDER.auto) {
-          toast('Auto-Mehr an – lädt beim Suchen nach, bis ein Treffer da ist', 'info');
+          toast('Auto-Mehr an – lädt, bis der Feed durchsucht ist', 'info');
           finderAutoRun();
         } else {
           finderSetNote('');
-          toast('Auto-Mehr aus', 'info');
+          toast('Auto-Mehr aus – angehalten', 'info');
         }
       });
     }
@@ -1531,6 +1549,92 @@
     toast((name || 'Seite') + ' in about:blank geöffnet', 'success');
   }
 
+  /* Eigene Seite in einen about:blank-Tab schreiben: Der Tab lädt nie eine echte
+     Adresse, deshalb bleibt in der Leiste about:blank stehen. */
+  function openOwnPageInBlank(route) {
+    var target = String(route || '').replace(/^\/+/, '');
+    if (ROUTES.indexOf(target) === -1) target = '';
+
+    var win = window.open('about:blank', '_blank');
+    if (!win) {
+      toast('Popup blockiert – erlaub bitte Pop-ups für diese Seite.', 'error');
+      return;
+    }
+
+    var base = siteUrl('');
+    var doc = win.document;
+
+    /* Kein document.write: Chrome setzt dabei die Adresse auf die unserer Seite.
+       Deshalb wird die Seite Stück für Stück per DOM aufgebaut, damit die
+       Adresszeile wirklich about:blank bleibt. */
+    var placeholder = doc.createElement('p');
+    placeholder.textContent = 'Seite wird geladen …';
+    try {
+      doc.documentElement.setAttribute('lang', 'de');
+      doc.body.setAttribute('style', 'margin:0;height:100vh;display:grid;place-items:center;' +
+        'background:#0b0d17;color:#e6e9f5;font:14px system-ui,sans-serif');
+      doc.body.appendChild(placeholder);
+    } catch (err) {
+      try { win.location.replace(siteUrl(target)); } catch (e2) { /* ignore */ }
+      return;
+    }
+
+    function copyAttributes(from, to) {
+      Array.prototype.forEach.call(from.attributes, function (attr) {
+        to.setAttribute(attr.name, attr.value);
+      });
+    }
+
+    function addScript(node, parent) {
+      var script = doc.createElement('script');
+      var src = node.getAttribute ? node.getAttribute('src') : '';
+      if (src) script.src = src;
+      else script.textContent = node.textContent;
+      parent.appendChild(script);
+    }
+
+    fetch(base + 'index.html', { cache: 'no-cache' }).then(function (res) {
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      return res.text();
+    }).then(function (html) {
+      var parsed = new DOMParser().parseFromString(html, 'text/html');
+
+      /* <base> lässt CSS, JS und JSON trotz about:blank von der echten Adresse laden. */
+      var baseTag = doc.createElement('base');
+      baseTag.setAttribute('href', base);
+      doc.head.appendChild(baseTag);
+
+      var charset = doc.createElement('meta');
+      charset.setAttribute('charset', 'utf-8');
+      doc.head.appendChild(charset);
+
+      Array.prototype.forEach.call(parsed.head.children, function (node) {
+        var tag = node.tagName;
+        if (tag === 'SCRIPT') { addScript(node, doc.head); return; }
+        if (tag === 'TITLE') { doc.title = node.textContent; return; }
+        if (tag === 'BASE') return;
+        doc.head.appendChild(doc.importNode(node, true));
+      });
+
+      copyAttributes(parsed.documentElement, doc.documentElement);
+      copyAttributes(parsed.body, doc.body);
+      doc.body.removeAttribute('style');
+
+      /* Startseite für den injizierten Tab, bevor die App startet. */
+      win.__BLANK_ROUTE__ = target;
+      doc.body.innerHTML = parsed.body.innerHTML;
+
+      /* Per innerHTML eingesetzte Skripte laufen nicht – hier von Hand nachladen. */
+      Array.prototype.forEach.call(parsed.body.querySelectorAll('script'), function (script) {
+        addScript(script, doc.body);
+      });
+    }).catch(function () {
+      try { win.location.replace(siteUrl(target)); } catch (err) { /* ignore */ }
+    });
+
+    toast(target ? 'Spiele-Seite in about:blank geöffnet' : 'Seite in about:blank geöffnet', 'success');
+  }
+
   /* Knopf auf Home: öffnet die ganze Seite als eigene URL in einem about:blank-Tab. */
   function siteUrl(hash) {
     var base;
@@ -1546,17 +1650,7 @@
     var buttons = document.querySelectorAll('[data-open-tab]');
     Array.prototype.forEach.call(buttons, function (btn) {
       btn.addEventListener('click', function () {
-        var route = btn.getAttribute('data-open-tab');
-        var url = siteUrl(route);
-        // Erst ein neutraler about:blank-Tab, dann die Seite darin laden.
-        var win = window.open('about:blank', '_blank');
-        if (!win) {
-          toast('Popup blockiert – erlaub bitte Pop-ups für diese Seite.', 'error');
-          return;
-        }
-        try { win.opener = null; } catch (err) { /* egal */ }
-        try { win.location.replace(url); } catch (err) { win.location.href = url; }
-        toast(route ? 'Spiele-Seite in about:blank geöffnet' : 'Seite in about:blank geöffnet', 'success');
+        openOwnPageInBlank(btn.getAttribute('data-open-tab'));
       });
     });
   }
@@ -2452,12 +2546,39 @@
 
     playerNote('<strong>Domain wird geladen …</strong><br />Falls nichts passiert, hilft <em>Neuer Tab</em> oben rechts.');
     frame.src = url;
+    updatePlayerFav();
 
     window.clearTimeout(state.player.timer);
     state.player.timer = window.setTimeout(function () {
       if (!state.player.open) return;
       playerNote('<strong>Diese Domain lässt sich nicht einbetten.</strong><br />Nimm eine andere Domain oder <em>Neuer Tab</em>.');
     }, 12000);
+  }
+
+  /* Favoriten-Stern im Player: speichert genau das Spiel, das gerade läuft. */
+  function playerFavData() {
+    if (!state.player.url) return null;
+    var title = $('#player-title');
+    var iconImg = $('#player-icon img');
+    return {
+      url: state.player.url,
+      name: title && title.textContent ? title.textContent : 'Spiel',
+      icon: iconImg ? iconImg.getAttribute('src') || '' : '',
+      type: state.player.type || state.route
+    };
+  }
+
+  function updatePlayerFav() {
+    var button = $('#player-fav');
+    if (!button) return;
+    var data = playerFavData();
+    var fav = !!(data && isFavorite(data.url));
+    button.classList.toggle('is-fav', fav);
+    button.setAttribute('aria-pressed', String(fav));
+    button.title = fav ? 'Aus Favoriten entfernen' : 'Zu Favoriten hinzufügen';
+    button.setAttribute('aria-label', button.title);
+    var label = button.querySelector('.player-btn-label');
+    if (label) label.textContent = fav ? 'Favorit ✓' : 'Favorit';
   }
 
   function openPlayer(opts) {
@@ -2499,6 +2620,7 @@
     var item = findItemByUrl(opts.url);
     state.player.urls = item && Array.isArray(item.urls) ? item.urls : [];
     renderPlayerDomains(state.player.urls, opts.url);
+    updatePlayerFav();
 
     window.clearTimeout(state.player.timer);
     state.player.timer = window.setTimeout(function () {
@@ -2591,8 +2713,7 @@
       home.addEventListener('click', function () {
         var target = ROUTES.indexOf(state.player.type) !== -1 ? state.player.type : 'home';
         closePlayer();
-        if (window.location.hash === '#/' + target) renderRoute(target);
-        else window.location.hash = '#/' + target;
+        navigate(target);
       });
     }
 
@@ -2609,6 +2730,18 @@
           playerNote('<strong>Spiel wird neu geladen …</strong>');
           frame.src = url;
         }, 40);
+      });
+    }
+
+    var fav = $('#player-fav');
+    if (fav) {
+      fav.addEventListener('click', function () {
+        var data = playerFavData();
+        if (!data) return;
+        var added = toggleFavorite(data);
+        updatePlayerFav();
+        refreshFavoritesView();
+        toast(added ? 'Zu Favoriten hinzugefügt' : 'Aus Favoriten entfernt', added ? 'success' : 'info');
       });
     }
 
