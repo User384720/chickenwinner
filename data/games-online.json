@@ -352,24 +352,6 @@
           ]
         },
         {
-          "name": "1v1.LOL",
-          "icon": "https://www.google.com/s2/favicons?domain=1v1.lol&sz=128",
-          "urls": [
-            {
-              "label": "lokal spielen",
-              "url": "games/native-lite/1v1lol/index.html"
-            },
-            {
-              "label": "1v1.lol",
-              "url": "https://1v1.lol"
-            },
-            {
-              "label": "gms.parcoil.com",
-              "url": "https://gms.parcoil.com/1v1lol/"
-            }
-          ]
-        },
-        {
           "name": "Deadshot.io",
           "icon": "https://www.google.com/s2/favicons?domain=deadshot.io&sz=128",
           "urls": [
@@ -10912,16 +10894,6 @@
           "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/10-minutes-till-dawn/icon.png"
         },
         {
-          "name": "1v1.LOL",
-          "urls": [
-            {
-              "label": "monkeygg2.org · neuer Tab",
-              "url": "https://monkeygg2.org/games/1v1-lol/"
-            }
-          ],
-          "icon": "https://raw.githubusercontent.com/MonkeyGG2/monkeygg2.github.io/main/games/1v1-lol/logo.png"
-        },
-        {
           "name": "2048",
           "urls": [
             {
@@ -12310,15 +12282,6 @@
             {
               "label": "raw.githack.com",
               "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/12-mini-battles.html"
-            }
-          ]
-        },
-        {
-          "name": "1v1.lol",
-          "urls": [
-            {
-              "label": "raw.githack.com",
-              "url": "https://raw.githack.com/CoolDude2349/Offline-HTML-Games-Pack/master/offline/1v1.lol.html"
             }
           ]
         },
