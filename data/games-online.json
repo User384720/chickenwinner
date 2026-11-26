@@ -1196,6 +1196,22 @@
               "url": "https://web-games.io/granny-3.embed"
             }
           ]
+        },
+        {
+          "name": "Azeroth Survivors",
+          "icon": "https://ported2browser.com/storage/covers/azeroth-survivors.webp",
+          "urls": [
+            {
+              "label": "wow.aethus.pl · neuer Tab",
+              "url": "https://wow.aethus.pl/",
+              "blank": true
+            },
+            {
+              "label": "azerothsurvivors.app/de · neuer Tab",
+              "url": "https://azerothsurvivors.app/de/",
+              "blank": true
+            }
+          ]
         }
       ]
     },
@@ -1419,8 +1435,9 @@
           "icon": "https://ported2browser.com/storage/covers/azeroth-survivors.webp",
           "urls": [
             {
-              "label": "wow.aethus.pl",
-              "url": "https://wow.aethus.pl/"
+              "label": "wow.aethus.pl · neuer Tab",
+              "url": "https://wow.aethus.pl/",
+              "blank": true
             }
           ]
         },
