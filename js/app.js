@@ -803,8 +803,11 @@
          Prüfung nicht massenhaft Player-Seiten von GamePix lädt. */
       var dot = type === 'rss-games' ? '' : statusDotMarkup(u.url, item, u);
       var color = safeColor(u.color) || safeColor(item.color);
+      /* Links, die sich nicht einbetten lassen: in einem leeren about:blank-Tab öffnen. */
+      var blank = u.blank === true || item.blank === true || /neuer Tab/i.test(u.label || '');
       return '<button class="badge badge-play' + (color ? ' has-color' : '') + (i >= visibleLinks ? ' is-extra' : '') + '" type="button" ' +
         'data-play-url="' + esc(u.url) + '" data-play-name="' + esc(item.name) + '" data-play-icon="' + esc(item.icon || '') + '" ' +
+        (blank ? 'data-play-blank="1" ' : '') +
         'data-play-type="' + esc(type) + '" ' +
         (color ? 'style="--badge-color:' + esc(color) + '" ' : '') +
         'title="Im Player öffnen' + (type === 'rss-games' ? '' : ': ' + esc(u.url)) + '">' +
@@ -1430,6 +1433,20 @@
         }
       });
     }
+  }
+
+  /* Link in einem frischen about:blank-Tab öffnen: Der Tab startet leer (URL = about:blank)
+     und bekommt erst danach die Zielseite. */
+  function openBlankUrl(url, name) {
+    if (!url) return;
+    var win = window.open('about:blank', '_blank');
+    if (!win) {
+      toast('Popup blockiert – erlaub bitte Pop-ups für diese Seite.', 'error');
+      return;
+    }
+    try { win.opener = null; } catch (err) { /* egal */ }
+    try { win.location.replace(url); } catch (err) { win.location.href = url; }
+    toast((name || 'Seite') + ' in about:blank geöffnet', 'success');
   }
 
   /* Knopf auf Home: öffnet die ganze Seite als eigene URL in einem about:blank-Tab. */
@@ -2171,6 +2188,10 @@
       var playButton = event.target.closest('[data-play-url]');
       if (playButton) {
         event.preventDefault();
+        if (playButton.dataset.playBlank) {
+          openBlankUrl(playButton.dataset.playUrl, playButton.dataset.playName);
+          return;
+        }
         openPlayer({
           url: playButton.dataset.playUrl,
           name: playButton.dataset.playName,
@@ -2470,6 +2491,15 @@
         }
         var chip = event.target.closest('[data-domain-url]');
         if (chip) switchPlayerDomain(chip.dataset.domainUrl);
+      });
+    }
+
+    var externalLink = $('#player-external');
+    if (externalLink) {
+      externalLink.addEventListener('click', function (event) {
+        event.preventDefault();
+        var title = $('#player-title');
+        openBlankUrl(state.player.url, title && title.textContent ? title.textContent : 'Seite');
       });
     }
 

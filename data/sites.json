@@ -123,7 +123,8 @@
           "urls": [
             {
               "label": "de.casino.guru · neuer Tab",
-              "url": "https://de.casino.guru/kostenlose-casino-spiele"
+              "url": "https://de.casino.guru/kostenlose-casino-spiele",
+              "blank": true
             }
           ]
         }
@@ -197,7 +198,8 @@
           "urls": [
             {
               "label": "harshitwaldia.github.io · neuer Tab",
-              "url": "https://harshitwaldia.github.io/Browser-Games-Directory/"
+              "url": "https://harshitwaldia.github.io/Browser-Games-Directory/",
+              "blank": true
             }
           ]
         }
