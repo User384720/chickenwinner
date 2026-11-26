@@ -497,6 +497,17 @@
               "url": "https://2v2.io/"
             }
           ]
+        },
+        {
+          "name": "SUPERHOT",
+          "icon": "https://www.google.com/s2/favicons?domain=kdata1.com&sz=128",
+          "urls": [
+            {
+              "label": "kdata1.com · neuer Tab",
+              "url": "https://kdata1.com/2019/05/superhot/",
+              "blank": true
+            }
+          ]
         }
       ]
     },
